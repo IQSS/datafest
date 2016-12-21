@@ -20,7 +20,7 @@ output: html_document
 ####Make an account
 
 ####Download files
-[Directory of potential files for download]()
+> [Directory of potential files for download](https://github.com/IQSS/datafest/tree/master/versioning/data)
 
 ####Create a new repository
 
