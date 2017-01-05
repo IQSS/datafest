@@ -6,4 +6,6 @@ Wednesday, Jan. 18 - 10:45-11:45
 The lesson for the day is available here:
 [https://rawgit.com/izahn/R-data-cleaning/master/dataCleaning.html](https://rawgit.com/izahn/R-data-cleaning/master/dataCleaning.html)
 
+Notes and data are availble [here](https://github.com/izahn/R-data-cleaning).
+
 Additional resources to support data clean up are availble [insert link].
