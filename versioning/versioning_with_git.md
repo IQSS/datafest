@@ -166,9 +166,9 @@ This may seem like a convoluted approach to dealing with conflicts but it is ver
 
 GitHub Desktop offers an easy way of getting started with GitHub and version control. Depending on your use case GitHub desktop may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line may offer some advantages. Version control systems like Git have a lot of features available to use. Some of these will only be applicable in very specific contexts, others will be more commonly useful. Alongside the lesson suggested above the resources below will allow you to gain a deeper understanding of version control.
 
-* The GitHub Desktop(https://desktop.github.com/) and the GitHub Desktop documentation(https://help.github.com/desktop/) outlines more features included in GitHub Desktop.
-* GitHub provides extensive support in the form of guides(https://guides.github.com/) and help(https://help.github.com/).
-* GitHub Glossary(https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
+* The [GitHub Desktop](https://desktop.github.com/) and the GitHub Desktop [documentation](https://help.github.com/desktop/) outlines more features included in GitHub Desktop.
+* GitHub provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
+* GitHub [Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
 
 ***
 
