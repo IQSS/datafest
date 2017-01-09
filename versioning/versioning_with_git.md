@@ -174,21 +174,21 @@ GitHub Desktop offers an easy way of getting started with GitHub and version con
 
 *Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
 
-<img src="../img/setup.png" width="500" align="center">
-<img src="../img/setup2.png" width="500" align="center">
-<img src="../img/new.png" width="500" align="center">
-<img src="../img/add.png" width="500" align="center">
-<img src="../img/repo1.png" width="500" align="center">
-<img src="../img/local_change.png" width="500" align="center">
-<img src="../img/publish.png" width="500" align="center">
-<img src="../img/gotogithub.png" width="500" align="center">
-<img src="../img/online1.png" width="500" align="center">
-<img src="../img/edit.png" width="500" align="center">
-<img src="../img/online_edits.png" width="500" align="center">
-<img src="../img/online_commit.png" width="500" align="center">
-<img src="../img/synced_change.png" width="500" align="center">
-<img src="../img/online_conflict.png" width="500" align="center">
-<img src="../img/local_conflict.png" width="500" align="center">
-<img src="../img/sync_conflict.png" width="500" align="center">
-<img src="../img/conflict_text.png" width="500" align="center">
-<img src="../img/commit_conflict.png" width="500" align="center">
+<img src="img/setup.png" width="500" align="center">
+<img src="img/setup2.png" width="500" align="center">
+<img src="img/new.png" width="500" align="center">
+<img src="img/add.png" width="500" align="center">
+<img src="img/repo1.png" width="500" align="center">
+<img src="img/local_change.png" width="500" align="center">
+<img src="img/publish.png" width="500" align="center">
+<img src="img/gotogithub.png" width="500" align="center">
+<img src="img/online1.png" width="500" align="center">
+<img src="img/edit.png" width="500" align="center">
+<img src="img/online_edits.png" width="500" align="center">
+<img src="img/online_commit.png" width="500" align="center">
+<img src="img/synced_change.png" width="500" align="center">
+<img src="img/online_conflict.png" width="500" align="center">
+<img src="img/local_conflict.png" width="500" align="center">
+<img src="img/sync_conflict.png" width="500" align="center">
+<img src="img/conflict_text.png" width="500" align="center">
+<img src="img/commit_conflict.png" width="500" align="center">
