@@ -8,7 +8,7 @@ Adapted for DataFest 2017 by: Radhika Khetani, Bob Freeman, Amir Karger
 
 # Version Control with Git/Github
 
-* *Materials used in these lessons were derived from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
+>> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop). Licensing information available at the bottom of this page.
 
 ## What is Version Control, and why use it?
 
@@ -170,4 +170,7 @@ GitHub Desktop offers an easy way of getting started with GitHub and version con
 * GitHub provides extensive support in the form of guides(https://guides.github.com/) and help(https://help.github.com/).
 * GitHub Glossary(https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
 
-* *Materials used in these lessons were derived from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
+***
+
+*Materials used in these lessons are derived from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
+
