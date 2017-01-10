@@ -116,7 +116,7 @@ It is cold and dry, but everything is my favorite color.
 
 The two moons may make things interesting
 ```
-> **Text Editors**
+> **Text Editors:**
 > To write in plain text we want to use a text editor. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time but for now we can start with a simpler editor. Good options are TextEdit for Mac, and Notepad for windows. 
 
 Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **commit** our changes.
