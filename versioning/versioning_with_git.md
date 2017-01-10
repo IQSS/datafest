@@ -1,10 +1,9 @@
 ---
 layout: default
 title: "Versioning with Git/Github"
-author: "Daniel van Strien"
+author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 output: html_document
 ---
-Adapted for DataFest 2017 by: Radhika Khetani, Bob Freeman, Amir Karger
 
 # Version Control with Git/Github
 
