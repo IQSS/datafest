@@ -108,7 +108,7 @@ If we choose the repository we just added we will see the files contained in tha
 
 If we were to look at hidden folders in the folder we have just added to GitHub you will see that the folder now contains an extra folder with the name ‘.git’. This folder is how GitHub desktop tracks changes we make within our version controlled folder whether these changes be adding new files or modifying existing ones.
 
-Let's open the `mars.txt` document using our text editor and add a couple of lines to it.
+Let's open the `mars.txt` document using our favorite text editor (see note below) and add a couple of lines to it.
 
 ```
 Mars is a red planet.
@@ -116,6 +116,8 @@ It is cold and dry, but everything is my favorite color.
 
 The two moons may make things interesting
 ```
+> **Text Editors**
+> To write in plain text we want to use a text editor. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time but for now we can start with a simpler editor. Good options are TextEdit for Mac, and Notepad for windows. 
 
 Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **commit** our changes.
 
