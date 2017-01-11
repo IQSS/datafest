@@ -4,5 +4,5 @@ Wednesday, Jan. 18 - 2:30-4:00
 #### Troy Adair, Christopher Gandrud, Christopher Morse, Dustin Tingley
 
 
-Notes and copie sof the slides are available [here](https://github.com/IQSS/datafest/tree/master/visualization_and_reporting).
+Notes and copies of the slides are available [here](https://github.com/IQSS/datafest/tree/master/visualization_and_reporting).
 
