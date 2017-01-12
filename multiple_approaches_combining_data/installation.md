@@ -109,7 +109,7 @@ The ODBC Manager software acts as a broker between your front-end program (R, Py
 
 1a. For the PC, this step is not needed as it is built into the Windows operating system.
 
-1b. For both Mac, please download to your `Installers` folder the [iODBC Manager 3.52.12 disk image](http://opldownload.s3.amazonaws.com/uda/components/7.0/universal-apple-macosx10.7-32/mxkozzzz.dmg). Open the disk image file, and double-click the installer package to start the installation process.
+1b. For the Mac, please download to your `Installers` folder the [iODBC Manager 3.52.12 disk image](http://opldownload.s3.amazonaws.com/uda/components/7.0/universal-apple-macosx10.7-32/mxkozzzz.dmg). Open the disk image file, and double-click the installer package to start the installation process.
 
 
 #### ODBC Drivers
@@ -132,32 +132,25 @@ Unfortunately, this must be done by hand via the Windows GUI interface. Although
 
 2. Click on the Drivers tab. You should see "SQLite3 ODBC Driver" listed here, among others:
 
-[image = odbc_data_source_admin_drivers.png]
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![alt text](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/odbc_data_source_admin_drivers.png "Data Source Administrator Drivers")
 
  If you do not, please retry the ODBC Manager and ODBC Driver PC installation steps. If you still do not see it here, please see the HelpDesk volunteers at DataFest concourse.
 
 3. Click on the User DNS tab. Click on the Add button. Select the SQLite3 ODBC Driver". 
 
-[image = odbc_create_new_data_source.png]
+![alt text](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/odbc_create_new_data_source.png "Create New Data Source")
 
 PLEASE verify that you select SQLite3, not the other choices. Click on the Finish button.
 
 4. In the new window that appears, enter "DF_Survey_DB" as the Data Source Name. For Database Name, enter "C:\Users\Public\datafest_2017\survey.db" or use the Browse button to navigate to the `survey.db` file in your `datafest_2017` folder. 
 
-[image=odbc_sqlite3_odbc_dsn_config.png]
+![alt text](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/odbc_sqlite3_odbc_dsn_config.png "SQLite3 ODBC DSN Configuration")
 
 You should have this window configured as such. Click on OK to close this window, and OK again to close the ODBC Manager.
 
 
 **Mac**
 
-1. In your Applications folder, open the iODBC folder. 
-
-SQLite3_Driver
-/usr/local/lib/libsqlite3odbc.dylib
-
-DF_Survey_DB
-/Users/Shared/datafest_2017/survey.db
-
-2. 
-
+1. For the Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/mac_odbc_config.command). Double-click on this to run the configuration script.
