@@ -178,5 +178,5 @@ You should have this window configured as such. Click on "OK" to close this wind
 
 `bash /Users/Shared/datafest_2017/Installers/mac_odbc_config.command`
 
-4. If all installed successfully, you should see a confirmation message. If not, you will be informed, and you should download the *.ini files from the GitHub site found at 'installers > mac' and place in your invisible Library home folder. If you are stuck, please see the HelpDesk volunteers at DataFest concourse.
+4. If all installed successfully, you should see a confirmation message "Files are present and installed OK". If not, you will be informed, and you should download the *.ini files from the GitHub site found at 'installers > mac' and place in your invisible Library home folder. If you are stuck, please show the error messages to the HelpDesk volunteers at DataFest concourse.
 
