@@ -4,8 +4,8 @@ Our hands-on session will be focusing on using SQLite3 as a lightweight, local d
 
 Although this looks lengthy, it is not and should take only about 5 minutes to complete.  Please install in the sections below:
 
-[Data Files](#Data_Files)<br>
-[SQLite3](#SQLite3)<br>
+[Data Files](#data-files)<br>
+[SQLite3](#sqlite3)<br>
 One (or all) of the following :<br>
   [Python + modules](#python--sqlite-module)<br>
   [R + packages](#r--rstudio--rsqlite--dplyr-packages)<br>
