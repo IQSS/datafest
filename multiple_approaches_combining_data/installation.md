@@ -176,6 +176,7 @@ PLEASE verify that you selected SQLite3, not the other choices. Click on the "Fi
 
 You should have this window configured as such. Click on "OK" to close this window, and "OK" again to close the ODBC Manager.
 
+5. Open Stata, and enter `odbc list`. You should see the data source that you entered there as a clickable link. Click on the DF_Survey_DB link, and you should see the list of the four data tables in our database. If you do not get this, please show the error messages to the HelpDesk volunteers at DataFest concourse.
 
 **Mac**
 
@@ -188,4 +189,7 @@ You should have this window configured as such. Click on "OK" to close this wind
 `bash /Users/Shared/datafest_2017/Installers/mac_odbc_config.command`
 
 4. If all installed successfully, you should see a confirmation message "Files are present and installed OK". If not, you will be informed, and you should download the *.ini files from the GitHub site found at 'installers > mac' and place in your invisible Library home folder. If you are stuck, please show the error messages to the HelpDesk volunteers at DataFest concourse.
+
+5. Open Stata, and enter `set odbcdriver ansi, permanently`, Enter, and `odbc list`. You should see the data source that you entered there as a clickable link. Click on the DF_Survey_DB link, and you should see the list of the four data tables in our database. If you do not get this, please show the error messages to the HelpDesk volunteers at DataFest concourse.
+
 
