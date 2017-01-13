@@ -16,8 +16,8 @@ If you already have R, Python, or Stata installed, you will still need to instal
 
 1. Create a folder at the following location:
 
-- Mac:    `/Macintosh HD/Users/Shared/df2017_merging_data`
-- PC :    `C:\Users\Public\df2017_merging_data`
+- Mac:    `/Macintosh HD/Users/Shared/datafest_2017`
+- PC :    `C:\Users\Public\datafest_2017`
     
 2. Download the following files into that folder:
 
@@ -37,7 +37,7 @@ No need to do anything here! SQLite3 is pre-installed on Mac systems on Mac OS X
 
 Although these instructions were written for Window 7 SP1, they may vary slightly for v8.1, or v10. Please adjust accordingly, or see the HelpDesk volunteers in the DataFest concourse.
 
-1. Please create a folder called `Installers` inside your `df2017_merging_data` folder, and download the following Zip archives to that location:
+1. Please create a folder called `Installers` inside your `datafest_2017` folder, and download the following Zip archives to that location:
 
     [32-bit DLL (x86) for SQLite version 3.16.2](github\installers\sqlite-dll-win32-x86-3160200.zip)
     [SQLite command-line tools, shell, sqldiff, and sqlite3_analyzer programs](github\installers\sqlite-tools-win32-x86-3160200.zip)
