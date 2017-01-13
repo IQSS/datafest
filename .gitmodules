@@ -1,3 +1,6 @@
 [submodule "datafest2017_rep_research_tools"]
 	path = datafest2017_rep_research_tools
 	url = https://github.com/christophergandrud/datafest2017_rep_research_tools.git
+[submodule "datafest2017_dashboard_shiny"]
+	path = datafest2017_dashboard_shiny
+	url = https://github.com/christophergandrud/datafest2017_dashboard_shiny.git
