@@ -59,12 +59,12 @@ You do not need to install all three analysis environments; instead, only instal
 
 **If you are taking the Text Analysis with Python (Hands-on), please install Python v3**
 
-**Python v2.7**
+**Python v2.7**<br>
     Mac 64-bit: https://repo.continuum.io/archive/Anaconda2-4.2.0-MacOSX-x86_64.pkg<br>
     PC 32-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86.exe<br>
     PC 64-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86_64.exe<br>
 
-**Python v3.5**
+**Python v3.5**<br>
     Mac 64-bit: https://repo.continuum.io/archive/Anaconda3-4.2.0-MacOSX-x86_64.pkg<br>
     PC 32-bit : https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe<br>
     PC 64-bit : https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe<br>
