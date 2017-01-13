@@ -54,7 +54,7 @@ You do not need to install these three analysis environments. We are going to de
 
 ### Python + SQLite module
 
-1. For both Mac and PC, please download to your `Installers` folder the appropriate installer from [Continuum Analytics](https://www.continuum.io/) Anaconda Python v2.7 installer and run it to start the installation process. If you don't know which PC installer to use, please use the 32-bit one.
+1. For Mac or PC, please download to your `Installers` folder the appropriate installer from [Continuum Analytics](https://www.continuum.io/) Anaconda Python v2.7 installer and run it to start the installation process. If you don't know which PC installer to use, please use the 32-bit one.
 
     Mac 64-bit: https://repo.continuum.io/archive/Anaconda2-4.2.0-MacOSX-x86_64.pkg<br>
     PC 32-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86.exe<br>
@@ -64,21 +64,23 @@ You do not need to install these three analysis environments. We are going to de
     
 ### R + RStudio + RSQLite + dplyr packages
 
-1. For both Mac and PC, please download to your `Installers` folder the R installer from the [CRAN](https://cran.r-project.org/) site and run it to start the installation process:
+1. For Mac or PC, please download to your `Installers` folder the R installer from the [CRAN](https://cran.r-project.org/) site and run it to start the installation process:
 
     Mac: https://cran.r-project.org/bin/macosx/R-3.3.2.pkg        
     PC : https://cran.r-project.org/bin/windows/base/R-3.3.2-win.exe
 
-2. For both Mac and PC, please download to your `Installers` folder the RStudio installer from the [RStudio](https://www.rstudio.com/) site and run it to start the installation process:
+2. For Mac or PC, please download to your `Installers` folder the RStudio installer from the [RStudio](https://www.rstudio.com/) site and run it to start the installation process:
 
     Mac: https://download1.rstudio.org/RStudio-1.0.136.dmg     
     PC : https://download1.rstudio.org/RStudio-1.0.136.exe
 
 
-3. Final step is to install the R packages needed for the workshop. Open up the RStudio program. In the console window that appears in the left pane, please enter the following commands one-at-a-time, noting that there may be long pauses as RStudio processes and installs all the dependent packages:
+3. Final step is to install the R packages needed for the workshop. Open up the RStudio program. In the console window that appears in the left pane, please enter the following commands one-at-a-time, *noting that there may be long pauses* as RStudio processes and installs all the dependent packages:
 
+```
     install.packages('RSQLite')
     install.packages('dplyr')
+```
 
 Red text may appear and scroll by. For the most part, that should be fine. But the final message should be something like...
 
@@ -119,7 +121,7 @@ This is perhaps the most complex of the three analysis environments, as the ODBC
 
 You must have a licensed copy of [Stata](http://www.stata.com) pre-installed. We will not provide it for your for this workshop.
 
-##### ODBC Manager
+#### ODBC Manager
 
 The ODBC Manager software acts as a broker between your front-end program (R, Python, Stata) and the backend database, allowing you to slot in any database. 
 
@@ -132,7 +134,7 @@ The ODBC Manager software acts as a broker between your front-end program (R, Py
 
 For each backend database or data source, you need software (a driver) to communicate between it and the ODBC Manager. We will use open source drivers from [http://www.ch-werner.de/sqliteodbc/](http://www.ch-werner.de/sqliteodbc/), which work well-enough for our purposes. Know that these can cost anywhere from $20 to $200!
 
-1. For both Mac and PC, please download to your `Installers` folder the appropriate installer and run it to start the installation process. PC users: please download and install BOTH sets of drivers.
+1. For Mac or PC, please download to your `Installers` folder the appropriate installer and run it to start the installation process. PC users: please download and install BOTH sets of drivers.
 
     Mac: [v0.9994 with full-text search support](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)
     PC : [v0.9995 Win32](http://www.ch-werner.de/sqliteodbc/sqliteodbc.exe)
@@ -169,7 +171,7 @@ You should have this window configured as such. Click on OK to close this window
 
 **Mac**
 
-1. For the Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/mac_odbc_config.command). 
+1. For Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/mac_odbc_config.command). 
 
 2. Click on the Search icon in the Mac main menu bar, or press Command-Space to bring up the Spotlight search. Enter "Terminal" and press Enter/Return when the Terminal application appears.
 
