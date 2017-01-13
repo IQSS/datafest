@@ -137,8 +137,8 @@ For each backend database or data source, you need software (a driver) to commun
 
 1. For Mac or PC, please download to your `Installers` folder the appropriate installer and run it to start the installation process. PC users: please download and install BOTH sets of drivers.
 
-    Mac: [v0.9994 with full-text search support](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)
-    PC : [v0.9995 Win32](http://www.ch-werner.de/sqliteodbc/sqliteodbc.exe)
+    Mac: [v0.9994 with full-text search support](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)<br>
+    PC : [v0.9995 Win32](http://www.ch-werner.de/sqliteodbc/sqliteodbc.exe)<br>
     PC : [v0.9995 Win64](http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe)
 
 #### ODBC Configuration
