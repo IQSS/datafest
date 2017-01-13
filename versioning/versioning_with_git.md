@@ -114,7 +114,7 @@ Download the folder we have generated for this session [from here](https://githu
 
 ### Adding a Folder/Repository
 
-There are a number of different ways to add files/folders for GitHub Desktop to track. We can drag the folder containing the file onto GitHub Desktop. When you do this you will be asked whether you want to create a repository for this folder. Alternatively we can click on the ‘plus’ icon to open a finder window to choose folders we want to add. 
+There are a number of different ways to add files/folders for GitHub Desktop to track. We can drag the folder containing the file onto GitHub Desktop. When you do this you will be asked whether you want to create a repository for this folder. Alternatively we can click on the ‘plus’ icon to open a window to choose folders we want to add. 
 
 <img src="img/add.png" width="700" align="center">
 
@@ -141,7 +141,7 @@ Save the changes to your file and go back to GitHub Desktop. You will see that t
 
 <img src="img/git-staging-area.png" width="700" align="center">
 
-In the context of Github Desktop the **add** to place changes in the *staging area* is completely transparent. However, it is important to know these terms for a proper understanding of how Git functions. You can place several changes in the staging area, and only **commit** when you are ready.
+In the context of Github Desktop the **add** to place changes in the *staging area* is completely transparent. However, it is important to know these terms for a proper understanding of how Git functions. You can place several changes in the staging area, and only **commit** when you are ready. But, do spend some time thinking about how and if all these changes go together, it might be best to only group a few related changes together in the staging area before the **commit** step.
 
 ### Committing Changes
 
@@ -155,23 +155,27 @@ When you commit you will see ‘commit to master’. This refers to the ‘maste
 
 A useful way to think about commits is as the ‘history’ of your document. Each commit records a development or change made to the documents in your repository; the history of the document can be traced by looking at all of the commits. For this history to be useful later on, either for ourselves or for someone else, it is important that this history is recorded at relevant points. Trying to make commits ‘atomic’ is an important consideration. What this means is that each commit ‘makes sense’ on its own. The changes in the commit and the message are understandable without having to look at surrounding commits.
 
-#### Commit Messages
-
-It is important that you use meaningful commit summaries and messages. You don't need to write which files were changes, as Git will track that by itself; you should describe changes at a higher level. Writing good commit messages requires some prior thought. This is especially important when you are working on a collaborative project, as it is especially important that other people can understand your commit messages. 
+> **Commit Messages**: It is important that you use meaningful commit summaries and messages. You don't need to write which files were changes, as Git will track that by itself; you should describe changes at a higher level. Writing good commit messages requires some prior thought. This is especially important when you are working on a collaborative project, as it is especially important that other people can understand your commit messages. 
 
 ### Publishing Your Repository
 
-At the moment we are only recording our changes locally. We may be happy to only store our changes locally (it is still important to back our files up) but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer. The process of doing this through GitHub Desktop is straightforward. On GitHub desktop you ‘publish’ repositories. This will **push** your repository from your computer to the GitHub website and set up a **remote** repository in the process.
+At the moment we are only recording our changes locally. We may be happy to only store our changes locally (it is still important to back our files up) but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer (for collaborating/sharing/backing up). 
+
+The process of doing this through GitHub Desktop is straightforward. On GitHub desktop you ‘publish’ repositories. This will **push** your repository from your computer to the GitHub website and set up a *remote* repository on Github's servers in the process.
 
 <img src="img/publish.png" width="700" align="center">
 
-Once you have ‘published’ your repository it will be viewable on your profile at GitHub’s website. It is possible to setup a private repository on GitHub but this requires you to have either signed up as a student or researcher or to pay for a GitHub subscription. If you haven’t signed up for one of these options you will not be able to create a private repository without first signing up for a subscription. Unless you need to start a subscription you can safely ignore the ‘billing information’ section. For this lesson it will be fine to publish a public repository. To quickly view your repository online you can use the repository menu and choose ‘View on GitHub’. This will bring you to your repository online in your browser.
+Once you have ‘published’ your repository it will be viewable on your profile at GitHub’s website. You can choose to keep it public or make it private, and if it's private, you can choose specific github users with whom you want to share it.
+
+For this lesson, we will stick with a public repository. To quickly view your repository online you can use the repository menu and choose ‘View on GitHub’. This will bring you to your repository online in your browser.
 
 <img src="img/gotogithub.png" width="700" align="center">
 
 <img src="img/online1.png" width="700" align="center">
 
-Once your document is online, you can continue to make local changes to your file. But you will have to sync your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers). It is important to keep these changes in sync. On GitHub Desktop this process is simplified by using a sync option rather than by using the push and pull commands used on the command line. You will see a ‘sync’ button on GitHub Desktop. This will ensure your local (computer) and remote (GitHub server) repositories are the same. If you want to work on your document before ‘publishing it’ you can choose to make commits without syncing. This will allow you to implement version control early on whilst keeping the changes local to your computer initially.
+Once your document is online, you can continue to make local changes to your file. But you will have to sync your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers). It is important to keep these changes in sync. 
+
+On GitHub Desktop this process is simplified by using the **Sync** option, which **pulls** in the changes in the remote repository and **pushes** any local changes to the remote repo. This will ensure your local (computer) and remote (GitHub server) repositories are current. 
 
 ### Making Changes Remotely
 
@@ -199,7 +203,11 @@ A ‘conflict’ emerges when you try to merge or ‘sync’ two versions of a d
 
 The most likely way a conflict will emerge is if you make a change remotely (on the GitHub website), and then make a subsequent change on your local machine without first synching the changes from the website. If you make changes in different parts of a document these changes can be ‘merged’ or synced together without any conflict. But these changes might conflict with one another (i.e. if you try and change the same line of the document in two different ways).
 
-An example will help illustrate how conflicts can emerge and how to deal with them. Say we add a change to our remote repository (on the GitHub website).
+<img src="img/conflict.png" width="700" align="center">
+
+An example will help illustrate the most likely way conflicts can emerge, and how to deal with them. 
+
+Say we add a change to our remote repository (on the GitHub website).
 
 <img src="img/online_conflict.png" width="700" align="center">
 
@@ -213,17 +221,24 @@ If we now commit our local changes and then sync our changes we get a message wa
 
 This is not a big problem. What you will need to do is manage these conflicts. GitHub desktop offers you the option of opening the file with the sync conflicts.
 
-If we choose to open file with an external editor the document will open with whichever text editor/application we have chosen as the default for opening markdown files. If you haven’t set a default application you can choose to ‘show in finder’. This will show the folder with your file. From here you can open it with your preferred editor.
+If we choose to open file with an external text editor the document will open with whichever text editor/application we have chosen as the default for opening markdown files. If you haven’t set a default application you can choose to ‘show in finder’ (or ‘show in folder’ for Windows). This will show the folder with your file. From here you can open it with your preferred editor.
+
+<img src="img/merge.png" width="400" align="center">
 
 If we take a look at the file we will see Git has highlighted the conflicting section.
 
-<img src="img/conflict_text.png" width="500" align="center">
+<img src="img/conflict_text.png" width="600" align="center">
 
-You will see that the conflicting section is marked with <<<<<<< and ends with >>>>>>>. These are known as the conflict markers. The two conflicting blocks are divided by a ======= line. There are a number of approaches to dealing with a conflict. You could choose to go with either of the changes by deleting the version you no longer want and removing the conflict markers. You could also decide to change the section entirely and not choose either of the options. Once you have ‘resolved’ the conflict you can go onto commit and sync your changes as usual. When you go to commit your changes you see that GitHub desktop specifies that the commit is to merge a conflict. This is useful if you later want to go back and review how you managed any conflicts.
+You will see that the conflicting section is marked with <<<<<<< and ends with >>>>>>>. These are known as the conflict markers. The two conflicting blocks are divided by a ======= line. There are a number of approaches to dealing with a conflict:
+
+* You could choose to go with either of the changes by deleting the version you no longer want and removing the conflict markers, OR
+* You could change the section entirely and not choose either of the options.
+
+Once you have ‘resolved’ the conflict you can go onto **commit** and **sync** your changes as usual. When you go to commit your changes you see that GitHub desktop specifies that the commit is to merge a conflict. This is useful if you later want to go back and review how you managed any conflicts.
 
 <img src="img/commit_conflict.png" width="700" align="center">
 
-This may seem like a convoluted approach to dealing with conflicts but it is very useful because of the control given to you in dealing with conflicts. If conflicts emerge on a system like Dropbox the result is two files being created. Although this is better than potentially loosing important changes, it also means you still have to look at these two documents and decide how you are going to merge them. If you are careful about always syncing changes you will be able to avoid having to deal with conflicts. When collaborating the likelihood for conflicts increases so it is useful to be aware of how to deal with conflicts before you begin to collaborate using GitHub.
+This may seem like a convoluted approach to dealing with conflicts but it is very useful because of the control given to you in dealing with conflicts. If conflicts emerge on a system like Dropbox the result is two files being created; although this is better than potentially losing important changes, it also means you still have to look at these two documents and decide how you are going to merge them. If you are careful about always syncing changes you will be able to avoid having to deal with conflicts. When collaborating the likelihood for conflicts increases so it is useful to be aware of how to deal with conflicts before you begin to collaborate using GitHub. 
 
 ## Further Resources
 
