@@ -223,11 +223,11 @@ This is not a big problem. What you will need to do is manage these conflicts. G
 
 If we choose to open file with an external text editor the document will open with whichever text editor/application we have chosen as the default for opening markdown files. If you haven’t set a default application you can choose to ‘show in finder’ (or ‘show in folder’ for Windows). This will show the folder with your file. From here you can open it with your preferred editor.
 
+<img src="img/merge.png" width="400" align="center">
+
 If we take a look at the file we will see Git has highlighted the conflicting section.
 
-<img src="img/merge.png" width="500" align="center">
-
-<img src="img/conflict_text.png" width="500" align="center">
+<img src="img/conflict_text.png" width="600" align="center">
 
 You will see that the conflicting section is marked with <<<<<<< and ends with >>>>>>>. These are known as the conflict markers. The two conflicting blocks are divided by a ======= line. There are a number of approaches to dealing with a conflict:
 
