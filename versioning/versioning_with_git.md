@@ -28,11 +28,11 @@ mydocument2016-01-08.txt
 
 Though this system might be slightly easier to follow, there are still problems with it. Primarily this system doesn’t record or describe the changes that took place between these two saves. It is possible that some of these changes were small typo fixes but the changes could also have been a major re-write or re-structuring of a document. If you have a change of heart about some of these changes you also need to work out which date the changes were made in order to go back to a previous version.
 
-Version control tries to address problems like these by implementing a systematic approach to recording and managing changes in files. At its simplest, version control involves taking ‘snapshots’ of your file at different stages. This snapshot records information about when the snapshot was made but also about what changes occurred between different snapshots. This allows you to ‘rewind’ your file to an older version. From this basic aim of version control a range of other possibilities are made available.
+Version control tries to address problems like these by implementing a systematic approach to recording and managing changes in files. At its simplest, version control involves taking ‘snapshots’ of your file; this snapshot records information about when the snapshot was made but also about what changes occurred between different snapshots. You decide when these snapshots are collected, and this allows you to ‘rewind’ your file to an older version. From this basic aim of version control a range of other possibilities are made available.
 
 ## Why Version Control Text Documents?
 
-As research increasingly makes use of digital tools and storage it becomes important to consider how to best manage our research data. This becomes especially important when we want to collaborate with other people. Though version control was originally designed for dealing with code there are many benefits to using it to with text documents too. Though not all of these benefits will be covered in this lesson, version controlling your document allows you to:
+As research increasingly makes use of digital tools and storage it becomes important to consider how to best manage our research data. This becomes especially important when we want to collaborate with other people. Though version control was originally designed for dealing with code (.R, .pl. .py) there are many benefits to using it to with text documents too (.txt, .csv, .tsv). Though not all of these benefits will be covered in this lesson, version controlling your document allows you to:
 
 * Track developments and changes in your documents
 * Record the changes you made to your document in a way that you will be able to understand later
@@ -40,11 +40,18 @@ As research increasingly makes use of digital tools and storage it becomes impor
 * ‘Merge’ two versions of a document and manage conflicts between versions
 * Revert changes, moving ‘backwards’ through your history to previous versions of your document
 
-Version control is particularly useful for facilitating collaboration. One of the original motivations behind version control systems was to allow different people to work on large projects together, in the case of Git to manage the Linux kernel source code. Using version control to collaborate allows for a greater deal of flexibility and control then many other solutions. As an example it would be possible for two people to work on a document at the same time and then merge these documents. If there were ‘conflicts’ between the two versions version control systems would allow you to see these conflicts and make an active decision about how to ‘merge’ these different versions into a new ‘third’ document. With this approach you would also retain a ‘history’ of the previous version should you wish to revert back to one of these later on.
+> Note: Different Version Control systems handle different non-text files differently. In most cases Word documents, graphics files, data objects from R or STATA, etc., can be included but most tools have limited capabilities for these.
 
 Version control will not be necessary for all of the documents you write. However there are times when version control will be very useful. For substantial work such as articles, books, or dissertations, version control makes a lot of sense.
 
-The implementation of version control we are going to use in this lesson will be publicly available, but it is possible to use version control and keep your documents hidden permanently or until you decide to make them available.
+Version control is particularly useful for facilitating collaboration. One of the original motivations behind version control systems was to allow different people to work on large projects together, in the case of Git to manage the Linux kernel source code. Benefits of collaborating with Version Control include:
+
+* flexibility and control
+* multiple people can simultaneously work on a document
+* easy conflict resolution 
+* easy to revert to an older version
+
+The example implementation of version control we are going to use today will be public; but, it is possible to use version control and keep your documents hidden permanently or until you decide to make them available.
 
 ## What are Git and GitHub?
 
@@ -52,19 +59,21 @@ Though often used synonymously, Git and GitHub are two different things. Git is 
 
 GitHub is a company which hosts Git repositories (more on this below) and provides software for using Git. This includes ‘GitHub Desktop’ which will be covered in this tutorial. GitHub is currently the most popular host of open source projects by [number of projects and number of users](https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities#Popularity).
 
-Although GitHub’s focus is primarily on source code, other projects, such as the Programming Historian, are increasingly making use of version control systems like GitHub to manage the work-flows of journal publishing, open textbooks and other humanities projects. Becoming familiar with GitHub will be useful not only for version controlling your own documents but will also make it easier to contribute and draw upon other projects which use GitHub. In this lesson the focus will be on gaining an understanding of the basic aims and principles of version control by uploading and version controlling a plain text document. This lesson will not cover everything but will provide a starting point to using version control.
+Although GitHub’s focus is primarily on source code, other projects are increasingly making use of version control systems like GitHub to manage the work-flows of journal publishing, open textbooks, other humanities projects, and teaching materials. 
+
+Becoming familiar with GitHub will be useful not only for version controlling your own documents but will also make it easier to contribute and draw upon other projects which use GitHub. In this lesson the focus will be on gaining an understanding of the basic aims and principles of version control by uploading and version controlling a plain text document. This lesson will not cover everything but will provide a starting point to using version control.
 
 ## Why Not use Dropbox or Google Drive?
 
 Dropbox, Google Drive and other services offer some form of version control in their systems. There are times when this may be sufficient for your needs. However there are a number of advantages to using a version control system like Git:
 
 * Language support: Git supports both text and programming languages. As research moves to include more digital techniques and tools it becomes increasingly important to have a way of managing and sharing both the ‘traditional’ outputs (journal articles, books, etc.) but also these newer outputs (code, datasets etc.)
-* More control: a proper version control systems gives you a much greater deal of control over how you manage changes in a document.
+* More control: a proper version control systems gives you a much greater deal of control over how you manage changes in a document, including the ability to comment on every change making it easier to revert.
 * Useful history: using version control systems like Git will allow you to produce a history of your document in which different stages of the documents can be navigated easily both by yourself and by others.
 
 ## Getting Started
 
-GitHub Desktop will allow us to easily start using version control. GitHub Desktop offers a Graphical User Interface (GUI) to use Git. A GUI allows users to interact with a program using a visual interface rather than relying on text commands. Though there are some potential advantages to using the command line version of Git in the long run, using a GUI can reduce the learning curve of using version control and Git. If you decide you are interested in using the command line you can find more resources at the end of the lesson.
+GitHub Desktop will allow us to easily start using version control. GitHub Desktop offers a Graphical User Interface (GUI) to use Git. Though there are some potential advantages to using the command line version of Git in the long run, using a GUI can reduce the learning curve of using version control and Git. If you decide you are interested in using the command line you can find more resources at the end of the lesson.
 
 ### A Note on Terminology
 
@@ -90,7 +99,16 @@ Once you sign in, you'll see that there is already a tutorial repository availab
 
 ### Creating a Repository
 
-To most effectively use Git to version control it is important to organize projects in folders. Git tracks the contents of a folder by creating a repository in the folder. The repository is made up of all the files in the folder that are ‘watched’ for changes by Git. It is best to create one repository for each major project you are working on, i.e., one repository for an article, one for a book, and one for some code you are developing. These folders are like the normal folders you would have on your computer for different projects, though the files in the folders have to be deliberately added to the repository in order to be version controlled. 
+Git tracks the contents of a folder by creating a repository in a given folder; so it is important to organize projects in folders. 
+
+Tracking items in a folder (repository) using Git:
+
+* The repository is made up of a folder whose contents are ‘watched’ for changes by Git.
+* A repository can have many files and sub-folders
+* It is best to create one repository for each major project you are working on, i.e., one repository for an article, one for a book, and one for some code you are developing. 
+* These folders are like the normal folders you would have on your computer for different projects, though the files in the folders have to be deliberately added to the repository in order to be version controlled. 
+* It can be set up to ignore some items in the folder (very large datasets, or temp files)
+* Do not create repositories for folders within a repository (avoid matryoshka repos!)
 
 Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it.
 
@@ -117,25 +135,29 @@ It is cold and dry, but everything is my favorite color.
 The two moons may make things interesting
 ```
 > **Text Editors:**
-> When creating a plain text document, you will want to use a text editor like TextEdit (Mac) or Notepad (Windows) instead of Microscoft Word. You will also want to make sure that you do not save it as Rich Text Format, but as plain text. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time.
+> When creating a plain text document, you will want to use a text editor like TextWrangler (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you do not save it as Rich Text Format, but as plain text. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time.
 
-Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **commit** our changes.
+Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes.
+
+<img src="img/git-staging-area.png" width="700" align="center">
+
+In the context of Github Desktop the **add** to place changes in the *staging area* is completely transparent. However, it is important to know these terms for a proper understanding of how Git functions. You can place several changes in the staging area, and only **commit** when you are ready.
 
 ### Committing Changes
 
-A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. Though people sometimes save different versions of a document, often you are saving a document merely to record the version as it is when it is saved. Saving the document means you can close the file and return to it in the same state later on. **Commits**, however, take a snapshot of the file at that point and allow you to document information about the changes made to the document.
+A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
 
-To commit changes you must give a summary of the changes and include an optional message. It is important that you think carefully about when to make commits. The advantages of version control taking snapshots of your changes regularly relies on you making commits. It is often tempting to just commit changes when you have finished working on a document but this might not reflect when important changes occurred.
+To commit changes you must give a summary of the changes and include an optional message. It is important that you think carefully about when to make commits, since the advantages of version control taking snapshots of your changes regularly relies on you making commits. It is often tempting to just commit changes when you have finished working on a document but this might not reflect when important changes occurred.
 
 <img src="img/local_change.png" width="700" align="center">
 
-When you commit you will see ‘commit to master’. This refers to the ‘master branch’. Within a Git repository it is possible to have multiple ‘branches.’ These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature. Initially it is not necessary to use the branches feature of GitHub, but you may want to learn to use it in the future, particularly if you want to use GitHub to collaborate on a repository with other people.
+When you commit you will see ‘commit to master’. This refers to the ‘master branch’. Within a Git repository it is possible to have multiple ‘branches.’ These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). Initially it is not necessary to use the branches feature of GitHub, but you may want to learn to use it in the future, particularly if you want to use GitHub to collaborate on a repository with other people. 
 
 A useful way to think about commits is as the ‘history’ of your document. Each commit records a development or change made to the documents in your repository; the history of the document can be traced by looking at all of the commits. For this history to be useful later on, either for ourselves or for someone else, it is important that this history is recorded at relevant points. Trying to make commits ‘atomic’ is an important consideration. What this means is that each commit ‘makes sense’ on its own. The changes in the commit and the message are understandable without having to look at surrounding commits.
 
 #### Commit Messages
 
-It is important that you use meaningful commit summaries and messages. Writing good commit messages requires some prior thought. Messages that make sense to you as an explanation of changes when you make a commit may no longer make sense to you in the future. If you are going to use version control in collaboration with other people it is especially important that other people can understand your commit messages. Version control as a system for managing changes to documents works best when active thought goes into using the software. It is therefore particularly important when collaborating with other that there is a shared understanding and approach to using version control.
+It is important that you use meaningful commit summaries and messages. You don't need to write which files were changes, as Git will track that by itself; you should describe changes at a higher level. Writing good commit messages requires some prior thought. This is especially important when you are working on a collaborative project, as it is especially important that other people can understand your commit messages. 
 
 ### Publishing Your Repository
 
