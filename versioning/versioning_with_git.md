@@ -139,7 +139,7 @@ The two moons may make things interesting
 
 Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes.
 
-![alt text](img/git-staging-area.svg)
+<svg src="img/git-staging-area.svg" width="700" align="center">
 
 In the context of Github Desktop the **add** to place changes in the *staging area* is completely transparent. However, it is important to know these terms for a proper understanding of how Git functions. You can place several changes in the staging area, and only **commit** when you are ready.
 
