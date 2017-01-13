@@ -49,11 +49,13 @@ curl -o $target/$dsnfile "https://raw.githubusercontent.com/IQSS/datafest/master
 
 if [ -f ~/Library/ODBC/odbc.ini ] && [ -f ~/Library/ODBC/odbcinst.ini ]
 then 
-  echo "Files are present and installed OK"
+  echo
+  echo "Files are present and installed OK. You may now close this window."
+  echo 
 else
+  echo
   echo "Files were not installed OK. Please download $driverfile and $dsnfile from the Github"
   echo "site at 'installers > mac' and manually place inside the folder $target."
-  echo "If any major problems, please see the HelpDesk volunteers at the DataFest concourse."
+  echo "If any major problems, show this window to the HelpDesk volunteers at the DataFest concourse."
+  echo
 fi
-  
-echo "Done! You may now close this window."
