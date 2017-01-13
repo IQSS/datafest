@@ -46,7 +46,7 @@ Although these instructions were written for Window 7 SP1, they may vary slightl
 
 2. Unzip each archive by a right-mouse click on each archive, select `Extract All...`, and in the dialog that appears, navigate to the folder `Computer > C:\Windows\System32`. Uncheck the `Show Extracted Files When Complete` checkbox. Click on the Enter button.
 
-3. To test the success of your installation, go to Windows Start menu, end `cmd` and press Enter. When a (black) shell window appears, type `sqlite3` and press Enter. You are successful if the prompt changes to `sqlite> `. Type `.quit` and Enter to exit. If you did not get this prompt, please see the HelpDesk volunteers at DataFest concourse.
+3. To test the success of your installation, go to Windows Start menu, type `cmd` and press Enter. When the (black) shell window appears, type `sqlite3` and press Enter. You are successful if the prompt changes to `sqlite> `. Type `.quit` and Enter to exit. If you did not get this prompt, please see the HelpDesk volunteers at DataFest concourse.
 
     
 ## Analysis Environments
