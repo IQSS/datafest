@@ -1,29 +1,39 @@
-## Installation Instructions for *Multiple Approaches to Combining Data*
+# Installation Instructions for *Multiple Approaches to Combining Data*
 
 Our hands-on session will be focusing on using SQLite3 as a lightweight, local database engine. We will primarily use materials and software from the Software Carpentry's [Databases & SQL lesson](http://swcarpentry.github.io/sql-novice-survey/). And we will extend these to include demonstrating the use of SQLite from within Stata via an ODBC connection. Although there are multiple layers to this hands-on, the installation per platform is rather straightforward. Let's dig in!
 
-### Data Files
+Although this looks lengthy, it is not and should take only about 5 minutes to complete.  Please install:
+
+[Data Files](#Data_Files)
+[SQLite3](#SQLite3)
+One (or all) of the following :
+  Python + 
+  R
+  
+If you already have R, Python, or Stata installed, you will still need to install supplemental files in those sections.
+
+## Data Files
 
 1. Create a folder at the following location:
 
-    Mac:    `/Macintosh HD/Users/Shared/df2017_merging_data`
-    PC :    `C:\Users\Public\df2017_merging_data`
+- Mac:    `/Macintosh HD/Users/Shared/df2017_merging_data`
+- PC :    `C:\Users\Public\df2017_merging_data`
     
 2. Download the following files into that folder:
 
-    [survey.db sqlite3 database](gihub/data/raw/survey.db)
-    [Person csv file](gihub/data/raw/person.csv)
-    [Site csv file](gihub/data/raw/site.csv)
-    [Survey csv file](gihub/data/raw/survey.csv)
-    [Visited csv file](gihub/data/raw/visited.csv)
+- [survey.db sqlite3 database](gihub/data/raw/survey.db)
+- [Person csv file](gihub/data/raw/person.csv)
+- [Site csv file](gihub/data/raw/site.csv)
+- [Survey csv file](gihub/data/raw/survey.csv)
+- [Visited csv file](gihub/data/raw/visited.csv)
 
-### SQLite3
+## SQLite3
 
-#### Mac
+### Mac
 
 No need to do anything here! SQLite3 is pre-installed on Mac systems on Mac OS X 10.4 and later.
 
-#### Windows
+### Windows
 
 Although these instructions were written for Window 7 SP1, they may vary slightly for v8.1, or v10. Please adjust accordingly, or see the HelpDesk volunteers in the DataFest concourse.
 
@@ -37,7 +47,7 @@ Although these instructions were written for Window 7 SP1, they may vary slightl
 3. To test the success of your installation, go to Windows Start menu, end `cmd` and press Enter. When a (black) shell window appears, type `sqlite3` and press Enter. You are successful if the prompt changes to `sqlite> `. Type `.quit` and Enter to exit. If you did not get this prompt, please see the HelpDesk volunteers at DataFest concourse.
 
     
-### Analysis Environments
+## Analysis Environments
 
 You do not need to install these three analysis environments. We are going to demonstrate how to use SQLite from each of them. Only install the one(s) that you are most interested in. Also note that you might be required to install these for other Datafest Hands-on sessions.
 
@@ -71,17 +81,21 @@ You do not need to install these three analysis environments. We are going to de
 
 Red text may appear and scroll by. For the most part, that should be fine. But the final message should be something like...
 
+```
 The downloaded binary packages are in
 	C:\Users\myuser\AppData\Local\Temp\RtmpusjIjg\downloaded_packages
-
+```
 
 4. To test the success of your installation, enter the following commands:
 
+```
     library('RSQLite')
     library('dplyr')
+```
     
 For RSQLite, there should be nothing printed. For dplyr, you may get someting like the following:
 
+```
 `Attaching package: ‘dplyr’
 
 The following objects are masked from ‘package:stats’:
@@ -91,6 +105,7 @@ The following objects are masked from ‘package:stats’:
 The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union`
+```
 
 If you receive any error (not warning) messages, please see the HelpDesk volunteers at DataFest concourse.
 
@@ -103,7 +118,7 @@ This is perhaps the most complex of the three analysis environments, as the ODBC
 
 You must have a licensed copy of [Stata](http://www.stata.com) pre-installed. We will not provide it for your for this workshop.
 
-#### ODBC Manager
+##### ODBC Manager
 
 The ODBC Manager software acts as a broker between your front-end program (R, Python, Stata) and the backend database, allowing you to slot in any database. 
 
@@ -153,4 +168,13 @@ You should have this window configured as such. Click on OK to close this window
 
 **Mac**
 
-1. For the Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/mac_odbc_config.command). Double-click on this to run the configuration script.
+1. For the Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/mac_odbc_config.command). 
+
+2. Click on the Search icon in the Mac main menu bar, or press Command-Space to bring up the Spotlight search. Enter "Terminal" and press Enter/Return when the Terminal application appears.
+
+3. In the Terminal window that appears, enter the following command:
+
+`bash /Users/Shared/datafest_2017/mac_odbc_config.command`
+
+4. If all installed successfully, you should see a confirmation message. If not, you will be informed, and you should download the *.ini files from the GitHub site found at 'installers > mac' and place in your invisible Library home folder. If you are stuck, please see the HelpDesk volunteers at DataFest concourse.
+

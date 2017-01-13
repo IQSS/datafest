@@ -7,7 +7,13 @@
 #
 # RMF, 1/12/17
 
-target=~/ODBC
+echo "This bash (terminal) script will make the necessary ODBC folder in your invisible"
+echo "home Library folder and download the odbc configuration files for this workshop."
+echo "If any config files are already present, these will be renamed with the suffix *.bak."
+echo
+echo
+
+target=$HOME/Library/ODBC
 driverfile=odbcinst.ini
 dsnfile=odbc.ini
 
@@ -24,8 +30,8 @@ then
 fi
 
 # bring in class file
-curl "https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/odbcinst.ini" \
-  > $target/$driverfile
+echo "Downloading $driverfile..."
+curl -o $target/$driverfile "https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/odbcinst.ini"
 
 # if odbc.ini exists, rename it to odbc.ini.bak for safe keeping
 
@@ -38,8 +44,16 @@ then
 fi
 
 # bring in class file
-curl "https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/odbc.ini" \
-  > $target/$dsnfile
+echo "Downloading $dsnfile..."
+curl -o $target/$dsnfile "https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/odbc.ini"
 
-echo
+if [ -f ~/Library/ODBC/odbc.ini ] && [ -f ~/Library/ODBC/odbcinst.ini ]
+then 
+  echo "Files are present and installed OK"
+else
+  echo "Files were not installed OK. Please download $driverfile and $dsnfile from the Github"
+  echo "site at 'installers > mac' and manually place inside the folder $target."
+  echo "If any major problems, please see the HelpDesk volunteers at the DataFest concourse."
+fi
+  
 echo "Done! You may now close this window."
