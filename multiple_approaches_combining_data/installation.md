@@ -170,13 +170,13 @@ You should have this window configured as such. Click on "OK" to close this wind
 
 **Mac**
 
-1. For Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/mac_odbc_config.command). 
+1. For Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/mac_odbc_config.command) (right-mouse click and "Save Link As...". 
 
 2. Click on the Search icon in the Mac main menu bar, or press Command-Space to bring up the Spotlight search. Enter "Terminal" and press Enter/Return when the Terminal application appears.
 
-3. In the Terminal window that appears, enter the following command:
+3. In the Terminal window that appears, enter the following command (note that 'Installers' is capitalized):
 
-`bash /Users/Shared/datafest_2017/mac_odbc_config.command`
+`bash /Users/Shared/datafest_2017/Installers/mac_odbc_config.command`
 
 4. If all installed successfully, you should see a confirmation message. If not, you will be informed, and you should download the *.ini files from the GitHub site found at 'installers > mac' and place in your invisible Library home folder. If you are stuck, please see the HelpDesk volunteers at DataFest concourse.
 
