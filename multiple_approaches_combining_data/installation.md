@@ -2,13 +2,14 @@
 
 Our hands-on session will be focusing on using SQLite3 as a lightweight, local database engine. We will primarily use materials and software from the Software Carpentry's [Databases & SQL lesson](http://swcarpentry.github.io/sql-novice-survey/). And we will extend these to include demonstrating the use of SQLite from within Stata via an ODBC connection. Although there are multiple layers to this hands-on, the installation per platform is rather straightforward. Let's dig in!
 
-Although this looks lengthy, it is not and should take only about 5 minutes to complete.  Please install:
+Although this looks lengthy, it is not and should take only about 5 minutes to complete.  Please install in the sections below:
 
-[Data Files](#Data_Files)
-[SQLite3](#SQLite3)
-One (or all) of the following :
-  Python + 
-  R
+[Data Files](#Data_Files)<br>
+[SQLite3](#SQLite3)<br>
+One (or all) of the following :<br>
+  [Python + modules](#python--sqlite-module)<br>
+  [R + packages](#r--rstudio--rsqlite--dplyr-packages)<br>
+  [Stata + ODBC](#stata--odbc-drivers)
   
 If you already have R, Python, or Stata installed, you will still need to install supplemental files in those sections.
 
@@ -50,7 +51,7 @@ Although these instructions were written for Window 7 SP1, they may vary slightl
     
 ## Analysis Environments
 
-You do not need to install these three analysis environments. We are going to demonstrate how to use SQLite from each of them. Only install the one(s) that you are most interested in. Also note that you might be required to install these for other Datafest Hands-on sessions.
+You do not need to install all three analysis environments; instead, only install the one(s) that you are most interested. In session, we are going to demonstrate how to use SQLite from each of them. Please note that you might be required to install these for other Datafest Hands-on sessions.
 
 ### Python + SQLite module
 
