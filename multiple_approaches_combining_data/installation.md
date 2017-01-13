@@ -19,7 +19,7 @@ If you already have R, Python, or Stata installed, you will still need to instal
 - Mac:    `/Macintosh HD/Users/Shared/datafest_2017`
 - PC :    `C:\Users\Public\datafest_2017`
     
-2. Download the following files into that folder, ensuring that the files have these exact names:
+2. Download the following files into that folder, ensuring that the files have the names within single quotes:
 
 - ['survey.db' sqlite3 database](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/data/survey.db)
 - ['person.csv' file](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/data/person.csv)
@@ -40,8 +40,8 @@ Although these instructions were written for Window 7 SP1, they may vary slightl
 
 1. Please create a folder called `Installers` inside your `datafest_2017` folder, and download the following Zip archives to that location:
 
-- [32-bit DLL (x86) for SQLite version 3.16.2](github\installers\sqlite-dll-win32-x86-3160200.zip)
-- [SQLite command-line tools, shell, sqldiff, and sqlite3_analyzer programs](github\installers\sqlite-tools-win32-x86-3160200.zip)
+- [32-bit DLL (x86) for SQLite version 3.16.2](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/installers/windows/sqlite-dll-win32-x86-3160200.zip)
+- [SQLite command-line tools, shell, sqldiff, and sqlite3_analyzer programs](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/installers/windows/sqlite-tools-win32-x86-3160200.zip)
 
 2. Unzip each archive by a right-mouse click on each archive, select `Extract All...`, and in the dialog that appears, navigate to the folder `Computer > C:\Windows\System32`. Uncheck the `Show Extracted Files When Complete` checkbox. Click on the Enter button.
 
