@@ -1,0 +1,3 @@
+[submodule "datafest2017_rep_research_tools"]
+	path = datafest2017_rep_research_tools
+	url = https://github.com/christophergandrud/datafest2017_rep_research_tools.git
