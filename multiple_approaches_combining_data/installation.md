@@ -55,11 +55,20 @@ You do not need to install all three analysis environments; instead, only instal
 
 ### Python + SQLite module
 
-1. For Mac or PC, please download to your `Installers` folder the appropriate installer from [Continuum Analytics](https://www.continuum.io/) Anaconda Python v2.7 installer and run it to start the installation process. If you don't know which PC installer to use, please use the 32-bit one.
+1. For Mac or PC, please download to your `Installers` folder the appropriate installer from [Continuum Analytics](https://www.continuum.io/) Anaconda Python installer and run it to start the installation process. If you don't know which PC installer to use, please use the 32-bit one.
 
+**If you are taking the Text Analysis with Python (Hands-on), please install Python v3**
+
+**Python v2.7**
     Mac 64-bit: https://repo.continuum.io/archive/Anaconda2-4.2.0-MacOSX-x86_64.pkg<br>
     PC 32-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86.exe<br>
-    PC 64-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86_64.exe
+    PC 64-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86_64.exe<br>
+
+**Python v3.5**
+    Mac 64-bit: https://repo.continuum.io/archive/Anaconda3-4.2.0-MacOSX-x86_64.pkg<br>
+    PC 32-bit : https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe<br>
+    PC 64-bit : https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe<br>
+
     
 2. To test the success of your installation, open up a Terminal or cmd shell window, type in `python` and press Enter. You are successful if the prompt changes to `>>> ` and 'Continuum Analytics' is mentioned in the text above. Type `quit()` and Enter to exit. If you did not get this prompt, please see the HelpDesk volunteers at DataFest concourse.
     

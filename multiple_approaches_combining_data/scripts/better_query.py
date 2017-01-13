@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sqlite3
 
 def get_name(database_file, person_id):
@@ -12,5 +13,4 @@ def get_name(database_file, person_id):
 
     return results[0][0]
 
-print "full name for dyer:", get_name('survey.db', 'dyer')
-
+print("full name for dyer:", get_name('survey.db', 'dyer'))
