@@ -135,7 +135,7 @@ The ODBC Manager software acts as a broker between your front-end program (R, Py
 
 For each backend database or data source, you need software (a driver) to communicate between it and the ODBC Manager. We will use open source drivers from [http://www.ch-werner.de/sqliteodbc/](http://www.ch-werner.de/sqliteodbc/), which work well-enough for our purposes. Know that these can cost anywhere from $20 to $200!
 
-1. For Mac or PC, please download to your `Installers` folder the appropriate installer and run it to start the installation process. PC users: please download and install BOTH sets of drivers.
+1. For Mac or PC, please download to your `Installers` folder the appropriate installer and open/run the appropriate program, disk image, or package to start the installation process. **PC users:** please download and install **BOTH** sets of drivers.
 
     Mac: [v0.9994 with full-text search support](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)<br>
     PC : [v0.9995 Win32](http://www.ch-werner.de/sqliteodbc/sqliteodbc.exe)<br>
@@ -149,25 +149,23 @@ Unfortunately, this must be done by hand via the Windows GUI interface. Although
 
 1. From your Start / Search menu, look for 'ODBC', and run a program similar to "Data Sources (ODBC)" or the Control Panel "Set up data sources (ODBC)"
 
-2. Click on the Drivers tab. You should see "SQLite3 ODBC Driver" listed here, among others:
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+2. Click on the "Drivers" tab. You should see "SQLite3 ODBC Driver" listed here, among others:
 
 ![alt text](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/odbc_data_source_admin_drivers.png "Data Source Administrator Drivers")
 
  If you do not, please retry the ODBC Manager and ODBC Driver PC installation steps. If you still do not see it here, please see the HelpDesk volunteers at DataFest concourse.
 
-3. Click on the User DNS tab. Click on the Add button. Select the SQLite3 ODBC Driver". 
+3. Click on the "User DNS" tab. Click on the "Add" button. Select the "SQLite3 ODBC Driver". 
 
 ![alt text](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/odbc_create_new_data_source.png "Create New Data Source")
 
-PLEASE verify that you select SQLite3, not the other choices. Click on the Finish button.
+PLEASE verify that you selected SQLite3, not the other choices. Click on the "Finish" button.
 
-4. In the new window that appears, enter "DF_Survey_DB" as the Data Source Name. For Database Name, enter "C:\Users\Public\datafest_2017\survey.db" or use the Browse button to navigate to the `survey.db` file in your `datafest_2017` folder. 
+4. In the new window that appears, enter "DF_Survey_DB" as the Data Source Name. For Database Name, enter `C:\Users\Public\datafest_2017\survey.db` or use the "Browse" button to navigate to the `survey.db` file in your `datafest_2017` folder. 
 
 ![alt text](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/odbc_sqlite3_odbc_dsn_config.png "SQLite3 ODBC DSN Configuration")
 
-You should have this window configured as such. Click on OK to close this window, and OK again to close the ODBC Manager.
+You should have this window configured as such. Click on "OK" to close this window, and "OK" again to close the ODBC Manager.
 
 
 **Mac**
