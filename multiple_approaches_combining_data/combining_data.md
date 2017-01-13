@@ -26,15 +26,82 @@ Assume prior (very basic!) knowledge of SQL; perhaps 1 to 2 slides on basic func
 
 ### Show approach at doing joins with SQL
 
+
+
 ## Section 3: ODBC & Using DBs within R, Python, & Stata (30 min inc. exercises)
 ??Briefly discuss ODBC & how to configure
 ??Direct access from R/Python using local shared libraries/language bindings
 
+---
+teaching: 20
+exercises: 10
+questions:
+- "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
+objectives:
+- "Write short programs that execute SQL queries."
+- "Trace the execution of a program that contains an SQL query."
+keypoints:
+- "General-purpose languages have libraries for accessing databases."
+- "To connect to a database, a program must use a library specific to that database manager."
+- "These libraries use a connection-and-cursor model."
+what we won't cover:
+- "Programs can read query results in batches or all at once."
+- "Queries should be written using parameter substitution, not string formatting."
+---
+
+
 ### Moving to R (dplyr), Python, and Stata for accessing local/remote DB
 
-#### Show connect, select, & print example using pseudocode
+One real value in using databases is that this data is accessible from multiple analysis and visualization environments, like R, Python, Stata, and Tableau. The real win is that these environments request the data, and all the heavy computation is done on the back end. This allow greater amount of flexibility in scripting, the data is managed uniformly, and the processing is offloaded to the database backend (SQLite). Let's look at one example:
+
+#### Accessing our data: A pseudocode example
+
+The steps one will go through follows this pattern:
+
+```
+01: load necessary libraries for database
+02: create and open the database connection
+03: initialize the pointer (cursor) into the database system
+04: execute the SQL query
+05: fetch the query results
+06: iterate over the data and print the results
+07: close the database connection
+```
+
+
+
+
+
 
 #### Show specific example in R, Python, & Stata
+
+
+
+**R**
+library(RSQLite)
+connection <- dbConnect(SQLite(), "survey.db")
+results <- dbGetQuery(connection, "SELECT Site.lat, Site.long FROM Site;")
+print(results)
+dbDisconnect(connection)
+
+**Python**
+from __future__ import print_function
+import sqlite3
+
+connection = sqlite3.connect("survey.db")
+cursor = connection.cursor()
+cursor.execute("SELECT Site.lat, Site.long FROM Site;")
+results = cursor.fetchall()
+
+for r in results:
+    print(r)
+cursor.close()
+
+connection.close()
+
+**Stata**
+
+
 
 ---
 title: "Programming with Databases - Python"
