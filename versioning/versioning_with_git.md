@@ -28,11 +28,11 @@ mydocument2016-01-08.txt
 
 Though this system might be slightly easier to follow, there are still problems with it. Primarily this system doesn’t record or describe the changes that took place between these two saves. It is possible that some of these changes were small typo fixes but the changes could also have been a major re-write or re-structuring of a document. If you have a change of heart about some of these changes you also need to work out which date the changes were made in order to go back to a previous version.
 
-Version control tries to address problems like these by implementing a systematic approach to recording and managing changes in files. At its simplest, version control involves taking ‘snapshots’ of your file at different stages. This snapshot records information about when the snapshot was made but also about what changes occurred between different snapshots. This allows you to ‘rewind’ your file to an older version. From this basic aim of version control a range of other possibilities are made available.
+Version control tries to address problems like these by implementing a systematic approach to recording and managing changes in files. At its simplest, version control involves taking ‘snapshots’ of your file; this snapshot records information about when the snapshot was made but also about what changes occurred between different snapshots. You decide when these snapshots are collected, and this allows you to ‘rewind’ your file to an older version. From this basic aim of version control a range of other possibilities are made available.
 
 ## Why Version Control Text Documents?
 
-As research increasingly makes use of digital tools and storage it becomes important to consider how to best manage our research data. This becomes especially important when we want to collaborate with other people. Though version control was originally designed for dealing with code there are many benefits to using it to with text documents too. Though not all of these benefits will be covered in this lesson, version controlling your document allows you to:
+As research increasingly makes use of digital tools and storage it becomes important to consider how to best manage our research data. This becomes especially important when we want to collaborate with other people. Though version control was originally designed for dealing with code (.R, .pl. .py) there are many benefits to using it to with text documents too (.txt, .csv, .tsv). Though not all of these benefits will be covered in this lesson, version controlling your document allows you to:
 
 * Track developments and changes in your documents
 * Record the changes you made to your document in a way that you will be able to understand later
@@ -40,11 +40,13 @@ As research increasingly makes use of digital tools and storage it becomes impor
 * ‘Merge’ two versions of a document and manage conflicts between versions
 * Revert changes, moving ‘backwards’ through your history to previous versions of your document
 
+> Note: Different Version Control systems handle different non-text files differently. In most cases Word documents, graphics files, data objects from R or STATA, etc., can be included but most tools have limited capabilities for these.
+
 Version control is particularly useful for facilitating collaboration. One of the original motivations behind version control systems was to allow different people to work on large projects together, in the case of Git to manage the Linux kernel source code. Using version control to collaborate allows for a greater deal of flexibility and control then many other solutions. As an example it would be possible for two people to work on a document at the same time and then merge these documents. If there were ‘conflicts’ between the two versions version control systems would allow you to see these conflicts and make an active decision about how to ‘merge’ these different versions into a new ‘third’ document. With this approach you would also retain a ‘history’ of the previous version should you wish to revert back to one of these later on.
 
 Version control will not be necessary for all of the documents you write. However there are times when version control will be very useful. For substantial work such as articles, books, or dissertations, version control makes a lot of sense.
 
-The implementation of version control we are going to use in this lesson will be publicly available, but it is possible to use version control and keep your documents hidden permanently or until you decide to make them available.
+The example implementation of version control we are going to use today will be public; but, it is possible to use version control and keep your documents hidden permanently or until you decide to make them available.
 
 ## What are Git and GitHub?
 
@@ -90,7 +92,14 @@ Once you sign in, you'll see that there is already a tutorial repository availab
 
 ### Creating a Repository
 
-To most effectively use Git to version control it is important to organize projects in folders. Git tracks the contents of a folder by creating a repository in the folder. The repository is made up of all the files in the folder that are ‘watched’ for changes by Git. It is best to create one repository for each major project you are working on, i.e., one repository for an article, one for a book, and one for some code you are developing. These folders are like the normal folders you would have on your computer for different projects, though the files in the folders have to be deliberately added to the repository in order to be version controlled. 
+Git tracks the contents of a folder by creating a repository in a given folder; so it is important to organize projects in folders. 
+
+Tracking items in a folder (repository) using Git:
+* The repository is made up of all the files in the folder that are ‘watched’ for changes by Git.
+* It is best to create one repository for each major project you are working on, i.e., one repository for an article, one for a book, and one for some code you are developing. 
+* These folders are like the normal folders you would have on your computer for different projects, though the files in the folders have to be deliberately added to the repository in order to be version controlled. 
+* It can be set up to ignore some items in the folder (very large datasets, or temp files)
+* Do not create repositories with folders which are within a repository (avoid matryoshka repos!)
 
 Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it.
 
@@ -117,7 +126,7 @@ It is cold and dry, but everything is my favorite color.
 The two moons may make things interesting
 ```
 > **Text Editors:**
-> When creating a plain text document, you will want to use a text editor like TextEdit (Mac) or Notepad (Windows) instead of Microscoft Word. You will also want to make sure that you do not save it as Rich Text Format, but as plain text. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time.
+> When creating a plain text document, you will want to use a text editor like TextWrangler (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you do not save it as Rich Text Format, but as plain text. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time.
 
 Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **commit** our changes.
 
