@@ -29,23 +29,23 @@ Assume prior (very basic!) knowledge of SQL; perhaps 1 to 2 slides on basic func
 
 
 ## Section 3: Using the Database within R, Python, & Stata
+---
+teaching: 20 minutes
+exercises: 10 minutes
+---
 
----
-teaching: 20
-exercises: 10
-questions:
-- "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
-objectives:
-- "Write short programs that execute SQL queries."
-- "Trace the execution of a program that contains an SQL query."
-keypoints:
-- "General-purpose languages have libraries for accessing databases."
-- "To connect to a database, a program must use a library specific to that database manager."
-- "These libraries use a connection-and-cursor model."
-what we won't cover:
-- "Programs can read query results in batches or all at once."
-- "Queries should be written using parameter substitution, not string formatting."
----
+> Questions:
+> - "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
+> objectives:
+> - "Write short programs that execute SQL queries."
+> - "Trace the execution of a program that contains an SQL query."
+> Keypoints:
+> - "General-purpose languages have libraries for accessing databases."
+> - "To connect to a database, a program must use a library specific to that database manager."
+> - "These libraries use a connection-and-cursor model."
+> What we won't cover:
+> - "Programs can read query results in batches or all at once."
+> - "Queries should be written using parameter substitution, not string formatting."
 
 
 ### Moving to R (dplyr), Python, and Stata for accessing local/remote DB
@@ -54,6 +54,9 @@ One real value in using databases is that this data is accessible from multiple 
 
 ??Briefly discuss ODBC & how to configure
 ??Direct access from R/Python using local shared libraries/language bindings
+
+![ODBC Concepts](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/udapcategoryodbc.png "Conceptual Overview of ODBC")
+*Image from [OpenLink Software](https://uda.openlinksw.com/odbc/)*
 
 TODO: general outline or figure on how languages access databases. This should show direct access via connectors; and also via ODBC Manager and Drivers
 
@@ -75,9 +78,7 @@ Let's go through these in more detail...
 
 ```
 01: load necessary libraries for database
-
 ```
-
 The script starts by importing the library, package, or extension needed to access the database. Often, to make the scripting language flexible, these are add-ons that 'extend' the functionality of the language. Sometimes these are built-in (as in Python) or sometimes these must be downloaded separately (as in R).
 If we were connecting to MySQL, DB2, or some other database,
 we would import a different library,
@@ -93,7 +94,6 @@ Line 2 establishes a connection to the database.
 The way we open the connection will differ among database systems, but they usually follow a similar format. This is typically database server hostname, communication port, username, password, etc. Since we're using SQLite, which is local to our computer,
 all we need to specify is the name of the database file.
 
-
 ```
 03: initialize the pointer (cursor) into the database system
 ```
@@ -104,12 +104,7 @@ its role is to keep track of where we are in the database.
 ```
 04: execute the SQL query
 ```
-Next, with this cursor (pointer) we ask the database to execute a query for us.
-The query is written in SQL , and passed as a string.
-It's our job to make sure that SQL is properly formatted;
-if it isn't,
-or if something goes wrong when it is being executed,
-the database will report an error.
+Next, with this cursor (pointer) we ask the database to execute a query for us. The query is written in SQL , and passed as a string. It's our job to make sure that SQL is properly formatted; if it isn't, or if something goes wrong when it is being executed, the database will report an error.
 
 The one exception to that is with the package dplyr in R, which turns R-like expressions into the required SQL behind-the-scenes, and executes that SQL on our behalf. We'll see an example of this shortly.
 
@@ -135,11 +130,11 @@ Since establishing a connection takes time, though, we shouldn't open a connecti
 
 **One final note:** We did not talk about error checking. This should be done after each step, as you never know what might go wrong. For simplicity sake, we left these steps out. (But you won't, will you?)
 
-#### Show specific example in R, Python, & Stata
+#### Language-specific Examples for Using Databases
 
-So let's see how these look in Python, R, and Stata!
+So let's see how we would implement this pseudocode in R, Python, and Stata!
 
-**R standard**
+**R (standard)**
 ```r
 # import our required packages
 library('RSQLite')
@@ -180,6 +175,9 @@ dbDisconnect(connection)
 ```
 
 **Python**
+
+The python code is slightly more verbose than that for R, but is still very easy to understand:
+
 ```python
 # import our python3-print-in-python2 and SQLite modules
 from __future__ import print_function
@@ -214,26 +212,6 @@ with one element for each field we asked for. We finally close our cursor and ou
 ```stata
 ???
 ```
-
-~~~
-import sqlite3
-connection = sqlite3.connect("survey.db")
-cursor = connection.cursor()
-cursor.execute("SELECT Site.lat, Site.long FROM Site;")
-results = cursor.fetchall()
-for r in results:
-    print r
-cursor.close()
-connection.close()
-~~~
-{: .python}
-~~~
-(-49.85, -128.57)
-(-47.15, -126.72)
-(-48.87, -123.4)
-~~~
-{: .output}
-
 
 ### Exercises:
 
