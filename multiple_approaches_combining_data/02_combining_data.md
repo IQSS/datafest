@@ -385,13 +385,31 @@ We can get unique data
 
 #### Filtering data
 
+One of the most powerful features of a database is the ability to filter data, i.e., to select only those records that match certain criteria. For example, suppose we want to see when a particular site was visited. We can select these records from the Visited table by using a WHERE clause in our query. We can also add Boolean operators to filter our data. For example, we can ask for all information from the DR-1 site collected before 1930:
+
 ```sql
 SELECT * FROM Visited WHERE site = 'DR-1' AND dated < '1930-01-01';
 ```
 
+|id |site|dated     |
+|---|----|----------|
+|619|DR-1|1927-02-08|
+|622|DR-1|1927-02-10|
+
+We can also filter by partial matches. For example, if we want to know something just about the site names beginning with “DR” we can use the LIKE keyword. The percent symbol acts as a wildcard, matching any characters in that place. It can be used at the beginning, middle, or end of the string:
+
 ```sql
 SELECT * FROM Visited WHERE site LIKE 'DR%';
 ```
+|id |site|dated     |
+|---|----|----------|
+|619|DR-1|1927-02-08|
+|622|DR-1|1927-02-10|
+|734|DR-3|1930-01-07|
+|735|DR-3|1930-01-12|
+|751|DR-3|1930-02-26|
+|752|DR-3|          |
+|844|DR-1|1932-03-22|
 
 #### Calculatint new values
 ```sql
@@ -414,7 +432,8 @@ SELECT   person, count(reading), round(avg(reading), 2)
 FROM     Survey
 WHERE    quant='rad'
 GROUP BY person;
-`
+```
+
 ### Show how to import data, assuring unique IDs
 
 
