@@ -338,6 +338,22 @@ GROUP BY person;
 
 ### Show how to import data, assuring unique IDs
 
+We don't have time in our workshop today to show how to go through importing datafiles into a brand new database. We will give one example that we won't go through.
+
+There are two steps when creating a database and pulling in new data: 1) creating the structure of the database to house the data, and 2) importing the data itself.
+
+In SQLite, assuming that you have started your console session in the same directory as your datafiles to import, you can execute the following commands:
+
+```sql
+CREATE TABLE "Person" ("id" TEXT, "personal" TEXT, "family" TEXT)
+.mode csv
+.import Person.csv Person
+```
+
+The first command creates a `Person` table with three columns, each column as a TEXT field. There are other data types one can use (e.g. integer, real, etc). Please see XXX for more info. These second line ensure that the file we pull in is recognized as a comma-separated value file. And the third line imports the file that is in our local, working directory into the `Person` data table.
+
+Although the console interface is the better, more reproducible option for doing this type of work, the [SQLite Manager plug-in](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/) for the [Firefox browser](https://www.mozilla.org/firefox) can help you with this process as well.
+
 
 ### Show approach at doing joins with SQL
 
