@@ -658,3 +658,4 @@ with one element for each field we asked for. We finally close our cursor and ou
 > 
 > ??Show approach at doing join inside R, Python, Stata
 > 
+
