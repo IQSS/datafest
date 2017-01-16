@@ -11,11 +11,11 @@ output: html_document
 
 ## Getting Started with Github Desktop
 
-GitHub Desktop will allow us to easily start using version control. GitHub Desktop offers a Graphical User Interface (GUI) to use Git. Though there are some potential advantages to using the command line version of Git in the long run, using a GUI can reduce the learning curve of using version control and Git. If you decide you are interested in using the command line you can find more resources at the end of the lesson.
+GitHub Desktop offers a Graphical User Interface (GUI) to use Git, and will allow us to easily start using Version Control. Though there are advantages to using the command line version of Git in the long run, a GUI is a good place to start. 
 
-### A Note on Terminology
-
-One of the trickiest aspects of using GitHub is the new terminology. Some of the commands are fairly self-explanatory, others less so. This tutorial will try and briefly summarise new terms. It may also be helpful to have a [glossary](https://help.github.com/articles/github-glossary/) on hand to refer to. But in general it can be best to pick up terminology through using GitHub rather than trying to understand all of the terms before you begin using it.
+> **A Note on Terminology**
+> 
+> One of the trickier aspects of using GitHub is the new terminology (`repository`,`add`, `commit`, `pull`, `push`, `remote`, `detached head`). Some of the commands/terms are fairly self-explanatory, others less so, and in this workshop you will encounter some of these.[Here is a glossary](https://help.github.com/articles/github-glossary/), however it is best to pick up terminology wile learning how to use GitHub.
 
 ### Register for a GitHub Account
 
@@ -23,7 +23,7 @@ Since we are going to be using [GitHub](https://github.com/) we will need to reg
 
 ### Install GitHub Desktop
 
-Most of you should have already installed [Github Desktop](https://desktop.github.com/). Open it and sign in using the credentials you used to sign up for a github account. 
+Most of you should have already installed [Github Desktop](https://desktop.github.com/). Open it, and sign in using the credentials you used to sign up for a github account. 
 
 <img src="img/setup.png" width="200" align="center">
 
@@ -41,18 +41,21 @@ Git tracks the contents of a folder by creating a repository in a given folder; 
 
 Tracking items in a folder (repository) using Git:
 
-* The repository is made up of a folder whose contents are ‘watched’ for changes by Git.
+* The repository is made up of a folder whose contents are ‘watched’ for changes by Git
 * A repository can have many files and sub-folders
-* It is best to create one repository for each major project you are working on, i.e., one repository for an article, one for a book, and one for some code you are developing. 
-* These folders are like the normal folders you would have on your computer for different projects, though the files in the folders have to be deliberately added to the repository in order to be version controlled. 
+* Create a repository for each major project you are working on
+* These folders are like the normal folders you would have on your computer for different projects, though the files in the folders have to be deliberately added to the repository in order to be version controlled.
 * It can be set up to ignore some items in the folder (very large datasets, or temp files)
 * Do not create repositories for folders within a repository (avoid matryoshka repos!)
 
-Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it.
+Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it in a location of your choosing.
 
 ### Adding a Folder/Repository
 
-There are a number of different ways to add files/folders for GitHub Desktop to track. We can drag the folder containing the file onto GitHub Desktop. When you do this you will be asked whether you want to create a repository for this folder. Alternatively we can click on the ‘plus’ icon to open a window to choose folders we want to add. 
+There are a number of different ways to add files/folders for GitHub Desktop to track: 
+
+* We can drag the folder containing the file onto GitHub Desktop. When you do this you will be asked whether you want to create a repository for this folder 
+* Alternatively, we can click on the ‘plus’ icon to open a window to choose folders we want to add. This is what we will be doing:
 
 <img src="img/add.png" width="700" align="center">
 
@@ -60,11 +63,11 @@ Once we have added our folder we will be able to see it in a list of repositorie
 
 <img src="img/repo1.png" width="700" align="center">
 
-If we choose the repository we just added we will see the files contained in that repository. From this menu we can choose which files we want to version control. (There might be times when we are working on projects in which files are produced which we don’t need or want to version control.) On the right we will see the current document.
+Choose the repository we just added to see the files contained in that repository. From this menu we can choose which files we want to version control. On the right we will see the current document.
 
-If we were to look at hidden folders in the folder we have just added to GitHub you will see that the folder now contains an extra folder with the name ‘.git’. This folder is how GitHub desktop tracks changes we make within our version controlled folder whether these changes be adding new files or modifying existing ones.
+The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitHub Desktop will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder. 
 
-Let's open the `mars.txt` document using our favorite text editor (see note below) and add a couple of lines to it.
+Let's open the `mars.txt` document using our favorite text editor (see note below about text editors) and add a couple of lines to it.
 
 ```
 Mars is a red planet.
@@ -72,34 +75,42 @@ It is cold and dry, but everything is my favorite color.
 
 The two moons may make things interesting
 ```
-> **Text Editors:**
-> When creating a plain text document, you will want to use a text editor like TextWrangler (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you do not save it as Rich Text Format, but as plain text. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time.
 
-Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes.
+Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear; this lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes.
 
 <img src="img/git-staging-area.png" width="700" align="center">
 
-In the context of Github Desktop the **add** to place changes in the *staging area* is completely transparent. However, it is important to know these terms for a proper understanding of how Git functions. You can place several changes in the staging area, and only **commit** when you are ready. But, do spend some time thinking about how and if all these changes go together, it might be best to only group a few related changes together in the staging area before the **commit** step.
+> **Text Editors:**
+>
+> When creating a plain text document, you will want to use a text editor like TextWrangler (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from.
+
+In the context of Github Desktop the **add** command to place changes in the *staging area* is transparent to us. You can "place/add" several changes in the staging area, and only **commit** when you are ready. 
 
 ### Committing Changes
 
 A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
 
-To commit changes you must give a summary of the changes and include an optional message. It is important that you think carefully about when to make commits, since the advantages of version control taking snapshots of your changes regularly relies on you making commits. It is often tempting to just commit changes when you have finished working on a document but this might not reflect when important changes occurred.
+To commit changes you must give a summary of the changes and include an optional message. 
 
 <img src="img/local_change.png" width="700" align="center">
 
-When you commit you will see ‘commit to master’. This refers to the ‘master branch’. Within a Git repository it is possible to have multiple ‘branches.’ These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). Initially it is not necessary to use the branches feature of GitHub, but you may want to learn to use it in the future, particularly if you want to use GitHub to collaborate on a repository with other people. 
+A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced by looking at all of the commits. 
 
-A useful way to think about commits is as the ‘history’ of your document. Each commit records a development or change made to the documents in your repository; the history of the document can be traced by looking at all of the commits. For this history to be useful later on, either for ourselves or for someone else, it is important that this history is recorded at relevant points. Trying to make commits ‘atomic’ is an important consideration. What this means is that each commit ‘makes sense’ on its own. The changes in the commit and the message are understandable without having to look at surrounding commits.
+* Think carefully about when to make commits, since the advantages of version control rely on taking snapshots of your changes regularly.
+* Make the commits "atomic", i.e. **commit** a few related changes together; this will help if you have to revert back to a specific version/snapshot. 
+* Use meaningful **commit summaries** and **messages**, so that your messages/summaries are independently understandable by your collaborators and your future self.
 
-> **Commit Messages**: It is important that you use meaningful commit summaries and messages. You don't need to write which files were changes, as Git will track that by itself; you should describe changes at a higher level. Writing good commit messages requires some prior thought. This is especially important when you are working on a collaborative project, as it is especially important that other people can understand your commit messages. 
+> **Note about Branches**:
+>
+> When you commit you will see ‘commit to master’. This refers to the **master** branch. 
+> 
+> Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control today, but we encourage you to explore it further.
 
 ### Publishing Your Repository
 
-At the moment we are only recording our changes locally. We may be happy to only store our changes locally (it is still important to back our files up) but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer (for collaborating/sharing/backing up). 
+At the moment we are only recording our changes locally. We may be happy to only store our changes locally, but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer (for collaborating/sharing/backing up). 
 
-The process of doing this through GitHub Desktop is straightforward. On GitHub desktop you ‘publish’ repositories. This will **push** your repository from your computer to the GitHub website and set up a *remote* repository on Github's servers in the process.
+This is straightforward in GitHub Desktop and you do it by "publishing" your repository. This will **push** your repository from your computer to the GitHub website, and set up a *remote* repository on Github's servers in the process.
 
 <img src="img/publish.png" width="700" align="center">
 
