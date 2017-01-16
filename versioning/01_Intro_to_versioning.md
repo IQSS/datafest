@@ -34,11 +34,11 @@ Version control systems start with a base version of the document and then save 
 
 Once you think of changes as separate from the document itself, you can then think about "playing back" different sets of changes onto the base document and getting different versions of the document. For example, two users can make independent sets of changes based on the same document.
 
-<img src="img/versions.png" width="600" align="center">
+<img src="img/versions.png" width="400" align="center">
 
 If there aren't conflicts, you can even play two sets of changes onto the same base document.
 
-<img src="img/merged_example.png" width="600" align="center">
+<img src="img/merged_example.png" width="400" align="center">
 
 A version control system is a tool that keeps track of these changes for us and helps us version and merge our files.
 
