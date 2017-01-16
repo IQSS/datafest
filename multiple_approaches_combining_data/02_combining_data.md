@@ -289,7 +289,7 @@ We can also combine values from different fields, for example by using the strin
 ```sql
 SELECT personal || ' ' || family FROM Person;
 ```
-|personal || ' ' || family|
+| personal || ' ' || family |
 |-------------------------|
 |William Dyer             |
 |Frank Pabodie            |
