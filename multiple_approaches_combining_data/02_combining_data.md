@@ -289,11 +289,12 @@ We can also combine values from different fields, for example by using the strin
 ```sql
 SELECT personal || ' ' || family FROM Person;
 ```
-|William Dyer             |
-|Frank Pabodie            |
-|Anderson Lake            |
-|Valentina Roerich        |
-|Frank Danforth           |
+|-----------------|
+|William Dyer     |
+|Frank Pabodie    |
+|Anderson Lake    |
+|Valentina Roerich|
+|Frank Danforth   |
 
 #### Aggregating data
 SQL has built in functions that enable data aggregation, some of the more commonly used ones are `min`, `max`, `avg`, `count`, `sum`, `round`. 
