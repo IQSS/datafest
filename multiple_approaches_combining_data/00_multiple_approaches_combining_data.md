@@ -5,33 +5,19 @@ author: "Radhika Khetani, Bob Freeman"
 output: html_document
 ---
 
-# Multiple Approaches to Combining Data
+## Welcome!
 
-Welcome
-Goals of the Hands-on
-Assumptions
-Agenda
-For further reading...
+## Goals of the Hands-on
 
-## Modules:
+## Assumptions
 
-Introduction to Structured Data
-Review of (basic) SQL and SQLite
+## Pre-lesson Preparation
+Installation instructions can be found at our [detailed Installation document](installation.md).
 
+## Lessons:
 
-## Section 1: Intro/Review (10 min)
+[Introduction to Structured Data](01_intro_to_structured_data.md)
+[Review of (basic) SQL and SQLite](02_combining_data.md)
+[Scripting with Databases](03_scripting_with_databases.md)
 
----
-title: "Intro to Structured Data/Review"
-teaching: 10
-exercises: 5
-questions:
-- "How can I get data from a database?"
-objectives:
-- "Explain the difference between a table, a record, and a field."
-- "Explain the difference between a database and a database manager."
-keypoints:
-- "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
-- "A database manager is a program that manipulates information stored in a database."
----
-
+## For further reading...
