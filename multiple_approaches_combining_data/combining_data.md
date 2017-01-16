@@ -33,6 +33,8 @@ keypoints:
 
 ### Review of structured data and advantage of database systems
 
+Three common options for storage are text files, spreadsheets, and databases. Text files are easiest to create, and work well with version control, but then we would have to build search and analysis tools ourselves. Spreadsheets are good for doing simple analyses, but they don’t handle large or complex data sets well. Databases, however, include powerful tools for search and analysis, and can handle large, complex data sets. These lessons will show how to use a database to explore the expeditions’ data.
+
 A [relational database]({{ site.github.url }}/reference/#relational-database)
 is a way to store and manipulate information.
 Databases are arranged as [tables]({{ site.github.url }}/reference/#table).
@@ -50,8 +52,6 @@ a program that manipulates the database for us.
 The database manager does whatever lookups and calculations the query specifies,
 returning the results in a tabular form
 that we can then use as a starting point for further queries.
-
-
 
 
 
@@ -110,6 +110,7 @@ keypoints:
 ---
 ### Brief (!) review of SQL
 
+Our data: In the late 1920s and early 1930s, William Dyer, Frank Pabodie, and Valentina Roerich led expeditions to the Pole of Inaccessibility in the South Pacific, and then onward to Antarctica. Two years ago, their expeditions were found in a storage locker at Miskatonic University. We have scanned and OCR the data they contain, and we now want to store that information in a way that will make search and analysis easy.
 
 Before we get into the data and using SQLite to select the data,
 
@@ -219,18 +220,15 @@ Let's turn on two options in our console to make working with SQL and SQLite mor
 > All SQLite-specific commands are prefixed with a `.` to distinguish them from SQL commands.
 > Type `.tables` to list the tables in the database.
 >
-> ~~~
+> ```sql
 > .tables
-> ~~~
-> {: .sql}
-> ~~~
+> 
 > Person   Site     Survey   Visited
-> ~~~
-> {: .outp> 
-> ~~~
-> {: .sql}
+> ```
 >
 > For a full list of commands, type `.help` and see the [SQLIte CLI page](https://sqlite.org/cli.html)
+
+#### Selecting data
 
 For now,
 let's write an SQL query that displays scientists' names.
@@ -257,8 +255,206 @@ To select all columns use `*`:
 SELECT * FROM Person;
 ```
 
-Filtering
-Aggregating
+|id      |personal |family  |
+|--------|---------|--------|
+|dyer    |William  |Dyer    |
+|pb      |Frank    |Pabodie |
+|lake    |Anderson |Lake    |
+|roe     |Valentina|Roerich |
+|danforth|Frank    |Danforth|
+
+Our next task is to identify the scientists on the expedition by looking at the `Person` table.
+As we mentioned earlier,
+database records are not stored in any particular order.
+This means that query results aren't necessarily sorted,
+and even if they are,
+we often want to sort them in a different way,
+e.g., by their identifier instead of by their personal name.
+We can do this in SQL by adding an `ORDER BY` clause to our query:
+
+```sql
+SELECT * FROM Person ORDER BY id;
+```
+
+|id     |personal |family  |
+|-------|---------|--------|
+|danfort|Frank    |Danforth|
+|dyer   |William  |Dyer    |
+|lake   |Anderson |Lake    |
+|pb     |Frank    |Pabodie |
+|roe    |Valentina|Roerich |
+
+By default,
+results are sorted in ascending order
+(i.e.,
+from least to greatest).
+We can sort in the opposite order using `DESC` (for "descending"):
+
+~~~
+SELECT * FROM person ORDER BY id DESC;
+~~~
+{: .sql}
+
+|id     |personal |family  |
+|-------|---------|--------|
+|roe    |Valentina|Roerich |
+|pb     |Frank    |Pabodie |
+|lake   |Anderson |Lake    |
+|dyer   |William  |Dyer    |
+|danfort|Frank    |Danforth|
+
+(And if we want to make it clear that we're sorting in ascending order,
+we can use `ASC` instead of `DESC`.)
+
+
+
+The `Person` table is not too interesting. So let's switch to our quantitative data:
+
+To determine which measurements were taken at each site,
+we can examine the `Survey` table.
+Data is often redundant,
+so queries often return redundant information.
+For example,
+if we select the quantities that have been measured
+from the `Survey` table,
+we get this:
+
+~~~
+SELECT quant FROM Survey;
+~~~
+{: .sql}
+
+|quant|
+|-----|
+|rad  |
+|sal  |
+|rad  |
+|sal  |
+|rad  |
+|sal  |
+|temp |
+|rad  |
+|sal  |
+|temp |
+|rad  |
+|temp |
+|sal  |
+|rad  |
+|sal  |
+|temp |
+|sal  |
+|rad  |
+|sal  |
+|sal  |
+|rad  |
+
+We can eliminate the redundant output to
+make the result more readable by adding the `DISTINCT` keyword to our
+query:
+
+~~~
+SELECT DISTINCT quant FROM Survey;
+~~~
+{: .sql}
+
+|quant|
+|-----|
+|rad  |
+|sal  |
+|temp |
+
+We can use the `DISTINCT` keyword on multiple columns.
+If we select more than one column,
+the distinct *pairs* of values are returned:
+
+~~~
+SELECT DISTINCT taken, quant FROM Survey;
+~~~
+{: .sql}
+
+|taken|quant|
+|-----|-----|
+|619  |rad  |
+|619  |sal  |
+|622  |rad  |
+|622  |sal  |
+|734  |rad  |
+|734  |sal  |
+|734  |temp |
+|735  |rad  |
+|735  |sal  |
+|735  |temp |
+|751  |rad  |
+|751  |temp |
+|751  |sal  |
+|752  |rad  |
+|752  |sal  |
+|752  |temp |
+|837  |rad  |
+|837  |sal  |
+|844  |rad  |
+
+In order to look at which scientist measured quantities at each site,
+we can look again at the `Survey` table, sorting results first in ascending order by `taken`,
+and then in descending order by `person`
+within each group of equal `taken` values:
+
+```sql
+SELECT taken, person, quant FROM Survey ORDER BY taken ASC, person DESC;
+```
+
+|taken|person|quant|
+|-----|------|-----|
+|619  |dyer  |rad  |
+|619  |dyer  |sal  |
+|622  |dyer  |rad  |
+|622  |dyer  |sal  |
+|734  |pb    |rad  |
+|734  |pb    |temp |
+|734  |lake  |sal  |
+|735  |pb    |rad  |
+|735  |-null-|sal  |
+|735  |-null-|temp |
+|751  |pb    |rad  |
+|751  |pb    |temp |
+|751  |lake  |sal  |
+|752  |roe   |sal  |
+|752  |lake  |rad  |
+|752  |lake  |sal  |
+|752  |lake  |temp |
+|837  |roe   |sal  |
+|837  |lake  |rad  |
+|837  |lake  |sal  |
+|844  |roe   |rad  |
+
+This query gives us a good idea of which scientist was at which site,
+and what measurements they performed while they were there. We can examine which scientists
+performed which measurements by selecting the appropriate columns and
+removing duplicates:
+
+```sql
+SELECT DISTINCT quant, person FROM Survey ORDER BY quant ASC;
+```
+
+|quant|person|
+|-----|------|
+|rad  |dyer  |
+|rad  |pb    |
+|rad  |lake  |
+|rad  |roe   |
+|sal  |dyer  |
+|sal  |lake  |
+|sal  |-null-|
+|sal  |roe   |
+|temp |pb    |
+|temp |-null-|
+|temp |lake  |
+
+
+We can get unique data 
+#### Filtering data
+
+#### Aggregating data
 
 ### Show how to import data, assuring unique IDs
 
