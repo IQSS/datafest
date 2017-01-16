@@ -3,23 +3,24 @@ title: Basic SQL(ite)
 author: "Radhika Khetani, Bob Freeman"
 teaching: 20
 exercises: 10
-questions:
-- "How can I get data from a database?"
-- "What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
-- "How can I select subsets of data?"
-- "How can I calculate new values on the fly?"
-- "How can I combine data from multiple tables?"
-objectives:
-- "Explain the difference between a table, a record, and a field."
-- "Explain the difference between a database and a database manager."
-keypoints:
-- "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
-- "A database manager is a program that manipulates information stored in a database."
 ---
+
+> Questions:
+> - "How can I get data from a database?"
+> - "What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
+> - "How can I select subsets of data?"
+> - "How can I calculate new values on the fly?"
+> - "How can I combine data from multiple tables?"
+> Objectives:
+> - "Explain the difference between a table, a record, and a field."
+> - "Explain the difference between a database and a database manager."
+> Keypoints:
+> - "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
+> - "A database manager is a program that manipulates information stored in a database."
+
 
 We going to assume some base familiarity of SQL. The remainder of this lesson will go through essential SQL commands that will get you off an running. For a more comprehensive review, we urge you to walk through the Software Carpentry [Databases and SQL lessons](http://swcarpentry.github.io/sql-novice-survey/).
 
-## Brief Review of SQL
 
 **Our data:** In the late 1920s and early 1930s, William Dyer, Frank Pabodie, and Valentina Roerich led expeditions to the Pole of Inaccessibility in the South Pacific, and then onward to Antarctica. Two years ago, their expeditions were found in a storage locker at Miskatonic University. We have scanned and OCR the data they contain, and we now want to store that information in a way that will make search and analysis easy.
 
@@ -151,7 +152,7 @@ Let's turn on two options in our console to make working with SQL and SQLite mor
 >
 > For a full list of commands, type `.help` and see the [SQLIte CLI page](https://sqlite.org/cli.html)
 
-### Selecting data
+## Selecting Data
 
 For now,
 let's write an SQL query that displays scientists' names.
@@ -237,7 +238,7 @@ We can use the `DISTINCT` keyword on multiple columns. If we select more than on
 
 We can get unique data 
 
-#### Filtering data
+## Filtering Data
 
 One of the most powerful features of a database is the ability to filter data, i.e., to select only those records that match certain criteria. For example, suppose we want to see when a particular site was visited. We can select these records from the Visited table by using a WHERE clause in our query. We can also add Boolean operators to filter our data. For example, we can ask for all information from the DR-1 site collected before 1930:
 
@@ -265,7 +266,7 @@ SELECT * FROM Visited WHERE site LIKE 'DR%';
 |752|DR-3|          |
 |844|DR-1|1932-03-22|
 
-#### Calculating new values
+## Calculating New Values
 
 After carefully re-reading the expedition logs, we realize that the radiation measurements they report may need to be corrected upward by 5%. Rather than modifying the stored data, we can do this calculation on the fly as part of our query:
 
@@ -297,7 +298,7 @@ SELECT personal || ' ' || family FROM Person;
 |Valentina Roerich|
 |Frank Danforth   |
 
-#### Aggregating data
+## Aggregating Data
 SQL has built in functions that enable data aggregation, some of the more commonly used ones are `min`, `max`, `avg`, `count`, `sum`, `round`. 
 
 There are several simpler ways to use these functions on tables, e.g. 
@@ -336,7 +337,8 @@ GROUP BY person;
 |pb    |3             |6.66                  |
 |roe   |1             |11.25                 |
 
-### Importing , assuring unique IDs
+## Importing Data
+
 
 We don't have time in our workshop today to show how to go through importing datafiles into a brand new database. We will give one example that we won't go through.
 
@@ -350,8 +352,7 @@ CREATE TABLE "Person" ("id" TEXT, "personal" TEXT, "family" TEXT)
 .import Person.csv Person
 ```
 
-The first command creates a `Person` table with three columns, each column as a TEXT field. There are other data types one can use (e.g. integer, real, etc). Please see XXX for more info. These second line ensure that the file we pull in is recognized as a comma-separated value file. And the third line imports the file that is in our local, working directory into the `Person` data table.
-
+The first command creates a `Person` table with three columns, each column as a TEXT field. There are other data types one can use (e.g. integer, real, etc). Please see the [SQLite Data Types document](https://www.sqlite.org/datatype3.html) for more info. These second line ensure that the file we pull in is recognized as a comma-separated value file. And the third line imports the file that is in our local, working directory into the `Person` data table.
 
 
 Although the console interface is the better, more reproducible option for doing this type of work, the [SQLite Manager plug-in](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/) for the [Firefox browser](https://www.mozilla.org/firefox) can help you with this process as well.
@@ -365,7 +366,7 @@ In our toy example, in order to submit our data to a web site that aggregates hi
 
 This figure shows the relations between the tables:
 
-![Survey Database Structure](images/sql-join-structure.svg)
+![Survey Database Structure](images/sql-join-structure.png)
 
 The SQL command to do this is `JOIN`. To keep it simple, we are going to join only the site `Visited` table with the quantitative `Survey` table data. To perform this feat, we use the following query
 
@@ -409,9 +410,18 @@ id | site | dated | taken | person | quant | reading |
 837 | MSK-4 | 1932-01-14 | 837 | roe | sal | 22.5 | 
 844 | DR-1 | 1932-03-22 | 844 | roe | rad | 11.25 | 
 
-This small query is only the start of what you can do with the JOIN command:
-- use `AND` with additional `ON` expressions and another `JOIN` phrase to merge in a 3rd table.
-- can still suffix this query with `ORDER BY`, `GROUP BY`, or other SQL expressions. 
+This small query is only the start of what you can do with the JOIN command: Ways to extend this include:
+- use `AND` with additional `ON` expressions and another `JOIN` phrase to merge in a 3rd table. For example:
+``sql
+SELECT Site.lat, Site.long, Visited.dated, Survey.quant, Survey.reading
+FROM   Site JOIN Visited JOIN Survey
+ON     Site.name=Visited.site
+AND    Visited.id=Survey.taken
+AND    Visited.dated IS NOT NULL;
+``
+- suffix this query with `ORDER BY`, `GROUP BY`, or other SQL expressions. 
+
+### A Note on Unique Values and Identifiers
 
 We can tell which records from `Site`, `Visited`, and `Survey` correspond with each other because those tables contain [primary keys](http://swcarpentry.github.io/sql-novice-survey/reference/#primary-key) and [foreign keys](http://swcarpentry.github.io/sql-novice-survey/reference/#foreign-key). A primary key is a value, or combination of values, that uniquely identifies each record in a table. A foreign key is a value (or combination of values) from one table that identifies a unique record in another table. Another way of saying this is that a foreign key is the primary key of one table that appears in some other table. In our database, `Person.id` is the primary key in the `Person` table, while `Survey.person` is a foreign key relating the `Survey` table's entries to entries in `Person`.
 
@@ -432,7 +442,10 @@ SELECT rowid, * FROM Person;
 
 ## Exercises
 
+> 1. XXX
+> 
+> 2. YYY
 >
->
+> 3. The `JOIN` query above merges data from the `Survey` and `Visited` tables. Write a similar query that joins data from the `Person` and `Survey` tables, and showing only the non-matched columns.
 >
 
