@@ -2,36 +2,279 @@
 layout: default
 title: "Multiple Approaches to Combining Data"
 author: "Radhika Khetani, Bob Freeman"
-output: html_document
+output:
+  html_document: 
+    toc: true
 ---
 
-#Multiple Approaches to Combining Data
+# Multiple Approaches to Combining Data
 
+Welcome
+Goals of the Hands-on
+Assumptions
+Agenda
+For further reading...
 
 ## Section 1: Intro/Review (10 min)
 
+---
+title: "Intro to Structured Data/Review"
+teaching: 10
+exercises: 5
+questions:
+- "How can I get data from a database?"
+objectives:
+- "Explain the difference between a table, a record, and a field."
+- "Explain the difference between a database and a database manager."
+keypoints:
+- "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
+- "A database manager is a program that manipulates information stored in a database."
+---
+
 ### Review of structured data and advantage of database systems
+
+A [relational database]({{ site.github.url }}/reference/#relational-database)
+is a way to store and manipulate information.
+Databases are arranged as [tables]({{ site.github.url }}/reference/#table).
+Each table has columns (also known as [fields]({{ site.github.url }}/reference/#field)) that describe the data,
+and rows (also known as [records]({{ site.github.url }}/reference/#record)) which contain the data.
+
+ 
+When we are using a spreadsheet,
+we put formulas into cells to calculate new values based on old ones.
+When we are using a database,
+we send commands
+(usually called [queries]({{ site.github.url }}/reference/#query))
+to a [database manager]({{ site.github.url }}/reference/#database-manager):
+a program that manipulates the database for us.
+The database manager does whatever lookups and calculations the query specifies,
+returning the results in a tabular form
+that we can then use as a starting point for further queries.
+
+
+
+
 
 #### Why would we want to do this?
 
+
+ * It keeps your data separate from your analysis. * This means there’s no risk of accidentally changing data when you analyze it. * If we get new data we can just rerun the query. * It’s fast, even for large amounts of data. * It improves quality control of data entry (type constraints and use of forms in Access, Filemaker, etc.) * The concepts of relational database querying are core to understanding how to do similar things using programming languages such as R or Python.
+
+
 #### What are some of the struggles of doing so?
 
-Assume prior (very basic!) knowledge of SQL; perhaps 1 to 2 slides on basic functionality
+If coming from spreadsheets or flatfiles (e.g. csv, Excel spreadsheets), there are a number of struggles that one will go through. Specifically:
+
+- programmatic interrogation of data goes through a text language (SQL) and not through an visual interface. But both can be used!
+- Spreadsheets are typically used for data collection & entry, formatting, analysis, and presentation. This mixed mode of use can cause problems at various points along the data lifecycle. In general, it is better to separate the various stages so that changes in one stage do not adversely affect the other
+
+- often we use a spreadsheet to convey additional information, metadata, on the data itself. For example, notes about data collection, units, validity of measurements, etc. These should be explicitly coded in your data, or kept as a separate metadata table for your work.
+
+
+#### Moving towards structured Data
+
+Key points when moving towards structured data that you wish to move into a database system:
+
+Exercise:
+
+Let's look at a few rows of the data that we're collecting:
+
+Turn to your neighbor, and talk about how you can break up this data into groups, and how would you represent the data within those groups?
+
+
 
 
 
 ## Section 2: Basic SQLite (30 min incl. exercises)
 
+Assume prior (very basic!) knowledge of SQL; perhaps 1 to 2 slides on basic functionality
+
+---
+title: "Selecting Data"
+teaching: 10
+exercises: 5
+questions:
+- "How can I get data from a database?"
+- "What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
+- "How can I select subsets of data?"
+- "How can I calculate new values on the fly?"
+- "How can I combine data from multiple tables?"
+
+objectives:
+- "Explain the difference between a table, a record, and a field."
+- "Explain the difference between a database and a database manager."
+
+keypoints:
+- "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
+- "A database manager is a program that manipulates information stored in a database."
+---
+### Brief (!) review of SQL
+
+
+Before we get into the data and using SQLite to select the data,
+
+The tables below show the database we will use in our examples:
+
+<div class="row">
+  <div class="col-md-6" markdown="1">
+
+**Person**: people who took readings.
+
+|id      |personal |family
+|--------|---------|----------
+|dyer    |William  |Dyer
+|pb      |Frank    |Pabodie
+|lake    |Anderson |Lake
+|roe     |Valentina|Roerich
+|danforth|Frank    |Danforth
+
+**Site**: locations where readings were taken.
+
+|name |lat   |long   |
+|-----|------|-------|
+|DR-1 |-49.85|-128.57|
+|DR-3 |-47.15|-126.72|
+|MSK-4|-48.87|-123.4 |
+
+**Visited**: when readings were taken at specific sites.
+
+|id   |site |dated     |
+|-----|-----|----------|
+|619  |DR-1 |1927-02-08|
+|622  |DR-1 |1927-02-10|
+|734  |DR-3 |1930-01-07|
+|735  |DR-3 |1930-01-12|
+|751  |DR-3 |1930-02-26|
+|752  |DR-3 |-null-    |
+|837  |MSK-4|1932-01-14|
+|844  |DR-1 |1932-03-22|
+
+  </div>
+  <div class="col-md-6" markdown="1">
+
+**Survey**: the actual readings.
+
+|taken|person|quant|reading|
+|-----|------|-----|-------|
+|619  |dyer  |rad  |9.82   |
+|619  |dyer  |sal  |0.13   |
+|622  |dyer  |rad  |7.8    |
+|622  |dyer  |sal  |0.09   |
+|734  |pb    |rad  |8.41   |
+|734  |lake  |sal  |0.05   |
+|734  |pb    |temp |-21.5  |
+|735  |pb    |rad  |7.22   |
+|735  |-null-|sal  |0.06   |
+|735  |-null-|temp |-26.0  |
+|751  |pb    |rad  |4.35   |
+|751  |pb    |temp |-18.5  |
+|751  |lake  |sal  |0.1    |
+|752  |lake  |rad  |2.19   |
+|752  |lake  |sal  |0.09   |
+|752  |lake  |temp |-16.0  |
+|752  |roe   |sal  |41.6   |
+|837  |lake  |rad  |1.46   |
+|837  |lake  |sal  |0.21   |
+|837  |roe   |sal  |22.5   |
+|844  |roe   |rad  |11.25  |
+
+  </div>
+</div>
+
+Notice that three entries --- one in the `Visited` table,
+and two in the `Survey` table --- don't contain any actual
+data, but instead have a special `-null-` entry:
+we'll return to these missing values [later]({{ site.github.url }}/05-null/).
+
+Let's begin by opening up our SQLite database and interrogating our data!
+
+> ## Getting Into and Out Of SQLite
+>
+> In order to use the SQLite commands *interactively*, we need to
+> enter into the SQLite console. 
+
+
+Open a shell or Terminal window and move to the location where our data is:
+
+Mac: Command-space to open up Spotlight search, type `Terminal`, and when the Terminal application appears, press Enter. Then enter the command `cd /Users/Shared/datafest_2017/`.
+PC: Go to your Windows/Start menu search, type `cmd`, and when the Windows Shell option appears, press Enter. Then enter the command `cd C:\Users\Public\datafest_2017\`.
+
+This folder should have your csv and sqlite3 database files in there. Now enter `sqlite3 survey.db`
+
+> The SQLite command is `sqlite3` and you are telling SQLite to open up
+> the `survey.db`.  You need to specify the `.db` file otherwise, SQLite
+> will open up a temporary, empty database.
+>
+> To get out of SQLite, type out `.exit` or `.quit`.  For some
+> terminals, `Ctrl-D` can also work.  If you forget any SQLite `.` (dot)
+> command, type `.help`.
+{: .callout}
+
+Let's turn on two options in our console to make working with SQL and SQLite more user-friendly:
+```sql
+.mode column
+.header on
+```
+
+> All SQLite-specific commands are prefixed with a `.` to distinguish them from SQL commands.
+> Type `.tables` to list the tables in the database.
+>
+> ~~~
+> .tables
+> ~~~
+> {: .sql}
+> ~~~
+> Person   Site     Survey   Visited
+> ~~~
+> {: .outp> 
+> ~~~
+> {: .sql}
+>
+> For a full list of commands, type `.help` and see the [SQLIte CLI page](https://sqlite.org/cli.html)
+
+For now,
+let's write an SQL query that displays scientists' names.
+We do this using the SQL command `SELECT`,
+giving it the names of the columns we want and the table we want them from.
+Our query and its output look like this:
+
+```sql
+SELECT family, personal FROM Person;
+```
+
+|family  |personal |
+|--------|---------|
+|Dyer    |William  |
+|Pabodie |Frank    |
+|Lake    |Anderson |
+|Roerich |Valentina|
+|Danforth|Frank    |
+
+Case does not matter, the columns names are separated by commands, and a semicolon is used to terminal the statement. If you forget the semicolon, SQL will prompt you with additional `>` on a new line. 
+
+To select all columns use `*`:
+```sql
+SELECT * FROM Person;
+```
+
+Filtering
+Aggregating
+
 ### Show how to import data, assuring unique IDs
 
+
 ### Show approach at doing joins with SQL
+
+Matching
 
 
 
 ## Section 3: Using the Database within R, Python, & Stata
+
 ---
-teaching: 20 minutes
-exercises: 10 minutes
+| title: | teaching:  | exercises: |
+| -- | --- | --- |
+| 20 minutes |  10 minutes |
 ---
 
 > Questions:
@@ -214,8 +457,8 @@ with one element for each field we asked for. We finally close our cursor and ou
 ```
 
 ### Exercises:
-
-We've shown how to execute the SQL code for a one table query in pseudocode. Modify your code and query for a two table join? 
-
-??Show approach at doing join inside R, Python, Stata
-
+> 
+> We've shown how to execute the SQL code for a one table query in pseudocode. Modify your code and query for a two table join? 
+> 
+> ??Show approach at doing join inside R, Python, Stata
+> 
