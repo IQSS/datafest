@@ -26,9 +26,6 @@ We going to assume some base familiarity of SQL. The remainder of this lesson wi
 
 Before we get into the data and using SQLite to select the data, the tables below show the database we will use in our examples:
 
-<div class="row">
-  <div class="col-md-6" markdown="1">
-
 **Person**: people who took readings.
 
 |id      |personal |family
@@ -60,8 +57,6 @@ Before we get into the data and using SQLite to select the data, the tables belo
 |837  |MSK-4|1932-01-14|
 |844  |DR-1 |1932-03-22|
 
-  </div>
-  <div class="col-md-6" markdown="1">
 
 **Survey**: the actual readings.
 
@@ -89,8 +84,6 @@ Before we get into the data and using SQLite to select the data, the tables belo
 |837  |roe   |sal  |22.5   |
 |844  |roe   |rad  |11.25  |
 
-  </div>
-</div>
 
 You may notice a couple of things:
 - Our table names are in the singular (e.g. Person vs People), and by convention we capitalize the first letter
