@@ -1,50 +1,29 @@
 ---
-layout: default
-title: "Multiple Approaches to Combining Data"
+title: Basic SQL(ite)
 author: "Radhika Khetani, Bob Freeman"
-output:
-  html_document: 
-    toc: true
----
-
-# Multiple Approaches to Combining Data
-
-Welcome
-Goals of the Hands-on
-Assumptions
-Agenda
-For further reading...
-
-## Section 2: Basic SQLite (30 min incl. exercises)
-
-Assume prior (very basic!) knowledge of SQL; perhaps 1 to 2 slides on basic functionality
-
----
-title: "Selecting Data"
-teaching: 10
-exercises: 5
+teaching: 20
+exercises: 10
 questions:
 - "How can I get data from a database?"
 - "What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
 - "How can I select subsets of data?"
 - "How can I calculate new values on the fly?"
 - "How can I combine data from multiple tables?"
-
 objectives:
 - "Explain the difference between a table, a record, and a field."
 - "Explain the difference between a database and a database manager."
-
 keypoints:
 - "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
 - "A database manager is a program that manipulates information stored in a database."
 ---
-### Brief (!) review of SQL
 
-Our data: In the late 1920s and early 1930s, William Dyer, Frank Pabodie, and Valentina Roerich led expeditions to the Pole of Inaccessibility in the South Pacific, and then onward to Antarctica. Two years ago, their expeditions were found in a storage locker at Miskatonic University. We have scanned and OCR the data they contain, and we now want to store that information in a way that will make search and analysis easy.
+We going to assume some base familiarity of SQL. The remainder of this lesson will go through essential SQL commands that will get you off an running. For a more comprehensive review, we urge you to walk through the Software Carpentry [Databases and SQL lessons](http://swcarpentry.github.io/sql-novice-survey/).
 
-Before we get into the data and using SQLite to select the data,
+## Brief Review of SQL
 
-The tables below show the database we will use in our examples:
+**Our data:** In the late 1920s and early 1930s, William Dyer, Frank Pabodie, and Valentina Roerich led expeditions to the Pole of Inaccessibility in the South Pacific, and then onward to Antarctica. Two years ago, their expeditions were found in a storage locker at Miskatonic University. We have scanned and OCR the data they contain, and we now want to store that information in a way that will make search and analysis easy.
+
+Before we get into the data and using SQLite to select the data, the tables below show the database we will use in our examples:
 
 <div class="row">
   <div class="col-md-6" markdown="1">
@@ -112,9 +91,15 @@ The tables below show the database we will use in our examples:
   </div>
 </div>
 
+You may notice a couple of things:
+- Our table names are in the singular (e.g. Person vs People), and by convention we capitalize the first letter
+- the column names are descriptive but succint, and are in lower case
+- per table, there is something that makes each row unique
+
+
 Notice that three entries --- one in the `Visited` table,
 and two in the `Survey` table --- don't contain any actual
-data, but instead have a special `-null-` entry:
+data, but instead have a special `-null-` entry. We don't have enough time to cover this situation; instead we refer you to the Software Carpentry [lesson on Missing Data](http://swcarpentry.github.io/sql-novice-survey/05-null/).
 we'll return to these missing values [later]({{ site.github.url }}/05-null/).
 
 Let's begin by opening up our SQLite database and interrogating our data!
@@ -123,7 +108,6 @@ Let's begin by opening up our SQLite database and interrogating our data!
 >
 > In order to use the SQLite commands *interactively*, we need to
 > enter into the SQLite console. 
-
 
 Open a shell or Terminal window and move to the location where our data is:
 
@@ -136,10 +120,9 @@ This folder should have your csv and sqlite3 database files in there. Now enter 
 > the `survey.db`.  You need to specify the `.db` file otherwise, SQLite
 > will open up a temporary, empty database.
 >
-> To get out of SQLite, type out `.exit` or `.quit`.  For some
-> terminals, `Ctrl-D` can also work.  If you forget any SQLite `.` (dot)
+> To get out of SQLite, type out `.exit` or `.quit`.  If you forget any SQLite `.` (dot)
 > command, type `.help`.
-{: .callout}
+
 
 Let's turn on two options in our console to make working with SQL and SQLite more user-friendly:
 ```sql
@@ -155,10 +138,20 @@ Let's turn on two options in our console to make working with SQL and SQLite mor
 > 
 > Person   Site     Survey   Visited
 > ```
+> To see how the database tables are structured, type
+>
+> ```sql
+> .schema
+> 
+> CREATE TABLE Person (id text, personal text, family text);
+> CREATE TABLE Site (name text, lat real, long real);
+> CREATE TABLE Visited (id text, site text, dated text);
+> CREATE TABLE Survey (taken integer, person text, quant text, reading real);
+> ```
 >
 > For a full list of commands, type `.help` and see the [SQLIte CLI page](https://sqlite.org/cli.html)
 
-#### Selecting data
+### Selecting data
 
 For now,
 let's write an SQL query that displays scientists' names.
@@ -180,30 +173,10 @@ SELECT family, personal FROM Person;
 
 Case does not matter, the columns names are separated by commands, and a semicolon is used to terminal the statement. If you forget the semicolon, SQL will prompt you with additional `>` on a new line. 
 
-To select all columns use `*`:
-```sql
-SELECT * FROM Person;
-```
-
-|id      |personal |family  |
-|--------|---------|--------|
-|dyer    |William  |Dyer    |
-|pb      |Frank    |Pabodie |
-|lake    |Anderson |Lake    |
-|roe     |Valentina|Roerich |
-|danforth|Frank    |Danforth|
-
-Our next task is to identify the scientists on the expedition by looking at the `Person` table.
-As we mentioned earlier,
-database records are not stored in any particular order.
-This means that query results aren't necessarily sorted,
-and even if they are,
-we often want to sort them in a different way,
-e.g., by their identifier instead of by their personal name.
-We can do this in SQL by adding an `ORDER BY` clause to our query:
+Database records are not stored in any particular order. This means that query results aren't necessarily sorted, and even if they are, we often want to sort them in a different way, e.g., by their identifier instead of by their personal name. We can do this in SQL by adding an `ORDER BY` clause to our query:
 
 ```sql
-SELECT * FROM Person ORDER BY id;
+SELECT * FROM Person ORDER BY family;
 ```
 
 |id     |personal |family  |
@@ -214,45 +187,14 @@ SELECT * FROM Person ORDER BY id;
 |pb     |Frank    |Pabodie |
 |roe    |Valentina|Roerich |
 
-By default,
-results are sorted in ascending order
-(i.e.,
-from least to greatest).
-We can sort in the opposite order using `DESC` (for "descending"):
-
-~~~
-SELECT * FROM person ORDER BY id DESC;
-~~~
-{: .sql}
-
-|id     |personal |family  |
-|-------|---------|--------|
-|roe    |Valentina|Roerich |
-|pb     |Frank    |Pabodie |
-|lake   |Anderson |Lake    |
-|dyer   |William  |Dyer    |
-|danfort|Frank    |Danforth|
-
-(And if we want to make it clear that we're sorting in ascending order,
-we can use `ASC` instead of `DESC`.)
+By default, results are sorted in ascending order (i.e., from least to greatest). We can sort in the opposite order using `DESC` instead of the default `ASC`.
 
 
+The real meat of our data, which measurements were taken at each site, is in the `Survey` table, so let's switch to that quantitative data. To determine  we can examine the `Survey` table. Data is often redundant, so queries often return redundant information. For example, if we select the quantities that have been measured from the `Survey` table, we get this:
 
-The `Person` table is not too interesting. So let's switch to our quantitative data:
-
-To determine which measurements were taken at each site,
-we can examine the `Survey` table.
-Data is often redundant,
-so queries often return redundant information.
-For example,
-if we select the quantities that have been measured
-from the `Survey` table,
-we get this:
-
-~~~
+```sql
 SELECT quant FROM Survey;
-~~~
-{: .sql}
+```
 
 |quant|
 |-----|
@@ -278,14 +220,11 @@ SELECT quant FROM Survey;
 |sal  |
 |rad  |
 
-We can eliminate the redundant output to
-make the result more readable by adding the `DISTINCT` keyword to our
-query:
+We can eliminate the redundant output to make the result more readable by adding the `DISTINCT` keyword to our query:
 
-~~~
+```sql
 SELECT DISTINCT quant FROM Survey;
-~~~
-{: .sql}
+```
 
 |quant|
 |-----|
@@ -293,92 +232,7 @@ SELECT DISTINCT quant FROM Survey;
 |sal  |
 |temp |
 
-We can use the `DISTINCT` keyword on multiple columns.
-If we select more than one column,
-the distinct *pairs* of values are returned:
-
-~~~
-SELECT DISTINCT taken, quant FROM Survey;
-~~~
-{: .sql}
-
-|taken|quant|
-|-----|-----|
-|619  |rad  |
-|619  |sal  |
-|622  |rad  |
-|622  |sal  |
-|734  |rad  |
-|734  |sal  |
-|734  |temp |
-|735  |rad  |
-|735  |sal  |
-|735  |temp |
-|751  |rad  |
-|751  |temp |
-|751  |sal  |
-|752  |rad  |
-|752  |sal  |
-|752  |temp |
-|837  |rad  |
-|837  |sal  |
-|844  |rad  |
-
-In order to look at which scientist measured quantities at each site,
-we can look again at the `Survey` table, sorting results first in ascending order by `taken`,
-and then in descending order by `person`
-within each group of equal `taken` values:
-
-```sql
-SELECT taken, person, quant FROM Survey ORDER BY taken ASC, person DESC;
-```
-
-|taken|person|quant|
-|-----|------|-----|
-|619  |dyer  |rad  |
-|619  |dyer  |sal  |
-|622  |dyer  |rad  |
-|622  |dyer  |sal  |
-|734  |pb    |rad  |
-|734  |pb    |temp |
-|734  |lake  |sal  |
-|735  |pb    |rad  |
-|735  |-null-|sal  |
-|735  |-null-|temp |
-|751  |pb    |rad  |
-|751  |pb    |temp |
-|751  |lake  |sal  |
-|752  |roe   |sal  |
-|752  |lake  |rad  |
-|752  |lake  |sal  |
-|752  |lake  |temp |
-|837  |roe   |sal  |
-|837  |lake  |rad  |
-|837  |lake  |sal  |
-|844  |roe   |rad  |
-
-This query gives us a good idea of which scientist was at which site,
-and what measurements they performed while they were there. We can examine which scientists
-performed which measurements by selecting the appropriate columns and
-removing duplicates:
-
-```sql
-SELECT DISTINCT quant, person FROM Survey ORDER BY quant ASC;
-```
-
-|quant|person|
-|-----|------|
-|rad  |dyer  |
-|rad  |pb    |
-|rad  |lake  |
-|rad  |roe   |
-|sal  |dyer  |
-|sal  |lake  |
-|sal  |-null-|
-|sal  |roe   |
-|temp |pb    |
-|temp |-null-|
-|temp |lake  |
+We can use the `DISTINCT` keyword on multiple columns. If we select more than one column, the distinct *pairs* of values are returned.
 
 
 We can get unique data 

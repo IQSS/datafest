@@ -1,43 +1,25 @@
 ---
 layout: default
-title: "Multiple Approaches to Combining Data"
+title: "Querying the Database within R, Python, & Stata"
 author: "Radhika Khetani, Bob Freeman"
-output:
-  html_document: 
-    toc: true
+output: html_document
+teaching: 20 minutes
+exercies: 10 minutes
+questions:
+- "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
+objectives:
+- "Write short programs that execute SQL queries."
+- "Trace the execution of a program that contains an SQL query."
+keypoints:
+- "General-purpose languages have libraries for accessing databases."
+- "To connect to a database, a program must use a library specific to that database manager."
+- "These libraries use a connection-and-cursor model."
+what we won't cover:
+- "Programs can read query results in batches or all at once."
+- "Queries should be written using parameter substitution, not string formatting."
 ---
 
-# Multiple Approaches to Combining Data
-
-Welcome
-Goals of the Hands-on
-Assumptions
-Agenda
-For further reading...
-
-## Section 3: Using the Database within R, Python, & Stata
-
----
-| title: | teaching:  | exercises: |
-| -- | --- | --- |
-| 20 minutes |  10 minutes |
----
-
-> Questions:
-> - "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
-> objectives:
-> - "Write short programs that execute SQL queries."
-> - "Trace the execution of a program that contains an SQL query."
-> Keypoints:
-> - "General-purpose languages have libraries for accessing databases."
-> - "To connect to a database, a program must use a library specific to that database manager."
-> - "These libraries use a connection-and-cursor model."
-> What we won't cover:
-> - "Programs can read query results in batches or all at once."
-> - "Queries should be written using parameter substitution, not string formatting."
-
-
-### Moving to R (dplyr), Python, and Stata for accessing local/remote DB
+## Moving to R (dplyr), Python, and Stata for accessing local/remote DB
 
 One real value in using databases is that this data is accessible from multiple analysis and visualization environments, like R, Python, Stata, and Tableau. The real win is that these environments request the data, and all the heavy computation is done on the back end. This allow greater amount of flexibility in scripting, the data is managed uniformly, and the processing is offloaded to the database backend (SQLite). Let's look at one example:
 
@@ -49,7 +31,7 @@ One real value in using databases is that this data is accessible from multiple 
 
 TODO: general outline or figure on how languages access databases. This should show direct access via connectors; and also via ODBC Manager and Drivers
 
-#### Accessing our data: A pseudocode example
+### Accessing our data: A pseudocode example
 
 All scripts and programs (we'll use the word 'script' to mean both of these) written in whatever language you choose will follow a standard pattern of steps. We'll write this pattern in pseudocode -- steps that outline code but are not specific to a particular language. These steaps are as follows:
 
@@ -119,7 +101,7 @@ Since establishing a connection takes time, though, we shouldn't open a connecti
 
 **One final note:** We did not talk about error checking. This should be done after each step, as you never know what might go wrong. For simplicity sake, we left these steps out. (But you won't, will you?)
 
-#### Language-specific Examples for Using Databases
+### Language-specific Examples for Using Databases
 
 So let's see how we would implement this pseudocode in R, Python, and Stata!
 
@@ -202,7 +184,7 @@ with one element for each field we asked for. We finally close our cursor and ou
 ???
 ```
 
-### Exercises:
+## Exercises:
 > 
 > We've shown how to execute the SQL code for a one table query in pseudocode. Modify your code and query for a two table join? 
 > 
