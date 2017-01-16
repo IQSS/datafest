@@ -382,10 +382,39 @@ SELECT DISTINCT quant, person FROM Survey ORDER BY quant ASC;
 
 
 We can get unique data 
+
 #### Filtering data
 
-#### Aggregating data
+```sql
+SELECT * FROM Visited WHERE site = 'DR-1' AND dated < '1930-01-01';
+```
 
+```sql
+SELECT * FROM Visited WHERE site LIKE 'DR%';
+```
+
+#### Calculatint new values
+```sql
+SELECT 1.05 * reading FROM Survey WHERE quant='rad';
+```
+
+```sql
+SELECT personal || ' ' || family FROM Person;
+```
+#### Aggregating data
+```sql
+SELECT person, count(reading), round(avg(reading), 2)
+FROM  Survey
+WHERE quant='rad'
+AND   person='dyer';
+```
+
+```sql
+SELECT   person, count(reading), round(avg(reading), 2)
+FROM     Survey
+WHERE    quant='rad'
+GROUP BY person;
+`
 ### Show how to import data, assuring unique IDs
 
 
