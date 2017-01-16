@@ -38,10 +38,13 @@ The lesson instructions we will follow are posted below. Please note that these 
 
 ## For further reading...
 
-- Software Carpentry's Databases and SQL
+- Software Carpentry's [Databases and SQL lessons](http://swcarpentry.github.io/sql-novice-survey/)
+- [SQLite Command Line reference ](https://sqlite.org/cli.html)
+- Stata [ODBC FAQs](https://www.google.com/search?q=stata+odbc&oq=stata+odbc&aqs=chrome.0.69i59j69i65l2j0l3.2279j1j7&sourceid=chrome&ie=UTF-8)
+- R's [dplyr and two-table joins](https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html)
 
-## Attribution
-We wish to thank the Software Carpentry and Data Carpentry community for their excellent and inspiring materials on databases, SQL, and SQLite.
+
+
 Best,
 Radhika and Bob
 
