@@ -265,21 +265,63 @@ SELECT * FROM Visited WHERE site LIKE 'DR%';
 |752|DR-3|          |
 |844|DR-1|1932-03-22|
 
-#### Calculatint new values
+#### Calculating new values
+
+After carefully re-reading the expedition logs, we realize that the radiation measurements they report may need to be corrected upward by 5%. Rather than modifying the stored data, we can do this calculation on the fly as part of our query:
+
 ```sql
 SELECT 1.05 * reading FROM Survey WHERE quant='rad';
 ```
+|1.05 * reading|
+|--------------|
+|10.311        |
+|8.19          |
+|8.8305        |
+|7.581         |
+|4.5675        |
+|2.2995        |
+|1.533         |
+|11.8125       |
+
+
+We can also combine values from different fields, for example by using the string concatenation operator ||:
 
 ```sql
 SELECT personal || ' ' || family FROM Person;
 ```
+| |
+|-------------------------|
+|William Dyer             |
+|Frank Pabodie            |
+|Anderson Lake            |
+|Valentina Roerich        |
+|Frank Danforth           |
+
 #### Aggregating data
+SQL has built in functions that enable data aggregation, some of the more commonly used ones are `min`, `max`, `avg`, `count`, `sum`, `round`. 
+
+There are several simpler ways to use these functions on tables, e.g. 
+
+`SELECT min(dated) FROM Visited;`, 
+
+`SELECT sum(reading) FROM Survey WHERE quant='sal';`, or 
+
+`SELECT min(reading), max(reading) FROM Survey WHERE quant='sal' AND reading<=1.0;`.
+
+However, aggregating all records at once doesn’t always make sense. For example, suppose we suspect that there is a systematic bias in our data, and that some scientists’ radiation readings are higher than others. In this scenario, we could use the following code for aggregating for one scientist at a time:
+
 ```sql
 SELECT person, count(reading), round(avg(reading), 2)
 FROM  Survey
 WHERE quant='rad'
 AND   person='dyer';
 ```
+|person|count(reading)|round(avg(reading), 2)|
+|------|--------------|----------------------|
+|dyer  |2             |8.81                  |
+
+
+Or, we could replace the `AND` with `GROUP BY` and get a table of aggregated values, which is much more useful to evaluate the bias:
 
 ```sql
 SELECT   person, count(reading), round(avg(reading), 2)
@@ -287,6 +329,12 @@ FROM     Survey
 WHERE    quant='rad'
 GROUP BY person;
 ```
+|person|count(reading)|round(avg(reading), 2)|
+|------|--------------|----------------------|
+|dyer  |2             |8.81                  |
+|lake  |2             |1.82                  |
+|pb    |3             |6.66                  |
+|roe   |1             |11.25                 |
 
 ### Show how to import data, assuring unique IDs
 
