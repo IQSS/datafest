@@ -336,7 +336,7 @@ GROUP BY person;
 |pb    |3             |6.66                  |
 |roe   |1             |11.25                 |
 
-### Show how to import data, assuring unique IDs
+### Importing , assuring unique IDs
 
 We don't have time in our workshop today to show how to go through importing datafiles into a brand new database. We will give one example that we won't go through.
 
@@ -352,9 +352,87 @@ CREATE TABLE "Person" ("id" TEXT, "personal" TEXT, "family" TEXT)
 
 The first command creates a `Person` table with three columns, each column as a TEXT field. There are other data types one can use (e.g. integer, real, etc). Please see XXX for more info. These second line ensure that the file we pull in is recognized as a comma-separated value file. And the third line imports the file that is in our local, working directory into the `Person` data table.
 
+
+
 Although the console interface is the better, more reproducible option for doing this type of work, the [SQLite Manager plug-in](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/) for the [Firefox browser](https://www.mozilla.org/firefox) can help you with this process as well.
 
 
-### Show approach at doing joins with SQL
+## Combining Data
 
-Matching
+Rarely is all the data that you need contained within one data sheet. Often, one collects data there are columns of similar, overlap, or matching between two datafiles or data tables. With the above methods for selecting, filtering, and aggregating data, we can construct an SQL query that will allow us to match & merge the data, while at the same time sorting, select, filtering, and aggregating. (Now try that in Excel!)
+
+In our toy example, in order to submit our data to a web site that aggregates historical meteorological data, we might need to format it as latitude, longitude, date, quantity, and reading. However, our latitudes and longitudes are in the `Site` table, while the dates of measurements are in the `Visited` table and the readings themselves are in the `Survey` table. We need to combine these tables somehow.
+
+This figure shows the relations between the tables:
+
+![Survey Database Structure](images/sql-join-structure.svg)
+
+The SQL command to do this is `JOIN`. To keep it simple, we are going to join only the site `Visited` table with the quantitative `Survey` table data. To perform this feat, we use the following query
+
+```sql
+SELECT *
+FROM Visited JOIN Survey
+ON Survey.taken = Visited.id;
+```
+
+We'll explain the two new expressions that you have not seen before:
+
+**`Visited JOIN Survey`** This expression tells SQL that you'd like to combine the two tables `Visited` and `Survey`. Alone, this instructs SQL to create a 'cross product' of the two tables -- it joins each record of one table with each record of the other table to give all possible combinations. But, we modify this combination with the next expression...
+
+**`ON Survey.taken = Visited.id`** This phrase instructs SQL to filter records where there is a match between the `taken` column of `Survey`, and the `id` column of `Visited`. Once we add this to our query, the database manager throws away records that combined information about two different sites, leaving us with just the ones we want.
+
+Notice that we used `Table.field` format to specify field names in the output of the join. We do this because tables can have fields with the same name, and we need to be specific which ones we’re talking about. For example, if we joined the `Person` and `Visited` tables, the result would inherit a field called `id` from each of the original tables.
+
+So our query results in the following output:
+
+id | site | dated | taken | person | quant | reading | 
+---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ----------
+619 | DR-1 | 1927-02-08 | 619 | dyer | rad | 9.82 | 
+619 | DR-1 | 1927-02-08 | 619 | dyer | sal | 0.13 | 
+622 | DR-1 | 1927-02-10 | 622 | dyer | rad | 7.8 | 
+622 | DR-1 | 1927-02-10 | 622 | dyer | sal | 0.09 | 
+734 | DR-3 | 1930-01-07 | 734 | lake | sal | 0.05 | 
+734 | DR-3 | 1930-01-07 | 734 | pb | rad | 8.41 | 
+734 | DR-3 | 1930-01-07 | 734 | pb | temp | -21.5 | 
+735 | DR-3 | 1930-01-12 | 735 |  | sal | 0.06 | 
+735 | DR-3 | 1930-01-12 | 735 |  | temp | -26.0 | 
+735 | DR-3 | 1930-01-12 | 735 | pb | rad | 7.22 | 
+751 | DR-3 | 1930-02-26 | 751 | lake | sal | 0.1 | 
+751 | DR-3 | 1930-02-26 | 751 | pb | rad | 4.35 | 
+751 | DR-3 | 1930-02-26 | 751 | pb | temp | -18.5 | 
+752 | DR-3 |  | 752 | lake | rad | 2.19 | 
+752 | DR-3 |  | 752 | lake | sal | 0.09 | 
+752 | DR-3 |  | 752 | lake | temp | -16.0 | 
+752 | DR-3 |  | | | 752 | | | roe | sal | 41.6 | 
+837 | MSK-4 | 1932-01-14 | 837 | lake | rad | 1.46 | 
+837 | MSK-4 | 1932-01-14 | 837 | lake | sal | 0.21 | 
+837 | MSK-4 | 1932-01-14 | 837 | roe | sal | 22.5 | 
+844 | DR-1 | 1932-03-22 | 844 | roe | rad | 11.25 | 
+
+This small query is only the start of what you can do with the JOIN command:
+- use `AND` with additional `ON` expressions and another `JOIN` phrase to merge in a 3rd table.
+- can still suffix this query with `ORDER BY`, `GROUP BY`, or other SQL expressions. 
+
+We can tell which records from `Site`, `Visited`, and `Survey` correspond with each other because those tables contain [primary keys](http://swcarpentry.github.io/sql-novice-survey/reference/#primary-key) and [foreign keys](http://swcarpentry.github.io/sql-novice-survey/reference/#foreign-key). A primary key is a value, or combination of values, that uniquely identifies each record in a table. A foreign key is a value (or combination of values) from one table that identifies a unique record in another table. Another way of saying this is that a foreign key is the primary key of one table that appears in some other table. In our database, `Person.id` is the primary key in the `Person` table, while `Survey.person` is a foreign key relating the `Survey` table's entries to entries in `Person`.
+
+Most database designers believe that every table should have a well-defined primary key. They also believe that this key should be separate from the data itself, so that if we ever need to change the data, we only need to make one change in one place. One easy way to do this is to create an arbitrary, unique ID for each record as we add it to the database. This is actually very common: those IDs have names like "student numbers" and "patient numbers", and they almost always turn out to have originally been a unique record identifier in some database system or other. As the query below demonstrates, SQLite [automatically numbers records](https://www.sqlite.org/lang_createtable.html#rowid) as they're added to tables, and we can use those record numbers in queries:
+
+```sql
+SELECT rowid, * FROM Person;
+```
+
+|rowid|id      |personal |family  |
+|-----|--------|---------|--------|
+|1    |dyer    |William  |Dyer    |
+|2    |pb      |Frank    |Pabodie |
+|3    |lake    |Anderson |Lake    |
+|4    |roe     |Valentina|Roerich |
+|5    |danforth|Frank    |Danforth|
+
+
+## Exercises
+
+>
+>
+>
+
