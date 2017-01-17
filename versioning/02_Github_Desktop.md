@@ -108,7 +108,7 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 
 ***
 
-**Exercise *[Create a repo and commit changes]* **
+**Exercise**
 
 1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer. 
 2. Create a repository with this folder in Github Desktop.
