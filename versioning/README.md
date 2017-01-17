@@ -16,9 +16,9 @@ Please install GitHub Desktop from https://desktop.github.com/.
 
 ## Lessons:
 
-[Introduction to Version Control](https://github.com/IQSS/datafest/blob/master/versioning/01_Intro_to_versioning.md)<br>
-[Basics of Version Control with Github](https://github.com/IQSS/datafest/blob/master/versioning/02_Github_Desktop.md)<br>
-[Intermediate topics: Remote repositories, managing conflicts](https://github.com/IQSS/datafest/blob/master/versioning/03_Github_remote_and_conflicts.md)<br>
+1. [Introduction to Version Control](https://github.com/IQSS/datafest/blob/master/versioning/01_Intro_to_versioning.md)<br>
+* [Basics of Version Control with Github](https://github.com/IQSS/datafest/blob/master/versioning/02_Github_Desktop.md)<br>
+* [Intermediate topics: Remote repositories, managing conflicts](https://github.com/IQSS/datafest/blob/master/versioning/03_Github_remote_and_conflicts.md)<br>
 
 Best,
 Radhika and Bob
