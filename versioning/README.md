@@ -20,7 +20,4 @@ Please install GitHub Desktop from https://desktop.github.com/.
 * [Basics of Version Control with Github](https://github.com/IQSS/datafest/blob/master/versioning/02_Github_Desktop.md)<br>
 * [Intermediate topics: Remote repositories, managing conflicts](https://github.com/IQSS/datafest/blob/master/versioning/03_Github_remote_and_conflicts.md)<br>
 
-Best,
-Radhika and Bob
-
 NOTE: These materials and the files within are governed by the Creative Commons Attribution license (CC BY 4.0).
