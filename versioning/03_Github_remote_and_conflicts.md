@@ -5,7 +5,7 @@ author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 output: html_document
 ---
 
-# Version Control with Git/Github
+#  Versioning your Data and Scripts
 
 >> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop) and from [Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). Licensing information available at the bottom of this page.
 
