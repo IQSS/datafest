@@ -106,6 +106,17 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 > 
 > Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control today, but we encourage you to explore it further.
 
+***
+
+**Exercise *[Create a repo and commit changes]* **
+
+1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer. 
+2. Create a repository with this folder in Github Desktop.
+3. Create a new plain text file called "data-file.txt", add a line or 2 of content to it and save it to the "learning_github" folder. 
+4. Go to Github Desktop, and commit the change with an approriate message.
+
+***
+
 ### Publishing Your Repository
 
 At the moment we are only recording our changes locally. We may be happy to only store our changes locally, but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer (for collaborating/sharing/backing up). 
@@ -118,4 +129,4 @@ This is straightforward in GitHub Desktop and you do it by "publishing" your rep
 
 * Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
 
-* Materials are also derived from Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). These materials are also licensed under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
+* Materials are also derived from [Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). These materials are also licensed under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
