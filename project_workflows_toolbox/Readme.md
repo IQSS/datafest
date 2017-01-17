@@ -18,7 +18,7 @@ The two parts to this lecture are the good seeds you will sow for the years of r
 **Speaker Notes and References**
 
 
-*Daina Borquin*
+*Daina Bouquin* - [Slides](http://slides.com/dbouquin/datafest_astro17/)
 
 *Bob Freeman*
 
