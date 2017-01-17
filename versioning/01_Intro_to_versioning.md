@@ -40,7 +40,7 @@ If there aren't conflicts, you can even play two sets of changes onto the same b
 
 <img src="img/merged_example.png" width="400" align="center">
 
-A version control system is a tool that keeps track of these changes for us and helps us version and merge our files.
+A Version Control system is a tool that keeps track of these changes for us and helps us version and merge our files.
 
 ## Why use Version Control?
 
