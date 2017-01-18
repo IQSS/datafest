@@ -68,6 +68,8 @@ Key points when moving towards structured data that you wish to move into a data
 > |DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|rad|8.41|
 > |DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|temp|-21.5|
 > |DR-3|1930-01-12|-47.15|-126.72|Frank|Pabodie|rad|7.22|
+> |DR-3|1930-01-12|-47.15|-126.72|||sal|0.06|
+> |DR-3|1930-01-12|-47.15|-126.72|||temp|-26.0|
 > |DR-3|1930-02-26|-47.15|-126.72|Anderson|Lake|sal|0.1|
 > |DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|rad|4.35|
 > |DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|temp|-18.5|
