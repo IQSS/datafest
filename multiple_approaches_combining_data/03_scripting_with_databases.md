@@ -23,9 +23,6 @@ what we won't cover:
 
 One real value in using databases is that this data is accessible from multiple analysis and visualization environments, like R, Python, Stata, and Tableau. The real win is that these environments request the data, and all the heavy computation is done on the back end. This allow greater amount of flexibility in scripting, the data is managed uniformly, and the processing is offloaded to the database backend (SQLite). Let's look at one example:
 
-??Briefly discuss ODBC & how to configure
-??Direct access from R/Python using local shared libraries/language bindings
-
 The best way to connect to a database (remote or local) is through the native driver (connector) that comes with the database program itself. With this driver, your program in any common language can natively connect directly to the database. Each database program will require its own custom driver.
 
 ![Connector  Concepts](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/connectors2.jpg "Conceptual Overview of Database Connector")
@@ -36,7 +33,6 @@ A more modular, generic approach is using ODBC (Open Database Connectivity). Thi
 ![ODBC Concepts](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/udapcategoryodbc.png "Conceptual Overview of ODBC")
 *Image from [OpenLink Software](https://uda.openlinksw.com/odbc/)*
 
-TODO: general outline or figure on how languages access databases. This should show direct access via connectors; and also via ODBC Manager and Drivers
 
 ### Accessing our data: A pseudocode example
 
