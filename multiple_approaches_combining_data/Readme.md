@@ -13,11 +13,17 @@ Overview at http://sched.co/8sVf
 
 Modern-day research requires merging data sets from multiple sources while maintaining consistency and integrity. This workshop will discuss the fundamentals of using a lightweight database like SQLite to achieve those goals, which opens up the powerful world of SQL. We will also explore examples in which various analysis tools like R, Stata, and Python, can access, interrogate, and combine this information with little effort.
 
-## Welcome!
 
 ## Goals of the Hands-on
-
-## Assumptions
+- talk about structured data and use of databases
+- "Explain the difference between a table, a record, and a field."
+- "Explain the difference between a database and a database manager."
+- "What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
+- "How can I select subsets of data, calculate new values on the fly?"
+- "How can I combine data from multiple tables?"
+- "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
+objectives:
+- "Write short programs that execute SQL queries."
 
 
 ## Pre-lesson Preparation

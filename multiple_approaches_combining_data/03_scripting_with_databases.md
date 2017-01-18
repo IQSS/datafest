@@ -2,22 +2,22 @@
 layout: default
 title: "Querying the Database within R, Python, & Stata"
 author: "Radhika Khetani, Bob Freeman"
-output: html_document
 teaching: 20 minutes
 exercies: 10 minutes
-questions:
-- "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
-objectives:
-- "Write short programs that execute SQL queries."
-- "Trace the execution of a program that contains an SQL query."
-keypoints:
-- "General-purpose languages have libraries for accessing databases."
-- "To connect to a database, a program must use a library specific to that database manager."
-- "These libraries use a connection-and-cursor model."
-what we won't cover:
-- "Programs can read query results in batches or all at once."
-- "Queries should be written using parameter substitution, not string formatting."
 ---
+
+> questions:
+> - "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
+> objectives:
+> - "Write short programs that execute SQL queries."
+> keypoints:
+> - "General-purpose languages have libraries for accessing databases."
+> - "To connect to a database, a program must use a library specific to that database manager."
+> - "These libraries use a connection-and-cursor model."
+> what we won't cover:
+> - "Programs can read query results in batches or all at once."
+> - "Queries should be written using parameter substitution, not string formatting."
+
 
 ## Moving to R (dplyr), Python, and Stata for accessing local/remote DB
 
