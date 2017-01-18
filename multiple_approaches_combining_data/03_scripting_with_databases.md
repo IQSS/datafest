@@ -201,3 +201,7 @@ list if _N < 5
 > We've shown how to execute the SQL code for a one table query in pseudocode. Modify your code and query for a two table join? 
 > 
 > 
+
+***
+
+*Materials used in these lessons are derived predominantly from Software Carpentry's Databases and SQL lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0). Small portions were also derived from Data Carpentry's SQL for Ecology lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0).*

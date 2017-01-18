@@ -32,9 +32,9 @@ The lesson instructions we will follow are posted below. Please note that these 
 > Materials used in these lessons are derived predominantly from Software Carpentry's [Databases and SQL lessons](http://swcarpentry.github.io/sql-novice-survey/), which have been released under the Creative Commons Attribution license (CC BY 4.0). Small portions were also derived from Data Carpentry's [SQL for Ecology lessons](http://www.datacarpentry.org/sql-ecology-lesson/), which have been released under the Creative Commons Attribution license (CC BY 4.0).
 >
 
-[Introduction to Structured Data](01_intro_to_structured_data.md)<br>
-[Review of (basic) SQL and SQLite](02_combining_data.md)<br>
-[Scripting with Databases](03_scripting_with_databases.md)<br>
+1. [Introduction to Structured Data](01_intro_to_structured_data.md)<br>
+* [Review of (basic) SQL and SQLite](02_combining_data.md)<br>
+* [Scripting with Databases](03_scripting_with_databases.md)<br>
 
 ## For further reading...
 

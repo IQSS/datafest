@@ -433,16 +433,15 @@ SELECT rowid, * FROM Person;
 |5    |danforth|Frank    |Danforth|
 
 
+***
 
+**Exercises:**
 
-## Exercises
+1. Select data from the `Survey` table, sorting by `quant` but reverse sort by `reading`.
+* Normalized salinity readings are supposed to be between 0.0 and 1.0. Write a query that selects all records from `Survey` with salinity values outside this range. Modify that query to return how many items are outside this range.
+* How many temperature readings did Frank Pabodie record, and what was their average value?
+* Our `Visited JOIN Survey` query above merges the data from these two tables. Write a similar query that joins data from the `Person` and `Survey` tables, and showing only the non-match columns.
 
-> 1. Select data from the `Survey` table, sorting by `quant` but reverse sort by `reading`.
-> 
-> 2a. Normalized salinity readings are supposed to be between 0.0 and 1.0. Write a query that selects all records from `Survey` with salinity values outside this range. Modify that query to return how many items are outside this range.
->
-> 3. How many temperature readings did Frank Pabodie record, and what was their average value?
-> 
-> 4. Our `Visited JOIN Survey` query above merges the data from these two tables. Write a similar query that joins data from the `Person` and `Survey` tables, and showing only the non-match columns.
->
+***
 
+*Materials used in these lessons are derived predominantly from Software Carpentry's Databases and SQL lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0). Small portions were also derived from Data Carpentry's SQL for Ecology lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0).*
