@@ -177,13 +177,12 @@ with one element for each field we asked for. We finally close our cursor and ou
 **Stata**
 
 ```stata
-clear
 set more off
-odbc exec("SELECT Site.lat, Site.long FROM Site;"), dsn("DF_Survey_DB")
-list if _N < 5
+odbc load lat=lat lon=long, exec(`"SELECT Site.lat, Site.long FROM Site;"') dsn("DF_Survey_DB") clear  
+list
 ```
 
-**Brief notes:** Stata does not need the open connect and cursor calls that the other languages do, so the code is even more compact. Unfortunately, Stata can only use one table at a time, so executing calls where the joins are done outside of Stata is even more important.
+**Brief notes:** Stata does not need the open connect and cursor calls that the other languages do, so the code is even more compact. Unfortunately, Stata can only use one table at a time. Thus executing calls where the joins are done outside of Stata is even more important!
 
 ### Database Safety
 
