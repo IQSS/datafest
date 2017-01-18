@@ -190,7 +190,20 @@ odbc exec("SELECT Site.lat, Site.long FROM Site;"), dsn("DF_Survey_DB")
 list if _N < 5
 ```
 
-**Brief notes:** 
+**Brief notes:** Stata does not need the open connect and cursor calls that the other languages do, so the code is even more compact. Unfortunately, Stata can only use one table at a time, so executing calls where the joins are done outside of Stata is even more important.
+
+### Database Safety
+
+So, the queries that we have done were simple and static. Once can do dynamic queries by including a wildcard in your query statement:
+
+```python
+query = "SELECT personal || ' ' || family FROM Person WHERE id=?;"
+person = 'dyer'
+cursor.execute(query, person)
+```
+
+The `?` wildcard allows you to substitue in a value at the time of the query execution. This means that you can dynamically set the value of a variable (or some other method) in order to make your script flexible and more abstract.
+
 
 ## Exercises:
 > 
