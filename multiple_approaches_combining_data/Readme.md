@@ -21,7 +21,7 @@ Modern-day research requires merging data sets from multiple sources while maint
 
 
 ## Pre-lesson Preparation
-Installation instructions can be found at https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/installation.md
+Installation instructions can be found at [installation.md](installation.md)
 
 
 ## Lessons:
