@@ -57,25 +57,26 @@ Key points when moving towards structured data that you wish to move into a data
 
 > Let's look at a few rows of the data that we're collecting:
 > 
-> site|dated|lat|long|personal|family|quant|reading
-> DR-1|1927-02-08|-49.85|-128.57|William|Dyer|rad|9.82
-> DR-1|1927-02-08|-49.85|-128.57|William|Dyer|sal|0.13
-> DR-1|1927-02-10|-49.85|-128.57|William|Dyer|rad|7.8
-> DR-1|1927-02-10|-49.85|-128.57|William|Dyer|sal|0.09
-> DR-1|1932-03-22|-49.85|-128.57|Valentina|Roerich|rad|11.25
-> DR-3|1930-01-07|-47.15|-126.72|Anderson|Lake|sal|0.05
-> DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|rad|8.41
-> DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|temp|-21.5
-> DR-3|1930-01-12|-47.15|-126.72|Frank|Pabodie|rad|7.22
-> DR-3|1930-02-26|-47.15|-126.72|Anderson|Lake|sal|0.1
-> DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|rad|4.35
-> DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|temp|-18.5
-> DR-3||-47.15|-126.72|Anderson|Lake|rad|2.19
-> DR-3||-47.15|-126.72|Anderson|Lake|sal|0.09
-> DR-3||-47.15|-126.72|Anderson|Lake|temp|-16.0
-> DR-3||-47.15|-126.72|Valentina|Roerich|sal|41.6
-> MSK-4|1932-01-14|-48.87|-123.4|Anderson|Lake|rad|1.46
-> MSK-4|1932-01-14|-48.87|-123.4|Anderson|Lake|sal|0.21
-> MSK-4|1932-01-14|-48.87|-123.4|Valentina|Roerich|sal|22.5
+> |site|dated|lat|long|personal|family|quant|reading|
+> |---|---|---|---|---|---|---|---|
+> |DR-1|1927-02-08|-49.85|-128.57|William|Dyer|rad|9.82|
+> |DR-1|1927-02-08|-49.85|-128.57|William|Dyer|sal|0.13|
+> |DR-1|1927-02-10|-49.85|-128.57|William|Dyer|rad|7.8|
+> |DR-1|1927-02-10|-49.85|-128.57|William|Dyer|sal|0.09|
+> |DR-1|1932-03-22|-49.85|-128.57|Valentina|Roerich|rad|11.25|
+> |DR-3|1930-01-07|-47.15|-126.72|Anderson|Lake|sal|0.05|
+> |DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|rad|8.41|
+> |DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|temp|-21.5|
+> |DR-3|1930-01-12|-47.15|-126.72|Frank|Pabodie|rad|7.22|
+> |DR-3|1930-02-26|-47.15|-126.72|Anderson|Lake|sal|0.1|
+> |DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|rad|4.35|
+> |DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|temp|-18.5|
+> |DR-3||-47.15|-126.72|Anderson|Lake|rad|2.19|
+> |DR-3||-47.15|-126.72|Anderson|Lake|sal|0.09|
+> |DR-3||-47.15|-126.72|Anderson|Lake|temp|-16.0|
+> |DR-3||-47.15|-126.72|Valentina|Roerich|sal|41.6|
+> |MSK-4|1932-01-14|-48.87|-123.4|Anderson|Lake|rad|1.46|
+> |MSK-4|1932-01-14|-48.87|-123.4|Anderson|Lake|sal|0.21|
+> |MSK-4|1932-01-14|-48.87|-123.4|Valentina|Roerich|sal|22.5|
 > 
 > Turn to your neighbor, and talk about how you can break up this data into groups, and how would you represent the data within those groups?
