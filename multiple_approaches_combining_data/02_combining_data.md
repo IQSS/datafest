@@ -403,15 +403,15 @@ id | site | dated | taken | person | quant | reading |
 837 | MSK-4 | 1932-01-14 | 837 | roe | sal | 22.5 | 
 844 | DR-1 | 1932-03-22 | 844 | roe | rad | 11.25 | 
 
-This small query is only the start of what you can do with the JOIN command: Ways to extend this include:
+This small query is only the start of what you can do with the JOIN command. Ways to extend this include:
 - use `AND` with additional `ON` expressions and another `JOIN` phrase to merge in a 3rd table. For example:
-``sql
+```sql
 SELECT Site.lat, Site.long, Visited.dated, Survey.quant, Survey.reading
 FROM   Site JOIN Visited JOIN Survey
 ON     Site.name=Visited.site
 AND    Visited.id=Survey.taken
 AND    Visited.dated IS NOT NULL;
-``
+```
 - suffix this query with `ORDER BY`, `GROUP BY`, or other SQL expressions. 
 
 ### A Note on Unique Values and Identifiers
@@ -433,12 +433,16 @@ SELECT rowid, * FROM Person;
 |5    |danforth|Frank    |Danforth|
 
 
+
+
 ## Exercises
 
-> 1. XXX
+> 1. Select data from the `Survey` table, sorting by `quant` but reverse sort by `reading`.
 > 
-> 2. YYY
+> 2a. Normalized salinity readings are supposed to be between 0.0 and 1.0. Write a query that selects all records from `Survey` with salinity values outside this range. Modify that query to return how many items are outside this range.
 >
-> 3. The `JOIN` query above merges data from the `Survey` and `Visited` tables. Write a similar query that joins data from the `Person` and `Survey` tables, and showing only the non-matched columns.
+> 3. How many temperature readings did Frank Pabodie record, and what was their average value?
+> 
+> 4. Our `Visited JOIN Survey` query above merges the data from these two tables. Write a similar query that joins data from the `Person` and `Survey` tables, and showing only the non-match columns.
 >
 
