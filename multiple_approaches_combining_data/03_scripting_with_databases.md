@@ -26,6 +26,13 @@ One real value in using databases is that this data is accessible from multiple 
 ??Briefly discuss ODBC & how to configure
 ??Direct access from R/Python using local shared libraries/language bindings
 
+The best way to connect to a database (remote or local) is through the native driver (connector) that comes with the database program itself. With this driver, your program in any common language can natively connect directly to the database. Each database program will require its own custom driver.
+
+![Connector  Concepts](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/connectors2.jpg "Conceptual Overview of Database Connector")
+*Image from [Uniface Info](http://unifaceinfo.com/docs/0907/Uniface_Library_HTML/ulibrary/UnifaceDatabaseConnectors_0B1A074C362F5F0369E54E0046832324.html)*
+
+A more modular, generic approach is using ODBC (Open Database Connectivity). This approach uses a database manager as a broker to hide database-specific commands, so that your program can use generic SQL-querying language. All that is needed is a specific driver to sit between the ODBC manage and the database.
+
 ![ODBC Concepts](https://github.com/IQSS/datafest/blob/master/multiple_approaches_combining_data/images/udapcategoryodbc.png "Conceptual Overview of ODBC")
 *Image from [OpenLink Software](https://uda.openlinksw.com/odbc/)*
 
@@ -181,12 +188,16 @@ with one element for each field we asked for. We finally close our cursor and ou
 **Stata**
 
 ```stata
-???
+clear
+set more off
+odbc exec("SELECT Site.lat, Site.long FROM Site;"), dsn("DF_Survey_DB")
+list if _N < 5
 ```
+
+**Brief notes:** 
 
 ## Exercises:
 > 
 > We've shown how to execute the SQL code for a one table query in pseudocode. Modify your code and query for a two table join? 
 > 
-> ??Show approach at doing join inside R, Python, Stata
 > 
