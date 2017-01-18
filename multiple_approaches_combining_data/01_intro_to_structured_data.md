@@ -1,37 +1,22 @@
 ---
 layout: default
-title: "Multiple Approaches to Combining Data"
+title: "Discussion of Structured Data & Database Systems"
 author: "Radhika Khetani, Bob Freeman"
-output:
-  html_document: 
-    toc: true
----
-
-# Multiple Approaches to Combining Data
-
-Welcome
-Goals of the Hands-on
-Assumptions
-Agenda
-For further reading...
-
-## Section 1: Intro/Review (10 min)
-
----
-title: "Intro to Structured Data/Review"
 teaching: 10
 exercises: 5
-questions:
-- "How can I get data from a database?"
-objectives:
-- "Explain the difference between a table, a record, and a field."
-- "Explain the difference between a database and a database manager."
-keypoints:
-- "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
-- "A database manager is a program that manipulates information stored in a database."
 ---
 
-### Review of structured data and advantage of database systems
+> questions:
+> - "How can I get data from a database?"
+> objectives:
+> - "Explain the difference between a table, a record, and a field."
+> - "Explain the difference between a database and a database manager."
+> keypoints:
+> - "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
+> - "A database manager is a program that manipulates information stored in a database."
+
+
+## Review of structured data and advantage of database systems
 
 A database is a construct for data storage; it can be specifically designed for a certain data type, or it can be more generic. We don't see these as often, but library indices and telephone directories are some examples of databases we can hold. Computer-based databases are more of the norm now, and are also what we will be discussing today.
 
@@ -44,7 +29,7 @@ Within a [relational database]({{ site.github.url }}/reference/#relational-datab
 When we are using a spreadsheet, we put formulas into cells to calculate new values based on old ones. When we are using a database,
 we send commands (usually called [queries]({{ site.github.url }}/reference/#query)) to a [database manager]({{ site.github.url }}/reference/#database-manager): a program that manipulates the database for us. The database manager does whatever lookups and calculations the query specifies, returning the results in a tabular form that we can then use as a starting point for further queries.
 
-#### Why would we want to do this?
+## Why would we want to do this?
 
 * It keeps data separate from your analysis
 * This means there’s no risk of accidentally changing data when you analyze it
@@ -53,7 +38,7 @@ we send commands (usually called [queries]({{ site.github.url }}/reference/#quer
 * It improves quality control of data entry (type constraints and use of forms in Access, Filemaker, etc.) 
 * A lot of these database managers can be used to access stored data easily with programming languages like R or Python
 
-#### What are some of the struggles of doing so?
+## What are some of the struggles of doing so?
 
 If coming from spreadsheets or flatfiles (e.g. csv, Excel spreadsheets), there are a number of struggles that one will go through. Specifically:
 
@@ -61,12 +46,36 @@ If coming from spreadsheets or flatfiles (e.g. csv, Excel spreadsheets), there a
 * Spreadsheets are typically used for data collection & entry, formatting, analysis, and presentation. This mixed mode of use can cause problems at various points along the data lifecycle. In general, it is better to separate the various stages so that changes in one stage do not adversely affect the other
 * often we use a spreadsheet to convey additional information, metadata, on the data itself. For example, notes about data collection, units, validity of measurements, etc. These should be explicitly coded in your data, or kept as a separate metadata table for your work.
 
-#### Moving towards structured Data
+## Moving towards structured Data
 
 Key points when moving towards structured data that you wish to move into a database system:
 
-Exercise:
+- Generate and use unique values (primary keys) for data in a given table. This primary key allows you to unique identify that row of data. This can be a unique, serial number (e.g. 1, 2, etc), a static # that is the row # upon data import, another value in a field (column), or a new field that is a combination of two values or fields that now creates a new value across all the table data.
+- Follow the data normalization rules as best as possible to create modular, non-redundant data. A good, lay discussion can be found at Software Carpentry's [Data Hygiene lesson](http://swcarpentry.github.io/sql-novice-survey/08-hygiene/).
 
-Let's look at a few rows of the data that we're collecting:
+## Exercise:
 
-Turn to your neighbor, and talk about how you can break up this data into groups, and how would you represent the data within those groups?
+> Let's look at a few rows of the data that we're collecting:
+> 
+> site|dated|lat|long|personal|family|quant|reading
+> DR-1|1927-02-08|-49.85|-128.57|William|Dyer|rad|9.82
+> DR-1|1927-02-08|-49.85|-128.57|William|Dyer|sal|0.13
+> DR-1|1927-02-10|-49.85|-128.57|William|Dyer|rad|7.8
+> DR-1|1927-02-10|-49.85|-128.57|William|Dyer|sal|0.09
+> DR-1|1932-03-22|-49.85|-128.57|Valentina|Roerich|rad|11.25
+> DR-3|1930-01-07|-47.15|-126.72|Anderson|Lake|sal|0.05
+> DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|rad|8.41
+> DR-3|1930-01-07|-47.15|-126.72|Frank|Pabodie|temp|-21.5
+> DR-3|1930-01-12|-47.15|-126.72|Frank|Pabodie|rad|7.22
+> DR-3|1930-02-26|-47.15|-126.72|Anderson|Lake|sal|0.1
+> DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|rad|4.35
+> DR-3|1930-02-26|-47.15|-126.72|Frank|Pabodie|temp|-18.5
+> DR-3||-47.15|-126.72|Anderson|Lake|rad|2.19
+> DR-3||-47.15|-126.72|Anderson|Lake|sal|0.09
+> DR-3||-47.15|-126.72|Anderson|Lake|temp|-16.0
+> DR-3||-47.15|-126.72|Valentina|Roerich|sal|41.6
+> MSK-4|1932-01-14|-48.87|-123.4|Anderson|Lake|rad|1.46
+> MSK-4|1932-01-14|-48.87|-123.4|Anderson|Lake|sal|0.21
+> MSK-4|1932-01-14|-48.87|-123.4|Valentina|Roerich|sal|22.5
+> 
+> Turn to your neighbor, and talk about how you can break up this data into groups, and how would you represent the data within those groups?
