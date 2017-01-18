@@ -190,3 +190,7 @@ with one element for each field we asked for. We finally close our cursor and ou
 > 
 > ??Show approach at doing join inside R, Python, Stata
 > 
+
+***
+
+*Materials used in these lessons are derived predominantly from Software Carpentry's Databases and SQL lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0). Small portions were also derived from Data Carpentry's SQL for Ecology lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0).*
