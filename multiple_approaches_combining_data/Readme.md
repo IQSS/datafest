@@ -16,14 +16,14 @@ Modern-day research requires merging data sets from multiple sources while maint
 
 ## Goals of the Hands-on
 - talk about structured data and use of databases
-- "Explain the difference between a table, a record, and a field."
-- "Explain the difference between a database and a database manager."
-- "What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
-- "How can I select subsets of data, calculate new values on the fly?"
-- "How can I combine data from multiple tables?"
-- "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
+- Explain the difference between a table, a record, and a field.
+- Explain the difference between a database and a database manager.
+- What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
+- How can I select subsets of data, calculate new values on the fly?
+- How can I combine data from multiple tables?
+- How can I access databases from scripts and programs written in Python, R, Stata, or other languages?
 objectives:
-- "Write short programs that execute SQL queries."
+- Write short programs that execute SQL queries.
 
 
 ## Pre-lesson Preparation
