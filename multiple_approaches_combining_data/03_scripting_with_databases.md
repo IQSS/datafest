@@ -132,20 +132,13 @@ dbDisconnect(connection)
 library('RSQLite')
 library('dplyr')
 
-# open the database connection
-connection <- dbConnect(SQLite(), "survey.db")
+my_db <- src_sqlite("survey.db")
 
-***
 # execute and fetch the results
-results <- dbGetQuery(connection, "SELECT Site.lat, Site.long FROM Site;")
-***
+results <- tbl(my_db, sql("SELECT Site.lat, Site.long FROM Site"))
 
 # print 'em out
 print(results)
-
-# close the connection
-dbDisconnect(connection)
-
 ```
 
 **Python**
