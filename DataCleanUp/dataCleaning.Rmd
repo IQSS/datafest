@@ -288,8 +288,6 @@ bind_rows(select(boysNames[[1]], Name, Count),
 Exercise: Cleanup all the data
 =========================================
 
---------
-
 In the previous examples we learned how to drop empty rows with `filter`, select
 only relevant columns with `select`, and re-arrange our data with `select` and
 `bind_rows`. In each case we applied the changes only to the first element of
@@ -299,11 +297,27 @@ Your task now is to use the `map` function to apply each
 of these transformations to all the elements in `boysNames`.
 
 --------
+--------
 
-In the previous exercise we cleaned up the "top 100" boys names data. The Excel files
-contain addiontal sheets, one of which contains *all* the boys names. 
-
-Repeat the data cleaning process we used for the "top 100" data using the sheets 
-containing all boys names. 
+Exercise prototype
+------------------
+There are different ways you can go about it. Here is one:
 
 
+```{r}
+
+## write a function that does all the cleanup
+cleanupNamesData <- function(x) {
+    filtered <- filter(x, !is.na(Name)) # drop rows with no Name value
+    selected <- select(filtered, Name, Count, Name.1, Count.1) # select just Name and Count columns
+    bind_rows(select(selected, Name,  Count), # re-arrange into two columns
+              select(selected, Name = Name.1, Count = Count.1))
+}
+
+## test it out on the second data.frame in the list
+glimpse(boysNames[[2]]) # before cleanup
+glimpse(cleanupNamesData(boysNames[[2]])) # after cleanup
+
+## apply the cleanup function to all the data.frames in the list
+boysNames <- map(boysNames, cleanupNamesData)
+```
