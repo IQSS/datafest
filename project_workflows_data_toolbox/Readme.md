@@ -17,12 +17,17 @@ The two parts to this lecture are the good seeds you will sow for the years of r
 
 **Speaker Notes and References**
 
+*Daina Bouquin* <br>
+- [Slides](http://slides.com/dbouquin/datafest_astro17/) 
+- local, archive copy kept [here](Data Management_ Astronomy by Daina Bouquin.html)
 
-*Daina Bouquin* - [Slides](http://slides.com/dbouquin/datafest_astro17/)
+*Bob Freeman* <br>
+- [Slides](Planning, Frameworks, & Data Toolbox - Bob Freeman.pdf) on Session overview, data management plans, project organization, and speaker introduction.
 
-*Bob Freeman*
+*Derek Miller* <br>
+- [Slides](http://www.people.fas.harvard.edu/~dmiller/datafest/) 
+- local, archive copy kept [here](Humanists Critique Data.html)
 
-*Derek Miller*
-
-*Caroline Shamu*
+*Caroline Shamu* <br>
+ - [Slides](Shamu_Datafest_1-17-17.pdf) on Data Management Resources for Biomedical Research
 
