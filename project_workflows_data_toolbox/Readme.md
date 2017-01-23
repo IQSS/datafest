@@ -29,5 +29,5 @@ The two parts to this lecture are the good seeds you will sow for the years of r
 - local, archive copy kept [here](Humanists Critique Data.html)
 
 *Caroline Shamu* <br>
- - [Slides](Shamu_Datafest_1-17-17.pdf) on Data Management Resources for Biomedical Research
-
+- [Slides](Shamu_Datafest_1-17-17.pdf) on Data Management Resources for Biomedical Research
+- Harvard Biomedical Data Management: Best practices & support services for research data lifecycles [website](http://datamanagement.hms.harvard.edu)
