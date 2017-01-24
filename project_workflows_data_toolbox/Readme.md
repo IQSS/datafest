@@ -29,11 +29,11 @@ The two parts to this lecture are the good seeds you will sow for the years of r
 - local, archive copy kept [here](Humanists Critique Data.html)
 
 *References*<br>
--Taylor Arnold and Lauren Tilton, *Humanities Data in R: Exploring Networks, Geospatial Data, Images, and Text* (New York, NY: Springer, 2015). Textbook introducing a range of techniques applicable for introductory research in a variety of disciplines.
+- Taylor Arnold and Lauren Tilton, *Humanities Data in R: Exploring Networks, Geospatial Data, Images, and Text* (New York, NY: Springer, 2015). Textbook introducing a range of techniques applicable for introductory research in a variety of disciplines.
 
--Geoffrey C. Bowker and Susan Leigh Star, *Sorting Things Out: Classification and Its Consequences* (Cambridge, MA: MIT Press, 1999). Excellent text about the politics, history, and theory of classification.
+- Geoffrey C. Bowker and Susan Leigh Star, *Sorting Things Out: Classification and Its Consequences* (Cambridge, MA: MIT Press, 1999). Excellent text about the politics, history, and theory of classification.
 
--Johanna Drucker, *SpecLab: Digital Aesthetics and Projects in Speculative Computing* (Chicago: University of Chicago Press, 2009). Critical account of the author's time at an early DH lab at UVA. Includes discussion of interface.
+- Johanna Drucker, *SpecLab: Digital Aesthetics and Projects in Speculative Computing* (Chicago: University of Chicago Press, 2009). Critical account of the author's time at an early DH lab at UVA. Includes discussion of interface.
 
 -Domenico Fiormonte and Teresa Numerico and Francesca Tomasi, *The Digital Humanist: A Critical Inquiry*, trans. Desmond Schmidt and Christopher Ferguson (Brooklyn, NY: Punctum Books, 2015). Excellent schematic overview of digital humanities subjects.
 
