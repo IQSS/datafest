@@ -39,8 +39,8 @@ The lesson instructions we will follow are posted below. Please note that these 
 >
 
 1. [Introduction to Structured Data](01_intro_to_structured_data.md)<br>
-* [Review of (basic) SQL and SQLite](02_combining_data.md)<br>
-* [Scripting with Databases](03_scripting_with_databases.md)<br>
+2. [Review of (basic) SQL and SQLite](02_combining_data.md)<br>
+3. [Scripting with Databases](03_scripting_with_databases.md)<br>
 
 ## For further reading...
 
