@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Versioning with Git/Github"
+title: "Introduction to Versioning"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 output: html_document
 ---
