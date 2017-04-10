@@ -23,9 +23,9 @@ Since we are going to be using [GitHub](https://github.com/) we will need to reg
 
 Most of you should have already installed [GitKraken](https://www.gitkraken.com/download). Open it, and sign in using the credentials you used to sign up for a github account. 
 
-<img src="img/setup.png" width="500" align="center">
+<img src="img/setup.png" width="700" align="center">
 
-<img src="img/setup2.png" width="350" align="center">
+<img src="img/setup2.png" width="700" align="center">
 
 Once you sign in, GitKraken will take you to it's Welcome screen. At this point, you are ready to start working with a repository.
 
