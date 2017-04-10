@@ -47,22 +47,92 @@ Tracking items in a folder (repository) using Git:
 
 Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it in a location of your choosing.
 
-### Adding a Folder/Repository
+### Creating a Folder/Repository 
 
-There are a number of different ways to add files/folders for GitHub Desktop to track: 
+There are a number of different ways to add files/folders for GitKraken to track. For this lesson, click on the folder icon at the top left. This will allow you to Open an existing repository, Clone a repository that you or someone else has created, or Init (create) a new repository. We will do the latter. 
 
-* We can drag the folder containing the file onto GitHub Desktop. When you do this you will be asked whether you want to create a repository for this folder 
-* Alternatively, we can click on the ‘plus’ icon to open a window to choose folders we want to add. This is what we will be doing:
+Click on Init, and then GitHub.com, so that we can create a repository that we will keep locally, as well at a remote location as a backup or perhaps for sharing:
 
-<img src="img/add.png" width="700" align="center">
+<img src="img/init.png" width="700" align="center">
+
+Fill in the fields as appropriate:
+* your account
+* the name of the repository. Keep this to letters, numbers, and underscores.
+* a good description
+* set the access for the remote location, whether this should be viewable by anyone, or kept private to yourself and people that you specifically add as collaborators
+* leave the Clone after init option checked
+* For the New repository path, select the location on your local computer or shared drive / mounted volume where the repo folder should be placed. Please include the name of the folder to house the repo and its files, or create the new folder inside this Browse window.
+* Finally, click on the Create Repository and Clone button.
+
+Voila! You now have your first Git repo!
+
+<img src="img/init.png" width="700" align="center">
 
 Once we have added our folder we will be able to see it in a list of repositories on the left column.
 
-<img src="img/repo1.png" width="700" align="center">
+<img src="img/first_repo.png" width="700" align="center">
 
-Choose the repository we just added to see the files contained in that repository. From this menu we can choose which files we want to version control. On the right we will see the current document.
+We'll point out a few feature here:
+* a list of known/open repos at the top left
+* a button/function bar in the top middle
+* a listing of the branches for your local and linked remote repositories
+* and then the commit (snapshot) message and files that are part of this commit
 
-The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitHub Desktop will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder. 
+Since we'll now want to add more files to this repository, right-mouse click on the README.md file and select Show in Finder (Show in Explorer) from the pop-up menu:
+
+<img src="img/show_in_finder.png" width="700" align="center">
+
+The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitHub Desktop will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
+
+<img src="img/finder_view.png" width="700" align="center">
+
+### Staging and Committing Changes
+
+
+
+We need to copy in our sample files that you've downloaded. Open up that folder, and copy/move those files here. Your window should look something like this:
+
+<img src="img/finder_view_added_files.png" width="700" align="center">
+
+When we switch back to GitKraken, you'll notice the timeline window at the top has changed. GitKraken has noticed files have changes, and it's indicated this new set of changes is considered Work in Progress:
+
+<img src="img/first_wip.png" width="700" align="center">
+
+Click on the WIP line at the top to show the files it is watching, show in the bottom pane. You can resize this panel to show all the files if you desire:
+
+<img src="img/file_list_resize.png" width="700" align="center">
+
+A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
+
+We next need to tell Git that we wish to prep these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include these files for a commit, we Stage the changes by clicking on the 'Stage all changes' button:
+
+<img src="img/initial_commit_stage.png" width="700" align="center">
+
+You do have the option of adding only certain files to the Staging area if you wish to make separate commits. Simply click on the work Stage that appears near the files you wish to include.
+
+To commit changes you must give a summary of the changes, include an optional message, and click on the Commit button:
+
+<img src="img/local_change.png" width="700" align="center">
+
+After the commit, the timeline changes to reflect the current state & history of our repository. Clicking on the top line, our recent commit, shows in the bottom pane the changes that were include, which is the addition (green plus square) of these files:
+
+<img src="img/local_change_after_commit.png" width="700" align="center">
+
+A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced by looking at all of the commits. 
+
+* Think carefully about when to make commits, since the advantages of version control rely on taking snapshots of your changes regularly.
+* Make the commits "atomic", i.e. **commit** a few related changes together; this will help if you have to revert back to a specific version/snapshot. 
+* Use meaningful **commit summaries** and **messages**, so that your messages/summaries are independently understandable by your collaborators and your future self.
+
+> **Note about Branches**:
+>
+> When you commit you will see ‘commit to master’. This refers to the **master** branch. 
+> 
+> Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control today, but we encourage you to explore it further.
+
+****
+
+### Changing File Contents and Committing Changes
 
 Let's open the `mars.txt` document using our favorite text editor (see note below about text editors) and add a couple of lines to it.
 
@@ -83,25 +153,6 @@ Save the changes to your file and go back to GitHub Desktop. You will see that t
 
 In the context of Github Desktop the **add** command to place changes in the *staging area* is transparent to us. You can "place/add" several changes in the staging area, and only **commit** when you are ready. 
 
-### Committing Changes
-
-A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
-
-To commit changes you must give a summary of the changes and include an optional message. 
-
-<img src="img/local_change.png" width="700" align="center">
-
-A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced by looking at all of the commits. 
-
-* Think carefully about when to make commits, since the advantages of version control rely on taking snapshots of your changes regularly.
-* Make the commits "atomic", i.e. **commit** a few related changes together; this will help if you have to revert back to a specific version/snapshot. 
-* Use meaningful **commit summaries** and **messages**, so that your messages/summaries are independently understandable by your collaborators and your future self.
-
-> **Note about Branches**:
->
-> When you commit you will see ‘commit to master’. This refers to the **master** branch. 
-> 
-> Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control today, but we encourage you to explore it further.
 
 ***
 
