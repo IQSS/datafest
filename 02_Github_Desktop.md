@@ -19,17 +19,16 @@ GitHub Desktop offers a Graphical User Interface (GUI) to use Git, and will allo
 
 Since we are going to be using [GitHub](https://github.com/) we will need to register for an account at GitHub if we don’t already have one. For [students](https://education.github.com/pack) and [researchers](https://github.com/blog/1840-improving-github-for-science) GitHub offers free private repositories. These are not necessary but might be appealing if you want to keep some work private.
 
-### Install GitHub Desktop
+### Install GitKraken
 
-Most of you should have already installed [Github Desktop](https://desktop.github.com/). Open it, and sign in using the credentials you used to sign up for a github account. 
+Most of you should have already installed [GitKraken](https://www.gitkraken.com/download). Open it, and sign in using the credentials you used to sign up for a github account. 
 
-<img src="img/setup.png" width="200" align="center">
+<img src="img/setup.png" width="500" align="center">
 
 <img src="img/setup2.png" width="350" align="center">
 
-Once you sign in, you'll see that there is already a tutorial repository available to you.
+Once you sign in, GitKraken will take you to it's Welcome screen. At this point, you are ready to start working with a repository.
 
-<img src="img/new.png" width="700" align="center">
 
 ## Version Controlling a directory of files
 
