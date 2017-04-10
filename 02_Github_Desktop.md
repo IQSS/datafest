@@ -143,15 +143,29 @@ It is cold and dry, but everything is my favorite color.
 The two moons may make things interesting
 ```
 
-Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear; this lets us know that GitHub is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes.
+Save the changes to your file and go back to GitKraken. Again, the program creates a new WIP timeline entry as it has detected changes. Click on this line to show that GitKraken has noticed that our file has changed (file icon with an elipsis inside):
+
+<img src="img/tracking_mars.png" width="700" align="center">
+
+When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes, just as we did before.
 
 <img src="img/git-staging-area.png" width="700" align="center">
+
+
 
 > **Text Editors:**
 >
 > When creating a plain text document, you will want to use a text editor like TextWrangler (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from.
 
 In the context of Github Desktop the **add** command to place changes in the *staging area* is transparent to us. You can "place/add" several changes in the staging area, and only **commit** when you are ready. 
+
+As we did with our previous initial commit, include a change message, and click on the Commit button:
+
+<img src="img/commit_mars_first_change.png" width="700" align="center">
+
+Again, you'll see our timeline has changed to include this commit:
+
+<img src="img/after_commit_mars_first_change.png" width="700" align="center">
 
 
 ***
