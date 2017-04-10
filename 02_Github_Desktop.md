@@ -47,6 +47,7 @@ Tracking items in a folder (repository) using Git:
 
 Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it in a location of your choosing.
 
+
 ### Creating a Folder/Repository 
 
 There are a number of different ways to add files/folders for GitKraken to track. For this lesson, click on the folder icon at the top left. This will allow you to Open an existing repository, Clone a repository that you or someone else has created, or Init (create) a new repository. We will do the latter. 
@@ -86,9 +87,8 @@ The folder we created the repsitory with now contains an extra folder with the n
 
 <img src="img/finder_view.png" width="700" align="center">
 
+
 ### Staging and Committing Changes
-
-
 
 We need to copy in our sample files that you've downloaded. Open up that folder, and copy/move those files here. Your window should look something like this:
 
@@ -130,7 +130,6 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 > 
 > Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control today, but we encourage you to explore it further.
 
-****
 
 ### Changing File Contents and Committing Changes
 
@@ -150,7 +149,6 @@ Save the changes to your file and go back to GitKraken. Again, the program creat
 When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes, just as we did before.
 
 <img src="img/git-staging-area.png" width="700" align="center">
-
 
 
 > **Text Editors:**
@@ -179,13 +177,21 @@ Again, you'll see our timeline has changed to include this commit:
 
 ***
 
-### Publishing Your Repository
+### Pushing Your Changes to Your Remote Repository
 
 At the moment we are only recording our changes locally. We may be happy to only store our changes locally, but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer (for collaborating/sharing/backing up). 
 
-This is straightforward in GitHub Desktop and you do it by "publishing" your repository. This will **push** your repository from your computer to the GitHub website, and set up a *remote* repository on Github's servers in the process.
+This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on Github's servers in the process.
 
-<img src="img/publish.png" width="700" align="center">
+<img src="img/push.png" width="700" align="center">
+
+We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', the standard term for the remote repository in Git (note that you can call it what you'd like. And you can have more than one remote! But that is beyond the scope of this document.) If we then right-mouse click on our 'origin', we can select the pop-up menu option View origin on Github.com:
+
+<img src="img/view_origin_on_github.png" width="700" align="center">
+
+Indeed, GitKraken sends us to our web browser and our repository on GitHub.com is displayed:
+
+<img src="img/repo_on_github.png" width="700" align="center">
 
 ***
 
