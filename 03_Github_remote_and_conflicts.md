@@ -31,9 +31,7 @@ It is also possible to make a change to your repository on the web interface. Cl
 
 Click on the 'Edit' option or icon. You will now be able to edit the file and add some new text.
 
-<img src="img/editongithubweb.png" width="250" align="center">
-
-<img src="img/online_edits.png" width="700" align="center">
+<img src="img/editongithubweb.png" width="700" align="center">
 
 Once you have made some changes to your file, you will again see the option to commit changes near the bottom of the text entry box.
 
