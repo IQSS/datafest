@@ -55,7 +55,7 @@ Once done, you'll see a momentary "Success!" notice:
 
 <img src="img/pull_success.png" width="700" align="center">
 
-Once very useful feature of this and other Git clients is looking at how a file has changed over time. In GK, right-mouse click on the file and select "File History" to see exactly that: 
+One very useful feature of this and other Git clients is looking at how a file has changed over time. In GK, right-mouse click on the file and select "File History" to see exactly that: 
 
 <img src="img/get_to_file_history.png" width="700" align="center">
 
