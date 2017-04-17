@@ -5,8 +5,6 @@ author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 output: html_document
 ---
 
->> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop) and from [Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). Licensing information available at the bottom of this page.
-
 ## Getting Started with Git using a GUI (Graphical User Interface)
 
 There are several options available that enable the use of Git and Github without the command line interface (UNIX/Linux). Two examples for this are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com); these offer a Graphical User Interface (GUI) to easily start using Version Control. Though there are advantages to using the command line version of Git in the long run, a GUI is a great place to start. 
