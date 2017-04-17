@@ -39,13 +39,46 @@ Once you have made some changes to your file, you will again see the option to c
 
 <img src="img/online_commit.png" width="700" align="center">
 
-Once you have committed these changes they will be stored on the remote repository. To get them back onto our own (local) computer, we need to Pull these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen.
+Once you have committed these changes they will be stored on the remote repository. GitKraken has already noticed that our remote repo has changed:
 
 <img src="img/synced_change1.png" width="700" align="center">
+
+Click on the timeline entry to view the file changes:
+
 <img src="img/synced_change2.png" width="700" align="center">
+
+And click on the file Mars.txt to see the changes within:
+
 <img src="img/synced_change3.png" width="700" align="center">
 
-You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>. <span style="color:red">Red</span> indicates where things have been removed, while <span style="color:green">green</span> indicates additions. This can be useful for viewing the edits you have made before making a commit. On the left you will see a history of the changes you have made; at the moment this is very brief but as you work on a project the history will become much longer. 
+You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>. <span style="color:red">Red</span> indicates where things have been removed, while <span style="color:green">green</span> indicates additions. 
+
+To get them back onto our own (local) computer, we need to Pull these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen:
+
+<img src="img/pull.png" width="700" align="center">
+
+Once done, you'll see a momentary "Success!" notice:
+
+<img src="img/pull_success.png" width="700" align="center">
+
+Once very useful feature of this and other Git clients is looking at how a file has changed over time. In GK, right-mouse click on the file and select "File History" to see exactly that: 
+
+<img src="img/get_to_file_history.png" width="700" align="center">
+
+Our Mars.txt file is display with comments on the left and differences between the (left) selected and previous versions:
+
+<img src="img/mars_file_history.png" width="700" align="center">
+
+Clicking on the previous comment shows the next level of changes:
+
+<img src="img/file_history_previous_comments.png" width="700" align="center">
+
+And finally, clicking on the File View button shows all the changes together, with the log (legend) of changes being indicated with color coding:
+
+<img src="img/history_combined_file_view.png" width="700" align="center">
+
+ 
+(Edit out: This can be useful for viewing the edits you have made before making a commit. On the left you will see a history of the changes you have made; at the moment this is very brief but as you work on a project the history will become much longer. )
 
 ## Managing Conflicts
 
