@@ -2,11 +2,7 @@
 layout: default
 title: "Git(hub) Remote and Conflicts"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
-output: html_document
 ---
-
-
->> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop) and from [Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). Licensing information available at the bottom of this page.
 
 ## Repositories online (remote)
 
@@ -182,10 +178,12 @@ If you are careful about always syncing changes you will be able to avoid having
 
 ## Further Resources
 
-GitHub Desktop offers an easy way of getting started with GitHub and version control. Depending on your use case GitHub desktop may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line may offer some advantages. Version control systems like Git have a lot of features available to use. Some of these will only be applicable in very specific contexts, others will be more commonly useful. Alongside the lesson suggested above the resources below will allow you to gain a deeper understanding of version control.
+GitKraken offers an easy way of getting started with GitHub and version control. Depending on your use case it may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line is recommended. 
 
-* The [GitHub Desktop](https://desktop.github.com/) and the GitHub Desktop [documentation](https://help.github.com/desktop/) outlines more features included in GitHub Desktop.
-* GitHub provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
+This lesson introduced you to the most rudimentary (yet very useful) concepts and terminolofy associated with using Version control (Git). The resources below will allow you get started with getting a deeper/better understanding of version control.
+
+* The [GitKraken documentation](https://support.gitkraken.com/getting-started/guide) is a great way to start exploring it's functionality, and learning more about what Git can do.
+* GitHub also provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
 * GitHub [Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
 
 ***
