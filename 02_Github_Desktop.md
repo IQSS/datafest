@@ -5,9 +5,11 @@ author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 output: html_document
 ---
 
+In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & Github).
+
 ## Getting Started with Git using a GUI (Graphical User Interface)
 
-There are several options available that enable the use of Git and Github without the command line interface (UNIX/Linux). Two examples for this are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com); these offer a Graphical User Interface (GUI) to easily start using Version Control. Though there are advantages to using the command line version of Git in the long run, a GUI is a great place to start. 
+Usually when programmers use Git for version control of their code, they use the command-line user interface, i.e. UNIX/Linux, to interact with Git. However, there are several tools that enable the use of Git easily for novices using a Graphical User Interface (GUI). Two examples of GUIs are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com). Although there are advantages to using the command line version of Git in the long run, a GUI is a great place to start. 
 
 > **A Note on Terminology**
 > 
@@ -26,7 +28,6 @@ Most of you should have already installed [GitKraken](https://www.gitkraken.com/
 <img src="img/setup2.png" width="700" align="center">
 
 Once you sign in, GitKraken will take you to it's Welcome screen. At this point, you are ready to start working with a repository.
-
 
 ## Version Controlling a directory of files
 
