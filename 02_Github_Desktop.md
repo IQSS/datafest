@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Getting Started with Github Desktop"
+title: "Getting Started with GitHub Desktop"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 output: html_document
 ---
 
-In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & Github).
+In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & GitHub).
 
 ## Getting Started with Git using a GUI (Graphical User Interface)
 
@@ -169,11 +169,11 @@ Again, you'll see our timeline has changed to include this commit:
 
 At the moment we are only recording our changes locally, but we may want to have these changes be available remotely as well (for collaborating/sharing/backing up). The idea is you keep your local and remote repositories "in sync". 
 
-This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on Github's servers in the process.
+This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on GitHub's servers in the process.
 
 <img src="img/push.png" width="700" align="center">
 
-We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', which is the default term for the remote repository in Git (note that you can call it whatever you'd like, and you can have more than one remote! But that is beyond the scope of this lesson.) If we then right-mouse click on our 'origin', we can select the pop-up menu option "View origin on Github.com":
+We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', which is the default term for the remote repository in Git (note that you can call it whatever you'd like, and you can have more than one remote! But that is beyond the scope of this lesson.) If we then right-mouse click on our 'origin', we can select the pop-up menu option "View origin on GitHub.com":
 
 <img src="img/view_origin_on_github.png" width="700" align="center">
 
@@ -181,7 +181,7 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 
 <img src="img/repo_on_github.png" width="700" align="center">
 
-> You can also have a fully local repository, without a remote "synced" one on Github. 
+> You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
 
 ***
@@ -193,7 +193,7 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 3. Create a new plain text file called "data-file.txt", add a line or 2 of content to it and save it to the "learning_github" folder
 4. Go back to GitKraken, and commit the change with an approriate message
 5. Push the changes to the remote repo on github.com
-6. [Optional 1] Make changes to data-file.txt on Github.com
+6. [Optional 1] Make changes to data-file.txt on GitHub.com
 7. [Optional 2] Sync or "Pull" the changes to the local repository
 
 ***
