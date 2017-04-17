@@ -193,8 +193,8 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 
 <img src="img/repo_on_github.png" width="700" align="center">
 
-<font align="left">[&tt;: Introduction to Version Control](01_Intro_to_versioning.md)</font>
-<font align="right">[&gt;: Intermediate topics: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)</font>
+<font align="left">[Prev: Introduction to Version Control](01_Intro_to_versioning.md)</font>
+<font align="right">[Next: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)</font>
 
 ***
 
