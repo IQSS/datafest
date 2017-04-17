@@ -35,6 +35,12 @@ If there aren't conflicts, you can "merge" two sets of changes onto the same bas
 
 <img src="img/merged_example.png" width="400" align="center">
 
+### Version Control Systems and Hosts
+
+There are a lot of [different version control systems available](https://en.wikipedia.org/wiki/List_of_version_control_software); however, in this class we will be focusing on [Git](git-scm.com). These systems enable you to track changes locally or remotely (easy for collaborations), and there are hosts available for remote management of your "[repositories](https://en.wikipedia.org/wiki/Repository_(version_control))".
+
+GitHub is currently the most popular host of open source projects by [number of projects and number of users](https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities#Popularity). But other hosts exist, including [SourceForge](https://sourceforge.net/), [BitBucket](https://bitbucket.org/), and [Gitlab](https://about.gitlab.com/), to name a few.
+
 ## Why use Version Control?
 
 The 2 main reasons to use version control are to:
@@ -60,23 +66,9 @@ Benefits of collaborating with Version Control include:
 
 Dropbox, Google Drive and other services offer some form of version control in their systems. There are times when this may be sufficient for your needs. However there are a number of advantages to using a version control system like Git:
 
-* **Language support**: Git supports both text and programming languages. As research moves to include more digital techniques and tools it becomes increasingly important to have a way of managing and sharing both the ‘traditional’ outputs (journal articles, books, etc.) but also these newer outputs (code, datasets etc.)
-* **More control**: a proper version control systems gives you a much greater deal of control over how you manage changes in a document, including the ability to comment on every change making it easier to revert. This is especially true when sets of changes across documents need to be coordinated as one unit.
-* **Useful history**: using version control systems like Git will allow you to produce a history of your document in which different stages of the documents can be navigated easily both by yourself and by others.
-
-## What are Git and GitHub?
-
-Though often used synonymously, Git and GitHub are two different things:
-
-* Git is a particular implementation of version control. However, it is used to refer both to a particular approach taken to version control and the software underlying it.
-
-* GitHub is a company which hosts Git repositories (more on this below) and provides software for using Git, e.g. ‘GitHub Desktop’. GitHub is currently the most popular host of open source projects by [number of projects and number of users](https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities#Popularity). But other hosts exist, including [SourceForge](https://sourceforge.net/), [BitBucket](https://bitbucket.org/), and [Gitlab](https://about.gitlab.com/), to name a few.
-
-
-
-Becoming familiar with GitHub will be useful not only for version controlling your own documents but will also make it easier to contribute and draw upon other projects which use GitHub. 
-
-In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by uploading and version controlling a plain text document using Github. This lesson will not cover everything but will provide a starting point to using Version Control (Git/Github or [other](https://en.wikipedia.org/wiki/Comparison_of_version_control_software)).
+* Supports both text and programming languages, and gives the user much more control over how code is represented and disseminated
+* Allows comments on every modification making it easier to revert. 
+* Allows you and others to navigate the history of a document readily.
 
 ***
 
