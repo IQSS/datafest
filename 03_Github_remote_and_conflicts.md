@@ -77,7 +77,8 @@ And finally, clicking on the File View button shows all the changes together, wi
 
 <img src="img/history_combined_file_view.png" width="700" align="center">
 
- 
+Click on the X at the upper right to close this window.
+
 (Edit out: This can be useful for viewing the edits you have made before making a commit. On the left you will see a history of the changes you have made; at the moment this is very brief but as you work on a project the history will become much longer. )
 
 ## Managing Conflicts
@@ -102,11 +103,19 @@ Without syncing, make a change to the same document using the text editor locall
 
 <img src="img/local_conflict.png" width="700" align="center">
 
-Finally, let's Commit our local changes and Sync the repos. As expected, we get a message warning us about "Sync Conflicts".
+Finally, let's Commit our local changes:
 
-<img src="img/sync_conflict.png" width="700" align="center">
+<img src="img/local_conflict_commit.png" width="700" align="center">
 
-This is not a big problem: What Git is aking you to do is manage these conflicts. GitHub Desktop offers you the option of opening the file with the sync conflicts.
+and Sync the repos by doing a Push. GitKraken warns us that we are behind the remote, so we must do a Pull:
+ 
+<img src="img/local_pull_warning.png" width="700" align="center">
+ 
+Once you do the Pull, as expected, we get a message warning us about "Merge Conflicts":
+
+<img src="img/merge_confict_warning.png" width="700" align="center">
+
+This is not a big problem: What Git is aking you to do is manage these conflicts. GitKraken offers you the option of opening the file with the sync conflicts.
 
 Open the file with an external text editor (the document will open with whichever text editor/application we have chosen as the default for opening Markdown files). 
 
@@ -122,9 +131,31 @@ There are a number of approaches to dealing with a conflict:
 
 * You could choose to go with either of the changes by deleting the version you no longer want and removing the conflict markers, OR
 
-* You could change the section entirely and not choose either of the options.
+* You could change the section entirely and not choose either of the options, OR
 
-Once you have *resolved* the conflict, save the file and proceed to **commit** & **sync** your changes as usual. When you go to Commit your changes you see that GitHub Desktop specifies that the commit is to merge a conflict. This is useful historical information if you later wish to review how you managed any conflicts.
+* You could keep both of the versions
+
+Whichever option you choose, you must **remove** the conflict markers in order to proceed. Once you have *resolved* the conflict, save the file and indicate to GitKraken that you have resolved the problem:
+
+<img src="img/conflict_resolved.png" width="600" align="center">
+
+and then proceed to **commit** and merge the changes (resolved conflict). When you go to Commit your changes you see that GitKraken specifies that the commit is to merge a conflict. This is useful historical information if you later wish to review how you managed any conflicts:
+
+<img src="img/commit_and_merge_conflict.png" width="600" align="center">
+
+GK now shows our commit & its message in the timeline in the upper pane:
+
+<img src="img/merged_conflict_timeline.png" width="600" align="center">
+
+And clicking on the timeline entry shows the affected file:
+
+<img src="img/merged_conflict_timeline_details.png" width="600" align="center">
+
+Now, synchronize your local changes by the standard workflow of **Pull and Push**:
+
+
+
+
 
 <img src="img/commit_conflict.png" width="700" align="center">
 
