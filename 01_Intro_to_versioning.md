@@ -7,7 +7,9 @@ output: html_document
 
 #  Versioning your Data and Scripts
 
->> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop). Licensing information available at the bottom of this page.
+## Setting up for today's class
+
+For this quick hands-on session we will be using a Graphical User Interface (GUI) to work with Git. Let's start by downloading and installing [GitKraken](https://www.gitkraken.com/download).
 
 ## What is Version Control?
 
