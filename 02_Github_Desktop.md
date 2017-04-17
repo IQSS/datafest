@@ -193,6 +193,9 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 
 <img src="img/repo_on_github.png" width="700" align="center">
 
+<font align="left">[&tt;: Introduction to Version Control](01_Intro_to_versioning.md)</font>
+<font align="right">[&gt;: Intermediate topics: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)</font>
+
 ***
 
 * Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
