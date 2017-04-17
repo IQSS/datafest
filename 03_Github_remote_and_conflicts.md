@@ -151,13 +151,21 @@ And clicking on the timeline entry shows the affected file:
 
 <img src="img/merged_conflict_timeline_details.png" width="600" align="center">
 
-Now, synchronize your local changes by the standard workflow of **Pull and Push**:
+Now, synchronize your local changes by the standard workflow of **Pull and Push** and your local and remote repositories will be in sync:
 
+<img src="img/commit_conflict_pull.png" width="700" align="center">
 
+Since we merged the conflict which contained the remote changes, our local repo is already in sync, so we're told just that:
 
+<img src="img/commit_conflict_pull_message.png" width="700" align="center">
 
+Now we just need to Push to finish the synchronization:
 
-<img src="img/commit_conflict.png" width="700" align="center">
+<img src="img/commit_conflict_push.png" width="700" align="center">
+
+And the timeline shows that our repos are now at the same point in the timeline:
+
+<img src="img/commit_conflict_synched_timelines.png" width="700" align="center">
 
 This may seem like a convoluted approach to dealing with conflicts, but it is very useful as you have total control and the last word in dealing with conflicts. In contrast, if conflicts emerge on a system like Dropbox, the result is two files being created: Although this is better than potentially losing important changes, it also means you still have to look at these two documents and decide how you are going to merge them. 
 
