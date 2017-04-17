@@ -12,15 +12,18 @@ output: html_document
 
 Once you have ‘published’ your repository it will be viewable on your profile at [GitHub.com](github.com). You can choose to keep it public or make it private; and if it's private, you can choose specific GitHub users with whom you want to share it or collaborate with.
 
-For this lesson, we will stick with a public repository. To quickly view your repository online you can choose from the menubar 'Repository' > 'View on GitHub'. This will reveal your online repository in your web browser.
+For this lesson, we will stick with a public repository. To quickly view your repository online right-click on your remote's Origin in the left pane, and select 'View origin on GitHub.com'. This will reveal your online repository in your web browser.
 
-<img src="img/gotogithub.png" width="700" align="center">
 
-<img src="img/online1.png" width="700" align="center">
+<img src="img/view_origin_on_github.png" width="700" align="center">
+
+
+<img src="img/repo_on_github.png" width="700" align="center">
+
 
 Once your document is online, you can continue to make local changes to your file. But you will have to synchronize your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers), and it is important to keep these changes in sync. 
 
-On GitHub Desktop this process is simplified by using the appropriately-named "**Sync**" option, which both **pulls** in changes from the remote repository, and **pushes** any local changes to the remote repo. 
+In GitKraken and standard Git workflows, this is accomplished by regular, intentional rounds of **Pull** and **Push**, which both **pulls** in changes from the remote repository, and **pushes** any local changes to the remote repo. 
 
 ### Making Changes Remotely
 
@@ -28,7 +31,7 @@ It is also possible to make a change to your repository on the web interface. Cl
 
 Click on the 'Edit' option or icon. You will now be able to edit the file and add some new text.
 
-<img src="img/edit.png" width="250" align="center">
+<img src="img/editongithubweb.png" width="250" align="center">
 
 <img src="img/online_edits.png" width="700" align="center">
 
@@ -36,9 +39,11 @@ Once you have made some changes to your file, you will again see the option to c
 
 <img src="img/online_commit.png" width="700" align="center">
 
-Once you have committed these changes they will be stored on the remote repository. To get them back onto our own (local) computer, we need to synchronize these changes. Use the ‘Sync’ button on GitHub Desktop to sync the local repository. 
+Once you have committed these changes they will be stored on the remote repository. To get them back onto our own (local) computer, we need to Pull these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen.
 
-<img src="img/synced_change.png" width="700" align="center">
+<img src="img/synced_change1.png" width="700" align="center">
+<img src="img/synced_change2.png" width="700" align="center">
+<img src="img/synced_change3.png" width="700" align="center">
 
 You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>. <span style="color:red">Red</span> indicates where things have been removed, while <span style="color:green">green</span> indicates additions. This can be useful for viewing the edits you have made before making a commit. On the left you will see a history of the changes you have made; at the moment this is very brief but as you work on a project the history will become much longer. 
 
