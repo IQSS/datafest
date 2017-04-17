@@ -2,7 +2,6 @@
 layout: default
 title: "Git(hub) Remote and Conflicts"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
-output: html_document
 ---
 
 ## Repositories online (remote)

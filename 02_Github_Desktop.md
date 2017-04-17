@@ -2,7 +2,6 @@
 layout: default
 title: "Getting Started with GitHub Desktop"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
-output: html_document
 ---
 
 In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & GitHub).
