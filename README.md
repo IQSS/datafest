@@ -2,7 +2,6 @@
 layout: default
 title: "Versioning your Data and Scripts"
 author: "Radhika Khetani, Bob Freeman, Amir Karger"
-output: html_document
 ---
 
 # Versioning your Data and Scripts
