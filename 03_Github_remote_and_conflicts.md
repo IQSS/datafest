@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Git(hub) Remote and Conflicts"
-author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
+author: "Bob Freeman, Radhika Khetani, Amir Karger"
 ---
 
 ***
