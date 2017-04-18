@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Getting Started with GitHub Desktop"
+title: "Getting Started with Git using GitKraken"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 ---
 
