@@ -16,7 +16,7 @@ Please [Download and install GitKraken](https://gitkraken.com/download).
 ## Lessons:
 
 1. [Introduction to Version Control](01_Intro_to_versioning.md)<br>
-2. [Getting Started with Git using GitKraken](02_Github_Desktop.md)<br>
+2. [Getting Started with Git using GitKraken](02_GitKraken.md)<br>
 3. [Intermediate topics: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)<br>
 
 ***
