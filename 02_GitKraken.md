@@ -4,7 +4,9 @@ title: "Getting Started with Git using GitKraken"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 ---
 
+***
 <font align="left">[Prev: Introduction to Version Control](01_Intro_to_versioning.md)</font>
+***
 
 In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & GitHub).
 
@@ -185,7 +187,9 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
 
+***
 <font align="right">[Next: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)</font>
+***
 
 ***
 
