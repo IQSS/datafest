@@ -4,6 +4,8 @@ title: "Git(hub) Remote and Conflicts"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 ---
 
+<font align="left">[Prev: Getting Started with Git using GitKraken](02_GitKraken.md)</font>
+
 ## Repositories online (remote)
 
 Once you have ‘published’ your repository it will be viewable on your profile at [GitHub.com](github.com). You can choose to keep it public or make it private; and if it's private, you can choose specific GitHub users with whom you want to share it or collaborate with.
