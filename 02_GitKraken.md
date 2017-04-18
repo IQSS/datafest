@@ -47,7 +47,7 @@ Tracking items in a folder (repository) using Git:
 * It can be set up to ignore some items in the folder (very large datasets, or temp files)
 * Do not create repositories for folders within a repository (avoid matryoshka repos!)
 
-Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it in a location of your choosing.
+Download the folder we have generated for this session [from here](https://github.com/hbctraining/versioning_data_scripts/blob/master/data/DataFest2017.zip), and unzip it in a location of your choosing.
 
 
 ### Creating a Folder/Repository 
