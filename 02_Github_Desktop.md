@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "Getting Started with Github Desktop"
+title: "Getting Started with GitKraken"
 author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 output: html_document
 ---
 
 >> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop) and from [Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). Licensing information available at the bottom of this page.
 
-## Getting Started with Github Desktop
+## Getting Started with GitKraken
 
-GitHub Desktop offers a Graphical User Interface (GUI) to use Git, and will allow us to easily start using Version Control. Though there are advantages to using the command line version of Git in the long run, a GUI is a good place to start. 
+GitKraken offers a Graphical User Interface (GUI) to use Git, and will allow us to easily start using Version Control. We chose GitKraken over other tools as it can be used on Mac, Windows, and Linux; can be used with multiple Git hosting platforms (e.g. GitHub, GitLab, Bitbucket, etc); and the user experience is generally pretty good. Though there are advantages to using the command line version of Git in the long run, a GUI is a good place to start. 
 
 > **A Note on Terminology**
 > 
@@ -83,7 +83,7 @@ Since we'll now want to add more files to this repository, right-mouse click on 
 
 <img src="img/show_in_finder.png" width="700" align="center">
 
-The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitHub Desktop will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
+The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
 
 <img src="img/finder_view.png" width="700" align="center">
 
@@ -155,7 +155,7 @@ When you click on the filename, you will see that these new lines of text appear
 >
 > When creating a plain text document, you will want to use a text editor like TextWrangler (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from.
 
-In the context of Github Desktop the **add** command to place changes in the *staging area* is transparent to us. You can "place/add" several changes in the staging area, and only **commit** when you are ready. 
+In the context of GitKraken the **add** command to place changes in the *staging area* is transparent to us. You can "place/add" several changes in the staging area, and only **commit** when you are ready. 
 
 As we did with our previous initial commit, include a change message, and click on the Commit button:
 
@@ -171,9 +171,9 @@ Again, you'll see our timeline has changed to include this commit:
 **Exercise**
 
 1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer. 
-2. Create a repository with this folder in Github Desktop.
+2. Create a repository with this folder in GitKraken.
 3. Create a new plain text file called "data-file.txt", add a line or 2 of content to it and save it to the "learning_github" folder. 
-4. Go to Github Desktop, and commit the change with an approriate message.
+4. Go to GitKraken, and commit the change with an approriate message.
 
 ***
 
