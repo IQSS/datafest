@@ -4,9 +4,6 @@ title: "Getting Started with Git using GitKraken"
 author: "Bob Freeman, Radhika Khetani, Amir Karger"
 ---
 
-***
-<font align="left">[Prev: Introduction to Version Control](01_Intro_to_versioning.md)</font>
-***
 
 In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & GitHub).
 
@@ -198,14 +195,6 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
 
-<font align="left">[Prev: Introduction to Version Control](01_Intro_to_versioning.md)</font>
-
-***
-<font align="right">[Next: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)</font>
-***
-
-***
-
 **Homework exercises**
 
 1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer
@@ -216,7 +205,15 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 6. [Optional 1] Make changes to data-file.txt on GitHub.com
 7. [Optional 2] Sync or "Pull" the changes to the local repository
 
+
+
+
 ***
+<font align="left">[Prev: Introduction to Version Control](01_Intro_to_versioning.md)</font>
+<font align="right">[Next: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)</font>
+***
+
+
 
 * Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
 
