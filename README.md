@@ -11,7 +11,9 @@ Tuesday April 18, 2017
 Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_beforeAdvisor'... ? This hands-on workshop will introduce the concepts of using a *version control system* to manage changes and the history of your data files (text, web, scripts, etc.). 
 
 ## Pre-lesson Preparation:
-Please [Download and install GitKraken](https://gitkraken.com/download). 
+
+1. Please [Download and install GitKraken](https://gitkraken.com/download). 
+2. Create an account for yourself on [GitHub](http://github.com). Please be sure to select the free/academic account, as this option has more long-term flexibility.
 
 ## Lessons:
 
