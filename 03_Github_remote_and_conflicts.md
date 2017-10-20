@@ -1,12 +1,12 @@
 ---
 layout: default
 title: "Git(hub) Remote and Conflicts"
-author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
-output: html_document
+author: "Bob Freeman, Radhika Khetani, Amir Karger"
 ---
 
-
->> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop) and from [Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). Licensing information available at the bottom of this page.
+***
+<font align="left">[Prev: Getting Started with Git using GitKraken](02_GitKraken.md)</font>
+***
 
 ## Repositories online (remote)
 
@@ -59,7 +59,7 @@ Once done, you'll see a momentary "Success!" notice:
 
 <img src="img/pull_success.png" width="700" align="center">
 
-Once very useful feature of this and other Git clients is looking at how a file has changed over time. In GK, right-mouse click on the file and select "File History" to see exactly that: 
+One very useful feature of this and other Git clients is looking at how a file has changed over time. In GK, right-mouse click on the file and select "File History" to see exactly that: 
 
 <img src="img/get_to_file_history.png" width="700" align="center">
 
@@ -180,12 +180,14 @@ If you are careful about always syncing changes you will be able to avoid having
 
 ***
 
-## Further Resources
+## Next steps and Resources
 
-GitKraken offers an easy way of getting started with GitHub and version control. Depending on your use case GitKraken may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line may offer some advantages. Version control systems like Git have a lot of features available to use. Some of these will only be applicable in very specific contexts, others will be more commonly useful. Alongside the lesson suggested above the resources below will allow you to gain a deeper understanding of version control.
+GitKraken offers an easy way of getting started with GitHub and version control. Depending on your use case it may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line is recommended. 
 
-* The [GitKraken](https://www.gitkraken.com/) and the GitKraken [documentation](https://support.gitkraken.com/) outlines more features included in https://support.gitkraken.com/.
-* GitHub provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
+This lesson introduced you to the most rudimentary (yet very useful) concepts and terminology associated with using Version control (Git). The resources below will allow you get started with getting a deeper/better understanding of version control.
+
+* The [GitKraken guide](https://support.gitkraken.com/getting-started/guide) is a great way to start exploring it's functionality, and learning more about what Git can do.
+* GitHub also provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
 * GitHub [Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
 
 ***

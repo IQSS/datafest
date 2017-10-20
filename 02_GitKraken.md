@@ -1,23 +1,26 @@
 ---
 layout: default
-title: "Getting Started with GitKraken"
-author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
-output: html_document
+title: "Getting Started with Git using GitKraken"
+author: "Bob Freeman, Radhika Khetani, Amir Karger"
 ---
 
->> NOTE: Materials used in these lessons are derived/adapted from [Daniel van Strien's "An Introduction to Version Control Using GitHub Desktop," Programming Historian, (17 June 2016)](http://programminghistorian.org/lessons/getting-started-with-github-desktop) and from [Software Carpentry instructional material](https://swcarpentry.github.io/git-novice/). Licensing information available at the bottom of this page.
+***
+<font align="left">[Prev: Introduction to Version Control](01_Intro_to_versioning.md)</font>
+***
 
-## Getting Started with GitKraken
+In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & GitHub).
 
-GitKraken offers a Graphical User Interface (GUI) to use Git, and will allow us to easily start using Version Control. We chose GitKraken over other tools as it can be used on Mac, Windows, and Linux; can be used with multiple Git hosting platforms (e.g. GitHub, GitLab, Bitbucket, etc); and the user experience is generally pretty good. Though there are advantages to using the command line version of Git in the long run, a GUI is a good place to start. 
+## Getting Started with Git using a GUI (Graphical User Interface)
+
+Usually when programmers use Git for version control of their code, they use the command-line user interface, i.e. UNIX/Linux, to interact with Git. However, there are several tools that enable the use of Git easily for novices using a Graphical User Interface (GUI). Two examples of GUIs are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com). Although there are advantages to using the command line version of Git in the long run, a GUI is a great place to start. 
 
 > **A Note on Terminology**
 > 
-> One of the trickier aspects of using GitHub is the new terminology (`repository`,`add`, `commit`, `pull`, `push`, `remote`, `detached head`). Some of the commands/terms are fairly self-explanatory, others less so, and in this workshop you will encounter some of these. [Here is a glossary](https://help.github.com/articles/github-glossary/), however it is best to pick up terminology wile learning how to use GitHub.
+> One of the trickier aspects of using GitHub is the new terminology (`repository`, `add`, `commit`, `pull`, `push`, `remote`, `detached head`). Some of the commands/terms are fairly self-explanatory, others less so, and in this workshop you will encounter some of these. [Here is a glossary of associated terms](https://help.github.com/articles/github-glossary/), however it is best to pick up terminology wile learning how to use GitHub.
 
 ### Register for a GitHub Account
 
-Since we are going to be using [GitHub](https://github.com/) we will need to register for an account at GitHub if we don’t already have one. For [students](https://education.github.com/pack) and [researchers](https://github.com/blog/1840-improving-github-for-science) GitHub offers free private repositories. These are not necessary but might be appealing if you want to keep some work private.
+Since we are going to be using [GitHub](https://github.com/) we will need to register for an account at GitHub if we don’t already have one. For [students](https://education.github.com/pack) and [researchers](https://github.com/blog/1840-improving-github-for-science) GitHub does offer free private repositories, these are not necessary but might be appealing if you want to keep some work private to you or a specified set of users.
 
 ### Install GitKraken
 
@@ -28,7 +31,6 @@ Most of you should have already installed [GitKraken](https://www.gitkraken.com/
 <img src="img/setup2.png" width="700" align="center">
 
 Once you sign in, GitKraken will take you to it's Welcome screen. At this point, you are ready to start working with a repository.
-
 
 ## Version Controlling a directory of files
 
@@ -45,12 +47,12 @@ Tracking items in a folder (repository) using Git:
 * It can be set up to ignore some items in the folder (very large datasets, or temp files)
 * Do not create repositories for folders within a repository (avoid matryoshka repos!)
 
-Download the folder we have generated for this session [from here](https://github.com/IQSS/datafest/raw/master/versioning/data/DataFest2017.zip), and unzip it in a location of your choosing.
+Download the folder we have generated for this session [from here](https://github.com/hbctraining/versioning_data_scripts/blob/master/data/DataFest2017.zip?raw=true), and unzip it in a location of your choosing.
 
 
 ### Creating a Folder/Repository 
 
-There are a number of different ways to add files/folders for GitKraken to track. For this lesson, click on the folder icon at the top left. This will allow you to Open an existing repository, Clone a repository that you or someone else has created, or Init (create) a new repository. We will do the latter. 
+There are a number of different ways to add files/folders for GitKraken to track. For this lesson, click on the folder icon at the top left corner. This will allow you to either *Open* an existing repository, or *Clone* a repository that you or someone else has created, or *Init* (initialize/create) a new repository. Today, we will be initializing a repository.
 
 Click on Init, and then GitHub.com, so that we can create a repository that we will keep locally, as well at a remote location as a backup or perhaps for sharing:
 
@@ -73,7 +75,7 @@ Once we have added our folder we will be able to see it in a list of repositorie
 
 <img src="img/first_repo.png" width="700" align="center">
 
-We'll point out a few feature here:
+We'll point out a few features here:
 * a list of known/open repos at the top left
 * a button/function bar in the top middle
 * a listing of the branches for your local and linked remote repositories
@@ -104,7 +106,7 @@ Click on the WIP line at the top to show the files it is watching, show in the b
 
 A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
 
-We next need to tell Git that we wish to prep these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include these files for a commit, we Stage the changes by clicking on the 'Stage all changes' button:
+We next need to tell Git that we wish to prep these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include these files for a commit, we **Stage** the changes by clicking on the 'Stage all changes' button:
 
 <img src="img/initial_commit_stage.png" width="700" align="center">
 
@@ -153,9 +155,9 @@ When you click on the filename, you will see that these new lines of text appear
 
 > **Text Editors:**
 >
-> When creating a plain text document, you will want to use a text editor like TextWrangler (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from.
+> When creating a plain text document, you will want to use a text editor like TextWrangler/Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from.
 
-In the context of GitKraken the **add** command to place changes in the *staging area* is transparent to us. You can "place/add" several changes in the staging area, and only **commit** when you are ready. 
+In the context of GitKraken when you **stage** your changes, it is similar to the **add** command on the command line. You can "add" several changes in the staging area, and only **commit** when you are ready. 
 
 As we did with our previous initial commit, include a change message, and click on the Commit button:
 
@@ -179,13 +181,13 @@ Again, you'll see our timeline has changed to include this commit:
 
 ### Pushing Your Changes to Your Remote Repository
 
-At the moment we are only recording our changes locally. We may be happy to only store our changes locally, but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer (for collaborating/sharing/backing up). 
+At the moment we are only recording our changes locally, but we may want to have these changes be available remotely as well (for collaborating/sharing/backing up). The idea is you keep your local and remote repositories "in sync". 
 
-This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on Github's servers in the process.
+This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on GitHub's servers in the process.
 
 <img src="img/push.png" width="700" align="center">
 
-We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', the standard term for the remote repository in Git (note that you can call it what you'd like. And you can have more than one remote! But that is beyond the scope of this document.) If we then right-mouse click on our 'origin', we can select the pop-up menu option View origin on Github.com:
+We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', which is the default term for the remote repository in Git (note that you can call it whatever you'd like, and you can have more than one remote! But that is beyond the scope of this lesson.) If we then right-mouse click on our 'origin', we can select the pop-up menu option "View origin on GitHub.com":
 
 <img src="img/view_origin_on_github.png" width="700" align="center">
 
@@ -193,8 +195,26 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 
 <img src="img/repo_on_github.png" width="700" align="center">
 
+> You can also have a fully local repository, without a remote "synced" one on GitHub. 
+> If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
+
 <font align="left">[Prev: Introduction to Version Control](01_Intro_to_versioning.md)</font>
+
+***
 <font align="right">[Next: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)</font>
+***
+
+***
+
+**Homework exercises**
+
+1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer
+2. Create a Git repository with this folder using GitKraken
+3. Create a new plain text file called "data-file.txt", add a line or 2 of content to it and save it to the "learning_github" folder
+4. Go back to GitKraken, and commit the change with an approriate message
+5. Push the changes to the remote repo on github.com
+6. [Optional 1] Make changes to data-file.txt on GitHub.com
+7. [Optional 2] Sync or "Pull" the changes to the local repository
 
 ***
 
