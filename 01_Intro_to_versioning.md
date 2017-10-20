@@ -8,7 +8,10 @@ author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Amir Karger"
 
 ## Setting up for today's class
 
-For this quick hands-on session we will be using a Graphical User Interface (GUI) to work with Git. **Let's start by downloading and installing [GitKraken](https://www.gitkraken.com/download)**.
+For this quick hands-on session we will be using a Graphical User Interface (GUI) to work with Git. Let's start by:
+1. [Download and install GitKraken](https://gitkraken.com/download). 
+2. Create an account for yourself on [GitHub](http://github.com). Please be sure to select the free/academic account, as this option has more long-term flexibility.
+3. Download the [workshop sample files](https://github.com/hbs-rcs/versioning_data_scripts/raw/master/data/DataFest2017.zip)
 
 ## What is Version Control?
 
@@ -70,10 +73,10 @@ Dropbox, Google Drive and other services offer some form of version control in t
 * Allows you and others to navigate the history of a document readily.
 
 ***
+<font align="left">[Previous: README](README.md)</font>
 <font align="right">[Next: Getting Started with Git using GitKraken](02_GitKraken.md)</font>
 ***
 
-***
 
 * Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
 
