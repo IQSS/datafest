@@ -2,23 +2,21 @@
 layout: default
 title: "Versioning your Data and Scripts"
 author: "Radhika Khetani, Bob Freeman, Amir Karger"
-output: html_document
 ---
 
 # Versioning your Data and Scripts
-Tuesday January 17, 2017<br>
-2:15pm - 3:45pm <br>
+Tuesday April 18, 2017
 
 ## Overview:
-Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_beforeAdvisor'... ? This hands-on workshop will introduce the concepts of using a *version control system* to manage changes and the history of your data files (text, web, scripts, etc.). Attendees will participate in multiple exercises in setting up repositories, where the changes and history are stored, working through the iterative process of altering files & recording changes, and rewinding the clock to retrieve a file at any point in the creative process.
+Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_beforeAdvisor'... ? This hands-on workshop will introduce the concepts of using a *version control system* to manage changes and the history of your data files (text, web, scripts, etc.). 
 
 ## Pre-lesson Preparation:
-Please install GitKraken from https://www.gitkraken.com/. 
+Please [Download and install GitKraken](https://gitkraken.com/download). 
 
 ## Lessons:
 
 1. [Introduction to Version Control](01_Intro_to_versioning.md)<br>
-2. [Basics of Version Control with Github](02_Github_Desktop.md)<br>
+2. [Getting Started with Git using GitKraken](02_GitKraken.md)<br>
 3. [Intermediate topics: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)<br>
 
 ***
