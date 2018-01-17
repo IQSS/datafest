@@ -213,6 +213,7 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 
 ***
 Next: [Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)
+
 ***
 
 
