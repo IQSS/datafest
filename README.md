@@ -1,7 +1,9 @@
 
 # Versioning your Data and Scripts
 
-Wednesday January 17, 2018: Authors: Radhika Khetani (rkhetani), Bob Freeman (devbioinfoguy), Amir Karger (amirkarger)
+Wednesday January 17, 2018
+
+Authors: Radhika Khetani (rkhetani), Bob Freeman (devbioinfoguy), Amir Karger (amirkarger)
 
 ## Overview:
 Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_beforeAdvisor'... ? This hands-on workshop will introduce the concepts of using a *version control system* to manage changes and the history of your data files (text, web, scripts, etc.). 
