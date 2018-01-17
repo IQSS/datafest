@@ -5,7 +5,7 @@ author: "Bob Freeman, Radhika Khetani, Amir Karger"
 ---
 
 ***
-<font align="left">[Prev: Getting Started with Git using GitKraken](02_GitKraken.md)</font>
+Previous: [Getting Started with Git using GitKraken](02_GitKraken.md)
 ***
 
 ## Repositories online (remote)
