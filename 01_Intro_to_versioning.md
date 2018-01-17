@@ -73,15 +73,11 @@ Dropbox, Google Drive and other services offer some form of version control in t
 * Allows you and others to navigate the history of a document readily.
 
 ***
-<font align="left">[Previous: README](README.md)</font>
-<font align="right">[Next: Getting Started with Git using GitKraken](02_GitKraken.md)</font>
-***
+[Previous: README](README.md)
+
+[Next: Getting Started with Git using GitKraken](02_GitKraken.md)
 
 ***
-<font style="float:left;">[Previous: README](README.md)</font>
-<font style="float:right;">[Next: Getting Started with Git using GitKraken](02_GitKraken.md)</font>
-***
-
 
 * Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
 
