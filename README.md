@@ -1,11 +1,12 @@
+# Versioning your Data and Scripts
+Tuesday April 18, 2017
+
 ---
 layout: default
 title: "Versioning your Data and Scripts"
 author: "Radhika Khetani, Bob Freeman, Amir Karger"
 ---
 
-# Versioning your Data and Scripts
-Tuesday April 18, 2017
 
 ## Overview:
 Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_beforeAdvisor'... ? This hands-on workshop will introduce the concepts of using a *version control system* to manage changes and the history of your data files (text, web, scripts, etc.). 
