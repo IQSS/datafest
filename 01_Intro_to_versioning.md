@@ -45,17 +45,17 @@ GitHub is currently the most popular host of open source projects by [number of 
 
 ## Why use Version Control?
 
-The 2 main reasons to use version control are to:
+The two main reasons to use version control are to:
 
 * Manage text/data/code effectively 
 * Collaborate efficiently
-
-Version control is particularly useful for facilitating collaboration. One of the original motivations behind version control systems was to allow different people to work on large projects together, and in the case of Git, to manage the Linux kernel source code. 
 
 Though version control was originally designed for dealing with code there are many benefits to using it to with ***text files*** too (`.txt`, `.csv`, `.tsv`). Some examples of projects making use of version control systems like GitHub include: writing manuscripts, books or dissertations, and for collaboratively developing as well as distributing teaching materials (like for this class).
 
 > Note: Different Version Control systems handle different *non-text files* differently. 
 > In most cases Word documents, graphics files, data objects from R or STATA, etc., can be included but most tools have limited capabilities for these.
+
+Version control is particularly useful for facilitating collaboration. One of the original motivations behind version control systems was to allow different people to work on large projects together, and in the case of Git, to manage the Linux kernel source code. 
 
 Benefits of collaborating with Version Control include:
 
