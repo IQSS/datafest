@@ -172,7 +172,7 @@ Again, you'll see our timeline has changed to include this commit:
 
 ***
 
-**Exercise**
+**Exercise #1**
 
 1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer. 
 2. Create a repository with this folder in GitKraken.
@@ -200,16 +200,13 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
 
-**Homework exercises**
+***
 
-1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer
-2. Create a Git repository with this folder using GitKraken
-3. Create a new plain text file called "data-file.txt", add a line or 2 of content to it and save it to the "learning_github" folder
-4. Go back to GitKraken, and commit the change with an approriate message
-5. Push the changes to the remote repo on github.com
-6. [Optional 1] Make changes to data-file.txt on GitHub.com
-7. [Optional 2] Sync or "Pull" the changes to the local repository
+**Exercise #2**
 
+1. Push the changes to the "learning_github" repo (from the preivous exercise) to the remote repo on github.com
+2. Make changes to data-file.txt on GitHub.com
+3. Sync or "Pull" the changes that were made remotely to the local repository
 
 ***
 Next: [Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)
