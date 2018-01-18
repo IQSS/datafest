@@ -175,7 +175,7 @@ Again, you'll see our timeline has changed to include this commit:
 **Exercise #1**
 
 1. Create a new folder called "learning_github", and add a couple of small text files to it from your computer. 
-2. Create a repository with this folder in GitKraken.
+2. Create a repository with this existing folder in GitKraken. Make sure to create it both locally, and remotely on github.com.
 3. Create a new plain text file called "data-file.txt", add a line or 2 of content to it and save it to the "learning_github" folder. 
 4. Go to GitKraken, and commit the change with an approriate message.
 
