@@ -259,6 +259,13 @@ SELECT * FROM Visited WHERE site LIKE 'DR%';
 |752|DR-3|          |
 |844|DR-1|1932-03-22|
 
+***
+**Exercise**
+
+Normalized salinity readings are supposed to be between 0.0 and 1.0. Write a query that selects all records from Survey with salinity values outside this range.
+
+***
+
 ## Calculating New Values
 
 After carefully re-reading the expedition logs, we realize that the radiation measurements they report may need to be corrected upward by 5%. Rather than modifying the stored data, we can do this calculation on the fly as part of our query:
@@ -330,8 +337,14 @@ GROUP BY person;
 |pb    |3             |6.66                  |
 |roe   |1             |11.25                 |
 
-## Importing Data
+***
+**Exercise**
 
+How many temperature readings did Frank Pabodie record, and what was their average value?
+
+***
+
+## Importing Data
 
 We don't have time in our workshop today to show how to go through importing datafiles into a brand new database. We will give one example that we won't go through.
 
