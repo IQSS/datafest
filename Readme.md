@@ -19,14 +19,13 @@ undergraduate students, and staff at Harvard University.
 The Repository
 -----------
 
-This repository contains workshop materials used in previous editions
-of Harvard's DataFest. Materials are organized by years.
+This repository contains workshop materials used in all previous editions
+of Harvard's DataFest.
 
 More information on past DataFest events could be found at:
 
 - [DataFest 2018](https://projects.iq.harvard.edu/datafest2018)
 - [DataFest 2017](https://projects.iq.harvard.edu/datafest2017)
-
 
 
 DataFest Organizers
