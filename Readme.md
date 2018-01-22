@@ -40,7 +40,6 @@ DataFest is organized by the following units at Harvard:
 - [HMS Research Computing](https://rc.hms.harvard.edu/)
 - [HMS Data Management Working Group](http://dmwg.hms.harvard.edu/)
 - [Harvard Chan Bioinformatics Core](http://bioinformatics.sph.harvard.edu/)
-- [DARTH: Harvard Arts & Humanities Research Computing](http://darthcrimson.org/)
 - [Harvard Library](http://library.harvard.edu/)
 - [The Center for Geographical Analysis](http://www.gis.harvard.edu/)
 
