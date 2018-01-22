@@ -3,7 +3,7 @@
 ============================================================
 
 
-**AUTHOR**: Ista Zahn
+**AUTHOR**: Ista Zahn   
 **GitHub repo**: https://github.com/izahn/R_retrieving_data
 
 
