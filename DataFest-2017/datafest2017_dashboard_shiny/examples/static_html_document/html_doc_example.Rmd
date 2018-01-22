@@ -1,0 +1,90 @@
+---
+title: "Student Dashboard Experience"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+
+# Load packages 
+library(gsheet)
+library(dplyr)
+library(plotly)
+library(ggmap)
+library(leaflet)
+
+# Download data
+URL <- 'https://docs.google.com/spreadsheets/d/1QQkVYYdAPYjCQRO1Oupqze7Q8WULkfJ_cmDvJERumU4/edit#gid=317007960'
+student_data <- gsheet2tbl(URL)
+
+# Simplify variable names
+names(student_data) <- c('timestamp', 'position', 'r_experience', 
+                         'dashboard_experience', 'hometown', 
+                         'rmarkdown_experience')
+
+# Relevel factors
+student_data$position <- factor(student_data$position, levels = c(
+    "Undergraduate student", "Graduate student", "Harvard staff", "Harvard faculty"
+))
+
+student_data$r_experience <- factor(student_data$r_experience, levels = c(
+    "Basic", "Intermediate", "Advanced"
+))
+
+```
+
+# Position
+
+Responses to "What type of participant are you?":
+
+```{r}
+# Find position counts
+position <- table(student_data$position) %>% data.frame
+
+# Plot
+plot_ly(data = position, x = ~Var1, y = ~Freq) %>%
+    layout(xaxis = list(title = ''),
+           yaxis = list(title = 'Frequency'))
+```
+
+# R Experience
+
+Response to "How would you describe your experience with the statistical software language R?"
+
+```{r}
+# Find position counts
+r_exp <- table(student_data$r_experience) %>% data.frame
+
+# Plot
+plot_ly(data = r_exp, x = ~Var1, y = ~Freq) %>%
+    layout(xaxis = list(title = ''),
+           yaxis = list(title = 'Frequency'))
+```
+
+# R Markdown Experience
+
+Response to "Do you have any experience using R Markdown?"
+
+```{r}
+# Find position counts
+rm_exp <- table(student_data$rmarkdown_experience) %>% data.frame
+
+# Plot
+plot_ly(data = rm_exp, x = ~Var1, y = ~Freq) %>%
+    layout(xaxis = list(title = ''),
+           yaxis = list(title = 'Frequency'))
+```
+
+# Hometowns
+
+Hometown locations
+
+```{r}
+# Find hometown longitude and latitude -----
+hometowns <- student_data$hometown
+hometowns <- hometowns[!is.na(hometowns)]
+hometown_coords <- geocode(hometowns)
+
+leaflet() %>% addTiles() %>%
+    addMarkers(data = hometown_coords, lng = ~lon, lat = ~lat)
+````

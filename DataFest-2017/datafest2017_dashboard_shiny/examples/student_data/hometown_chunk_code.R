@@ -1,0 +1,95 @@
+# SETUP CHUNK ------------------------------------------------------------------
+# Load required packages, install if needed.
+pkgs <- c('flexdashboard', 'gsheet', 'ggmap', 'dplyr', 'leaflet', 'sp',
+          'rworldmap', 'networkD3', 'geosphere', 'plotly')
+
+pkg_missing <- pkgs[!(pkgs %in% installed.packages()[, 1])]
+if (length(pkg_missing) > 0) install.packages(pkg_missing, 
+                                              repos='http://cran.us.r-project.org')
+
+
+library(flexdashboard)
+library(gsheet)
+library(ggmap)
+library(dplyr)
+library(leaflet)
+library(sp)
+library(rworldmap)
+library(networkD3)
+library(geosphere)
+library(plotly)
+
+# Download survey data -----
+URL <- 'https://docs.google.com/spreadsheets/d/1QQkVYYdAPYjCQRO1Oupqze7Q8WULkfJ_cmDvJERumU4/edit#gid=317007960'
+student_data <- gsheet2tbl(URL)
+
+# Find hometown longitude and latitude -----
+hometowns <- student_data$`What do you consider to be your "home town"?`
+hometowns <- hometowns[!is.na(hometowns)]
+hometown_coords <- geocode(hometowns)
+hometown_coords <- subset(hometown_coords, !is.na(lon))
+
+
+
+# MAP CHUNK --------------------------------------------------------------------
+# Map student hometowns
+leaflet() %>% addTiles() %>%
+    addMarkers(data = hometown_coords, lng = ~lon, lat = ~lat)
+
+
+
+# NETWORK CHUNK ----------------------------------------------------------------
+# Maximum distance for relationship
+max_distance <- 1000000 # in meters
+
+# Find distances between each home town
+distances <- vector()
+for (i in 1:nrow(hometown_coords)) {
+    temp_indv <- hometown_coords[i, ]
+    
+    temp_distances <- distm(hometown_coords, temp_indv) %>% data.frame
+    temp_distances$id <- i
+    temp_distances$other_id <- 1:nrow(hometown_coords)
+    names(temp_distances)[1] <- 'distance'
+    distances <- rbind(distances, temp_distances)
+}
+distances <- distances[, c(2, 3, 1)]
+
+# Remove self-self edges
+distances <- subset(distances, id != other_id)
+
+# Keep only nodes that are within 1,000 km of each other
+distances <- subset(distances, distance <= max_distance)
+
+# Plot network
+simpleNetwork(distances[, 1:2], zoom = TRUE)
+
+
+
+# BAR PLOT CHUNK ---------------------------------------------------------------
+# Function to find countries that each hometown is in
+coords2country = function(points)
+{  
+    # Function from: http://stackoverflow.com/a/14342127
+    countriesSP <- getMap(resolution='low')
+    
+    #setting CRS directly to that from rworldmap
+    pointsSP = SpatialPoints(points, proj4string=CRS(proj4string(countriesSP)))  
+    
+    # use 'over' to get indices of the Polygons object containing each point 
+    indices = over(pointsSP, countriesSP)
+    
+    # return the ADMIN names of each country
+    indices$ISO3  
+}
+countries <- coords2country(hometown_coords)
+
+# Find country counts
+countries_count <- table(countries)
+countries_count <- countries_count[countries_count > 0] 
+countries_count <- data.frame(countries_count)
+
+# Plot counts
+plot_ly(data = countries_count, x = ~countries, y = ~Freq) %>%
+    layout(xaxis = list(title = ''),
+           yaxis = list(title = 'Frequency'))

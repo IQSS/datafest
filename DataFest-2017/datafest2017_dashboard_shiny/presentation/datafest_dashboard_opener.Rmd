@@ -1,0 +1,165 @@
+---
+title: "DataFest 2017 | Teaser: web documents with dashboards and Shiny"
+author: "[Christopher Gandrud](http://christophergandrud.blogspot.com/p/research.html) & [Dustin Tingley](http://scholar.harvard.edu/dtingley)"
+date: "18 January 2017"
+output:
+    ioslides_presentation:
+        css: datafest_slides.css
+        logo: img/iqss_logo_flat.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE)
+```
+
+
+# Dynamic and interactive documents/dashboards
+
+## Interactive documents/dashboards
+
+The perspectives in this session share some really important goals:
+
+Letting people **see data** 
+
+Letting people **explore data**
+
+Facilitating **decisions and insights** via data
+
+## The R Approach
+
+[R](https://www.r-project.org/) 
+
+<br>
+
+Via [RStudio](www.rstudio.com):
+
+[flexdashboard](http://rmarkdown.rstudio.com/flexdashboard/) 
+
+[shiny](https://www.rstudio.com/products/shiny/)
+
+
+
+# The Power of Packages
+
+## Packages  
+
+The Open Source R community writes packages that enable users to **do more but code less**.
+
+Almost everything today take a couple of lines of code.
+
+You no longer have to be a programmer to use R.
+
+Packages are rapidly expanding R's capabilities.
+
+## A growing community
+
+![](img/rplot03.svg)
+
+
+## Web-native visualisations
+
+<br>
+
+There are a growing number of R packages that make it easy to create interactive/web native visualisations.
+
+Many of these are based on a framework called **htmlwidgets**.
+
+## Leaflet
+
+```{r message=FALSE}
+library(leaflet); library(dplyr)
+
+leaflet() %>% addTiles() %>% fitBounds(0, 40, 10, 50)
+```
+
+## networkD3
+
+```{r}
+library(networkD3); data(MisLinks); data(MisNodes)
+
+forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source",
+             Target = "target", Value = "value", NodeID = "name",
+             Group = "group", opacity = 0.7, zoom = TRUE)
+```
+
+## dygraphs
+
+```{r}
+library(dygraphs)
+dygraph(nhtemp, main = "New Haven Temperatures") %>%
+    dyRangeSelector(dateWindow = c("1920-01-01", "1960-01-01"))
+```
+
+## DT
+
+```{r}
+library(DT)
+datatable(iris, options = list(pageLength = 5))
+```
+
+
+
+# Serving Content
+
+## Interactive Documents
+
+See Tools for Reproducible Data Science session run by Christopher
+
+<br>
+<br>
+
+[RMarkdown](rmarkdown.rstudio.com)
+
+## Dashboard Hosting Options
+
+Many options, with free! academic licenses
+
+[shinyapps.io](http://www.shinyapps.io/)
+
+[RPubs](https://rpubs.com/)
+
+[IQSS](http://www.iq.harvard.edu/) (in collaboration with [VPAL-Research](http://vpal.harvard.edu/research) ) maintains a Shiny Server for advanced use cases (Harvard Key authentication, level 3 security)
+
+#Examples
+
+##Galery
+
+[Shiny Gallery](https://shiny.rstudio.com/gallery/)
+
+##Harvard Examples
+
+[DGSView](https://hmdc.shinyapps.io/GovDGSExample/)
+
+Course Planning
+
+##Shiny as GUI for a package
+
+The [Structural Topic Model](www.structuraltopicmodel.com) is a new machine learning algorithm for analyzing text
+
+It also has a GUI front end for people who do not want to code directly in R! (best for not huge data sets)
+
+library(stm)
+
+library(stmgui)
+
+runStmGui()
+
+
+# Additional considerations
+
+
+## Additional considerations
+
+99.99% of what you will see today is **free**.
+
+Across the University much data is managed by **old spreadsheet practices**/Researchers also generating lots of data
+
+And databases/reporting/visualization tools are **separated** from data science tools
+
+R easily integrates with **modern databases** (SQL etc.)/has all the statistics and machine learning tools you'd want
+
+Our students learn R, and their employers want them to know R
+
+
+
+ 

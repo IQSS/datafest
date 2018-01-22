@@ -1,0 +1,92 @@
+---
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: flatly
+params: 
+  symbol: GOOG
+---
+
+<!--------- From RStudio --------------->
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(quantmod)
+library(DT)
+library(dygraphs)
+library(lubridate)
+library(highcharter)
+
+prices <- round(getSymbols(params$symbol, auto.assign = FALSE), 2)
+close <- Cl(last(prices))
+open <- Op(last(prices))
+recent <- last(prices, n = 90)
+```
+
+Report for `r params$symbol`
+==============================
+
+Column {data-width=650, .tabset}
+-----------------------------------------------------------------------
+
+### `r params$symbol` 3 Month Stock Price
+
+```{r}
+highchart() %>% 
+   hc_yAxis_multiples(
+    list(title = list(text = NULL), height = "75%", top = "0%"),
+    list(title = list(text = NULL), height = "15%", top = "80.5%", opposite = TRUE)
+  ) %>%
+  hc_add_series_ohlc(prices, yAxis=0, name= params$symbol) %>% 
+  hc_add_series_xts(prices[,paste0(params$symbol,".Volume")], name="Volume", type="column", yAxis=1) %>% 
+  hc_add_theme(hc_theme_economist())
+```
+
+### `r params$symbol` Data
+
+```{r}
+df <- as.data.frame(recent)
+df[,paste0(params$symbol, ".Volume")] <- df[,paste0(params$symbol, ".Volume")]/1000000 
+datatable(df, options= list(fillContainer=TRUE)) %>% 
+  formatCurrency(c(paste0(params$symbol, ".Open"), paste0(params$symbol, ".High"), paste0(params$symbol, ".Low"), paste0(params$symbol,".Close"),
+                  paste0(params$symbol, ".Adjusted")), digits=2) %>% 
+  formatRound(c(paste0(params$symbol, ".Volume")), digits=0)
+```
+
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+
+### Open
+
+```{r}
+today <- last(prices, n=1)
+valueBox(value = today[1,paste0(params$symbol, ".Open")], caption = Sys.Date(), icon = "fa-money", color = "primary")
+```
+
+### High
+
+```{r}
+today <- last(prices, n=1)
+valueBox(value = today[1,paste0(params$symbol, ".High")], caption = "Today's High", icon = "fa-arrow-up", color = "success")
+```
+
+### Low
+
+```{r}
+today <- last(prices, n=1)
+valueBox(value = today[1,paste0(params$symbol, ".Low")], caption = "Today's Low", icon = "fa-arrow-down", color = "danger")
+```
+
+
+### Volume
+
+```{r}
+today <- last(prices, n=1)
+val <- today[1,paste0(params$symbol, ".Volume")]
+valueBox(value = today[1,paste0(params$symbol, ".Volume")], caption = "Today's Volume", icon = "fa-line-chart", color = "info")
+```
+

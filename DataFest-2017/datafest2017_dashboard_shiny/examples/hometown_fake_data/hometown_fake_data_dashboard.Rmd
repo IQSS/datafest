@@ -1,0 +1,93 @@
+---
+title: "DataFest Hometowns: FAKE DATA"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+# Required packages
+library(geosphere)
+library(dplyr)
+library(leaflet)
+library(networkD3)
+library(sp)
+library(rworldmap)
+library(plotly)
+
+# Generat random long and lat
+rand_long <- runif(n = 60, min = 0, max = 100)
+rand_lat <- runif(n = 60, min = 20, max = 60)
+
+full <- cbind(rand_long, rand_lat)
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Map of Hometowns
+
+```{r}
+leaflet() %>% addTiles() %>%
+    addMarkers(lng = rand_long, lat = rand_lat)
+```
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Close (<= 1,000 km) Hometowns Network
+
+```{r}
+distances <- vector()
+for (i in 1:nrow(full)) {
+    temp_indv <- full[i, ]
+    
+    temp_distances <- distm(full, temp_indv) %>% data.frame
+    temp_distances$id <- i
+    temp_distances$other_id <- 1:nrow(full)
+    names(temp_distances)[1] <- 'distance'
+    distances <- rbind(distances, temp_distances)
+}
+distances <- distances[, c(2, 3, 1)]
+
+# Remove self-self edges
+distances <- subset(distances, id != other_id)
+
+# Keep only nodes that are within 1,000 km of each other
+distances <- subset(distances, distance <= 1000000)
+
+simpleNetwork(distances[, 1:2], zoom = TRUE)
+```
+
+### Hometown Countries
+
+```{r}
+coords2country = function(points)
+{  
+    # Function from: http://stackoverflow.com/a/14342127
+    countriesSP <- getMap(resolution='low')
+
+    #setting CRS directly to that from rworldmap
+    pointsSP = SpatialPoints(points, proj4string=CRS(proj4string(countriesSP)))  
+
+    # use 'over' to get indices of the Polygons object containing each point 
+    indices = over(pointsSP, countriesSP)
+
+    # return the ADMIN names of each country
+    indices$ISO3  
+}
+
+countries <- coords2country(full)
+
+countries_count <- table(countries)
+countries_count <- countries_count[countries_count > 0] 
+countries_count <- data.frame(countries_count)
+
+plot_ly(data = countries_count, x = ~countries, y = ~Freq) %>%
+    layout(xaxis = list(title = ''),
+           yaxis = list(title = 'Frequency'))
+```
+

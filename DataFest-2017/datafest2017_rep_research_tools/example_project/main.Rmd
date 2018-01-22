@@ -1,0 +1,65 @@
+---
+title: "Example Project"
+author: "YOUR NAME"
+date: "17/01/2017"
+output:
+  pdf_document:
+    fig_caption: true
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, error=FALSE)
+```
+
+# A header
+
+Lorem ipsum dolor sit amet, **consectetur adipiscing elit**. Sed molestie elementum massa, vitae scelerisque neque tristique vel. Maecenas quam tellus, placerat ac urna eget, imperdiet condimentum urna [@Donoho2010] :
+
+$$
+s^2 = \frac{\sum(x - \bar{x})^2}{n - 1}
+$$
+
+Two plus two equals `r 2 + 2`.
+
+```{r echo=FALSE, fig.cap='Plotted Random Numbers'}
+plot(1:10, rnorm(n = 10))
+```
+
+# A Table of Some Numbers That Are Included with R 
+
+This is a table with lots of numbers.[^mtcars-note]
+
+```{r echo=FALSE}
+knitr::kable(mtcars, caption = 'mtcars Dataset')
+```
+
+# 2012 Olymics Medals Count Table
+
+```{r message=FALSE, echo=FALSE}
+source('bbc_medals_scrape.R')
+
+# Create table
+knitr::kable(medals, caption = '2012 Medal Count')
+```
+
+# Regression model
+
+```{r, results='asis'}
+# Load packages
+library(car); library(stargazer)
+
+# Estimate normal linear model
+m1 <- lm(prestige ~ education, data = Prestige)
+m2 <- lm(prestige ~ education + type, data = Prestige)
+
+# Create formatted table
+stargazer <- stargazer(m1, m2, 
+                       title = 'Parameter Estimates',
+                       type = 'latex', header = FALSE)
+```
+
+## References
+
+
+[^mtcars-note]: This is a footnote.
