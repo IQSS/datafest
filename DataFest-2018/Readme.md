@@ -2,7 +2,7 @@ DataFest 2018
 ===========
 
 
-This repository contains workshop materials for Harvard [DataFest 2018](https://projects.iq.harvard.edu/datafest2018).
+This directory contains workshop materials for Harvard [DataFest 2018](https://projects.iq.harvard.edu/datafest2018).
 
 DataFest Organizers
 -----------
