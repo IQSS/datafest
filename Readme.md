@@ -19,7 +19,7 @@ undergraduate students, and staff at Harvard University.
 The Repository
 -----------
 
-This repository contains workshop materials used at previous editions
+This repository contains workshop materials used in previous editions
 of Harvard's DataFest. Materials are organized by years.
 
 More information on past DataFest events could be found at:
@@ -32,7 +32,7 @@ More information on past DataFest events could be found at:
 DataFest Organizers
 -----------
 
-DataFest is organized by the following Harvard units:
+DataFest is organized by the following units at Harvard:
 
 - [IQSS Data Science Services](http://dss.iq.harvard.edu/)
 - [IQSS Program on Survey Research](http://psr.iq.harvard.edu/)
