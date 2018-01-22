@@ -3,7 +3,7 @@
 
 Wednesday January 17, 2018
 
-**Authors**: Radhika Khetani (rkhetani), Bob Freeman (devbioinfoguy), Amir Karger (amirkarger)
+**Authors**: Radhika Khetani (rkhetani), Bob Freeman (devbioinfoguy), Amir Karger (amirkarger)   
 **GitHubrepo**: https://github.com/hbs-rcs/versioning_data_scripts/
 
 

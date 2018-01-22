@@ -4,7 +4,7 @@
 
 [Schedule](https://projects.iq.harvard.edu/datafest2018/schedule)
 
-**Instructor**:  [Lex Berman](http://www.iq.harvard.edu/people/lex-berman)
+**Instructor**:  [Lex Berman](http://www.iq.harvard.edu/people/lex-berman)   
 **GitHub repo**: https://github.com/vajlex/R_with_QGIS
 
 **Overview:  This session will introduce setup and use of R within QGIS.**
