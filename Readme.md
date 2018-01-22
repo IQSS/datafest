@@ -24,24 +24,26 @@ of Harvard's DataFest. Materials are organized by years.
 
 More information on past DataFest events could be found at:
 
-[DataFest 2018](https://projects.iq.harvard.edu/datafest2018)
-[DataFest 2017](https://projects.iq.harvard.edu/datafest2017)
+- [DataFest 2018](https://projects.iq.harvard.edu/datafest2018)
+- [DataFest 2017](https://projects.iq.harvard.edu/datafest2017)
 
 
 
 DataFest Organizers
 -----------
 
-[IQSS Data Science Services](http://dss.iq.harvard.edu/)
-[IQSS Program on Survey Research](http://psr.iq.harvard.edu/)
-[HBS Research Computing Services](http://grid.rcs.hbs.org/)
-[FAS Research Computing](https://rc.fas.harvard.edu/)
-[HMS Research Computing](https://rc.hms.harvard.edu/)
-[HMS Data Management Working Group](http://dmwg.hms.harvard.edu/)
-[Harvard Chan Bioinformatics Core](http://bioinformatics.sph.harvard.edu/)
-[DARTH: Harvard Arts & Humanities Research Computing](http://darthcrimson.org/)
-[Harvard Library](http://library.harvard.edu/)
-[The Center for Geographical Analysis](http://www.gis.harvard.edu/)
+DataFest is organized by the following Harvard units:
+
+- [IQSS Data Science Services](http://dss.iq.harvard.edu/)
+- [IQSS Program on Survey Research](http://psr.iq.harvard.edu/)
+- [HBS Research Computing Services](http://grid.rcs.hbs.org/)
+- [FAS Research Computing](https://rc.fas.harvard.edu/)
+- [HMS Research Computing](https://rc.hms.harvard.edu/)
+- [HMS Data Management Working Group](http://dmwg.hms.harvard.edu/)
+- [Harvard Chan Bioinformatics Core](http://bioinformatics.sph.harvard.edu/)
+- [DARTH: Harvard Arts & Humanities Research Computing](http://darthcrimson.org/)
+- [Harvard Library](http://library.harvard.edu/)
+- [The Center for Geographical Analysis](http://www.gis.harvard.edu/)
 
 
 
