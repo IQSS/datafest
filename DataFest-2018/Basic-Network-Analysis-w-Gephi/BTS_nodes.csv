@@ -1,0 +1,1237 @@
+IATA,ID,CITY_NAME,STATE_NAME,label,region
+MEM,13244,"Memphis, TN",Tennessee,"MEM - Memphis, TN",Southeast
+MEO,13246,"Manteo, NC",North Carolina,"MEO - Manteo, NC",Southeast
+MFR,13264,"Medford, OR",Oregon,"MFR - Medford, OR",Northwest
+MHT,13296,"Manchester, NH",New Hampshire,"MHT - Manchester, NH",Northeast
+MIA,13303,"Miami, FL",Florida,"MIA - Miami, FL",Southeast
+MKE,13342,"Milwaukee, WI",Wisconsin,"MKE - Milwaukee, WI",Midwest
+MKK,13347,"Hoolehua, HI",Hawaii,"MKK - Hoolehua, HI",Pacific
+MOT,13433,"Minot, ND",North Dakota,"MOT - Minot, ND",Midwest
+MQT,13459,"Marquette, MI",Michigan,"MQT - Marquette, MI",Midwest
+MQY,13461,"Smyrna, TN",Tennessee,"MQY - Smyrna, TN",Southeast
+MRY,13476,"Monterey, CA",California,"MRY - Monterey, CA",Pacific
+MSN,13485,"Madison, WI",Wisconsin,"MSN - Madison, WI",Midwest
+MSO,13486,"Missoula, MT",Montana,"MSO - Missoula, MT",Northwest
+MSP,13487,"Minneapolis, MN",Minnesota,"MSP - Minneapolis, MN",Midwest
+MSY,13495,"New Orleans, LA",Louisiana,"MSY - New Orleans, LA",Southeast
+MTH,13501,"Marathon, FL",Florida,"MTH - Marathon, FL",Southeast
+MVW,13540,"Burlington/Mount Vernon, WA",Washington,"MVW - Burlington/Mount Vernon, WA",Northwest
+MVY,13541,"Martha's Vineyard, MA",Massachusetts,"MVY - Martha's Vineyard, MA",Northeast
+MWH,13546,"Moses Lake, WA",Washington,"MWH - Moses Lake, WA",Northwest
+MYR,13577,"Myrtle Beach, SC",South Carolina,"MYR - Myrtle Beach, SC",Southeast
+NYL,13785,"Yuma, AZ",Arizona,"NYL - Yuma, AZ",Southwest
+OAK,13796,"Oakland, CA",California,"OAK - Oakland, CA",Pacific
+OKC,13851,"Oklahoma City, OK",Oklahoma,"OKC - Oklahoma City, OK",Southwest
+OLF,13862,"Wolf Point, MT",Montana,"OLF - Wolf Point, MT",Northwest
+OMA,13871,"Omaha, NE",Nebraska,"OMA - Omaha, NE",Midwest
+ONP,13890,"Newport, OR",Oregon,"ONP - Newport, OR",Northwest
+ONT,13891,"Ontario, CA",California,"ONT - Ontario, CA",Pacific
+ORD,13930,"Chicago, IL",Illinois,"ORD - Chicago, IL",Midwest
+ORF,13931,"Norfolk, VA",Virginia,"ORF - Norfolk, VA",Northeast
+OTH,13964,"North Bend/Coos Bay, OR",Oregon,"OTH - North Bend/Coos Bay, OR",Northwest
+PBG,14025,"Plattsburgh, NY",New York,"PBG - Plattsburgh, NY",Northeast
+PBI,14027,"West Palm Beach/Palm Beach, FL",Florida,"PBI - West Palm Beach/Palm Beach, FL",Southeast
+PDT,14054,"Pendleton, OR",Oregon,"PDT - Pendleton, OR",Northwest
+PDX,14057,"Portland, OR",Oregon,"PDX - Portland, OR",Northwest
+PHL,14100,"Philadelphia, PA",Pennsylvania,"PHL - Philadelphia, PA",Northeast
+PHX,14107,"Phoenix, AZ",Arizona,"PHX - Phoenix, AZ",Southwest
+PIH,14113,"Pocatello, ID",Idaho,"PIH - Pocatello, ID",Northwest
+PIR,14120,"Pierre, SD",South Dakota,"PIR - Pierre, SD",Midwest
+PIT,14122,"Pittsburgh, PA",Pennsylvania,"PIT - Pittsburgh, PA",Northeast
+PLN,14150,"Pellston, MI",Michigan,"PLN - Pellston, MI",Midwest
+PQI,14231,"Presque Isle/Houlton, ME",Maine,"PQI - Presque Isle/Houlton, ME",Northeast
+PSC,14252,"Pasco/Kennewick/Richland, WA",Washington,"PSC - Pasco/Kennewick/Richland, WA",Northwest
+PVD,14307,"Providence, RI",Rhode Island,"PVD - Providence, RI",Northeast
+PWM,14321,"Portland, ME",Maine,"PWM - Portland, ME",Northeast
+RAP,14457,"Rapid City, SD",South Dakota,"RAP - Rapid City, SD",Midwest
+RBG,14467,"Roseburg, OR",Oregon,"RBG - Roseburg, OR",Northwest
+RDD,14487,"Redding, CA",California,"RDD - Redding, CA",Pacific
+RDM,14489,"Bend/Redmond, OR",Oregon,"RDM - Bend/Redmond, OR",Northwest
+RDU,14492,"Raleigh/Durham, NC",North Carolina,"RDU - Raleigh/Durham, NC",Southeast
+RHI,14520,"Rhinelander, WI",Wisconsin,"RHI - Rhinelander, WI",Midwest
+RIC,14524,"Richmond, VA",Virginia,"RIC - Richmond, VA",Northeast
+RKS,14543,"Rock Springs, WY",Wyoming,"RKS - Rock Springs, WY",Northwest
+RNO,14570,"Reno, NV",Nevada,"RNO - Reno, NV",Pacific
+ROA,14574,"Roanoke, VA",Virginia,"ROA - Roanoke, VA",Northeast
+ROC,14576,"Rochester, NY",New York,"ROC - Rochester, NY",Northeast
+ROW,14588,"Roswell, NM",New Mexico,"ROW - Roswell, NM",Southwest
+RST,14633,"Rochester, MN",Minnesota,"RST - Rochester, MN",Midwest
+RSW,14635,"Fort Myers, FL",Florida,"RSW - Fort Myers, FL",Southeast
+SAN,14679,"San Diego, CA",California,"SAN - San Diego, CA",Pacific
+SAT,14683,"San Antonio, TX",Texas,"SAT - San Antonio, TX",Southwest
+SAV,14685,"Savannah, GA",Georgia,"SAV - Savannah, GA",Southeast
+SBA,14689,"Santa Barbara, CA",California,"SBA - Santa Barbara, CA",Pacific
+SBN,14696,"South Bend, IN",Indiana,"SBN - South Bend, IN",Midwest
+SBP,14698,"San Luis Obispo, CA",California,"SBP - San Luis Obispo, CA",Pacific
+SBY,14704,"Salisbury, MD",Maryland,"SBY - Salisbury, MD",Northeast
+SCE,14711,"State College, PA",Pennsylvania,"SCE - State College, PA",Northeast
+SDF,14730,"Louisville, KY",Kentucky,"SDF - Louisville, KY",Midwest
+SEA,14747,"Seattle, WA",Washington,"SEA - Seattle, WA",Northwest
+SFO,14771,"San Francisco, CA",California,"SFO - San Francisco, CA",Pacific
+SGF,14783,"Springfield, MO",Missouri,"SGF - Springfield, MO",Midwest
+SGU,14794,"St. George, UT",Utah,"SGU - St. George, UT",Southwest
+SHV,14814,"Shreveport, LA",Louisiana,"SHV - Shreveport, LA",Southeast
+SIT,14828,"Sitka, AK",Alaska,"SIT - Sitka, AK",Alaska
+SJC,14831,"San Jose, CA",California,"SJC - San Jose, CA",Pacific
+SJT,14842,"San Angelo, TX",Texas,"SJT - San Angelo, TX",Southwest
+SJU,14843,"San Juan, PR",Puerto Rico,"SJU - San Juan, PR",Southeast
+SLC,14869,"Salt Lake City, UT",Utah,"SLC - Salt Lake City, UT",Southwest
+SLE,14871,"Salem, OR",Oregon,"SLE - Salem, OR",Northwest
+SMF,14893,"Sacramento, CA",California,"SMF - Sacramento, CA",Pacific
+SMX,14905,"Santa Maria, CA",California,"SMX - Santa Maria, CA",Pacific
+SNA,14908,"Santa Ana, CA",California,"SNA - Santa Ana, CA",Pacific
+STL,15016,"St. Louis, MO",Missouri,"STL - St. Louis, MO",Midwest
+STT,15024,"Charlotte Amalie, VI",U.S. Virgin Islands,"STT - Charlotte Amalie, VI",Southeast
+STX,15027,"Christiansted, VI",U.S. Virgin Islands,"STX - Christiansted, VI",Southeast
+SUN,15041,"Sun Valley/Hailey/Ketchum, ID",Idaho,"SUN - Sun Valley/Hailey/Ketchum, ID",Northwest
+SWF,15070,"Newburgh/Poughkeepsie, NY",New York,"SWF - Newburgh/Poughkeepsie, NY",Northeast
+SYR,15096,"Syracuse, NY",New York,"SYR - Syracuse, NY",Northeast
+TLH,15249,"Tallahassee, FL",Florida,"TLH - Tallahassee, FL",Southeast
+TPA,15304,"Tampa, FL",Florida,"TPA - Tampa, FL",Southeast
+TUL,15370,"Tulsa, OK",Oklahoma,"TUL - Tulsa, OK",Southwest
+TUS,15376,"Tucson, AZ",Arizona,"TUS - Tucson, AZ",Southwest
+TVC,15380,"Traverse City, MI",Michigan,"TVC - Traverse City, MI",Midwest
+TVF,15381,"Thief River Falls, MN",Minnesota,"TVF - Thief River Falls, MN",Midwest
+TWF,15389,"Twin Falls, ID",Idaho,"TWF - Twin Falls, ID",Northwest
+TYS,15412,"Knoxville, TN",Tennessee,"TYS - Knoxville, TN",Southeast
+UKI,15458,"Ukiah, CA",California,"UKI - Ukiah, CA",Pacific
+UXK,15525,"Petaluma, CA",California,"UXK - Petaluma, CA",Pacific
+VIS,15601,"Visalia, CA",California,"VIS - Visalia, CA",Pacific
+YKM,16101,"Yakima, WA",Washington,"YKM - Yakima, WA",Northwest
+ANC,10299,"Anchorage, AK",Alaska,"ANC - Anchorage, AK",Alaska
+BDL,10529,"Hartford, CT",Connecticut,"BDL - Hartford, CT",Northeast
+CVG,11193,"Cincinnati, OH",Kentucky,"CVG - Cincinnati, OH",Midwest
+DEN,11292,"Denver, CO",Colorado,"DEN - Denver, CO",Southwest
+JFK,12478,"New York, NY",New York,"JFK - New York, NY",Northeast
+MCI,13198,"Kansas City, MO",Missouri,"MCI - Kansas City, MO",Midwest
+MHR,13295,"Sacramento, CA",California,"MHR - Sacramento, CA",Pacific
+AEX,10185,"Alexandria, LA",Louisiana,"AEX - Alexandria, LA",Southeast
+BOS,10721,"Boston, MA",Massachusetts,"BOS - Boston, MA",Northeast
+BRO,10747,"Brownsville, TX",Texas,"BRO - Brownsville, TX",Southwest
+BUF,10792,"Buffalo, NY",New York,"BUF - Buffalo, NY",Northeast
+CSG,11150,"Columbus, GA",Georgia,"CSG - Columbus, GA",Southeast
+DFW,11298,"Dallas/Fort Worth, TX",Texas,"DFW - Dallas/Fort Worth, TX",Southwest
+ELP,11540,"El Paso, TX",Texas,"ELP - El Paso, TX",Southwest
+EWR,11618,"Newark, NJ",New Jersey,"EWR - Newark, NJ",Northeast
+FLL,11697,"Fort Lauderdale, FL",Florida,"FLL - Fort Lauderdale, FL",Southeast
+GYY,12055,"Gary, IN",Indiana,"GYY - Gary, IN",Midwest
+HRL,12206,"Harlingen/San Benito, TX",Texas,"HRL - Harlingen/San Benito, TX",Southwest
+IAH,12266,"Houston, TX",Texas,"IAH - Houston, TX",Southwest
+JQF,12544,"CONCORD, NC",North Carolina,"JQF - CONCORD, NC",Southeast
+LRD,13061,"Laredo, TX",Texas,"LRD - Laredo, TX",Southwest
+MDT,13230,"Harrisburg, PA",Pennsylvania,"MDT - Harrisburg, PA",Northeast
+MFE,13256,"Mission/McAllen/Edinburg, TX",Texas,"MFE - Mission/McAllen/Edinburg, TX",Southwest
+TOL,15295,"Toledo, OH",Ohio,"TOL - Toledo, OH",Midwest
+TUP,15374,"Tupelo, MS",Mississippi,"TUP - Tupelo, MS",Southeast
+VCV,15570,"Victorville, CA",California,"VCV - Victorville, CA",Pacific
+ASE,10372,"Aspen, CO",Colorado,"ASE - Aspen, CO",Southwest
+ATL,10397,"Atlanta, GA",Georgia,"ATL - Atlanta, GA",Southeast
+ERI,11577,"Erie, PA",Pennsylvania,"ERI - Erie, PA",Northeast
+IAD,12264,"Washington, DC",Virginia,"IAD - Washington, DC",Northeast
+MDW,13232,"Chicago, IL",Illinois,"MDW - Chicago, IL",Midwest
+PWK,14320,"Chicago, IL",Illinois,"PWK - Chicago, IL",Midwest
+RIL,14530,"Rifle, CO",Colorado,"RIL - Rifle, CO",Southwest
+TEB,15167,"Teterboro, NJ",New Jersey,"TEB - Teterboro, NJ",Northeast
+UGN,15447,"Waukegan, IL",Illinois,"UGN - Waukegan, IL",Midwest
+BNA,10693,"Nashville, TN",Tennessee,"BNA - Nashville, TN",Southeast
+FOK,11728,"Westhampton, NY",New York,"FOK - Westhampton, NY",Northeast
+MCO,13204,"Orlando, FL",Florida,"MCO - Orlando, FL",Southeast
+SLK,14875,"Saranac Lake/Lake Placid, NY",New York,"SLK - Saranac Lake/Lake Placid, NY",Northeast
+ACK,10154,"Nantucket, MA",Massachusetts,"ACK - Nantucket, MA",Northeast
+HYA,12250,"Hyannis, MA",Massachusetts,"HYA - Hyannis, MA",Northeast
+DCA,11278,"Washington, DC",Virginia,"DCA - Washington, DC",Northeast
+AFW,10194,"Dallas/Fort Worth, TX",Texas,"AFW - Dallas/Fort Worth, TX",Southwest
+AZO,10469,"Kalamazoo, MI",Michigan,"AZO - Kalamazoo, MI",Midwest
+BTL,10778,"Battle Creek, MI",Michigan,"BTL - Battle Creek, MI",Midwest
+BWG,10819,"Bowling Green, KY",Kentucky,"BWG - Bowling Green, KY",Midwest
+CAE,10868,"Columbia, SC",South Carolina,"CAE - Columbia, SC",Southeast
+CLE,11042,"Cleveland, OH",Ohio,"CLE - Cleveland, OH",Midwest
+CMH,11066,"Columbus, OH",Ohio,"CMH - Columbus, OH",Midwest
+CRW,11146,"Charleston/Dunbar, WV",West Virginia,"CRW - Charleston/Dunbar, WV",Northeast
+DAY,11267,"Dayton, OH",Ohio,"DAY - Dayton, OH",Midwest
+FNT,11721,"Flint, MI",Michigan,"FNT - Flint, MI",Midwest
+GRR,11986,"Grand Rapids, MI",Michigan,"GRR - Grand Rapids, MI",Midwest
+GSO,11995,"Greensboro/High Point, NC",North Carolina,"GSO - Greensboro/High Point, NC",Southeast
+HLM,12155,"Holland, MI",Michigan,"HLM - Holland, MI",Midwest
+IAG,12265,"Niagara Falls, NY",New York,"IAG - Niagara Falls, NY",Northeast
+IND,12339,"Indianapolis, IN",Indiana,"IND - Indianapolis, IN",Midwest
+JZT,12598,"Arlington, TX",Texas,"JZT - Arlington, TX",Southwest
+LCK,12917,"Columbus, OH",Ohio,"LCK - Columbus, OH",Midwest
+LEX,12945,"Lexington, KY",Kentucky,"LEX - Lexington, KY",Midwest
+LIT,12992,"Little Rock, AR",Arkansas,"LIT - Little Rock, AR",Southeast
+MBS,13184,"Saginaw/Bay City/Midland, MI",Michigan,"MBS - Saginaw/Bay City/Midland, MI",Midwest
+PHF,14098,"Newport News/Williamsburg, VA",Virginia,"PHF - Newport News/Williamsburg, VA",Northeast
+SUS,15043,"St. Louis, MO",Missouri,"SUS - St. Louis, MO",Midwest
+TDF,15163,"Roxboro, NC",North Carolina,"TDF - Roxboro, NC",Southeast
+TXK,15401,"Texarkana, AR",Arkansas,"TXK - Texarkana, AR",Southeast
+UIN,15454,"Quincy, IL",Illinois,"UIN - Quincy, IL",Midwest
+YIP,16091,"Detroit, MI",Michigan,"YIP - Detroit, MI",Midwest
+HNL,12173,"Honolulu, HI",Hawaii,"HNL - Honolulu, HI",Pacific
+ITO,12402,"Hilo, HI",Hawaii,"ITO - Hilo, HI",Pacific
+KOA,12758,"Kona, HI",Hawaii,"KOA - Kona, HI",Pacific
+LIH,12982,"Lihue, HI",Hawaii,"LIH - Lihue, HI",Pacific
+OGG,13830,"Kahului, HI",Hawaii,"OGG - Kahului, HI",Pacific
+ADW,10172,"Camp Springs, MD",Maryland,"ADW - Camp Springs, MD",Northeast
+AZA,10466,"Phoenix, AZ",Arizona,"AZA - Phoenix, AZ",Southwest
+BED,10540,"Bedford, MA",Massachusetts,"BED - Bedford, MA",Northeast
+BKL,10647,"Cleveland, OH",Ohio,"BKL - Cleveland, OH",Midwest
+BWI,10821,"Baltimore, MD",Maryland,"BWI - Baltimore, MD",Northeast
+CKB,11027,"Clarksburg/Fairmont, WV",West Virginia,"CKB - Clarksburg/Fairmont, WV",Northeast
+CLL,11049,"College Station/Bryan, TX",Texas,"CLL - College Station/Bryan, TX",Southwest
+CPS,11123,"St. Louis, MO",Missouri,"CPS - St. Louis, MO",Midwest
+DAL,11259,"Dallas, TX",Texas,"DAL - Dallas, TX",Southwest
+DSM,11423,"Des Moines, IA",Iowa,"DSM - Des Moines, IA",Midwest
+FNL,11719,"Fort Collins/Loveland, CO",Colorado,"FNL - Fort Collins/Loveland, CO",Southwest
+FOE,11726,"Topeka, KS",Kansas,"FOE - Topeka, KS",Southwest
+FRG,11764,"East Farmingdale, NY",New York,"FRG - East Farmingdale, NY",Northeast
+FSD,11775,"Sioux Falls, SD",South Dakota,"FSD - Sioux Falls, SD",Midwest
+GEG,11884,"Spokane, WA",Washington,"GEG - Spokane, WA",Northwest
+HPN,12197,"White Plains, NY",New York,"HPN - White Plains, NY",Northeast
+ITH,12397,"Ithaca/Cortland, NY",New York,"ITH - Ithaca/Cortland, NY",Northeast
+LAX,12892,"Los Angeles, CA",California,"LAX - Los Angeles, CA",Pacific
+LGA,12953,"New York, NY",New York,"LGA - New York, NY",Northeast
+LNK,13029,"Lincoln, NE",Nebraska,"LNK - Lincoln, NE",Midwest
+MHK,13290,"Manhattan/Ft. Riley, KS",Kansas,"MHK - Manhattan/Ft. Riley, KS",Southwest
+MKC,13341,"Kansas City, MO",Missouri,"MKC - Kansas City, MO",Midwest
+OGD,13829,"Ogden, UT",Utah,"OGD - Ogden, UT",Southwest
+ORH,13933,"Worcester, MA",Massachusetts,"ORH - Worcester, MA",Northeast
+PVU,14314,"Provo, UT",Utah,"PVU - Provo, UT",Southwest
+BUR,10800,"Burbank, CA",California,"BUR - Burbank, CA",Pacific
+C01,10857,"Camarillo, CA",California,"C01 - Camarillo, CA",Pacific
+COE,11098,"Coeur d'Alene, ID",Idaho,"COE - Coeur d'Alene, ID",Northwest
+VNY,15618,"Van Nuys, CA",California,"VNY - Van Nuys, CA",Pacific
+GUM,12016,"Guam, TT",U.S. Pacific Trust Territories and Possessions,"GUM - Guam, TT",Pacific
+ROP,14582,"Rota, TT",U.S. Pacific Trust Territories and Possessions,"ROP - Rota, TT",Pacific
+MCG,13196,"McGrath, AK",Alaska,"MCG - McGrath, AK",Alaska
+BET,10551,"Bethel, AK",Alaska,"BET - Bethel, AK",Alaska
+JNU,12523,"Juneau, AK",Alaska,"JNU - Juneau, AK",Alaska
+KTN,12819,"Ketchikan, AK",Alaska,"KTN - Ketchikan, AK",Alaska
+OME,13873,"Nome, AK",Alaska,"OME - Nome, AK",Alaska
+OTZ,13970,"Kotzebue, AK",Alaska,"OTZ - Kotzebue, AK",Alaska
+YAK,15991,"Yakutat, AK",Alaska,"YAK - Yakutat, AK",Alaska
+ILI,12321,"Iliamna, AK",Alaska,"ILI - Iliamna, AK",Alaska
+ADQ,10170,"Kodiak, AK",Alaska,"ADQ - Kodiak, AK",Alaska
+AOS,10324,"Amook Bay, AK",Alaska,"AOS - Amook Bay, AK",Alaska
+KMY,12743,"Moser Bay, AK",Alaska,"KMY - Moser Bay, AK",Alaska
+KYK,12866,"Karluk, AK",Alaska,"KYK - Karluk, AK",Alaska
+SYB,15091,"Seal Bay, AK",Alaska,"SYB - Seal Bay, AK",Alaska
+UGI,15446,"Uganik, AK",Alaska,"UGI - Uganik, AK",Alaska
+WFB,15741,"Ketchikan, AK",Alaska,"WFB - Ketchikan, AK",Alaska
+ABL,10139,"Ambler, AK",Alaska,"ABL - Ambler, AK",Alaska
+AKI,10241,"Akiak, AK",Alaska,"AKI - Akiak, AK",Alaska
+ANI,10304,"Aniak, AK",Alaska,"ANI - Aniak, AK",Alaska
+ANV,10313,"Anvik, AK",Alaska,"ANV - Anvik, AK",Alaska
+BKC,10640,"Buckland, AK",Alaska,"BKC - Buckland, AK",Alaska
+CHU,10996,"Chuathbaluk, AK",Alaska,"CHU - Chuathbaluk, AK",Alaska
+CYF,11227,"Chefornak, AK",Alaska,"CYF - Chefornak, AK",Alaska
+DRG,11411,"Deering, AK",Alaska,"DRG - Deering, AK",Alaska
+EEK,11492,"Eek, AK",Alaska,"EEK - Eek, AK",Alaska
+EMK,11550,"Emmonak, AK",Alaska,"EMK - Emmonak, AK",Alaska
+GAM,11845,"Gambell, AK",Alaska,"GAM - Gambell, AK",Alaska
+GNU,11952,"Goodnews Bay, AK",Alaska,"GNU - Goodnews Bay, AK",Alaska
+HCR,12087,"Holy Cross, AK",Alaska,"HCR - Holy Cross, AK",Alaska
+HPB,12195,"Hooper Bay, AK",Alaska,"HPB - Hooper Bay, AK",Alaska
+IAN,12268,"Kiana, AK",Alaska,"IAN - Kiana, AK",Alaska
+KKA,12704,"Koyuk, AK",Alaska,"KKA - Koyuk, AK",Alaska
+KOT,12769,"Kotlik, AK",Alaska,"KOT - Kotlik, AK",Alaska
+KPN,12779,"Kipnuk, AK",Alaska,"KPN - Kipnuk, AK",Alaska
+KSM,12807,"St. Mary's, AK",Alaska,"KSM - St. Mary's, AK",Alaska
+KTS,12822,"Brevig Mission, AK",Alaska,"KTS - Brevig Mission, AK",Alaska
+KUK,12831,"Kasigluk, AK",Alaska,"KUK - Kasigluk, AK",Alaska
+KVL,12844,"Kivalina, AK",Alaska,"KVL - Kivalina, AK",Alaska
+KWN,12853,"Quinhagak, AK",Alaska,"KWN - Quinhagak, AK",Alaska
+KWT,12855,"Kwethluk, AK",Alaska,"KWT - Kwethluk, AK",Alaska
+MOU,13434,"Mountain Village, AK",Alaska,"MOU - Mountain Village, AK",Alaska
+NME,13710,"Nightmute, AK",Alaska,"NME - Nightmute, AK",Alaska
+NUP,13770,"Nunapitchuk, AK",Alaska,"NUP - Nunapitchuk, AK",Alaska
+OBU,13806,"Kobuk, AK",Alaska,"OBU - Kobuk, AK",Alaska
+OOK,13894,"Toksook, AK",Alaska,"OOK - Toksook, AK",Alaska
+ORV,13942,"Noorvik, AK",Alaska,"ORV - Noorvik, AK",Alaska
+PHO,14102,"Point Hope, AK",Alaska,"PHO - Point Hope, AK",Alaska
+PKA,14130,"Napaskiak, AK",Alaska,"PKA - Napaskiak, AK",Alaska
+PQS,14234,"Pilot Station, AK",Alaska,"PQS - Pilot Station, AK",Alaska
+RDV,14493,"Red Devil, AK",Alaska,"RDV - Red Devil, AK",Alaska
+RSH,14627,"Russian Mission, AK",Alaska,"RSH - Russian Mission, AK",Alaska
+SCM,14718,"Scammon Bay, AK",Alaska,"SCM - Scammon Bay, AK",Alaska
+SHH,14805,"Shishmaref, AK",Alaska,"SHH - Shishmaref, AK",Alaska
+SHX,14816,"Shageluk, AK",Alaska,"SHX - Shageluk, AK",Alaska
+SKK,14856,"Shaktoolik, AK",Alaska,"SKK - Shaktoolik, AK",Alaska
+SMK,14895,"St. Michael, AK",Alaska,"SMK - St. Michael, AK",Alaska
+SVA,15049,"Savoonga, AK",Alaska,"SVA - Savoonga, AK",Alaska
+SXP,15085,"Sheldon Point, AK",Alaska,"SXP - Sheldon Point, AK",Alaska
+TNK,15282,"Tununak, AK",Alaska,"TNK - Tununak, AK",Alaska
+UNK,15478,"Unalakleet, AK",Alaska,"UNK - Unalakleet, AK",Alaska
+VAK,15554,"Chevak, AK",Alaska,"VAK - Chevak, AK",Alaska
+WAA,15709,"Wales, AK",Alaska,"WAA - Wales, AK",Alaska
+WLK,15785,"Selawik, AK",Alaska,"WLK - Selawik, AK",Alaska
+WNA,15798,"Napakiak, AK",Alaska,"WNA - Napakiak, AK",Alaska
+WTK,15861,"Noatak, AK",Alaska,"WTK - Noatak, AK",Alaska
+WTL,15862,"Tuntutuliak, AK",Alaska,"WTL - Tuntutuliak, AK",Alaska
+WWT,15887,"Newtok, AK",Alaska,"WWT - Newtok, AK",Alaska
+HNH,12171,"Hoonah, AK",Alaska,"HNH - Hoonah, AK",Alaska
+AKN,10245,"King Salmon, AK",Alaska,"AKN - King Salmon, AK",Alaska
+ATK,10396,"Atqasuk, AK",Alaska,"ATK - Atqasuk, AK",Alaska
+CDB,10917,"Cold Bay, AK",Alaska,"CDB - Cold Bay, AK",Alaska
+CDV,10926,"Cordova, AK",Alaska,"CDV - Cordova, AK",Alaska
+DLG,11336,"Dillingham, AK",Alaska,"DLG - Dillingham, AK",Alaska
+DUT,11445,"Unalaska, AK",Alaska,"DUT - Unalaska, AK",Alaska
+EGX,11511,"Egegik, AK",Alaska,"EGX - Egegik, AK",Alaska
+FAI,11630,"Fairbanks, AK",Alaska,"FAI - Fairbanks, AK",Alaska
+KLW,12728,"Klawock, AK",Alaska,"KLW - Klawock, AK",Alaska
+NCN,13629,"Chenega, AK",Alaska,"NCN - Chenega, AK",Alaska
+PSG,14256,"Petersburg, AK",Alaska,"PSG - Petersburg, AK",Alaska
+SDP,14738,"Sandpoint, AK",Alaska,"SDP - Sandpoint, AK",Alaska
+SNP,14919,"St. Paul, AK",Alaska,"SNP - St. Paul, AK",Alaska
+STG,15012,"St. George Island, AK",Alaska,"STG - St. George Island, AK",Alaska
+TEK,15171,"Tatitlek, AK",Alaska,"TEK - Tatitlek, AK",Alaska
+WRG,15841,"Wrangell, AK",Alaska,"WRG - Wrangell, AK",Alaska
+BRW,10754,"Barrow, AK",Alaska,"BRW - Barrow, AK",Alaska
+FWA,11823,"Fort Wayne, IN",Indiana,"FWA - Fort Wayne, IN",Midwest
+GSP,11996,"Greer, SC",South Carolina,"GSP - Greer, SC",Southeast
+JAN,12448,"Jackson/Vicksburg, MS",Mississippi,"JAN - Jackson/Vicksburg, MS",Southeast
+RDB,14485,"Red Dog, AK",Alaska,"RDB - Red Dog, AK",Alaska
+SCC,14709,"Deadhorse, AK",Alaska,"SCC - Deadhorse, AK",Alaska
+TCL,15153,"Tuscaloosa, AL",Alabama,"TCL - Tuscaloosa, AL",Southeast
+PPG,14222,"Pago Pago, TT",U.S. Pacific Trust Territories and Possessions,"PPG - Pago Pago, TT",Pacific
+CKX,11036,"Chicken, AK",Alaska,"CKX - Chicken, AK",Alaska
+TKJ,15236,"Tok, AK",Alaska,"TKJ - Tok, AK",Alaska
+BVU,16390,"Beluga, AK",Alaska,"BVU - Beluga, AK",Alaska
+JZE,12583,"Trading Bay, AK",Alaska,"JZE - Trading Bay, AK",Alaska
+MRI,13467,"Anchorage, AK",Alaska,"MRI - Anchorage, AK",Alaska
+SKW,14863,"Skwentna, AK",Alaska,"SKW - Skwentna, AK",Alaska
+TYE,15406,"Tyonek, AK",Alaska,"TYE - Tyonek, AK",Alaska
+XWA,15934,"Granite Point, AK",Alaska,"XWA - Granite Point, AK",Alaska
+ACT,10155,"Waco, TX",Texas,"ACT - Waco, TX",Southwest
+ADS,10171,"Dallas, TX",Texas,"ADS - Dallas, TX",Southwest
+BFI,10559,"Seattle, WA",Washington,"BFI - Seattle, WA",Northwest
+BMG,10683,"Bloomington, IN",Indiana,"BMG - Bloomington, IN",Midwest
+BYH,10838,"Blytheville, AR",Arkansas,"BYH - Blytheville, AR",Southeast
+CPR,11122,"Casper, WY",Wyoming,"CPR - Casper, WY",Northwest
+DTW,11433,"Detroit, MI",Michigan,"DTW - Detroit, MI",Midwest
+HSV,12217,"Huntsville, AL",Alabama,"HSV - Huntsville, AL",Southeast
+ILG,12320,"Wilmington, DE",Delaware,"ILG - Wilmington, DE",Northeast
+LGC,12955,"LaGrange, GA",Georgia,"LGC - LaGrange, GA",Southeast
+LUK,13105,"Cincinnati, OH",Ohio,"LUK - Cincinnati, OH",Midwest
+LZU,13151,"Lawrenceville, GA",Georgia,"LZU - Lawrenceville, GA",Southeast
+QMA,14397,"Kennesaw, GA",Georgia,"QMA - Kennesaw, GA",Southeast
+RWI,14656,"Rocky Mount, NC",North Carolina,"RWI - Rocky Mount, NC",Southeast
+SGH,14785,"Springfield, OH",Ohio,"SGH - Springfield, OH",Midwest
+BGM,10577,"Binghamton, NY",New York,"BGM - Binghamton, NY",Northeast
+FBS,11646,"Friday Harbor, WA",Washington,"FBS - Friday Harbor, WA",Northwest
+KEH,12652,"Kenmore, WA",Washington,"KEH - Kenmore, WA",Northwest
+LKE,13002,"Seattle, WA",Washington,"LKE - Seattle, WA",Northwest
+PUL,14295,"Poulsbo, WA",Washington,"PUL - Poulsbo, WA",Northwest
+RCE,14477,"Roche Harbor, WA",Washington,"RCE - Roche Harbor, WA",Northwest
+RNT,14572,"Renton, WA",Washington,"RNT - Renton, WA",Northwest
+RSJ,14628,"Rosario, WA",Washington,"RSJ - Rosario, WA",Northwest
+WA1,16651,"Camp Orkila Eastsound, WA",Washington,"WA1 - Camp Orkila Eastsound, WA",Northwest
+AUS,10423,"Austin, TX",Texas,"AUS - Austin, TX",Southwest
+ABE,10135,"Allentown/Bethlehem/Easton, PA",Pennsylvania,"ABE - Allentown/Bethlehem/Easton, PA",Northeast
+ALB,10257,"Albany, NY",New York,"ALB - Albany, NY",Northeast
+BHM,10599,"Birmingham, AL",Alabama,"BHM - Birmingham, AL",Southeast
+DRT,11415,"Del Rio, TX",Texas,"DRT - Del Rio, TX",Southwest
+JVL,12571,"Beloit/Janesville, WI",Wisconsin,"JVL - Beloit/Janesville, WI",Midwest
+1G4,10011,"Peach Springs, AZ",Arizona,"1G4 - Peach Springs, AZ",Southwest
+AZ1,10463,"Grand Canyon, AZ",Arizona,"AZ1 - Grand Canyon, AZ",Southwest
+BLD,10661,"Boulder City, NV",Nevada,"BLD - Boulder City, NV",Pacific
+FLG,11695,"Flagstaff, AZ",Arizona,"FLG - Flagstaff, AZ",Southwest
+GCN,11869,"Grand Canyon, AZ",Arizona,"GCN - Grand Canyon, AZ",Southwest
+L41,16428,"Marble Canyon, AZ",Arizona,"L41 - Marble Canyon, AZ",Southwest
+PGA,14081,"Page, AZ",Arizona,"PGA - Page, AZ",Southwest
+BTI,10775,"Barter Island, AK",Alaska,"BTI - Barter Island, AK",Alaska
+GAL,11844,"Galena, AK",Alaska,"GAL - Galena, AK",Alaska
+HOM,12184,"Homer, AK",Alaska,"HOM - Homer, AK",Alaska
+KAL,12615,"Kaltag, AK",Alaska,"KAL - Kaltag, AK",Alaska
+KLG,12719,"Kalskag, AK",Alaska,"KLG - Kalskag, AK",Alaska
+MLL,13369,"Marshall, AK",Alaska,"MLL - Marshall, AK",Alaska
+NUI,13767,"Nuiqsut, AK",Alaska,"NUI - Nuiqsut, AK",Alaska
+PAQ,14013,"Palmer, AK",Alaska,"PAQ - Palmer, AK",Alaska
+TOG,15293,"Togiak, AK",Alaska,"TOG - Togiak, AK",Alaska
+DUJ,11441,"DuBois, PA",Pennsylvania,"DUJ - DuBois, PA",Northeast
+MGW,13282,"Morgantown, WV",West Virginia,"MGW - Morgantown, WV",Northeast
+ABQ,10140,"Albuquerque, NM",New Mexico,"ABQ - Albuquerque, NM",Southwest
+ABY,10146,"Albany, GA",Georgia,"ABY - Albany, GA",Southeast
+BIL,10620,"Billings, MT",Montana,"BIL - Billings, MT",Northwest
+BOI,10713,"Boise, ID",Idaho,"BOI - Boise, ID",Northwest
+CID,11003,"Cedar Rapids/Iowa City, IA",Iowa,"CID - Cedar Rapids/Iowa City, IA",Midwest
+CLT,11057,"Charlotte, NC",North Carolina,"CLT - Charlotte, NC",Southeast
+FAT,11638,"Fresno, CA",California,"FAT - Fresno, CA",Pacific
+ICT,12278,"Wichita, KS",Kansas,"ICT - Wichita, KS",Southwest
+JAX,12451,"Jacksonville, FL",Florida,"JAX - Jacksonville, FL",Southeast
+LAN,12884,"Lansing, MI",Michigan,"LAN - Lansing, MI",Midwest
+LAS,12889,"Las Vegas, NV",Nevada,"LAS - Las Vegas, NV",Pacific
+LBB,12896,"Lubbock, TX",Texas,"LBB - Lubbock, TX",Southwest
+LFT,12951,"Lafayette, LA",Louisiana,"LFT - Lafayette, LA",Southeast
+LGB,12954,"Long Beach, CA",California,"LGB - Long Beach, CA",Pacific
+PIA,14108,"Peoria, IL",Illinois,"PIA - Peoria, IL",Midwest
+PIE,14112,"St. Petersburg, FL",Florida,"PIE - St. Petersburg, FL",Southeast
+PNS,14193,"Pensacola, FL",Florida,"PNS - Pensacola, FL",Southeast
+RFD,14512,"Rockford, IL",Illinois,"RFD - Rockford, IL",Midwest
+EGE,11503,"Eagle, CO",Colorado,"EGE - Eagle, CO",Southwest
+MMU,13398,"Morristown, NJ",New Jersey,"MMU - Morristown, NJ",Northeast
+SMO,14898,"Santa Monica, CA",California,"SMO - Santa Monica, CA",Pacific
+CPX,11126,"Culebra, PR",Puerto Rico,"CPX - Culebra, PR",Southeast
+SIG,14819,"San Juan, PR",Puerto Rico,"SIG - San Juan, PR",Southeast
+VQS,15626,"Vieques, PR",Puerto Rico,"VQS - Vieques, PR",Southeast
+CHS,10994,"Charleston, SC",South Carolina,"CHS - Charleston, SC",Southeast
+IAB,12263,"Wichita, KS",Kansas,"IAB - Wichita, KS",Southwest
+ILN,12324,"Wilmington, OH",Ohio,"ILN - Wilmington, OH",Midwest
+MZJ,13587,"Marana, AZ",Arizona,"MZJ - Marana, AZ",Southwest
+NGU,13667,"Norfolk, VA",Virginia,"NGU - Norfolk, VA",Northeast
+PAE,14004,"Everett, WA",Washington,"PAE - Everett, WA",Northwest
+PSM,14259,"Portsmouth, NH",New Hampshire,"PSM - Portsmouth, NH",Northeast
+RME,14553,"Rome, NY",New York,"RME - Rome, NY",Northeast
+SUU,15045,"Fairfield, CA",California,"SUU - Fairfield, CA",Pacific
+SCK,14716,"Stockton, CA",California,"SCK - Stockton, CA",Pacific
+WRI,15842,"Fort Dix, NJ",New Jersey,"WRI - Fort Dix, NJ",Northeast
+BLI,10666,"Bellingham, WA",Washington,"BLI - Bellingham, WA",Northwest
+CLM,11050,"Port Angeles, WA",Washington,"CLM - Port Angeles, WA",Northwest
+CVO,11198,"Corvallis, OR",Oregon,"CVO - Corvallis, OR",Northwest
+DRO,11413,"Durango, CO",Colorado,"DRO - Durango, CO",Southwest
+EAT,11470,"Wenatchee, WA",Washington,"EAT - Wenatchee, WA",Northwest
+ENA,11555,"Kenai, AK",Alaska,"ENA - Kenai, AK",Alaska
+ESD,11588,"Eastsound, WA",Washington,"ESD - Eastsound, WA",Northwest
+EUG,11603,"Eugene, OR",Oregon,"EUG - Eugene, OR",Northwest
+FMN,11711,"Farmington, NM",New Mexico,"FMN - Farmington, NM",Southwest
+FRD,11762,"Friday Harbor, WA",Washington,"FRD - Friday Harbor, WA",Northwest
+GTF,12003,"Great Falls, MT",Montana,"GTF - Great Falls, MT",Northwest
+GUP,12018,"Gallup, NM",New Mexico,"GUP - Gallup, NM",Southwest
+HII,12132,"Lake Havasu City, AZ",Arizona,"HII - Lake Havasu City, AZ",Southwest
+IDA,12280,"Idaho Falls, ID",Idaho,"IDA - Idaho Falls, ID",Northwest
+LGD,12956,"La Grande, OR",Oregon,"LGD - La Grande, OR",Northwest
+LMT,13024,"Klamath Falls, OR",Oregon,"LMT - Klamath Falls, OR",Northwest
+LWS,13127,"Lewiston, ID",Idaho,"LWS - Lewiston, ID",Northwest
+MAF,13158,"Midland/Odessa, TX",Texas,"MAF - Midland/Odessa, TX",Southwest
+ABI,10136,"Abilene, TX",Texas,"ABI - Abilene, TX",Southwest
+ALO,10268,"Waterloo, IA",Iowa,"ALO - Waterloo, IA",Midwest
+BTR,10781,"Baton Rouge, LA",Louisiana,"BTR - Baton Rouge, LA",Southeast
+CHO,10990,"Charlottesville, VA",Virginia,"CHO - Charlottesville, VA",Northeast
+COS,11109,"Colorado Springs, CO",Colorado,"COS - Colorado Springs, CO",Southwest
+COU,11111,"Columbia, MO",Missouri,"COU - Columbia, MO",Midwest
+DOV,11375,"Dover, DE",Delaware,"DOV - Dover, DE",Northeast
+GRB,11977,"Green Bay, WI",Wisconsin,"GRB - Green Bay, WI",Midwest
+MCF,13195,"Tampa, FL",Florida,"MCF - Tampa, FL",Southeast
+NZY,13791,"San Diego, CA",California,"NZY - San Diego, CA",Pacific
+SFB,14761,"Sanford, FL",Florida,"SFB - Sanford, FL",Southeast
+ELD,11531,"El Dorado, AR",Arkansas,"ELD - El Dorado, AR",Southeast
+HIK,12134,"Honolulu, HI",Hawaii,"HIK - Honolulu, HI",Pacific
+MCC,13192,"Sacramento, CA",California,"MCC - Sacramento, CA",Pacific
+MHV,13297,"Mojave, CA",California,"MHV - Mojave, CA",Pacific
+NUW,13772,"Whidbey Island, WA",Washington,"NUW - Whidbey Island, WA",Northwest
+UAM,15422,"Guam, TT",U.S. Pacific Trust Territories and Possessions,"UAM - Guam, TT",Pacific
+VAD,15550,"Valdosta, GA",Georgia,"VAD - Valdosta, GA",Southeast
+HOU,12191,"Houston, TX",Texas,"HOU - Houston, TX",Southwest
+BGR,10581,"Bangor, ME",Maine,"BGR - Bangor, ME",Northeast
+OSC,13947,"Oscoda, MI",Michigan,"OSC - Oscoda, MI",Midwest
+AIA,10221,"Alliance, NE",Nebraska,"AIA - Alliance, NE",Midwest
+CDR,10925,"Chadron, NE",Nebraska,"CDR - Chadron, NE",Midwest
+A20,10033,"Alpine, AK",Alaska,"A20 - Alpine, AK",Alaska
+RQI,14601,"Nixon Fork Mine, AK",Alaska,"RQI - Nixon Fork Mine, AK",Alaska
+GFK,11898,"Grand Forks, ND",North Dakota,"GFK - Grand Forks, ND",Midwest
+HUF,12228,"Terre Haute, IN",Indiana,"HUF - Terre Haute, IN",Midwest
+LCH,12915,"Lake Charles, LA",Louisiana,"LCH - Lake Charles, LA",Southeast
+LRU,13072,"Las Cruces, NM",New Mexico,"LRU - Las Cruces, NM",Southwest
+MGM,13277,"Montgomery, AL",Alabama,"MGM - Montgomery, AL",Southeast
+MWA,13543,"Marion/Herrin, IL",Illinois,"MWA - Marion/Herrin, IL",Midwest
+PUB,14288,"Pueblo, CO",Colorado,"PUB - Pueblo, CO",Southwest
+ABR,10141,"Aberdeen, SD",South Dakota,"ABR - Aberdeen, SD",Midwest
+ACV,10157,"Arcata/Eureka, CA",California,"ACV - Arcata/Eureka, CA",Pacific
+APN,10333,"Alpena, MI",Michigan,"APN - Alpena, MI",Midwest
+ATW,10408,"Appleton, WI",Wisconsin,"ATW - Appleton, WI",Midwest
+AUO,10419,"Auburn, AL",Alabama,"AUO - Auburn, AL",Southeast
+AVP,10434,"Scranton/Wilkes-Barre, PA",Pennsylvania,"AVP - Scranton/Wilkes-Barre, PA",Northeast
+BFF,10558,"Scottsbluff, NE",Nebraska,"BFF - Scottsbluff, NE",Midwest
+BFL,10561,"Bakersfield, CA",California,"BFL - Bakersfield, CA",Pacific
+BFM,10562,"Mobile, AL",Alabama,"BFM - Mobile, AL",Southeast
+BIH,10617,"Bishop, CA",California,"BIH - Bishop, CA",Pacific
+BIS,10627,"Bismarck/Mandan, ND",North Dakota,"BIS - Bismarck/Mandan, ND",Midwest
+BJI,10631,"Bemidji, MN",Minnesota,"BJI - Bemidji, MN",Midwest
+BKW,10654,"Beckley, WV",West Virginia,"BKW - Beckley, WV",Northeast
+BMI,10685,"Bloomington/Normal, IL",Illinois,"BMI - Bloomington/Normal, IL",Midwest
+BQN,10732,"Aguadilla, PR",Puerto Rico,"BQN - Aguadilla, PR",Southeast
+BTV,10785,"Burlington, VT",Vermont,"BTV - Burlington, VT",Northeast
+BWD,10817,"Brownwood, TX",Texas,"BWD - Brownwood, TX",Southwest
+BZN,10849,"Bozeman, MT",Montana,"BZN - Bozeman, MT",Northwest
+CDC,10918,"Cedar City, UT",Utah,"CDC - Cedar City, UT",Southwest
+CEC,10930,"Crescent City, CA",California,"CEC - Crescent City, CA",Pacific
+CHA,10980,"Chattanooga, TN",Tennessee,"CHA - Chattanooga, TN",Southeast
+CIC,11002,"Chico, CA",California,"CIC - Chico, CA",Pacific
+CIU,11013,"Sault Ste. Marie, MI",Michigan,"CIU - Sault Ste. Marie, MI",Midwest
+CMX,11076,"Hancock/Houghton, MI",Michigan,"CMX - Hancock/Houghton, MI",Midwest
+COD,11097,"Cody, WY",Wyoming,"COD - Cody, WY",Northwest
+CWA,11203,"Mosinee, WI",Wisconsin,"CWA - Mosinee, WI",Midwest
+DHN,11308,"Dothan, AL",Alabama,"DHN - Dothan, AL",Southeast
+DIK,11315,"Dickinson, ND",North Dakota,"DIK - Dickinson, ND",Midwest
+DLH,11337,"Duluth, MN",Minnesota,"DLH - Duluth, MN",Midwest
+EAR,11468,"Kearney, NE",Nebraska,"EAR - Kearney, NE",Midwest
+EKA,11522,"Eureka, CA",California,"EKA - Eureka, CA",Pacific
+ELM,11537,"Elmira/Corning, NY",New York,"ELM - Elmira/Corning, NY",Northeast
+ESC,11587,"Escanaba, MI",Michigan,"ESC - Escanaba, MI",Midwest
+EWN,11617,"New Bern/Morehead/Beaufort, NC",North Carolina,"EWN - New Bern/Morehead/Beaufort, NC",Southeast
+EYW,11624,"Key West, FL",Florida,"EYW - Key West, FL",Southeast
+FCA,11648,"Kalispell, MT",Montana,"FCA - Kalispell, MT",Northwest
+GCK,11867,"Garden City, KS",Kansas,"GCK - Garden City, KS",Southwest
+GJT,11921,"Grand Junction, CO",Colorado,"GJT - Grand Junction, CO",Southwest
+GRI,11980,"Grand Island, NE",Nebraska,"GRI - Grand Island, NE",Midwest
+HDN,12094,"Hayden, CO",Colorado,"HDN - Hayden, CO",Southwest
+HTS,12223,"Ashland, WV",West Virginia,"HTS - Ashland, WV",Northeast
+ILM,12323,"Wilmington, NC",North Carolina,"ILM - Wilmington, NC",Southeast
+IMT,12335,"Iron Mountain/Kingsfd, MI",Michigan,"IMT - Iron Mountain/Kingsfd, MI",Midwest
+IPL,12363,"El Centro, CA",California,"IPL - El Centro, CA",Pacific
+IPT,12365,"Williamsport, PA",Pennsylvania,"IPT - Williamsport, PA",Northeast
+ISN,12389,"Williston, ND",North Dakota,"ISN - Williston, ND",Midwest
+IYK,12436,"Inyokern, CA",California,"IYK - Inyokern, CA",Pacific
+JAC,12441,"Jackson, WY",Wyoming,"JAC - Jackson, WY",Northwest
+JHM,12492,"Kapalua, HI",Hawaii,"JHM - Kapalua, HI",Pacific
+JHW,12494,"Jamestown, NY",New York,"JHW - Jamestown, NY",Northeast
+LBF,12899,"North Platte, NE",Nebraska,"LBF - North Platte, NE",Midwest
+LNY,13034,"Lanai, HI",Hawaii,"LNY - Lanai, HI",Pacific
+MCW,13211,"Mason City, IA",Iowa,"MCW - Mason City, IA",Midwest
+NZC,13788,"Jacksonville, FL",Florida,"NZC - Jacksonville, FL",Southeast
+OGA,13827,"Ogallala, NE",Nebraska,"OGA - Ogallala, NE",Midwest
+PRB,14236,"Paso Robles, CA",California,"PRB - Paso Robles, CA",Pacific
+RIW,14534,"Riverton/Lander, WY",Wyoming,"RIW - Riverton/Lander, WY",Northwest
+SQA,14965,"Santa Ynez, CA",California,"SQA - Santa Ynez, CA",Pacific
+KGX,12676,"Grayling, AK",Alaska,"KGX - Grayling, AK",Alaska
+KYU,12868,"Koyukuk, AK",Alaska,"KYU - Koyukuk, AK",Alaska
+AVL,10431,"Asheville, NC",North Carolina,"AVL - Asheville, NC",Southeast
+CAK,10874,"Akron, OH",Ohio,"CAK - Akron, OH",Midwest
+CLU,11058,"Columbus, IN",Indiana,"CLU - Columbus, IN",Midwest
+EVV,11612,"Evansville, IN",Indiana,"EVV - Evansville, IN",Midwest
+MFD,13255,"Mansfield, OH",Ohio,"MFD - Mansfield, OH",Midwest
+MKG,13344,"Muskegon, MI",Michigan,"MKG - Muskegon, MI",Midwest
+MRC,13464,"Columbia, TN",Tennessee,"MRC - Columbia, TN",Southeast
+ONA,13881,"Winona, MN",Minnesota,"ONA - Winona, MN",Midwest
+TRI,15323,"Bristol/Johnson City/Kingsport, TN",Tennessee,"TRI - Bristol/Johnson City/Kingsport, TN",Southeast
+ALN,10267,"Alton, IL",Illinois,"ALN - Alton, IL",Midwest
+EGV,11510,"Eagle River, WI",Wisconsin,"EGV - Eagle River, WI",Midwest
+MCN,13203,"Macon, GA",Georgia,"MCN - Macon, GA",Southeast
+ORL,13936,"Orlando, FL",Florida,"ORL - Orlando, FL",Southeast
+PSP,14262,"Palm Springs, CA",California,"PSP - Palm Springs, CA",Pacific
+AIN,10225,"Wainwright, AK",Alaska,"AIN - Wainwright, AK",Alaska
+AKP,10247,"Anaktuvuk Pass, AK",Alaska,"AKP - Anaktuvuk Pass, AK",Alaska
+ARC,10349,"Arctic Village, AK",Alaska,"ARC - Arctic Village, AK",Alaska
+FYU,11833,"Fort Yukon, AK",Alaska,"FYU - Fort Yukon, AK",Alaska
+HSL,12214,"Huslia, AK",Alaska,"HSL - Huslia, AK",Alaska
+HUS,12235,"Hughes, AK",Alaska,"HUS - Hughes, AK",Alaska
+RBY,14474,"Ruby, AK",Alaska,"RBY - Ruby, AK",Alaska
+VDZ,15579,"Valdez, AK",Alaska,"VDZ - Valdez, AK",Alaska
+PDB,14046,"Pedro Bay, AK",Alaska,"PDB - Pedro Bay, AK",Alaska
+CYS,11233,"Cheyenne, WY",Wyoming,"CYS - Cheyenne, WY",Northwest
+MTM,13504,"Metlakatla, AK",Alaska,"MTM - Metlakatla, AK",Alaska
+OCF,13809,"Ocala, FL",Florida,"OCF - Ocala, FL",Southeast
+PTH,14273,"Port Heiden, AK",Alaska,"PTH - Port Heiden, AK",Alaska
+VEE,15581,"Venetie, AK",Alaska,"VEE - Venetie, AK",Alaska
+AUK,10416,"Alakanuk, AK",Alaska,"AUK - Alakanuk, AK",Alaska
+ELI,11535,"Elim, AK",Alaska,"ELI - Elim, AK",Alaska
+GLV,11941,"Golovin, AK",Alaska,"GLV - Golovin, AK",Alaska
+KKH,12708,"Kongiganak, AK",Alaska,"KKH - Kongiganak, AK",Alaska
+KKI,12709,"Akiachak, AK",Alaska,"KKI - Akiachak, AK",Alaska
+KWK,12851,"Kwigillingok, AK",Alaska,"KWK - Kwigillingok, AK",Alaska
+MYU,13579,"Mekoryuk, AK",Alaska,"MYU - Mekoryuk, AK",Alaska
+SHG,14804,"Shungnak, AK",Alaska,"SHG - Shungnak, AK",Alaska
+SLQ,14880,"Sleetmute, AK",Alaska,"SLQ - Sleetmute, AK",Alaska
+TLA,15245,"Teller, AK",Alaska,"TLA - Teller, AK",Alaska
+GON,11961,"New London/Groton, CT",Connecticut,"GON - New London/Groton, CT",Northeast
+O1H,16722,"Millersburg, OH",Ohio,"O1H - Millersburg, OH",Midwest
+SHD,14802,"Staunton, VA",Virginia,"SHD - Staunton, VA",Northeast
+PVC,14306,"Provincetown, MA",Massachusetts,"PVC - Provincetown, MA",Northeast
+CNO,11086,"Chino, CA",California,"CNO - Chino, CA",Pacific
+DCU,11282,"Decatur, AL",Alabama,"DCU - Decatur, AL",Southeast
+OPF,13898,"Miami, FL",Florida,"OPF - Miami, FL",Southeast
+SLN,14877,"Salina, KS",Kansas,"SLN - Salina, KS",Southwest
+A1K,16668,"Deadhorse1, AK",Alaska,"A1K - Deadhorse1, AK",Alaska
+A26,10039,"Ivotuk, AK",Alaska,"A26 - Ivotuk, AK",Alaska
+ZNC,16311,"Nyac, AK",Alaska,"ZNC - Nyac, AK",Alaska
+YNG,16133,"Youngstown/Warren, OH",Ohio,"YNG - Youngstown/Warren, OH",Midwest
+BRD,10739,"Brainerd, MN",Minnesota,"BRD - Brainerd, MN",Midwest
+AMA,10279,"Amarillo, TX",Texas,"AMA - Amarillo, TX",Southwest
+ISP,12391,"Islip, NY",New York,"ISP - Islip, NY",Northeast
+COF,11099,"Cocoa Beach, FL",Florida,"COF - Cocoa Beach, FL",Southeast
+NUQ,13771,"Mountain View, CA",California,"NUQ - Mountain View, CA",Pacific
+GVL,12028,"Gainesville, GA",Georgia,"GVL - Gainesville, GA",Southeast
+TLJ,15250,"Tatalina, AK",Alaska,"TLJ - Tatalina, AK",Alaska
+ATY,10409,"Watertown, SD",South Dakota,"ATY - Watertown, SD",Midwest
+MLB,13360,"Melbourne, FL",Florida,"MLB - Melbourne, FL",Southeast
+CHD,10982,"Chandler, AZ",Arizona,"CHD - Chandler, AZ",Southwest
+CHZ,10999,"Chiloquin, OR",Oregon,"CHZ - Chiloquin, OR",Northwest
+DVT,11450,"Phoenix, AZ",Arizona,"DVT - Phoenix, AZ",Southwest
+SDX,14744,"Sedona, AZ",Arizona,"SDX - Sedona, AZ",Southwest
+DPA,11376,"Chicago, IL",Illinois,"DPA - Chicago, IL",Midwest
+SFZ,14778,"Smithfield, RI",Rhode Island,"SFZ - Smithfield, RI",Northeast
+TTN,15356,"Trenton, NJ",New Jersey,"TTN - Trenton, NJ",Northeast
+AOO,10322,"Altoona, PA",Pennsylvania,"AOO - Altoona, PA",Northeast
+ARA,10347,"New Iberia, LA",Louisiana,"ARA - New Iberia, LA",Southeast
+DDC,11283,"Dodge City, KS",Kansas,"DDC - Dodge City, KS",Southwest
+MFH,13259,"Mesquite, NV",Nevada,"MFH - Mesquite, NV",Pacific
+RUI,14646,"Ruidoso, NM",New Mexico,"RUI - Ruidoso, NM",Southwest
+TSP,15344,"Tehachapi, CA",California,"TSP - Tehachapi, CA",Pacific
+PTK,14275,"Pontiac, MI",Michigan,"PTK - Pontiac, MI",Midwest
+INT,12348,"Winston-Salem, NC",North Carolina,"INT - Winston-Salem, NC",Southeast
+ISO,12390,"Kinston, NC",North Carolina,"ISO - Kinston, NC",Southeast
+LAF,12878,"Lafayette, IN",Indiana,"LAF - Lafayette, IN",Midwest
+OAJ,13795,"Jacksonville/Camp Lejeune, NC",North Carolina,"OAJ - Jacksonville/Camp Lejeune, NC",Southeast
+PGD,14082,"Punta Gorda, FL",Florida,"PGD - Punta Gorda, FL",Southeast
+MMT,13397,"Columbia, SC",South Carolina,"MMT - Columbia, SC",Southeast
+NIP,13682,"Jacksonville, FL",Florida,"NIP - Jacksonville, FL",Southeast
+LSV,13087,"Las Vegas, NV",Nevada,"LSV - Las Vegas, NV",Pacific
+RIV,14533,"Riverside, CA",California,"RIV - Riverside, CA",Pacific
+DQS,11399,"Whitmore, AZ",Arizona,"DQS - Whitmore, AZ",Southwest
+BLV,10676,"Belleville, IL",Illinois,"BLV - Belleville, IL",Midwest
+CLD,11041,"Carlsbad, CA",California,"CLD - Carlsbad, CA",Pacific
+SAF,14674,"Santa Fe, NM",New Mexico,"SAF - Santa Fe, NM",Southwest
+SCF,14712,"Phoenix, AZ",Arizona,"SCF - Phoenix, AZ",Southwest
+SDM,14736,"San Diego, CA",California,"SDM - San Diego, CA",Pacific
+GKN,11924,"Gulkana, AK",Alaska,"GKN - Gulkana, AK",Alaska
+MYK,13574,"May Creek, AK",Alaska,"MYK - May Creek, AK",Alaska
+NIB,13676,"Nikolai, AK",Alaska,"NIB - Nikolai, AK",Alaska
+SBD,14691,"San Bernardino, CA",California,"SBD - San Bernardino, CA",Pacific
+KNW,12755,"New Stuyahok, AK",Alaska,"KNW - New Stuyahok, AK",Alaska
+CYM,11230,"Chatham, AK",Alaska,"CYM - Chatham, AK",Alaska
+ANB,10298,"Anniston, AL",Alabama,"ANB - Anniston, AL",Southeast
+CMI,11067,"Champaign/Urbana, IL",Illinois,"CMI - Champaign/Urbana, IL",Midwest
+GDC,11871,"Greenville, SC",South Carolina,"GDC - Greenville, SC",Southeast
+II3,12307,"De Kalb, IL",Illinois,"II3 - De Kalb, IL",Midwest
+DQK,11391,"Fort Drum, NY",New York,"DQK - Fort Drum, NY",Northeast
+NC1,13619,"Gastonia, NC",North Carolina,"NC1 - Gastonia, NC",Southeast
+PGV,14092,"Greenville, NC",North Carolina,"PGV - Greenville, NC",Southeast
+PIB,14109,"Hattiesburg/Laurel, MS",Mississippi,"PIB - Hattiesburg/Laurel, MS",Southeast
+VPS,15624,"Valparaiso, FL",Florida,"VPS - Valparaiso, FL",Southeast
+ACY,10158,"Atlantic City, NJ",New Jersey,"ACY - Atlantic City, NJ",Northeast
+PKB,14131,"Parkersburg, WV",West Virginia,"PKB - Parkersburg, WV",Northeast
+XNA,15919,"Fayetteville, AR",Arkansas,"XNA - Fayetteville, AR",Southeast
+GYR,12054,"Goodyear, AZ",Arizona,"GYR - Goodyear, AZ",Southwest
+SUX,15048,"Sioux City, IA",Iowa,"SUX - Sioux City, IA",Midwest
+ATT,10405,"Atmautluak, AK",Alaska,"ATT - Atmautluak, AK",Alaska
+PTU,14282,"Platinum, AK",Alaska,"PTU - Platinum, AK",Alaska
+TLT,15257,"Tuluksak, AK",Alaska,"TLT - Tuluksak, AK",Alaska
+FAR,11637,"Fargo, ND",North Dakota,"FAR - Fargo, ND",Midwest
+HON,12185,"Huron, SD",South Dakota,"HON - Huron, SD",Midwest
+MSL,13484,"Muscle Shoals, AL",Alabama,"MSL - Muscle Shoals, AL",Southeast
+UVA,15511,"Uvalde, TX",Texas,"UVA - Uvalde, TX",Southwest
+AET,10184,"Allakaket, AK",Alaska,"AET - Allakaket, AK",Alaska
+PIZ,14125,"Point Lay, AK",Alaska,"PIZ - Point Lay, AK",Alaska
+WBQ,15725,"Beaver, AK",Alaska,"WBQ - Beaver, AK",Alaska
+NUL,13768,"Nulato, AK",Alaska,"NUL - Nulato, AK",Alaska
+CWF,15825,"Lake Charles, LA",Louisiana,"CWF - Lake Charles, LA",Southeast
+MEI,13241,"Meridian, MS",Mississippi,"MEI - Meridian, MS",Southeast
+UXP,15530,"Bay St. Louis, MS",Mississippi,"UXP - Bay St. Louis, MS",Southeast
+FXE,11827,"Fort Lauderdale, FL",Florida,"FXE - Fort Lauderdale, FL",Southeast
+APF,10329,"Naples, FL",Florida,"APF - Naples, FL",Southeast
+TMB,15260,"Miami, FL",Florida,"TMB - Miami, FL",Southeast
+DRF,11410,"Drift River, AK",Alaska,"DRF - Drift River, AK",Alaska
+EAA,11463,"Eagle, AK",Alaska,"EAA - Eagle, AK",Alaska
+MLY,13381,"Manley Hot Springs, AK",Alaska,"MLY - Manley Hot Springs, AK",Alaska
+TKE,15231,"Tenakee, AK",Alaska,"TKE - Tenakee, AK",Alaska
+NKI,13693,"Naukiti, AK",Alaska,"NKI - Naukiti, AK",Alaska
+WWP,15885,"Whale Pass, AK",Alaska,"WWP - Whale Pass, AK",Alaska
+IGG,12294,"Igiugig, AK",Alaska,"IGG - Igiugig, AK",Alaska
+SSW,15003,"Stuart Island, WA",Washington,"SSW - Stuart Island, WA",Northwest
+WA3,16654,"Shaw Island, WA",Washington,"WA3 - Shaw Island, WA",Northwest
+ASN,10380,"Talladega, AL",Alabama,"ASN - Talladega, AL",Southeast
+CEF,10933,"Chicopee Falls, MA",Massachusetts,"CEF - Chicopee Falls, MA",Northeast
+OKK,13854,"Kokomo/Logansport/Peru, IN",Indiana,"OKK - Kokomo/Logansport/Peru, IN",Midwest
+OLS,13868,"Nogales, AZ",Arizona,"OLS - Nogales, AZ",Southwest
+PAH,14006,"Paducah, KY",Kentucky,"PAH - Paducah, KY",Midwest
+TTD,15351,"Troutdale, OR",Oregon,"TTD - Troutdale, OR",Northwest
+MLU,13377,"Monroe, LA",Louisiana,"MLU - Monroe, LA",Southeast
+PAM,14009,"Panama City, FL",Florida,"PAM - Panama City, FL",Southeast
+EDF,11487,"Anchorage, AK",Alaska,"EDF - Anchorage, AK",Alaska
+MIB,13304,"Minot, ND",North Dakota,"MIB - Minot, ND",Midwest
+FSM,11778,"Fort Smith, AR",Arkansas,"FSM - Fort Smith, AR",Southeast
+MVN,13537,"Mount Vernon, IL",Illinois,"MVN - Mount Vernon, IL",Midwest
+TN8,12574,"Nashville, TN",Tennessee,"TN8 - Nashville, TN",Southeast
+CKD,11028,"Crooked Creek, AK",Alaska,"CKD - Crooked Creek, AK",Alaska
+FTW,11789,"Dallas/Fort Worth, TX",Texas,"FTW - Dallas/Fort Worth, TX",Southwest
+MTJ,13502,"Montrose/Delta, CO",Colorado,"MTJ - Montrose/Delta, CO",Southwest
+FPR,11732,"Fort Pierce, FL",Florida,"FPR - Fort Pierce, FL",Southeast
+AAF,10122,"Apalachicola, FL",Florida,"AAF - Apalachicola, FL",Southeast
+GGW,11908,"Glasgow, MT",Montana,"GGW - Glasgow, MT",Northwest
+OVE,13981,"Oroville, CA",California,"OVE - Oroville, CA",Pacific
+FFO,11668,"Dayton, OH",Ohio,"FFO - Dayton, OH",Midwest
+IFP,10590,"Bullhead City, AZ",Arizona,"IFP - Bullhead City, AZ",Southwest
+DAB,11252,"Daytona Beach, FL",Florida,"DAB - Daytona Beach, FL",Southeast
+KOY,12771,"Olga Bay, AK",Alaska,"KOY - Olga Bay, AK",Alaska
+KPR,12782,"Port Williams, AK",Alaska,"KPR - Port Williams, AK",Alaska
+MRF,16679,"Marfa, TX",Texas,"MRF - Marfa, TX",Southwest
+MTN,13505,"Baltimore, MD",Maryland,"MTN - Baltimore, MD",Northeast
+PDK,14050,"Atlanta, GA",Georgia,"PDK - Atlanta, GA",Southeast
+SCH,14713,"Schenectady, NY",New York,"SCH - Schenectady, NY",Northeast
+SGR,14792,"Sugar Land, TX",Texas,"SGR - Sugar Land, TX",Southwest
+UT1,15498,"Heber, UT",Utah,"UT1 - Heber, UT",Southwest
+VRB,15628,"Vero Beach, FL",Florida,"VRB - Vero Beach, FL",Southeast
+IRC,12370,"Circle, AK",Alaska,"IRC - Circle, AK",Alaska
+WBB,15721,"Stebbins, AK",Alaska,"WBB - Stebbins, AK",Alaska
+PML,14167,"Port Moller, AK",Alaska,"PML - Port Moller, AK",Alaska
+WKK,15774,"Aleknagik, AK",Alaska,"WKK - Aleknagik, AK",Alaska
+CEM,10938,"Central, AK",Alaska,"CEM - Central, AK",Alaska
+WMO,15794,"White Mountain, AK",Alaska,"WMO - White Mountain, AK",Alaska
+TAL,15124,"Tanana, AK",Alaska,"TAL - Tanana, AK",Alaska
+FBK,11643,"Fairbanks, AK",Alaska,"FBK - Fairbanks, AK",Alaska
+HYG,12252,"Hydaburg, AK",Alaska,"HYG - Hydaburg, AK",Alaska
+OHC,13841,"Northeast Cape, AK",Alaska,"OHC - Northeast Cape, AK",Alaska
+PIP,14119,"Pilot Point, AK",Alaska,"PIP - Pilot Point, AK",Alaska
+TNC,15278,"Tin City, AK",Alaska,"TNC - Tin City, AK",Alaska
+KFP,12663,"False Pass, AK",Alaska,"KFP - False Pass, AK",Alaska
+KTB,12815,"Thorne Bay, AK",Alaska,"KTB - Thorne Bay, AK",Alaska
+KEK,12653,"Ekwok, AK",Alaska,"KEK - Ekwok, AK",Alaska
+KCL,12638,"Chignik Lagoon, AK",Alaska,"KCL - Chignik Lagoon, AK",Alaska
+KPB,12773,"Point Baker, AK",Alaska,"KPB - Point Baker, AK",Alaska
+KLL,12720,"Levelock, AK",Alaska,"KLL - Levelock, AK",Alaska
+SKF,14853,"San Antonio, TX",Texas,"SKF - San Antonio, TX",Southwest
+A43,10056,"Kodiak Island, AK",Alaska,"A43 - Kodiak Island, AK",Alaska
+KPY,12785,"Port Bailey, AK",Alaska,"KPY - Port Bailey, AK",Alaska
+MMH,13388,"Mammoth Lakes, CA",California,"MMH - Mammoth Lakes, CA",Pacific
+STS,15023,"Santa Rosa, CA",California,"STS - Santa Rosa, CA",Pacific
+UTM,15502,"Tunica, MS",Mississippi,"UTM - Tunica, MS",Southeast
+ALZ,10278,"Lazy Bay, AK",Alaska,"ALZ - Lazy Bay, AK",Alaska
+JST,12559,"Johnstown, PA",Pennsylvania,"JST - Johnstown, PA",Northeast
+LWB,13121,"Lewisburg, WV",West Virginia,"LWB - Lewisburg, WV",Northeast
+PTA,14268,"Port Alsworth, AK",Alaska,"PTA - Port Alsworth, AK",Alaska
+FLO,11699,"Florence, SC",South Carolina,"FLO - Florence, SC",Southeast
+BQK,10731,"Brunswick, GA",Georgia,"BQK - Brunswick, GA",Southeast
+GTR,12007,"Columbus, MS",Mississippi,"GTR - Columbus, MS",Southeast
+LBL,12902,"Liberal, KS",Kansas,"LBL - Liberal, KS",Southwest
+SHR,14812,"Sheridan, WY",Wyoming,"SHR - Sheridan, WY",Northwest
+TPL,15310,"Temple, TX",Texas,"TPL - Temple, TX",Southwest
+BIF,10615,"El Paso, TX",Texas,"BIF - El Paso, TX",Southwest
+MLI,13367,"Moline, IL",Illinois,"MLI - Moline, IL",Midwest
+NQX,13736,"Key West, FL",Florida,"NQX - Key West, FL",Southeast
+WSN,15853,"South Naknek, AK",Alaska,"WSN - South Naknek, AK",Alaska
+KCC,12633,"Coffman Cove, AK",Alaska,"KCC - Coffman Cove, AK",Alaska
+GBD,11856,"Great Bend, KS",Kansas,"GBD - Great Bend, KS",Southwest
+HOT,12190,"Hot Springs, AR",Arkansas,"HOT - Hot Springs, AR",Southeast
+PTV,14283,"Porterville, CA",California,"PTV - Porterville, CA",Pacific
+JLN,12511,"Joplin, MO",Missouri,"JLN - Joplin, MO",Midwest
+STC,15008,"St. Cloud, MN",Minnesota,"STC - St. Cloud, MN",Midwest
+A3K,16696,"Smith Bay, AK",Alaska,"A3K - Smith Bay, AK",Alaska
+DQH,11388,"Alpine, AK",Alaska,"DQH - Alpine, AK",Alaska
+HNM,12174,"Hana, HI",Hawaii,"HNM - Hana, HI",Pacific
+JRF,12549,"Kapolei, HI",Hawaii,"JRF - Kapolei, HI",Pacific
+LUP,13109,"Kalaupapa, HI",Hawaii,"LUP - Kalaupapa, HI",Pacific
+MUE,13520,"Kamuela, HI",Hawaii,"MUE - Kamuela, HI",Pacific
+HGR,12119,"Hagerstown, MD",Maryland,"HGR - Hagerstown, MD",Northeast
+TN4,15273,"Pulaski, TN",Tennessee,"TN4 - Pulaski, TN",Southeast
+CRP,11140,"Corpus Christi, TX",Texas,"CRP - Corpus Christi, TX",Southwest
+MOB,13422,"Mobile, AL",Alabama,"MOB - Mobile, AL",Southeast
+SRQ,14986,"Sarasota/Bradenton, FL",Florida,"SRQ - Sarasota/Bradenton, FL",Southeast
+ALS,10272,"Alamosa, CO",Colorado,"ALS - Alamosa, CO",Southwest
+WRL,15843,"Worland, WY",Wyoming,"WRL - Worland, WY",Northwest
+A02,10015,"Deadmans Bay, AK",Alaska,"A02 - Deadmans Bay, AK",Alaska
+KKB,12705,"Kitoi Bay, AK",Alaska,"KKB - Kitoi Bay, AK",Alaska
+KWP,12854,"West Point, AK",Alaska,"KWP - West Point, AK",Alaska
+ADK,10165,"Adak Island, AK",Alaska,"ADK - Adak Island, AK",Alaska
+FNR,11720,"Funter Bay Alaska, AK",Alaska,"FNR - Funter Bay Alaska, AK",Alaska
+BFD,10557,"Bradford, PA",Pennsylvania,"BFD - Bradford, PA",Northeast
+SPN,14955,"Saipan, TT",U.S. Pacific Trust Territories and Possessions,"SPN - Saipan, TT",Pacific
+TIQ,15215,"Tinian, TT",U.S. Pacific Trust Territories and Possessions,"TIQ - Tinian, TT",Pacific
+JRV,12553,"Ceiba, PR",Puerto Rico,"JRV - Ceiba, PR",Southeast
+CIK,11007,"Chalkyitsik, AK",Alaska,"CIK - Chalkyitsik, AK",Alaska
+UTO,15504,"Utopia, AK",Alaska,"UTO - Utopia, AK",Alaska
+GNV,11953,"Gainesville, FL",Florida,"GNV - Gainesville, FL",Southeast
+EIL,11517,"Fairbanks, AK",Alaska,"EIL - Fairbanks, AK",Alaska
+GRK,11982,"Killeen, TX",Texas,"GRK - Killeen, TX",Southwest
+KVC,12841,"King Cove, AK",Alaska,"KVC - King Cove, AK",Alaska
+UGS,15448,"Ugashik, AK",Alaska,"UGS - Ugashik, AK",Alaska
+EXI,11619,"Excursion Inlet, AK",Alaska,"EXI - Excursion Inlet, AK",Alaska
+ECG,11479,"Elizabeth City, NC",North Carolina,"ECG - Elizabeth City, NC",Southeast
+PUW,14303,"Pullman, WA",Washington,"PUW - Pullman, WA",Northwest
+XXP,15973,"Lakeport, CA",California,"XXP - Lakeport, CA",Pacific
+SRV,14987,"Stony River, AK",Alaska,"SRV - Stony River, AK",Alaska
+MRB,13463,"Martinsburg, WV",West Virginia,"MRB - Martinsburg, WV",Northeast
+SOV,14942,"Seldovia, AK",Alaska,"SOV - Seldovia, AK",Alaska
+IKO,12315,"Nikolski, AK",Alaska,"IKO - Nikolski, AK",Alaska
+JZM,12591,"Hog River, AK",Alaska,"JZM - Hog River, AK",Alaska
+FAY,11641,"Fayetteville, NC",North Carolina,"FAY - Fayetteville, NC",Southeast
+YUM,16218,"Yuma, AZ",Arizona,"YUM - Yuma, AZ",Southwest
+MKL,13348,"Jackson, TN",Tennessee,"MKL - Jackson, TN",Southeast
+CZN,11245,"Chisana, AK",Alaska,"CZN - Chisana, AK",Alaska
+RAC,14447,"Racine, WI",Wisconsin,"RAC - Racine, WI",Midwest
+AGS,10208,"Augusta, GA",Georgia,"AGS - Augusta, GA",Southeast
+MXF,13555,"Montgomery, AL",Alabama,"MXF - Montgomery, AL",Southeast
+NJK,13689,"El Centro, CA",California,"NJK - El Centro, CA",Pacific
+SVW,15063,"Sparrevohn, AK",Alaska,"SVW - Sparrevohn, AK",Alaska
+APA,10325,"Denver, CO",Colorado,"APA - Denver, CO",Southwest
+CGF,10965,"Cleveland, OH",Ohio,"CGF - Cleveland, OH",Midwest
+GPT,11973,"Gulfport/Biloxi, MS",Mississippi,"GPT - Gulfport/Biloxi, MS",Southeast
+VEL,15582,"Vernal, UT",Utah,"VEL - Vernal, UT",Southwest
+NEW,13655,"New Orleans, LA",Louisiana,"NEW - New Orleans, LA",Southeast
+STP,15020,"Minneapolis/St. Paul, MN",Minnesota,"STP - Minneapolis/St. Paul, MN",Midwest
+HSH,12211,"Las Vegas, NV",Nevada,"HSH - Las Vegas, NV",Pacific
+JXN,12576,"Jackson, MI",Michigan,"JXN - Jackson, MI",Midwest
+SWO,15074,"Stillwater, OK",Oklahoma,"SWO - Stillwater, OK",Southwest
+BBD,16665,"Brady, TX",Texas,"BBD - Brady, TX",Southwest
+FOD,11725,"Fort Dodge, IA",Iowa,"FOD - Fort Dodge, IA",Midwest
+PBF,14024,"Pine Bluff, AR",Arkansas,"PBF - Pine Bluff, AR",Southeast
+T5X,16709,"Castroville , TX",Texas,"T5X - Castroville , TX",Southwest
+A72,10085,"Chinitna Bay, AK",Alaska,"A72 - Chinitna Bay, AK",Alaska
+SWD,15069,"Seward, AK",Alaska,"SWD - Seward, AK",Alaska
+KZB,12869,"Zachar Bay, AK",Alaska,"KZB - Zachar Bay, AK",Alaska
+KMO,12737,"Manokotak, AK",Alaska,"KMO - Manokotak, AK",Alaska
+AGC,10198,"Pittsburgh, PA",Pennsylvania,"AGC - Pittsburgh, PA",Northeast
+FYV,11834,"Fayetteville, AR",Arkansas,"FYV - Fayetteville, AR",Southeast
+GAD,11840,"Gadsden, AL",Alabama,"GAD - Gadsden, AL",Southeast
+CGA,10961,"Craig, AK",Alaska,"CGA - Craig, AK",Alaska
+EDA,11484,"Edna Bay, AK",Alaska,"EDA - Edna Bay, AK",Alaska
+TCT,15160,"Takotna, AK",Alaska,"TCT - Takotna, AK",Alaska
+05A,10005,"Little Squaw, AK",Alaska,"05A - Little Squaw, AK",Alaska
+BTT,10783,"Bettles, AK",Alaska,"BTT - Bettles, AK",Alaska
+LUR,13111,"Cape Lisburne, AK",Alaska,"LUR - Cape Lisburne, AK",Alaska
+UMT,15472,"Umiat, AK",Alaska,"UMT - Umiat, AK",Alaska
+MDO,13226,"Middleton Island, AK",Alaska,"MDO - Middleton Island, AK",Alaska
+LFI,12947,"Newport News/Hampton, VA",Virginia,"LFI - Newport News/Hampton, VA",Northeast
+RQZ,14618,"Mary Esther, FL",Florida,"RQZ - Mary Esther, FL",Southeast
+CDL,10923,"Candle, AK",Alaska,"CDL - Candle, AK",Alaska
+DTR,11431,"Decatur Island, WA",Washington,"DTR - Decatur Island, WA",Northwest
+FTY,11790,"Atlanta, GA",Georgia,"FTY - Atlanta, GA",Southeast
+EFD,11495,"Houston, TX",Texas,"EFD - Houston, TX",Southwest
+EGP,11506,"Eagle Pass, TX",Texas,"EGP - Eagle Pass, TX",Southwest
+LBE,12898,"Latrobe, PA",Pennsylvania,"LBE - Latrobe, PA",Northeast
+OWB,13983,"Owensboro, KY",Kentucky,"OWB - Owensboro, KY",Midwest
+SDY,14745,"Sidney, MT",Montana,"SDY - Sidney, MT",Northwest
+DEC,11288,"Decatur, IL",Illinois,"DEC - Decatur, IL",Midwest
+LAL,12882,"Lakeland, FL",Florida,"LAL - Lakeland, FL",Southeast
+A03,10016,"Hallo Bay, AK",Alaska,"A03 - Hallo Bay, AK",Alaska
+POB,14197,"Fayetteville, NC",North Carolina,"POB - Fayetteville, NC",Southeast
+MVC,16527,"Monroeville, AL",Alabama,"MVC - Monroeville, AL",Southeast
+SYA,15090,"Shemya, AK",Alaska,"SYA - Shemya, AK",Alaska
+WAL,15713,"Chincoteague, VA",Virginia,"WAL - Chincoteague, VA",Northeast
+AHN,10216,"Athens, GA",Georgia,"AHN - Athens, GA",Southeast
+QQT,14430,"Peachtree City, GA",Georgia,"QQT - Peachtree City, GA",Southeast
+SVH,15054,"Statesville, NC",North Carolina,"SVH - Statesville, NC",Southeast
+IGM,12297,"Kingman, AZ",Arizona,"IGM - Kingman, AZ",Southwest
+KNB,12745,"Kanab, UT",Utah,"KNB - Kanab, UT",Southwest
+DQL,11392,"Anchorage, AK",Alaska,"DQL - Anchorage, AK",Alaska
+HFD,12108,"Hartford, CT",Connecticut,"HFD - Hartford, CT",Northeast
+HKB,12141,"Healy, AK",Alaska,"HKB - Healy, AK",Alaska
+KOZ,12772,"Ouzinkie, AK",Alaska,"KOZ - Ouzinkie, AK",Alaska
+A63,10076,"Yukon Charley Rivvers, AK",Alaska,"A63 - Yukon Charley Rivvers, AK",Alaska
+TN6,15275,"Dyersburg, TN",Tennessee,"TN6 - Dyersburg, TN",Southeast
+LSE,13076,"La Crosse, WI",Wisconsin,"LSE - La Crosse, WI",Midwest
+WA6,15707,"Stehekin, WA",Washington,"WA6 - Stehekin, WA",Northwest
+LPO,13052,"La Porte, IN",Indiana,"LPO - La Porte, IN",Midwest
+BVY,10815,"Beverly, MA",Massachusetts,"BVY - Beverly, MA",Northeast
+MQI,16634,"Quincy, MA",Massachusetts,"MQI - Quincy, MA",Northeast
+GAI,11842,"Gaithersburg, MD",Maryland,"GAI - Gaithersburg, MD",Northeast
+VA7,16721,"Bridgewater, VA",Virginia,"VA7 - Bridgewater, VA",Northeast
+BFT,10569,"Beaufort, SC",South Carolina,"BFT - Beaufort, SC",Southeast
+HTO,12222,"East Hampton, NY",New York,"HTO - East Hampton, NY",Northeast
+MMI,13389,"Athens, TN",Tennessee,"MMI - Athens, TN",Southeast
+UXR,15532,"Monument Valley, UT",Utah,"UXR - Monument Valley, UT",Southwest
+CTH,11165,"Coatesville, PA",Pennsylvania,"CTH - Coatesville, PA",Northeast
+DCK,11280,"Dahl Creek, AK",Alaska,"DCK - Dahl Creek, AK",Alaska
+VIK,15599,"Kavik River, AK",Alaska,"VIK - Kavik River, AK",Alaska
+ZXF,16339,"Illinois Creek, AK",Alaska,"ZXF - Illinois Creek, AK",Alaska
+OGS,13832,"Ogdensburg, NY",New York,"OGS - Ogdensburg, NY",Northeast
+NTU,13763,"Oceana, VA",Virginia,"NTU - Oceana, VA",Northeast
+XSD,15930,"Tonopah, NV",Nevada,"XSD - Tonopah, NV",Pacific
+AST,10385,"Astoria/Seaside, OR",Oregon,"AST - Astoria/Seaside, OR",Northwest
+ELN,11538,"Ellensburg, WA",Washington,"ELN - Ellensburg, WA",Northwest
+VWE,15650,"Chelan, WA",Washington,"VWE - Chelan, WA",Northwest
+WA7,15708,"Chelan, WA",Washington,"WA7 - Chelan, WA",Northwest
+MUO,13525,"Mountain Home, ID",Idaho,"MUO - Mountain Home, ID",Northwest
+NKX,13700,"San Diego, CA",California,"NKX - San Diego, CA",Pacific
+MNZ,13418,"Manassas, VA",Virginia,"MNZ - Manassas, VA",Northeast
+NHZ,13674,"Brunswick, ME",Maine,"NHZ - Brunswick, ME",Northeast
+SFM,14769,"Sanford, ME",Maine,"SFM - Sanford, ME",Northeast
+SOP,14938,"Pinehurst/Southern Pines, NC",North Carolina,"SOP - Pinehurst/Southern Pines, NC",Southeast
+GLR,11938,"Gaylord, MI",Michigan,"GLR - Gaylord, MI",Midwest
+MCK,13200,"McCook, NE",Nebraska,"MCK - McCook, NE",Midwest
+OSH,13949,"Oshkosh, WI",Wisconsin,"OSH - Oshkosh, WI",Midwest
+QQY,14435,"San Marcos, TX",Texas,"QQY - San Marcos, TX",Southwest
+ENV,11563,"Wendover, UT",Utah,"ENV - Wendover, UT",Southwest
+NNK,13714,"Naknek, AK",Alaska,"NNK - Naknek, AK",Alaska
+VZY,15700,"Katmai Lodge, AK",Alaska,"VZY - Katmai Lodge, AK",Alaska
+A52,10065,"Silver Salmon Creek, AK",Alaska,"A52 - Silver Salmon Creek, AK",Alaska
+EHM,11512,"Cape Newenham, AK",Alaska,"EHM - Cape Newenham, AK",Alaska
+PSE,14254,"Ponce, PR",Puerto Rico,"PSE - Ponce, PR",Southeast
+GST,11997,"Gustavus, AK",Alaska,"GST - Gustavus, AK",Alaska
+LPS,13055,"Lopez Island, WA",Washington,"LPS - Lopez Island, WA",Northwest
+WA5,15706,"Winthrop, WA",Washington,"WA5 - Winthrop, WA",Northwest
+SZL,15108,"Knob Noster, MO",Missouri,"SZL - Knob Noster, MO",Midwest
+ISQ,12392,"Manistique, MI",Michigan,"ISQ - Manistique, MI",Midwest
+OSU,13958,"Columbus, OH",Ohio,"OSU - Columbus, OH",Midwest
+FET,11663,"Fremont, NE",Nebraska,"FET - Fremont, NE",Midwest
+PGS,14091,"Peach Springs, AZ",Arizona,"PGS - Peach Springs, AZ",Southwest
+TRM,15325,"Thermal, CA",California,"TRM - Thermal, CA",Pacific
+LYH,13139,"Lynchburg, VA",Virginia,"LYH - Lynchburg, VA",Northeast
+VGT,15589,"Las Vegas, NV",Nevada,"VGT - Las Vegas, NV",Pacific
+GCY,11870,"Greeneville, TN",Tennessee,"GCY - Greeneville, TN",Southeast
+AND,10300,"Anderson, SC",South Carolina,"AND - Anderson, SC",Southeast
+FKL,11684,"Franklin/Oil City, PA",Pennsylvania,"FKL - Franklin/Oil City, PA",Northeast
+F70,11627,"Murrieta/Temecula, CA",California,"F70 - Murrieta/Temecula, CA",Pacific
+NY1,13781,"Kingston, NY",New York,"NY1 - Kingston, NY",Northeast
+ORI,13934,"Port Lions, AK",Alaska,"ORI - Port Lions, AK",Alaska
+RMP,14559,"Rampart, AK",Alaska,"RMP - Rampart, AK",Alaska
+KCG,12635,"Chignik Bay, AK",Alaska,"KCG - Chignik Bay, AK",Alaska
+KCQ,12641,"Chignik, AK",Alaska,"KCQ - Chignik, AK",Alaska
+KPV,12784,"Perryville, AK",Alaska,"KPV - Perryville, AK",Alaska
+AGN,10204,"Angoon, AK",Alaska,"AGN - Angoon, AK",Alaska
+KNK,12748,"Kokhanok, AK",Alaska,"KNK - Kokhanok, AK",Alaska
+NNL,13715,"Nondalton, AK",Alaska,"NNL - Nondalton, AK",Alaska
+ECP,11481,"Panama City, FL",Florida,"ECP - Panama City, FL",Southeast
+KXA,12857,"Kasaan, AK",Alaska,"KXA - Kasaan, AK",Alaska
+WMK,15793,"Meyers Chuck, AK",Alaska,"WMK - Meyers Chuck, AK",Alaska
+CLP,11053,"Clarks Point, AK",Alaska,"CLP - Clarks Point, AK",Alaska
+KGK,12671,"Koliganek, AK",Alaska,"KGK - Koliganek, AK",Alaska
+LIJ,12983,"Long Island, AK",Alaska,"LIJ - Long Island, AK",Alaska
+AIK,10224,"Aiken, SC",South Carolina,"AIK - Aiken, SC",Southeast
+BDR,10535,"Bridgeport, CT",Connecticut,"BDR - Bridgeport, CT",Northeast
+VT1,16588,"West Dover, VT",Vermont,"VT1 - West Dover, VT",Northeast
+GFL,11899,"Glens Falls, NY",New York,"GFL - Glens Falls, NY",Northeast
+PPV,14229,"Port Protection, AK",Alaska,"PPV - Port Protection, AK",Alaska
+APC,10327,"Napa, CA",California,"APC - Napa, CA",Pacific
+MNT,13415,"Minto, AK",Alaska,"MNT - Minto, AK",Alaska
+NLG,13704,"Nelson Lagoon, AK",Alaska,"NLG - Nelson Lagoon, AK",Alaska
+HVN,12244,"New Haven, CT",Connecticut,"HVN - New Haven, CT",Northeast
+LEB,12932,"Lebanon-Hanover, NH",New Hampshire,"LEB - Lebanon-Hanover, NH",Northeast
+LEW,12944,"Lewiston/Auburn, ME",Maine,"LEW - Lewiston/Auburn, ME",Northeast
+ROG,14577,"Rogers, AR",Arkansas,"ROG - Rogers, AR",Southeast
+HYL,12253,"Hollis, AK",Alaska,"HYL - Hollis, AK",Alaska
+PEC,14062,"Pelican, AK",Alaska,"PEC - Pelican, AK",Alaska
+06A,10006,"Kizhuyak, AK",Alaska,"06A - Kizhuyak, AK",Alaska
+A29,10042,"Kiluda Bay, AK",Alaska,"A29 - Kiluda Bay, AK",Alaska
+AKK,10243,"Akhiok, AK",Alaska,"AKK - Akhiok, AK",Alaska
+DGB,11299,"Danger Bay, AK",Alaska,"DGB - Danger Bay, AK",Alaska
+KLN,12721,"Larsen Bay, AK",Alaska,"KLN - Larsen Bay, AK",Alaska
+PCT,14044,"Princeton, NJ",New Jersey,"PCT - Princeton, NJ",Northeast
+BKG,10643,"Branson, MO",Missouri,"BKG - Branson, MO",Midwest
+BPT,10728,"Beaumont/Port Arthur, TX",Texas,"BPT - Beaumont/Port Arthur, TX",Southwest
+AUG,10414,"Augusta/Waterville, ME",Maine,"AUG - Augusta/Waterville, ME",Northeast
+MTP,13507,"Montauk Point, NY",New York,"MTP - Montauk Point, NY",Northeast
+NY7,16498,"Skaneateles, NY",New York,"NY7 - Skaneateles, NY",Northeast
+OXC,13987,"Waterbury, CT",Connecticut,"OXC - Waterbury, CT",Northeast
+PNE,14182,"Philadelphia, PA",Pennsylvania,"PNE - Philadelphia, PA",Northeast
+RUT,14648,"Rutland, VT",Vermont,"RUT - Rutland, VT",Northeast
+VGC,16454,"Hamilton, NY",New York,"VGC - Hamilton, NY",Northeast
+LVK,13117,"Livermore, CA",California,"LVK - Livermore, CA",Pacific
+FDK,11656,"Frederick, MD",Maryland,"FDK - Frederick, MD",Northeast
+SSI,14996,"Brunswick, GA",Georgia,"SSI - Brunswick, GA",Southeast
+UES,15440,"Waukesha, WI",Wisconsin,"UES - Waukesha, WI",Midwest
+BHB,10589,"Bar Harbor, ME",Maine,"BHB - Bar Harbor, ME",Northeast
+OLH,13863,"Old Harbor, AK",Alaska,"OLH - Old Harbor, AK",Alaska
+DHB,16603,"Deer Harbor, WA",Washington,"DHB - Deer Harbor, WA",Northwest
+BID,10613,"Block Island, RI",Rhode Island,"BID - Block Island, RI",Northeast
+MSV,13493,"Monticello, NY",New York,"MSV - Monticello, NY",Northeast
+N3Y,16724,"Ticonderoga, NY",New York,"N3Y - Ticonderoga, NY",Northeast
+NPT,13731,"Newport, RI",Rhode Island,"NPT - Newport, RI",Northeast
+WST,15855,"Westerly, RI",Rhode Island,"WST - Westerly, RI",Northeast
+CZF,11241,"Cape Romanzof, AK",Alaska,"CZF - Cape Romanzof, AK",Alaska
+AK6,16581,"Gold King 2, AK",Alaska,"AK6 - Gold King 2, AK",Alaska
+SVS,15061,"Stevens Village, AK",Alaska,"SVS - Stevens Village, AK",Alaska
+BML,10687,"Berlin, NH",New Hampshire,"BML - Berlin, NH",Northeast
+PSF,14255,"Pittsfield, MA",Massachusetts,"PSF - Pittsfield, MA",Northeast
+JEF,12474,"Jefferson City, MO",Missouri,"JEF - Jefferson City, MO",Midwest
+DVL,11447,"Devils Lake, ND",North Dakota,"DVL - Devils Lake, ND",Midwest
+INL,12343,"International Falls, MN",Minnesota,"INL - International Falls, MN",Midwest
+SPI,14952,"Springfield, IL",Illinois,"SPI - Springfield, IL",Midwest
+JMS,12519,"Jamestown, ND",North Dakota,"JMS - Jamestown, ND",Midwest
+EAU,11471,"Eau Claire, WI",Wisconsin,"EAU - Eau Claire, WI",Midwest
+IML,12332,"Imperial, NE",Nebraska,"IML - Imperial, NE",Midwest
+ART,10361,"Watertown, NY",New York,"ART - Watertown, NY",Northeast
+FID,11675,"Fishers Island, NY",New York,"FID - Fishers Island, NY",Northeast
+GED,11883,"Georgetown, DE",Delaware,"GED - Georgetown, DE",Northeast
+NH3,16731,"Haverhill, NH",New Hampshire,"NH3 - Haverhill, NH",Northeast
+VA2,15546,"Chesapeake, VA",Virginia,"VA2 - Chesapeake, VA",Northeast
+TEX,15177,"Telluride, CO",Colorado,"TEX - Telluride, CO",Southwest
+FMY,11714,"Fort Myers, FL",Florida,"FMY - Fort Myers, FL",Southeast
+TWA,15385,"Twin Hills, AK",Alaska,"TWA - Twin Hills, AK",Alaska
+KEB,12649,"Nanwalek, AK",Alaska,"KEB - Nanwalek, AK",Alaska
+BLM,10670,"Belmar/Farmingdale, NJ",New Jersey,"BLM - Belmar/Farmingdale, NJ",Northeast
+ONH,13884,"Oneonta, NY",New York,"ONH - Oneonta, NY",Northeast
+ZXU,16353,"North Kingstown, RI",Rhode Island,"ZXU - North Kingstown, RI",Northeast
+DXR,11456,"Danbury, CT",Connecticut,"DXR - Danbury, CT",Northeast
+LOU,13044,"Louisville, KY",Kentucky,"LOU - Louisville, KY",Midwest
+BJC,10630,"Broomfield, CO",Colorado,"BJC - Broomfield, CO",Southwest
+AL8,16737,"Scottsboro, AL",Alabama,"AL8 - Scottsboro, AL",Southeast
+AR3,16738,"Bentonville, AR",Arkansas,"AR3 - Bentonville, AR",Southeast
+T1N,16741,"Selmer, TN",Tennessee,"T1N - Selmer, TN",Southeast
+MXY,13564,"McCarthy, AK",Alaska,"MXY - McCarthy, AK",Alaska
+LWM,13125,"Lawrence, MA",Massachusetts,"LWM - Lawrence, MA",Northeast
+OWD,13984,"Norwood, MA",Massachusetts,"OWD - Norwood, MA",Northeast
+ZXM,16345,"Saltery Cove, AK",Alaska,"ZXM - Saltery Cove, AK",Alaska
+ELV,11545,"Elfin Cove, AK",Alaska,"ELV - Elfin Cove, AK",Alaska
+DOF,11367,"Dora Bay, AK",Alaska,"DOF - Dora Bay, AK",Alaska
+WWA,15881,"Wasilla, AK",Alaska,"WWA - Wasilla, AK",Alaska
+BBX,10504,"Blue Bell, PA",Pennsylvania,"BBX - Blue Bell, PA",Northeast
+HAR,12070,"Harrisburg, PA",Pennsylvania,"HAR - Harrisburg, PA",Northeast
+A27,10040,"Pogo Mines, AK",Alaska,"A27 - Pogo Mines, AK",Alaska
+KBC,12621,"Birch Creek, AK",Alaska,"KBC - Birch Creek, AK",Alaska
+CXF,11214,"Coldfoot, AK",Alaska,"CXF - Coldfoot, AK",Alaska
+LMA,13016,"Lake Minchumina, AK",Alaska,"LMA - Lake Minchumina, AK",Alaska
+RLU,14551,"Bornite/Ruby Creek, AK",Alaska,"RLU - Bornite/Ruby Creek, AK",Alaska
+ZXH,16340,"Chomondely Sound, AK",Alaska,"ZXH - Chomondely Sound, AK",Alaska
+KPC,12774,"Port Clarence, AK",Alaska,"KPC - Port Clarence, AK",Alaska
+WCR,15731,"Chandalar, AK",Alaska,"WCR - Chandalar, AK",Alaska
+FQW,11756,"Fort Glenn, AK",Alaska,"FQW - Fort Glenn, AK",Alaska
+IKK,12314,"Kankakee, IL",Illinois,"IKK - Kankakee, IL",Midwest
+QQB,14412,"Keyes Point, AK",Alaska,"QQB - Keyes Point, AK",Alaska
+HNS,12175,"Haines, AK",Alaska,"HNS - Haines, AK",Alaska
+FVQ,11813,"Donlin Creek Mine, AK",Alaska,"FVQ - Donlin Creek Mine, AK",Alaska
+CT6,16681,"East Haddam, CT",Connecticut,"CT6 - East Haddam, CT",Northeast
+LCI,12916,"Laconia, NH",New Hampshire,"LCI - Laconia, NH",Northeast
+LNS,13032,"Lancaster, PA",Pennsylvania,"LNS - Lancaster, PA",Northeast
+MVL,13535,"Morrisville, VT",Vermont,"MVL - Morrisville, VT",Northeast
+NAD,13599,"North Adams, MA",Massachusetts,"NAD - North Adams, MA",Northeast
+NCO,13630,"North Kingstown, RI",Rhode Island,"NCO - North Kingstown, RI",Northeast
+RKD,14539,"Rockland, ME",Maine,"RKD - Rockland, ME",Northeast
+DKK,11331,"Dunkirk, NY",New York,"DKK - Dunkirk, NY",Northeast
+BAF,10478,"Westfield, MA",Massachusetts,"BAF - Westfield, MA",Northeast
+FHB,16363,"Fernandina Beach, FL",Florida,"FHB - Fernandina Beach, FL",Southeast
+ME7,16736,"Stonington, ME",Maine,"ME7 - Stonington, ME",Northeast
+N3C,16728,"Franklin, NC",North Carolina,"N3C - Franklin, NC",Southeast
+VWK,15656,"Saratoga Springs, NY",New York,"VWK - Saratoga Springs, NY",Northeast
+IN7,16742,"Indianapolis, IN",Indiana,"IN7 - Indianapolis, IN",Midwest
+CRE,11135,"Myrtle Beach, SC",South Carolina,"CRE - Myrtle Beach, SC",Southeast
+FFT,11669,"Frankfort, KY",Kentucky,"FFT - Frankfort, KY",Midwest
+TKI,15235,"Tokeen, AK",Alaska,"TKI - Tokeen, AK",Alaska
+JZU,12599,"Bennington, VT",Vermont,"JZU - Bennington, VT",Northeast
+LEE,12934,"Leesburg, FL",Florida,"LEE - Leesburg, FL",Southeast
+MA2,16479,"Montague, MA",Massachusetts,"MA2 - Montague, MA",Northeast
+MSS,13490,"Massena, NY",New York,"MSS - Massena, NY",Northeast
+OCA,12661,"Key Largo, FL",Florida,"OCA - Key Largo, FL",Southeast
+EEN,11493,"Keene, NH",New Hampshire,"EEN - Keene, NH",Northeast
+UBF,15427,"Chatham, MA",Massachusetts,"UBF - Chatham, MA",Northeast
+DWH,11453,"Houston, TX",Texas,"DWH - Houston, TX",Southwest
+A17,10030,"Port Vita, AK",Alaska,"A17 - Port Vita, AK",Alaska
+A28,10041,"Ayakulik River, AK",Alaska,"A28 - Ayakulik River, AK",Alaska
+DQU,11401,"Ketchikan, AK",Alaska,"DQU - Ketchikan, AK",Alaska
+KBE,12622,"Bell Island, AK",Alaska,"KBE - Bell Island, AK",Alaska
+WHD,15754,"Hyder, AK",Alaska,"WHD - Hyder, AK",Alaska
+SKJ,14855,"Sitkinak, AK",Alaska,"SKJ - Sitkinak, AK",Alaska
+KAE,12610,"Kake, AK",Alaska,"KAE - Kake, AK",Alaska
+SAC,14672,"Sacramento, CA",California,"SAC - Sacramento, CA",Pacific
+LVD,13115,"Lime Village, AK",Alaska,"LVD - Lime Village, AK",Alaska
+SGY,14797,"Skagway, AK",Alaska,"SGY - Skagway, AK",Alaska
+WSX,15856,"Westsound, WA",Washington,"WSX - Westsound, WA",Northwest
+MOD,13424,"Modesto, CA",California,"MOD - Modesto, CA",Pacific
+OLM,13865,"Olympia, WA",Washington,"OLM - Olympia, WA",Northwest
+PRC,14237,"Prescott, AZ",Arizona,"PRC - Prescott, AZ",Southwest
+6B0,16429,"Middlebury, VT",Vermont,"6B0 - Middlebury, VT",Northeast
+EWB,11615,"New Bedford/Fall River, MA",Massachusetts,"EWB - New Bedford/Fall River, MA",Northeast
+HHH,12124,"Hilton Head, SC",South Carolina,"HHH - Hilton Head, SC",Southeast
+ME3,16540,"Belfast, ME",Maine,"ME3 - Belfast, ME",Northeast
+MPV,13450,"Montpelier/Barre, VT",Vermont,"MPV - Montpelier/Barre, VT",Northeast
+GEK,11885,"Ganes Creek, AK",Alaska,"GEK - Ganes Creek, AK",Alaska
+CUB,11176,"Columbia, SC",South Carolina,"CUB - Columbia, SC",Southeast
+CEZ,10950,"Cortez, CO",Colorado,"CEZ - Cortez, CO",Southwest
+CT1,16441,"Plainville, CT",Connecticut,"CT1 - Plainville, CT",Northeast
+ESN,11592,"Easton, MD",Maryland,"ESN - Easton, MD",Northeast
+BEH,10543,"Benton Harbor/St. Joseph, MI",Michigan,"BEH - Benton Harbor/St. Joseph, MI",Midwest
+HLN,12156,"Helena, MT",Montana,"HLN - Helena, MT",Northwest
+CDW,10927,"Caldwell, NJ",New Jersey,"CDW - Caldwell, NJ",Northeast
+VSF,15634,"Springfield, VT",Vermont,"VSF - Springfield, VT",Northeast
+SBM,14695,"Sheboygan, WI",Wisconsin,"SBM - Sheboygan, WI",Midwest
+A6K,16720,"Fairbanks1, AK",Alaska,"A6K - Fairbanks1, AK",Alaska
+WWD,15882,"Cape May, NJ",New Jersey,"WWD - Cape May, NJ",Northeast
+LKP,13008,"Lake Placid, NY",New York,"LKP - Lake Placid, NY",Northeast
+NJ7,16727,"New Jersey, NJ",New Jersey,"NJ7 - New Jersey, NJ",Northeast
+SEG,14751,"Selinsgrove, PA",Pennsylvania,"SEG - Selinsgrove, PA",Northeast
+HIB,12129,"Hibbing, MN",Minnesota,"HIB - Hibbing, MN",Midwest
+7AK,16567,"Akun, AK",Alaska,"7AK - Akun, AK",Alaska
+SUA,15030,"Stuart, FL",Florida,"SUA - Stuart, FL",Southeast
+THV,15203,"York, PA",Pennsylvania,"THV - York, PA",Northeast
+CNY,11092,"Moab, UT",Utah,"CNY - Moab, UT",Southwest
+MA5,16543,"Northampton, MA",Massachusetts,"MA5 - Northampton, MA",Northeast
+MD2,16710,"Indian Head, MD",Maryland,"MD2 - Indian Head, MD",Northeast
+TKF,15232,"Truckee, CA",California,"TKF - Truckee, CA",Pacific
+VA4,15548,"Leesburg, VA",Virginia,"VA4 - Leesburg, VA",Northeast
+WSG,15847,"Washington, PA",Pennsylvania,"WSG - Washington, PA",Northeast
+MHM,13292,"Minchumina, AK",Alaska,"MHM - Minchumina, AK",Alaska
+BCE,10511,"Bryce Canyon, UT",Utah,"BCE - Bryce Canyon, UT",Southwest
+GQQ,11975,"Galion, OH",Ohio,"GQQ - Galion, OH",Midwest
+CEU,10945,"Clemson, SC",South Carolina,"CEU - Clemson, SC",Southeast
+O2H,16729,"Mount Vernon, OH",Ohio,"O2H - Mount Vernon, OH",Midwest
+HHR,12127,"Hawthorne, CA",California,"HHR - Hawthorne, CA",Pacific
+GUC,12012,"Gunnison, CO",Colorado,"GUC - Gunnison, CO",Southwest
+PBK,14028,"Pack Creek, AK",Alaska,"PBK - Pack Creek, AK",Alaska
+QMN,14400,"Mansfield, MA",Massachusetts,"QMN - Mansfield, MA",Northeast
+FCM,11650,"Minneapolis, MN",Minnesota,"FCM - Minneapolis, MN",Midwest
+DSI,11421,"Destin, FL",Florida,"DSI - Destin, FL",Southeast
+UST,15497,"St. Augustine, FL",Florida,"UST - St. Augustine, FL",Southeast
+PGC,16524,"Petersburg, WV",West Virginia,"PGC - Petersburg, WV",Northeast
+TN7,15276,"Winchester, TN",Tennessee,"TN7 - Winchester, TN",Southeast
+ZZV,16361,"Zanesville, OH",Ohio,"ZZV - Zanesville, OH",Midwest
+T6X,16745,"Houston, TX",Texas,"T6X - Houston, TX",Southwest
+DLO,11341,"Dolomi, AK",Alaska,"DLO - Dolomi, AK",Alaska
+WA9,16515,"Brewster, WA",Washington,"WA9 - Brewster, WA",Northwest
+ARB,10348,"Ann Arbor, MI",Michigan,"ARB - Ann Arbor, MI",Midwest
+JGG,12484,"Williamsburg, VA",Virginia,"JGG - Williamsburg, VA",Northeast
+ATO,10400,"Athens, OH",Ohio,"ATO - Athens, OH",Midwest
+GDV,11879,"Glendive, MT",Montana,"GDV - Glendive, MT",Northwest
+CJR,14371,"Culpeper, VA",Virginia,"CJR - Culpeper, VA",Northeast
+HES,12103,"Hermiston, OR",Oregon,"HES - Hermiston, OR",Northwest
+DIO,11317,"Diomede Island, AK",Alaska,"DIO - Diomede Island, AK",Alaska
+ISS,12394,"Wiscasset, ME",Maine,"ISS - Wiscasset, ME",Northeast
+PTD,14270,"Port Alexander, AK",Alaska,"PTD - Port Alexander, AK",Alaska
+GTY,16682,"Gettysburg, PA",Pennsylvania,"GTY - Gettysburg, PA",Northeast
+HAO,12068,"Hamilton, OH",Ohio,"HAO - Hamilton, OH",Midwest
+PGM,14088,"Port Graham, AK",Alaska,"PGM - Port Graham, AK",Alaska
+MBL,13182,"Manistee/Ludington, MI",Michigan,"MBL - Manistee/Ludington, MI",Midwest
+N1Y,16680,"Canandaigua, NY",New York,"N1Y - Canandaigua, NY",Northeast
+PPC,14218,"Prospect Creek, AK",Alaska,"PPC - Prospect Creek, AK",Alaska
+GWO,12039,"Greenwood, MS",Mississippi,"GWO - Greenwood, MS",Southeast
+HBH,12079,"Hobart Bay, AK",Alaska,"HBH - Hobart Bay, AK",Alaska
+DE2,16520,"Middletown, DE",Delaware,"DE2 - Middletown, DE",Northeast
+RMN,14557,"Stafford, VA",Virginia,"RMN - Stafford, VA",Northeast
+WVL,15879,"Augusta/Waterville, ME",Maine,"WVL - Augusta/Waterville, ME",Northeast
+ENN,11559,"Nenana, AK",Alaska,"ENN - Nenana, AK",Alaska
+CTX,11174,"Cortland, NY",New York,"CTX - Cortland, NY",Northeast
+MD1,16463,"Michellville, MD",Maryland,"MD1 - Michellville, MD",Northeast
+JBR,12455,"Jonesboro, AR",Arkansas,"JBR - Jonesboro, AR",Southeast
+N4C,16750,"Sanford, NC",North Carolina,"N4C - Sanford, NC",Southeast
+SYI,15093,"Shelbyville/Tullahoma, TN",Tennessee,"SYI - Shelbyville/Tullahoma, TN",Southeast
+CON,11106,"Concord, NH",New Hampshire,"CON - Concord, NH",Northeast
+DUA,11434,"Durant, OK",Oklahoma,"DUA - Durant, OK",Southwest
+AYS,10460,"Waycross, GA",Georgia,"AYS - Waycross, GA",Southeast
+TYR,15411,"Tyler, TX",Texas,"TYR - Tyler, TX",Southwest
+JZY,12603,"Grangeville, ID",Idaho,"JZY - Grangeville, ID",Northwest
+NH1,16548,"Hampton, NH",New Hampshire,"NH1 - Hampton, NH",Northeast
+LPR,15534,"Lorain/Elyria, OH",Ohio,"LPR - Lorain/Elyria, OH",Midwest
+A2K,10770,"Bartletts, AK",Alaska,"A2K - Bartletts, AK",Alaska
+NY3,16704,"Brockport, NY",New York,"NY3 - Brockport, NY",Northeast
+ME4,16553,"Oxford, ME",Maine,"ME4 - Oxford, ME",Northeast
+GCC,11865,"Gillette, WY",Wyoming,"GCC - Gillette, WY",Northwest
+SAA,14670,"Saratoga, WY",Wyoming,"SAA - Saratoga, WY",Northwest
+AKB,10237,"Atka, AK",Alaska,"AKB - Atka, AK",Alaska
+PYM,14332,"Plymouth, MA",Massachusetts,"PYM - Plymouth, MA",Northeast
+MLC,13361,"McAlester, OK",Oklahoma,"MLC - McAlester, OK",Southwest
+PA6,16643,"Pittsburgh1, PA",Pennsylvania,"PA6 - Pittsburgh1, PA",Northeast
+HYS,12255,"Hays, KS",Kansas,"HYS - Hays, KS",Southwest
+GMU,11947,"Greenville, SC",South Carolina,"GMU - Greenville, SC",Southeast
+GSH,11994,"Goshen, IN",Indiana,"GSH - Goshen, IN",Midwest
+HBG,12078,"Hattiesburg, MS",Mississippi,"HBG - Hattiesburg, MS",Southeast
+NV5,16725,"Gerlach, NV",Nevada,"NV5 - Gerlach, NV",Pacific
+RBH,14468,"Brooks Lodge, AK",Alaska,"RBH - Brooks Lodge, AK",Alaska
+NJ1,13685,"Berlin, NJ",New Jersey,"NJ1 - Berlin, NJ",Northeast
+IL2,16744,"Effingham, IL",Illinois,"IL2 - Effingham, IL",Midwest
+VCT,15569,"Victoria, TX",Texas,"VCT - Victoria, TX",Southwest
+DMN,11348,"Deming, NM",New Mexico,"DMN - Deming, NM",Southwest
+TLF,15248,"Telida, AK",Alaska,"TLF - Telida, AK",Alaska
+STE,15010,"Stevens Point, WI",Wisconsin,"STE - Stevens Point, WI",Midwest
+SMN,14897,"Salmon, ID",Idaho,"SMN - Salmon, ID",Northwest
+SPB,14945,"Charlotte Amalie, VI",U.S. Virgin Islands,"SPB - Charlotte Amalie, VI",Southeast
+FWH,11824,"Fort Worth, TX",Texas,"FWH - Fort Worth, TX",Southwest
+KWF,12847,"Waterfall, AK",Alaska,"KWF - Waterfall, AK",Alaska
+ZXN,16346,"Clover Bay, AK",Alaska,"ZXN - Clover Bay, AK",Alaska
+AK7,16584,"Rampart, AK",Alaska,"AK7 - Rampart, AK",Alaska
+GBH,11859,"Galbraith Lake, AK",Alaska,"GBH - Galbraith Lake, AK",Alaska
+JZI,12587,"Portland, TN",Tennessee,"JZI - Portland, TN",Southeast
+BRL,10744,"Burlington, IA",Iowa,"BRL - Burlington, IA",Midwest
+SXQ,15086,"Soldotna, AK",Alaska,"SXQ - Soldotna, AK",Alaska
+SSB,14992,"Christiansted, VI",U.S. Virgin Islands,"SSB - Christiansted, VI",Southeast
+MVM,13536,"Kayenta, AZ",Arizona,"MVM - Kayenta, AZ",Southwest
+LAW,12891,"Lawton/Fort Sill, OK",Oklahoma,"LAW - Lawton/Fort Sill, OK",Southwest
+RSN,14630,"Ruston, LA",Louisiana,"RSN - Ruston, LA",Southeast
+CCR,10910,"Concord, CA",California,"CCR - Concord, CA",Pacific
+SPS,14960,"Wichita Falls, TX",Texas,"SPS - Wichita Falls, TX",Southwest
+STF,15011,"Starkville, MS",Mississippi,"STF - Starkville, MS",Southeast
+UOX,15481,"Oxford, MS",Mississippi,"UOX - Oxford, MS",Southeast
+GGG,11905,"Longview, TX",Texas,"GGG - Longview, TX",Southwest
+LAR,12888,"Laramie, WY",Wyoming,"LAR - Laramie, WY",Northwest
+OFU,13826,"Ofu, TT",U.S. Pacific Trust Territories and Possessions,"OFU - Ofu, TT",Pacific
+DBQ,11274,"Dubuque, IA",Iowa,"DBQ - Dubuque, IA",Midwest
+HKY,12149,"Hickory, NC",North Carolina,"HKY - Hickory, NC",Southeast
+NHK,13671,"Patuxent River, MD",Maryland,"NHK - Patuxent River, MD",Northeast
+EKO,11525,"Elko, NV",Nevada,"EKO - Elko, NV",Pacific
+SVN,15057,"Savannah, GA",Georgia,"SVN - Savannah, GA",Southeast
+DMA,11344,"Tucson, AZ",Arizona,"DMA - Tucson, AZ",Southwest
+HRO,12207,"Harrison, AR",Arkansas,"HRO - Harrison, AR",Southeast
+MCE,13194,"Merced, CA",California,"MCE - Merced, CA",Pacific
+RDG,14488,"Reading, PA",Pennsylvania,"RDG - Reading, PA",Northeast
+TCM,15154,"Tacoma, WA",Washington,"TCM - Tacoma, WA",Northwest
+LSF,13077,"Columbus, GA",Georgia,"LSF - Columbus, GA",Southeast
+LKK,13003,"Kulik Lake, AK",Alaska,"LKK - Kulik Lake, AK",Alaska
+CNM,11085,"Carlsbad, NM",New Mexico,"CNM - Carlsbad, NM",Southwest
+GLH,11931,"Greenville, MS",Mississippi,"GLH - Greenville, MS",Southeast
+RCA,14475,"Rapid City, SD",South Dakota,"RCA - Rapid City, SD",Midwest
+IWD,12412,"Ironwood, MI",Michigan,"IWD - Ironwood, MI",Midwest
+SVC,15051,"Silver City/Hurley, NM",New Mexico,"SVC - Silver City/Hurley, NM",Southwest
+MDH,13221,"Carbondale, IL",Illinois,"MDH - Carbondale, IL",Midwest
+LAM,12883,"Los Alamos, NM",New Mexico,"LAM - Los Alamos, NM",Southwest
+LGU,12965,"Logan, UT",Utah,"LGU - Logan, UT",Southwest
+WYS,15897,"West Yellowstone, MT",Montana,"WYS - West Yellowstone, MT",Northwest
+FHU,11673,"Fort Huachuca, AZ",Arizona,"FHU - Fort Huachuca, AZ",Southwest
+MIE,13307,"Muncie/Anderson/Newcastle, IN",Indiana,"MIE - Muncie/Anderson/Newcastle, IN",Midwest
+BTM,10779,"Butte, MT",Montana,"BTM - Butte, MT",Northwest
+FAQ,16647,"Fitiuta Village, TT",U.S. Pacific Trust Territories and Possessions,"FAQ - Fitiuta Village, TT",Pacific
+SOW,14943,"Show Low, AZ",Arizona,"SOW - Show Low, AZ",Southwest
+NTD,13756,"Port Hueneme, CA",California,"NTD - Port Hueneme, CA",Pacific
+HVR,12245,"Havre, MT",Montana,"HVR - Havre, MT",Northwest
+IRK,12375,"Kirksville, MO",Missouri,"IRK - Kirksville, MO",Midwest
+CVN,11197,"Clovis, NM",New Mexico,"CVN - Clovis, NM",Southwest
+MAZ,13176,"Mayaguez, PR",Puerto Rico,"MAZ - Mayaguez, PR",Southeast
+RBN,14470,"Fort Jefferson, FL",Florida,"RBN - Fort Jefferson, FL",Southeast
+CGI,10967,"Cape Girardeau, MO",Missouri,"CGI - Cape Girardeau, MO",Midwest
+TBN,15138,"Fort Leonard Wood, MO",Missouri,"TBN - Fort Leonard Wood, MO",Midwest
+HOB,12177,"Hobbs, NM",New Mexico,"HOB - Hobbs, NM",Southwest
+VLD,15607,"Valdosta, GA",Georgia,"VLD - Valdosta, GA",Southeast
+ALW,10275,"Walla Walla, WA",Washington,"ALW - Walla Walla, WA",Northwest
+SNS,14922,"Salinas/Monterey, CA",California,"SNS - Salinas/Monterey, CA",Pacific
+BOK,10715,"Brookings, OR",Oregon,"BOK - Brookings, OR",Northwest
+ZXC,16336,"Gasquet, CA",California,"ZXC - Gasquet, CA",Pacific
+HKS,12147,"Jackson, MS",Mississippi,"HKS - Jackson, MS",Southeast
+FLT,11702,"Flat, AK",Alaska,"FLT - Flat, AK",Alaska
+A7K,16723,"Nakochna, AK",Alaska,"A7K - Nakochna, AK",Alaska
+SEF,14750,"Sebring, FL",Florida,"SEF - Sebring, FL",Southeast
+GNT,16746,"Grants, NM",New Mexico,"GNT - Grants, NM",Southwest
+GEY,11893,"Greybull, WY",Wyoming,"GEY - Greybull, WY",Northwest
+QQN,14424,"Woodlake, CA",California,"QQN - Woodlake, CA",Pacific
+OR4,16560,"Bend, OR",Oregon,"OR4 - Bend, OR",Northwest
+DTO,11430,"Denton, TX",Texas,"DTO - Denton, TX",Southwest
+N2C,16719,"Monroe, NC",North Carolina,"N2C - Monroe, NC",Southeast
+VWD,15649,"Hanford, CA",California,"VWD - Hanford, CA",Pacific
+CAR,10879,"Caribou, ME",Maine,"CAR - Caribou, ME",Northeast
+FTG,11784,"Denver, CO",Colorado,"FTG - Denver, CO",Southwest
+ENW,11564,"Kenosha, WI",Wisconsin,"ENW - Kenosha, WI",Midwest
+SQV,14972,"Sequim, WA",Washington,"SQV - Sequim, WA",Northwest
+AUW,10424,"Wausau, WI",Wisconsin,"AUW - Wausau, WI",Midwest
+XXN,15971,"Willits, CA",California,"XXN - Willits, CA",Pacific
+FAL,11633,"Roma, TX",Texas,"FAL - Roma, TX",Southwest
+UXY,15539,"Circle, MT",Montana,"UXY - Circle, MT",Northwest
+HUL,12232,"Houlton, ME",Maine,"HUL - Houlton, ME",Northeast
+XXY,15982,"Fortuna, CA",California,"XXY - Fortuna, CA",Pacific
+A39,10052,"Ptarmigan Lake, AK",Alaska,"A39 - Ptarmigan Lake, AK",Alaska
+A4K,16698,"Dune Lake, AK",Alaska,"A4K - Dune Lake, AK",Alaska
+A51,10064,"Wien Lake, AK",Alaska,"A51 - Wien Lake, AK",Alaska
+LOZ,13046,"London/Corbin, KY",Kentucky,"LOZ - London/Corbin, KY",Midwest
+XWF,15939,"Jerome, ID",Idaho,"XWF - Jerome, ID",Northwest
+RQY,14617,"Comanche, TX",Texas,"RQY - Comanche, TX",Southwest
+CEV,10946,"Connersville, IN",Indiana,"CEV - Connersville, IN",Midwest
+FDY,11659,"Findlay, OH",Ohio,"FDY - Findlay, OH",Midwest
+A40,10053,"Cape Simpson, AK",Alaska,"A40 - Cape Simpson, AK",Alaska
+UCY,15433,"Union City, TN",Tennessee,"UCY - Union City, TN",Southeast
+AOH,10317,"Lima, OH",Ohio,"AOH - Lima, OH",Midwest
+A35,11828,"Kaktovik, AK",Alaska,"A35 - Kaktovik, AK",Alaska
+HIF,12131,"Ogden, UT",Utah,"HIF - Ogden, UT",Southwest
+RRT,14623,"Warroad, MN",Minnesota,"RRT - Warroad, MN",Midwest
+CBA,10886,"Corner Bay, AK",Alaska,"CBA - Corner Bay, AK",Alaska
+NH2,16730,"Gorham, NH",New Hampshire,"NH2 - Gorham, NH",Northeast
+A37,10050,"Kako, AK",Alaska,"A37 - Kako, AK",Alaska
+NY5,16442,"Millbrook, NY",New York,"NY5 - Millbrook, NY",Northeast
+FWL,11825,"Farewell, AK",Alaska,"FWL - Farewell, AK",Alaska
+SC1,14706,"Beaufort, SC",South Carolina,"SC1 - Beaufort, SC",Southeast
+MDF,13219,"Medford, WI",Wisconsin,"MDF - Medford, WI",Midwest
+PA5,16525,"West Chester, PA",Pennsylvania,"PA5 - West Chester, PA",Northeast
+KZH,12870,"Kizhuyak, AK",Alaska,"KZH - Kizhuyak, AK",Alaska
+A04,10017,"Red Lake, AK",Alaska,"A04 - Red Lake, AK",Alaska
+WQZ,15838,"Chignik Lake, AK",Alaska,"WQZ - Chignik Lake, AK",Alaska
+N2Y,16715,"Seneca Falls, NY",New York,"N2Y - Seneca Falls, NY",Northeast
+CUW,11188,"Cube Cove, AK",Alaska,"CUW - Cube Cove, AK",Alaska
+ISM,12388,"Orlando, FL",Florida,"ISM - Orlando, FL",Southeast
+SPA,14944,"Spartanburg, SC",South Carolina,"SPA - Spartanburg, SC",Southeast
+MA1,13152,"Edgartown, MA",Massachusetts,"MA1 - Edgartown, MA",Northeast
+OPH,13899,"Ophir, AK",Alaska,"OPH - Ophir, AK",Alaska
+O3H,16739,"Columbus, OH",Ohio,"O3H - Columbus, OH",Midwest
+TSG,15339,"Tanacross, AK",Alaska,"TSG - Tanacross, AK",Alaska
+BCT,10519,"Boca Raton, FL",Florida,"BCT - Boca Raton, FL",Southeast
+FQI,11742,"Scott, KY",Kentucky,"FQI - Scott, KY",Midwest
+MS4,16743,"Batesville, MS",Mississippi,"MS4 - Batesville, MS",Southeast
+CVS,11200,"Clovis, NM",New Mexico,"CVS - Clovis, NM",Southwest
+RKR,14542,"Poteau, OK",Oklahoma,"RKR - Poteau, OK",Southwest
+TIK,15211,"Oklahoma City, OK",Oklahoma,"TIK - Oklahoma City, OK",Southwest
+SSC,14993,"Sumter, SC",South Carolina,"SSC - Sumter, SC",Southeast
+GSB,11992,"Goldsboro, NC",North Carolina,"GSB - Goldsboro, NC",Southeast
+BAD,10476,"Shreveport, LA",Louisiana,"BAD - Shreveport, LA",Southeast
+RND,14565,"San Antonio, TX",Texas,"RND - San Antonio, TX",Southwest
+HOP,12187,"Hopkinsville, KY",Kentucky,"HOP - Hopkinsville, KY",Midwest

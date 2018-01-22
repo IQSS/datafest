@@ -1,0 +1,25 @@
+bit.ly/DF_D3
+
+https://github.com/d3/d3/wiki/Gallery
+
+Code sample 1: https://codepen.io/ColeDCrawford/pen/baeqmV
+
+Code Sample 2: https://codepen.io/ColeDCrawford/pen/ppbeGe
+
+Code Sample 3: https://codepen.io/ColeDCrawford/pen/VyjWJQ 
+
+Code Sample 4: https://codepen.io/jaguillette/pen/JMyEvM
+
+Interactive data visualization for the web (Book): http://id.lib.harvard.edu/aleph/015117894/catalog
+
+Examples: https://bl.ocks.org/ 
+
+ 
+
+Reusable D3 Libraries:
+
+    D3 Plus: https://d3plus.org/ (D3-based reusable chart library. From Alexander Simoes, MIT)
+
+    RAW Graphs: http://rawgraphs.io/ (Export to PNG / SVG, or download data model as JSON. Uses D3 to produce graphs, but doesn't give you D3 code)
+
+    C3.js: http://c3js.org/  (D3-based reusable chart library)
