@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>University Graduate Salaries vs Cost</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>University Graduate Salaries vs Cost (2017)</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-9">
+				<div id="scatterplot"></div>
+			</div>
+			<div class="col-md-3">
+				<select multiple class="form-control" id="filter-conferences">
+				</select>
+				<div class="legendContainer">
+	 				<h3>School Rank (US News & World Report)</h3>
+	 					<div id="legend"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+
+	<!-- D3 implementation -->
+	<script src="js/scatterplot.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
