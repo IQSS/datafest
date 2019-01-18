@@ -3,12 +3,26 @@
 .details {
   position: absolute;
   text-align: center;
-  width: 120px;
-  /*height: 50px;*/
+  width: 175px;
   padding: 2px;
   font: 12px sans-serif;
   background: lightsteelblue;
   border: 0px;
   border-radius: 8px;
   pointer-events: none;
+}
+
+.details > div {
+  text-align: left;
+  margin-left: 5px;
+}
+#detail-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.axisLabel {
+  fill: black;
+  font-size: 1.8em;
 }

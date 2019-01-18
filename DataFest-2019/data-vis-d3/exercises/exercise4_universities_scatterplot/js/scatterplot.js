@@ -20,7 +20,7 @@ Scatterplot = function(_parentElement, _data){
 Scatterplot.prototype.initVis = function(){
   var vis = this;
 
-  vis.margin = { top: 20, right: 50, bottom: 20, left: 150 };
+  vis.margin = { top: 20, right: 50, bottom: 100, left: 150 };
   vis.width = 1000 - vis.margin.left - vis.margin.right;
   vis.height = 600 - vis.margin.top - vis.margin.bottom;
 
@@ -32,6 +32,7 @@ Scatterplot.prototype.initVis = function(){
 
   // Scales and axes
   // Domains are fixed - don't update
+  var formatAsCurrency = d3.format("$");
   vis.x = d3.scaleLinear()
     .range([0, vis.width])
     .domain([
@@ -40,11 +41,20 @@ Scatterplot.prototype.initVis = function(){
     ]);
 
   vis.xAxis = d3.axisBottom()
+    .tickFormat(formatAsCurrency)
     .scale(vis.x);
 
   vis.xAxisGroup = vis.svg.append("g")
     .attr("class", "x-axis axis")
     .attr("transform", "translate(0," + vis.height + ")");
+
+  vis.xAxisGroup.append("text")
+    .attr("transform",
+        "translate(" + (vis.width/2) + " ," +
+                       (50) + ")")
+    .style("text-anchor", "middle")
+    .attr("class", "axisLabel")
+    .text("Average Graduate Debt");
 
   vis.y = d3.scaleLinear()
     .range([vis.height, 0])
@@ -54,16 +64,20 @@ Scatterplot.prototype.initVis = function(){
     ]);
 
   vis.yAxis = d3.axisLeft()
+    .tickFormat(formatAsCurrency)
     .scale(vis.y);
 
   vis.yAxisGroup = vis.svg.append("g")
     .attr("class", "y-axis axis");
 
-  // Tooltip
-  // Needs to be on top of SVG - select the parent element
-  vis.tooltip = d3.select("#" + vis.parentElement).append("div")
-    .attr("class", "details")
-    .style("opacity", 0);
+  vis.yAxisGroup.append("text")
+    .attr("transform", "rotate(-90)")
+        .attr("y", 0 - vis.margin.left + 50)
+        .attr("x",0 - (vis.height / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .attr("class", "axisLabel")
+        .text("Average Graduate Salary");
 
   // Color scale
   vis.colorScale = d3.scaleThreshold()
@@ -74,33 +88,41 @@ Scatterplot.prototype.initVis = function(){
     .range(['Top 25','25-50','50-100','100-150','150-200','200+'])
 
   // Legend
-  // vis.legend = vis.svg.append("g")
-  //   .attr("class","legend")
-  //   .attr("transform","translate(50,30)")
-  //   .style("font-size","12px")
-  //   .call(d3.legend)
-  var legendSvg = d3.select("#legend").append("g")
+  var legendSvg = d3.select("#legend").append("svg")
     .attr("width", 200)
     .attr("height", 300);
   vis.legend = legendSvg.selectAll(".legendRange")
-    .data(vis.rankScale.domain());
-  vis.legend.enter()
+    .data([0, 25, 50, 100, 150, 200])
+    .enter()
+    .append("g")
+    .attr("class", "legendRange")
+    .attr("transform", function (d, i){
+      return "translate(0," + i * 20 + ")"
+    });
+  vis.legend
     .append("rect")
     .attr("class", "legendRange")
-    .attr("x", 0)
-    .attr("y", 0)
-    .attr("width", '10px')
-    .attr("height", '10px')
+    .attr("x", 10)
+    .attr("y", 10)
+    .attr("width", 10)
+    .attr("height", 10)
+    .style("stroke", "black")
     .style("fill", function(d,i){
       return vis.colorScale(d)
     });
-  vis.legend.enter()
+  vis.legend
     .append("text")
-    .attr("x", 20)
-    .attr("y", 10)
+    .attr("x", 25)
+    .attr("y", 20)
     .text(function(d,i){
       return vis.rankScale(d);
     });
+
+  // Tooltip
+  // Needs to be on top of SVG - select the parent element
+  vis.tooltip = d3.select("#" + vis.parentElement).append("div")
+    .attr("class", "details")
+    .style("opacity", 0);
 
   vis.wrangleData();
 }
@@ -146,26 +168,33 @@ Scatterplot.prototype.updateVis = function(){
         return vis.y(d.grad_salary)
       })
       .style("fill", function(d){
-        //return "grey";
         return vis.colorScale(d.rank);
       })
-      // .attr("data-legend",function(d) {
-      //   return vis.rankScale(d.rank);
-      // })
       .on("mouseover", function(d){
-        console.log(d3.event);
         vis.tooltip.transition()
           .duration(200)
           .style("opacity", .9);
-        vis.tooltip.html(d.name)
+        vis.tooltip.html(`
+          <div id="detail-title">${d.name}</div>
+          <div>USN&WR Rank: ${d.rank}</div>
+          <div>Value Rank: ${d.value_rank}</div>
+          <div>Av. Grad Salary: $${d.grad_salary}</div>
+          <div>Av. Grad Debt: $${d.avg_grad_debt}</div>
+          `)
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
-        console.log(vis.tooltip);
+        d3.select(this)
+          .style("fill", "red");
+        console.log(d);
       })
       .on("mouseout", function(d){
         vis.tooltip.transition()
           .duration(200)
           .style("opacity", 0);
+          d3.select(this)
+            .style("fill", function(d){
+              return vis.colorScale(d.rank);
+            })
       });
 
     //Remove old data
