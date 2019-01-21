@@ -216,8 +216,8 @@ print("Random Forest Grid Recall:: {:.8f}".format(recall_rf, end = "\n\n"))
 del dt_grid["criterion"]
 
 # Create a list of predetermined values for each of two boosting-level tuning parameters 
-numTrees = [20, 30, 40, 50, 60, 70, 80, 90, 100]
-subsample = [0.6, 0.7, 0.75, 0.8, 0.85, 0.9]
+numTrees = [60, 70, 80]
+subsample = [0.6, 0.7, 0.8]
 # Create a variable recording the maximum cross-validated mean over a grid. Initialize it equal to 0.
 max_score_numTrees_sampleSize = 0
 # Loop over every predetermined value in the numTrees list.
