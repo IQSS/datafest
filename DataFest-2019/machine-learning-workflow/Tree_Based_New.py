@@ -247,7 +247,7 @@ print("GBM Grid:: best number of trees: {}; best subsample size: {}; maximum cro
 # Given the best two boosting-level parameters, tune the third boosting-level parameter learning_rate. There is a tradeoff between learning_
 # rate and number of stages in the boosting.
 # Create a list of predetermined values for learning_rate  
-learning_rate = [0.1, 0.05, 0.01]
+learning_rate = [0.1, 0.05]
 # Create a variable recording the maximum cross-validated mean over a grid. Initialize it equal to 0.
 max_score_learning_rate = 0
 # Loop over every predetermined value in the learning_rate list.
