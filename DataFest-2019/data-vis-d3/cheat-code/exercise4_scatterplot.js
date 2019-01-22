@@ -53,7 +53,7 @@ Scatterplot.prototype.initVis = function(){
                        (50) + ")")
     .style("text-anchor", "middle")
     .attr("class", "axisLabel")
-    .text("Average Graduate Debt");
+    .text("Total Cost Per Year");
 
   vis.y = d3.scaleLinear()
     .range([vis.height, 0])
