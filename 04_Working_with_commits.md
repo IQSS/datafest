@@ -58,6 +58,19 @@ When prompted, you can immediate commit this explicit change, or keep the change
 
 ***
 
+**Exercise**
+
+1. 
+2. 
+3. 
+4. 
+
+***
+
+## 
+
+***
+
 ## Next steps and Resources
 
 GitKraken offers an easy way of getting started with GitHub and version control. Depending on your use case it may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line is recommended. 
