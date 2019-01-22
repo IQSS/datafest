@@ -6,14 +6,5 @@
 
   // Now let's add a text element to the svg element through the svg variable.
   // We have to size this too.
-  svg.append("text")
-    .text("Hello, SVG world!")
-    .attr("x",0)
-    .attr("y",15);
 
   // Now let's draw a crude picture of the world, because it's svg and we can
-  svg.append("circle")      //shape name
-      .attr("cx",150)       //x-axis coordinate in px, in relation to svg element in DOM
-      .attr("cy",15)        //y-axis coordinate
-      .attr("fill","blue")  //color
-      .attr("r",10);        //radius length (px)
