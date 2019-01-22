@@ -10,10 +10,12 @@ You will also need a local webserver. The easiest way to set this up is with <a 
 
 Then:
 
-  `# If Python version returned above is 3.X
+  ```
+  # If Python version returned above is 3.X
   python3 -m http.server 2222
   # If Python version returned above is 2.X
-  python -m SimpleHTTPServer 2222`
+  python -m SimpleHTTPServer 2222
+  ```
 
 This will run it on port 2222; you can use a different port if desired. Run this out of /data-vis-d3/exercises, and you'll be able to easily switch between the exercise materials without closing and restarting the server.
 
