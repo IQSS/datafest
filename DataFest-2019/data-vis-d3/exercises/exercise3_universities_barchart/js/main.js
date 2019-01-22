@@ -4,39 +4,24 @@ var barChartWidth = 1500 - margin.left - margin.right,
 		barChartHeight = 1500 - margin.top - margin.bottom
 		barHeight = 8;
 
-// Loading the data
-d3.csv("data/universities_ranked_2017_conferences.csv", function(data){
+// TO DO: Load the data with d3.csv
+d3.csv("", function(data){
+	// TO DO: Log the data to the console and see what it looks like
 
-	console.log("data loaded");
-	console.log(data);
-
-	//format the data
+	// TO DO: finish formatting the data as integers
 	data.forEach(function(d){
 		d.percentage_nonneedbased_aid = +d.percentage_nonneedbased_aid;
-		d.four_year_grad_rate = +d.four_year_grad_rate;
-		d.admit_rate = +d.admit_rate;
-		d.avg_grad_debt = +d.avg_grad_debt;
-		d.avg_needbased_aid = +d.avg_needbased_aid;
-		d.instate_tuition = +d.instate_tuition;
-		d.rank = +d.rank;
-		d.value_rank = +d.value_rank;
-		d.grad_salary = +d.grad_salary;
-		d.total_cost_per_year = +d.total_cost_per_year;
-		d.tuition_and_fees = +d.tuition_and_fees;
-		d.undergrad_enrollment = +d.undergrad_enrollment;
-		d.avg_nonneedbased_aid = +d.avg_nonneedbased_aid;
+
 	});
 
-	//sort the data
-	function sortData(unsortedData,sortOn){
-		var sorted = unsortedData.sort(function(a, b){
-			return b[sortOn]-a[sortOn];
-		});
-		return sorted;
-	}
-	var sortedData = sortData(data, "grad_salary");
+	// TO DO: sort the sortData and log it to the console to check it's right
+	// You'll need to use a compare function on the grad_salary property
+	// https://www.w3schools.com/js/js_array_sort.asp
 
-	console.log(sortedData);
+	var sortedData;
+	console.log(sorted_data);
+
+})
 
 	// Create the chart and store it in a variable
 	var barChart = d3.select("#bar-chart")
@@ -46,40 +31,39 @@ d3.csv("data/universities_ranked_2017_conferences.csv", function(data){
 		.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-	// Create scales and axes
+	// TO DO: finish the scales and axes
+
 	var xscale = d3.scaleLinear()
 		.domain([0, d3.max(sortedData, function(d) {
-			return d.grad_salary;
+			// TO DO return the highest grad salary
 		})])
 		.range([0, barChartWidth]);
-	var xAxis = d3.axisBottom()
-							.scale(xscale)
-							.ticks(10)
-							.tickSizeOuter(0);
 
-	var xBarAxis = d3.axisTop()
-							.scale(xscale)
+	var xAxis = d3.axisTop()
+							// TO DO call the scale here
 							.tickSizeOuter(0);
 
 	var xBarGroup = barChart.append("g")
 		.attr("class", "axis x-axis")
 		.attr("transform", "translate(0,-10)")
-		.call(xBarAxis);
+		//TO DO call the axis here
 
 	var yscale = d3.scaleLinear()
-		.domain([0, sortedData.length])
+		//TO DO add a domain from 0 to the length of the sorted data
+		.domain([,])
 		.range([0, barChartHeight]);
 
 	// Add the bars
+	// TO DO:
+	// Bind the data (done); enter the data (done)
+	// append rects for each school
+	// Give each bar a class attribute, a fixed height, and a dynamic width using the xscale and the
+	// d.grad_salary property
+	// x and y attributes already completed
 	var schools = barChart.selectAll("rect")
 		.data(sortedData)
 		.enter()
-			.append("rect")
-			.attr("class", "schoolBar")
-			.attr("height", barHeight)
-			.attr("width", function(d){
-				return xscale(d.grad_salary);
-			})
+			//Do work here
 			.attr("y", function(d, i){
 				return yscale(i);
 			})
@@ -94,9 +78,15 @@ d3.csv("data/universities_ranked_2017_conferences.csv", function(data){
 		.append("text")
 			.attr("class", "barLabels")
 			.text(function(d){
-				return(`${d.name} | (${d.rank}) | $${d.grad_salary}`)
+				//TO DO: give the bars dynamic labels
+				return "LABEL";
 			})
-			.attr("x", function(d){ return xscale(d.grad_salary) + 3})
-			.attr("y", function(d,i){ return yscale(i)+8});
+			.attr("x", function(d){
+				return xscale(d.grad_salary) + 3
+			})
+			//TO DO: give it a y value using the yscale and i. See the x value above as an example
+			.attr("y", function(d,i){
+
+			});
 
 });
