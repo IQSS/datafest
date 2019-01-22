@@ -1,10 +1,9 @@
+// Placeholder variables
 var allData = [];
 var scatterplot;
-var conferencesSet = new Set();
 var allConferences;
-
-//Start application
-loadData();
+// Sets hold unique values; only one copy of each, which is what we want for our selectbox
+var conferencesSet = new Set();
 
 function loadData(){
   d3.csv("data/universities_ranked_2017_conferences.csv", function(err, csvData){
@@ -27,14 +26,14 @@ function loadData(){
         d.undergrad_enrollment = +d.undergrad_enrollment;
         d.avg_nonneedbased_aid = +d.avg_nonneedbased_aid;
 
-        conferencesSet.add(d.conference);
+        //TO DO: add the conference names to conferencesSet
       });
 
+      // Getting an array from the set
       allConferences = Array.from(conferencesSet).sort();
-      console.log(allConferences);
 
       allConferences.forEach(function(d){
-        $('#filter-conferences').append(`<option value="${d}" selected="selected">${d}</option>`);
+        //TO DO: add an <option> for each item in allConferences
       })
 
       createVis();
@@ -45,7 +44,9 @@ function loadData(){
 function createVis(){
   //Instantiate visualization object
   scatterplot = new Scatterplot("scatterplot", allData);
-  $('#filter-conferences').change(function(){
-    scatterplot.wrangleData();
-  })
+
+  //TO DO: add the filtering functionality here
 }
+
+//Start application
+loadData();

@@ -9,7 +9,6 @@ Scatterplot = function(_parentElement, _data){
 	this.data = _data;
 
 	this.initVis();
-
 }
 
 /*
@@ -31,17 +30,14 @@ Scatterplot.prototype.initVis = function(){
 
   // Scales and axes
   // Domains are fixed - don't update on data change
+	// TO DO: Create a currency format for the axis, and use it as a .tickFormat()
+	//				add ranges and domains to the scales
   var formatAsCurrency = d3.format("$");
-  vis.x = d3.scaleLinear()
-    .range([0, vis.width])
-    .domain([
-      d3.min(vis.data, function(d){ return d.total_cost_per_year }) - 5000, //Padding
-      d3.max(vis.data, function(d){ return d.total_cost_per_year })
-    ]);
+	vis.x = d3.scaleLinear();
+    //add domain and range to the scale; use d3.min and d3.max on d.total_cost_per_year
 
   vis.xAxis = d3.axisBottom()
-    .tickFormat(formatAsCurrency)
-    .scale(vis.x);
+    //add tickFormat and scale to the axis
 
   vis.xAxisGroup = vis.svg.append("g")
     .attr("class", "x-axis axis")
@@ -56,15 +52,11 @@ Scatterplot.prototype.initVis = function(){
     .text("Average Graduate Debt");
 
   vis.y = d3.scaleLinear()
-    .range([vis.height, 0])
-    .domain([
-      d3.min(vis.data, function(d){ return d.grad_salary }) - 5000, //Padding
-      d3.max(vis.data, function(d){ return d.grad_salary })
-    ]);
+		// Add range and domain to the scale; use the vis.height property for range
+		// and d3.min/max and d.grad_salary for the domain
 
   vis.yAxis = d3.axisLeft()
-    .tickFormat(formatAsCurrency)
-    .scale(vis.y);
+    //add tickFormat and scale to the axis
 
   vis.yAxisGroup = vis.svg.append("g")
     .attr("class", "y-axis axis");
@@ -81,7 +73,8 @@ Scatterplot.prototype.initVis = function(){
   // Color scale
   vis.colorScale = d3.scaleThreshold()
     .domain([25, 50, 100, 150, 200])
-    .range(['#006837','#31a354','#78c679','#addd8e','#d9f0a3','#ffffcc'])
+		// TO DO: use an array of hex colors as the range
+		// Check out http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3 for ideas
   vis.rankScale = d3.scaleThreshold()
     .domain([25, 50, 100, 150, 200])
     .range(['Top 25','25-50','50-100','100-150','150-200','200+'])
@@ -98,24 +91,13 @@ Scatterplot.prototype.initVis = function(){
     .attr("transform", function (d, i){
       return "translate(0," + i * 20 + ")"
     });
-  vis.legend
-    .append("rect")
-    .attr("class", "legendRange")
-    .attr("x", 10)
-    .attr("y", 10)
-    .attr("width", 10)
-    .attr("height", 10)
-    .style("stroke", "black")
-    .style("fill", function(d,i){
-      return vis.colorScale(d)
-    });
-  vis.legend
-    .append("text")
-    .attr("x", 25)
-    .attr("y", 20)
-    .text(function(d,i){
-      return vis.rankScale(d);
-    });
+	//TO DO: add <rects> and <text> elements for each item in the legend
+	//Make sure to use the colorScale for the rect colors, and the rankScale for the text values
+	//The data has already been bound above
+
+  //vis.legend
+    //.append("rect")
+    // ...
 
   // Tooltip
   // Needs to be on top of SVG - select the parent element
@@ -133,12 +115,10 @@ Scatterplot.prototype.initVis = function(){
 Scatterplot.prototype.wrangleData = function(){
   var vis = this;
 
-  //Filter data
-  var selected = $('#filter-conferences').val();
+  // Filter data
+	// TO DO: if you have implemented the filter selectbox, filter the data here
+	// instead of just making setting displayData
   vis.displayData = vis.data;
-  vis.displayData = vis.displayData.filter(function(d){
-    return selected.includes(d.conference);
-  })
 
   vis.updateVis();
 }
@@ -148,43 +128,43 @@ Scatterplot.prototype.wrangleData = function(){
  */
 Scatterplot.prototype.updateVis = function(){
   var vis = this;
-  console.log("updateVis");
 
-  //Draw points
+  //Draw all of the points
+
+  //Bind the data
   vis.schools = vis.svg.selectAll(".school")
     .data(vis.displayData);
+
+  // TO DO
+  // add a circle for each school; the radius should return avg_grad_debt (appropriately scaled down)
+  // Merge the data (remember the enter, update, remove pattern)
+  // cx should use the x scale and total_cost_per_year
+  // cy should use the y scale and grad_salary
+  // fill should use the colorscale and school rankScale
+  // mouseover should change html of the tooltip to something useful, like a label displaying data about the school
   vis.schools.enter()
-      .append("circle")
+      //APPEND A CIRCLE
       .attr("class", "school")
-      .merge(vis.schools)
+      //MERGE THE DATA
       .attr("r", function(d){
-        return d.avg_grad_debt / 5000;
+        //
       })
       .attr("cx", function(d){
-        return vis.x(d.total_cost_per_year)
+        //
       })
       .attr("cy", function(d){
-        return vis.y(d.grad_salary)
+        //
       })
       .style("fill", function(d){
-        return vis.colorScale(d.rank);
+        //
       })
       .on("mouseover", function(d){
         vis.tooltip.transition()
           .duration(200)
           .style("opacity", .9);
-        vis.tooltip.html(`
-          <div id="detail-title">${d.name}</div>
-          <div>USN&WR Rank: ${d.rank}</div>
-          <div>Value Rank: ${d.value_rank}</div>
-          <div>Av. Grad Salary: $${d.grad_salary}</div>
-          <div>Av. Grad Debt: $${d.avg_grad_debt}</div>
-          `)
+        vis.tooltip.html("LABEL")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
-        d3.select(this)
-          .style("fill", "red");
-        console.log(d);
       })
       .on("mouseout", function(d){
         vis.tooltip.transition()
