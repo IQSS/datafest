@@ -7,7 +7,6 @@
 Scatterplot = function(_parentElement, _data){
 	this.parentElement = _parentElement;
 	this.data = _data;
-	this.displayData = _data;
 
 	this.initVis();
 
@@ -31,7 +30,7 @@ Scatterplot.prototype.initVis = function(){
 	       .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
   // Scales and axes
-  // Domains are fixed - don't update
+  // Domains are fixed - don't update on data change
   var formatAsCurrency = d3.format("$");
   vis.x = d3.scaleLinear()
     .range([0, vis.width])

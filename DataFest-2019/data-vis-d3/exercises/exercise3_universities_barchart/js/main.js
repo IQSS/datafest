@@ -4,13 +4,13 @@ var barChartWidth = 1500 - margin.left - margin.right,
 		barChartHeight = 1500 - margin.top - margin.bottom
 		barHeight = 8;
 
-
-d3.csv("data/universities_ranked_2017.csv", function(data){
+// Loading the data
+d3.csv("data/universities_ranked_2017_conferences.csv", function(data){
 
 	console.log("data loaded");
 	console.log(data);
 
-	//format our data
+	//format the data
 	data.forEach(function(d){
 		d.percentage_nonneedbased_aid = +d.percentage_nonneedbased_aid;
 		d.four_year_grad_rate = +d.four_year_grad_rate;
@@ -27,7 +27,7 @@ d3.csv("data/universities_ranked_2017.csv", function(data){
 		d.avg_nonneedbased_aid = +d.avg_nonneedbased_aid;
 	});
 
-	//sort our data
+	//sort the data
 	function sortData(unsortedData,sortOn){
 		var sorted = unsortedData.sort(function(a, b){
 			return b[sortOn]-a[sortOn];
@@ -38,6 +38,7 @@ d3.csv("data/universities_ranked_2017.csv", function(data){
 
 	console.log(sortedData);
 
+	// Create the chart and store it in a variable
 	var barChart = d3.select("#bar-chart")
 		.append("svg")
 		.attr("width", barChartWidth + margin.left + margin.right)
@@ -45,20 +46,15 @@ d3.csv("data/universities_ranked_2017.csv", function(data){
 		.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+	// Create scales and axes
 	var xscale = d3.scaleLinear()
 		.domain([0, d3.max(sortedData, function(d) {
 			return d.grad_salary;
 		})])
 		.range([0, barChartWidth]);
-
-	var yscale = d3.scaleLinear()
-		.domain([0, sortedData.length])
-		.range([0, barChartHeight]);
-
 	var xAxis = d3.axisBottom()
 							.scale(xscale)
 							.ticks(10)
-							//.tickFormat(d3.timeFormat("%B %Y"))
 							.tickSizeOuter(0);
 
 	var xBarAxis = d3.axisTop()
@@ -67,10 +63,14 @@ d3.csv("data/universities_ranked_2017.csv", function(data){
 
 	var xBarGroup = barChart.append("g")
 		.attr("class", "axis x-axis")
-		//.attr("transform", "translate(0," + barChartWidth + ")")
 		.attr("transform", "translate(0,-10)")
 		.call(xBarAxis);
 
+	var yscale = d3.scaleLinear()
+		.domain([0, sortedData.length])
+		.range([0, barChartHeight]);
+
+	// Add the bars
 	var schools = barChart.selectAll("rect")
 		.data(sortedData)
 		.enter()
@@ -87,6 +87,7 @@ d3.csv("data/universities_ranked_2017.csv", function(data){
 				return 0;
 			});
 
+	//Label the bars
 	var barLabels = barChart.selectAll(".barLabels")
 		.data(sortedData)
 		.enter()
