@@ -18,7 +18,9 @@ Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_b
 
 1. [Introduction to Version Control](01_Intro_to_versioning.md)<br>
 2. [Getting Started with Git using GitKraken](02_GitKraken.md)<br>
-3. [Intermediate topics: Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)<br>
+3. [Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)<br>
+4. Intermediate Topics<br>
+  1. [Working with Commits](04_Working_with_commits_.md)<br>
 
 ***
 

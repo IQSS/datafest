@@ -179,17 +179,9 @@ If you are careful about always syncing changes you will be able to avoid having
 3. Resolve the conflict and commit.
 4. [Optional] Add your neighbor as a collaborator to a the "learning_github" repo (in Settings -> Collaborators & teams), make changes to create a conflict within the "data-file.txt" document in one of the repos (pick one), and resolve the conflict.
 
+
 ***
-
-## Next steps and Resources
-
-GitKraken offers an easy way of getting started with GitHub and version control. Depending on your use case it may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line is recommended. 
-
-This lesson introduced you to the most rudimentary (yet very useful) concepts and terminology associated with using Version control (Git). The resources below will allow you get started with getting a deeper/better understanding of version control.
-
-* The [GitKraken guide](https://support.gitkraken.com/getting-started/guide) is a great way to start exploring it's functionality, and learning more about what Git can do.
-* GitHub also provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
-* GitHub [Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
+Next: [Working with Commits](04_Working_with_commits_.md)
 
 ***
 
