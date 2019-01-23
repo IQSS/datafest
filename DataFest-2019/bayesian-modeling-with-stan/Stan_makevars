@@ -1,0 +1,2 @@
+CXX14=clang++
+CXX14FLAGS=-mtune=native -march=native -fPIC -O3
