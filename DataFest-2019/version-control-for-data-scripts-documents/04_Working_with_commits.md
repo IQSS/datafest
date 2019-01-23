@@ -56,16 +56,7 @@ When prompted, you can immediate commit this explicit change, or keep the change
 
 <img src="img/4.07.commit_a_revert_commit.png" width="700" align="center">
 
-***
-
-**Exercise**
-
-1. 
-2. 
-3. 
-4. 
-
-***
+**Exercises-Coming soon!**
 
 ## Resetting (Checking Out Previous) Commits, and Stash/Pop
 
@@ -126,16 +117,7 @@ and make this commit in GitKraken:
 
 <img src="img/4.19.commit_reorganized_files.png" width="700" align="center">
 
-***
-
-Exercises:
-
-1.
-2.
-3.
-
-
-***
+**Exercises-Coming soon!**
 
 ## Next steps and Resources
 
