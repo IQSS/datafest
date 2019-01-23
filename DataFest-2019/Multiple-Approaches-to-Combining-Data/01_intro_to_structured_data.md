@@ -85,4 +85,8 @@ Key points when moving towards structured data that you wish to move into a data
 > Turn to your neighbor, and talk about how you can break up this data into groups, and how would you represent the data within those groups?
 
 ***
+
+[Next Lesson](02_combining_data.md)
+
+***
 *Materials used in these lessons are derived predominantly from Software Carpentry's Databases and SQL lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0). Small portions were also derived from Data Carpentry's SQL for Ecology lessons, which have been released under the Creative Commons Attribution license (CC BY 4.0).*
