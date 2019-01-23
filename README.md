@@ -20,8 +20,8 @@ Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_b
 * [2. Getting Started with Git using GitKraken](02_GitKraken.md)<br>
 * [3. Remote repositories, managing conflicts](03_Github_remote_and_conflicts.md)<br>
 * Intermediate Topics<br>
-  * [5. Working with Commits](04_Working_with_commits_.md)<br>
-  * 6. Branching
+  * [4. Working with Commits](04_Working_with_commits_.md)<br>
+  * 5. Branching
 
 ***
 
