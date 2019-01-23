@@ -22,11 +22,11 @@ If you already have R, Python, or Stata installed, you will still need to instal
     
 2. Download the following files into that folder, ensuring that the files have the names within single quotes:
 
-- ['survey.db' sqlite3 database](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/data/survey.db)
-- ['person.csv' file](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/data/person.csv)
-- ['site.csv' file](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/data/site.csv)
-- ['survey.csv' file](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/data/survey.csv)
-- ['visited.csv' file](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/data/visited.csv)
+- ['survey.db' sqlite3 database](https://github.com/IQSS/datafest/blob/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/data/survey.db)
+- ['person.csv' file](https://github.com/IQSS/datafest/blob/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/data/person.csv)
+- ['site.csv' file](https://github.com/IQSS/datafest/blob/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/data/site.csv)
+- ['survey.csv' file](https://github.com/IQSS/datafest/blob/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/data/survey.csv)
+- ['visited.csv' file](https://github.com/IQSS/datafest/blob/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/data/visited.csv)
 
 
 ## SQLite3
