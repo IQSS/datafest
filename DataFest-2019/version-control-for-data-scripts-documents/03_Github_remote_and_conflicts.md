@@ -78,8 +78,6 @@ And finally, clicking on the File View button shows all the changes together, wi
 
 Click on the X at the upper right to close this window.
 
-(Edit out: This can be useful for viewing the edits you have made before making a commit. On the left you will see a history of the changes you have made; at the moment this is very brief but as you work on a project the history will become much longer. )
-
 ## Managing Conflicts
 
 A **conflict** emerges when you try to merge (sync) two versions of a document with changes which conflict with each other. If you are careful about committing and syncing then it is unlikely you will run into this issue; but if you do, it can be resolved fairly easily.
