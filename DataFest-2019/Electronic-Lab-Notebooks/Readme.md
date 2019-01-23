@@ -3,16 +3,16 @@
 January 22, 2019 | DataFest 2019 | Data Management Track
 
 ## Overview
-### Electronic Lab Notebooks: <I>Let’s make the switch to increase reproducibility</I>
+### Electronic Lab Notebooks: <i>Let’s make the switch to increase reproducibility</i>
 <b>Presenter</b>: Julie Goldman, Countway Research Data Services Librarian, Harvard Library
-<p>Slides</b>: http://bit.ly/DataFest19-ELN
+<p><b>Slides</b>: http://bit.ly/DataFest19-ELN
 
 <br><br>
 
 ## RSpace: An ELN Example & Its Workflow
 ### Supporting reproducibility with a connected electronic lab notebook
 <b>Presenter</b>: Rory Macneil, Founder/CEO, RSpace
-<p><b>Slides</b>:
+<p><b>Slides</b>: https://github.com/IQSS/datafest/blob/master/DataFest-2019/Electronic-Lab-Notebooks/2019-RSpace-Harvard-Datafest.ppt
 
 <br><br>
 
@@ -24,8 +24,8 @@ January 22, 2019 | DataFest 2019 | Data Management Track
 
 <br><br>
 
-### Additional Readings
+## Additional Readings
 <p>“Supporting Reproducibility with a Connected ELN.” Addgene. https://blog.addgene.org/supporting-reproducibility-with-a-connected-eln
 <p>“Addressing the Research Replication Crisis.” AAMC. https://news.aamc.org/medical-education/article/academic-medicine-research-replication-crisis 
 <p>“Policy: NIH plans to enhance reproducibility.” Nature. https://www.nature.com/news/policy-nih-plans-to-enhance-reproducibility-1.14586
-<p>Walsh, E., & Cho, I. (2013). “Using Evernote as an Electronic Lab Notebook in a Translational Science Laboratory.” <i>Journal of Laboratory Automation</i> 18(3), 229–234. https://doi.org/10.1177/2211068212471834
+<p>Walsh, E., & Cho, I. (2013). “Using Evernote as an Electronic Lab Notebook in a Translational Science Laboratory.” <i>Journal of Laboratory Automation</i> 18(3): 229–234. https://doi.org/10.1177/2211068212471834
