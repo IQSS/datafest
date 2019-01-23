@@ -1,4 +1,4 @@
-Sys.setenv(R_MAKEVARS_USER="~/.R/Makevars")
+Sys.setenv(R_MAKEVARS_USER = "~/.R/Makevars")
 library(rstan)
 golf_data <- read.csv("golf_data.csv")
 dat <- with(golf_data, list(obs = nrow(golf_data), feet = feet, 
