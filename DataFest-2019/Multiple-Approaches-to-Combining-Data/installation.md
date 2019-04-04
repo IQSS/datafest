@@ -41,8 +41,8 @@ Although these instructions were written for Window 7 SP1, they may vary slightl
 
 1. Please create a folder called `Installers` inside your `datafest_2017` folder, and download the following Zip archives to that location:
 
-- [32-bit DLL (x86) for SQLite version 3.16.2](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/installers/windows/sqlite-dll-win32-x86-3160200.zip)
-- [SQLite command-line tools, shell, sqldiff, and sqlite3_analyzer programs](https://github.com/IQSS/datafest/raw/master/multiple_approaches_combining_data/installers/windows/sqlite-tools-win32-x86-3160200.zip)
+- [32-bit DLL (x86) for SQLite version 3.16.2](https://github.com/IQSS/datafest/raw/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/installers/windows/sqlite-dll-win32-x86-3160200.zip)
+- [SQLite command-line tools, shell, sqldiff, and sqlite3_analyzer programs](https://github.com/IQSS/datafest/raw/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/installers/windows/sqlite-tools-win32-x86-3160200.zip)
 
 2. Unzip each archive by a right-mouse click on each archive, select `Extract All...`, and in the dialog that appears, navigate to the folder `Computer > C:\Windows\System32`. Uncheck the `Show Extracted Files When Complete` checkbox. Click on the Enter button.
 
