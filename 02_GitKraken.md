@@ -52,7 +52,9 @@ Tracking items in a folder (repository) using Git:
 Download the folder we have generated for this session [from here](https://github.com/hbctraining/versioning_data_scripts/blob/master/data/DataFest2017.zip?raw=true), and unzip it in a location of your choosing.
 
 
-### Creating a Folder/Repository 
+
+
+### Creating a Folder/Repository, Starting from your Local Machine
 
 There are a number of different ways to add files/folders for GitKraken to track. For this lesson, click on the folder icon at the top left corner. This will allow you to either *Open* an existing repository, or *Clone* a repository that you or someone else has created, or *Init* (initialize/create) a new repository. Today, we will be initializing a repository.
 
@@ -90,6 +92,9 @@ Since we'll now want to add more files to this repository, right-mouse click on 
 The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
 
 <img src="img/finder_view.png" width="700" align="center">
+
+
+### Creating a Repository, by Cloning an Existing Project
 
 
 ### Staging and Committing Changes
