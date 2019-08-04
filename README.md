@@ -12,7 +12,7 @@ Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_b
 
 1. Please [Download and install GitKraken](https://gitkraken.com/download). 
 2. Create an account for yourself on [GitHub](http://github.com). Please be sure to select the free/academic account, as this option has more long-term flexibility.
-3. Download the [workshop sample files](https://github.com/hbs-rcs/versioning_data_scripts/raw/master/data/DataFest2017.zip)
+3. Download the [workshop example files](https://github.com/hbs-rcs/versioning_data_scripts/raw/master/data/example_files.zip)
 
 ## Lessons:
 
