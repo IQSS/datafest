@@ -28,8 +28,10 @@ Since we are going to be using [GitHub](https://github.com/) we will need to reg
 
 Most of you should have already installed [GitKraken](https://www.gitkraken.com/download). Open it, and sign in using the credentials you used to sign up for a github account. 
 
+**need new photo**
 <img src="img/setup.png" width="700" align="center">
 
+**need new photo**
 <img src="img/setup2.png" width="700" align="center">
 
 Once you sign in, GitKraken will take you to it's Welcome screen. At this point, you are ready to start working with a repository.
@@ -60,23 +62,28 @@ There are a number of different ways to add files/folders for GitKraken to track
 
 Click on Init, and then GitHub.com, so that we can create a repository that we will keep locally, as well at a remote location as a backup or perhaps for sharing:
 
+**need new photo**
 <img src="img/init.png" width="700" align="center">
 
 Fill in the fields as appropriate:
 * your account
-* the name of the repository. Keep this to letters, numbers, and underscores.
+* the name of the repository. Keep this to letters, numbers, and underscores. For this class, let's call it 'gitkraken_workshop'
 * a good description
 * set the access for the remote location, whether this should be viewable by anyone, or kept private to yourself and people that you specifically add as collaborators
 * leave the Clone after init option checked
-* For the New repository path, select the location on your local computer or shared drive / mounted volume where the repo folder should be placed. Please include the name of the folder to house the repo and its files, or create the new folder inside this Browse window.
+* For the New repository path, select the location on your local computer or shared drive / mounted volume where the repo folder should be placed. Please include the name of the folder to house the repo and its files, or create the new folder inside this Browse window. For this class, let's place the repo on your Desktop.
 * Finally, click on the Create Repository and Clone button.
+
+**Note: sometimes people fail at this step and they are confused as to how to proceed. FINISH THESE HELPFUL INSTRUCTIONS!**
 
 Voila! You now have your first Git repo!
 
+**need new photo**
 <img src="img/init.png" width="700" align="center">
 
 Once we have added our folder we will be able to see it in a list of repositories on the left column.
 
+**need new photo**
 <img src="img/first_repo.png" width="700" align="center">
 
 We'll point out a few features here:
@@ -87,10 +94,12 @@ We'll point out a few features here:
 
 Since we'll now want to add more files to this repository, right-mouse click on the README.md file and select Show in Finder (Show in Explorer) from the pop-up menu:
 
+**need new photo**
 <img src="img/show_in_finder.png" width="700" align="center">
 
 The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
 
+**need new photo**
 <img src="img/finder_view.png" width="700" align="center">
 
 
@@ -101,30 +110,41 @@ The folder we created the repsitory with now contains an extra folder with the n
 
 We need to copy in our sample files that you've downloaded. Open up that folder, and copy/move those files here. Your window should look something like this:
 
+**need new photo**
 <img src="img/finder_view_added_files.png" width="700" align="center">
+
+But before we continue, we wish to utilize a few best practices from research data management: organize your files, using appropriate folder structure and file naming. Create 5 new directories: code, data, docs, figures, and other; and copy the files into these directories, placing them into their appropriate, final location. When done, your repo should look something like the following image:
+
+**need new photo**
+
 
 When we switch back to GitKraken, you'll notice the timeline window at the top has changed. GitKraken has noticed files have changes, and it's indicated this new set of changes is considered Work in Progress:
 
+**need new photo**
 <img src="img/first_wip.png" width="700" align="center">
 
 Click on the WIP line at the top to show the files it is watching, show in the bottom pane. You can resize this panel to show all the files if you desire:
 
+**need new photo**
 <img src="img/file_list_resize.png" width="700" align="center">
 
 A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
 
 We next need to tell Git that we wish to prep these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include these files for a commit, we **Stage** the changes by clicking on the 'Stage all changes' button:
 
+**need new photo**
 <img src="img/initial_commit_stage.png" width="700" align="center">
 
 You do have the option of adding only certain files to the Staging area if you wish to make separate commits. Simply click on the work Stage that appears near the files you wish to include.
 
 To commit changes you must give a summary of the changes, include an optional message, and click on the Commit button:
 
+**need new photo**
 <img src="img/local_change.png" width="700" align="center">
 
 After the commit, the timeline changes to reflect the current state & history of our repository. Clicking on the top line, our recent commit, shows in the bottom pane the changes that were include, which is the addition (green plus square) of these files:
 
+**need new photo**
 <img src="img/local_change_after_commit.png" width="700" align="center">
 
 A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced by looking at all of the commits. 
@@ -142,13 +162,26 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 
 ### Changing File Contents and Committing Changes
 
-Let's open the `mars.txt` document using our favorite text editor (see note below about text editors) and add a couple of lines to it.
+Let's open the `README.md` document using our favorite text editor (see note below about text editors) and make this more useful. GitHub automatically renders Markdown document into readable HTML pages that are displayed at the bottom of the main page of your repo. Let's turn this into something more meaningful by added some boilerplate text and helpful information to the small amount of text already there
 
 ```
-Mars is a red planet.
-It is cold and dry, but everything is my favorite color.
 
-The two moons may make things interesting
+##Overview
+Our code will demonstrate the different code snippets that have been used for programming classes. We
+will have this written in both R and Python. 
+
+##Installation
+
+##Usage
+
+##Getting help
+
+## Contributors
+
+## Reference
+
+## Licensing
+
 ```
 
 Save the changes to your file and go back to GitKraken. Again, the program creates a new WIP timeline entry as it has detected changes. Click on this line to show that GitKraken has noticed that our file has changed (file icon with an elipsis inside):
@@ -162,7 +195,7 @@ When you click on the filename, you will see that these new lines of text appear
 
 > **Text Editors:**
 >
-> When creating a plain text document, you will want to use a text editor like TextWrangler/Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from.
+> When creating a plain text document, you will want to use a text editor like Atom, TextWrangler/Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from. In a pinch, you can always use TextEdit (Mac) or Notepad (Windows).
 
 In the context of GitKraken when you **stage** your changes, it is similar to the **add** command on the command line. You can "add" several changes in the staging area, and only **commit** when you are ready. 
 
