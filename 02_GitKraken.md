@@ -172,18 +172,16 @@ Contributions and references are included in the source code files.
 Contributions and references are included in the source code files.
 
 ## Licensing
-This is all available as CC BY 4.0 license.
+This is all available as CC BY 4.0 license. Enjoy!
 
 ```
 
 Save the changes to your file and go back to GitKraken. Again, the program creates a new WIP timeline entry as it has detected changes. Click on this line to show that GitKraken has noticed that our file has changed (file icon with an elipsis inside):
 
-**need new photo**
-<img src="img/tracking_mars.png" width="700" align="center">
+<img src="img/2.new-viewing_readme_diff.png" width="700" align="center">
 
 When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes, just as we did before.
 
-**need new photo**
 <img src="img/git-staging-area.png" width="700" align="center">
 
 
@@ -195,13 +193,12 @@ In the context of GitKraken when you **stage** your changes, it is similar to th
 
 As we did with our previous initial commit, include a change message, and click on the Commit button:
 
-**need new photo**
-<img src="img/commit_mars_first_change.png" width="700" align="center">
+<img src="img/2.new-pre_commit_readme_change.png" width="700" align="center">
 
 Again, you'll see our timeline has changed to include this commit:
 
-**need new photo**
-<img src="img/after_commit_mars_first_change.png" width="700" align="center">
+
+<img src="img/2.new-post_commit_readme_change.png" width="700" align="center">
 
 
 ***
