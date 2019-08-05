@@ -151,19 +151,19 @@ Let's open the `README.md` document using our favorite text editor (see note bel
 
 ```
 
-##Overview
+## Overview
 Our code will demonstrate the different code snippets that have been used for programming
 classes. We
 will have this written in both R and Python. 
 
-##Installation
+## Installation
 The full suite of code will require the Tmisc and dplyr R packages; 
 matplotlib and seaborn for Python
 
-##Usage
+## Usage
 Simply fire up RStudio for trying out your R code, or Spyder for your Python code.
 
-##Getting help
+## Getting help
 
 ## Contributors
 Contributions and references are included in the source code files.
@@ -219,18 +219,15 @@ At the moment we are only recording our changes locally, but we may want to have
 
 This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on GitHub's servers in the process.
 
-**need new photo**
-<img src="img/push.png" width="700" align="center">
+<img src="img/2.new-push.png" width="700" align="center">
 
 We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', which is the default term for the remote repository in Git (note that you can call it whatever you'd like, and you can have more than one remote! But that is beyond the scope of this lesson.) If we then right-mouse click on our 'origin', we can select the pop-up menu option "View origin on GitHub.com":
 
-**need new photo**  
-<img src="img/view_origin_on_github.png" width="700" align="center">
+<img src="img/2.new-view_origin_on_github.png" width="700" align="center">
 
 Indeed, GitKraken sends us to our web browser and our repository on GitHub.com is displayed:
 
-**need new photo**
-<img src="img/repo_on_github.png" width="700" align="center">
+<img src="img/2.new-repo_on_github.png" width="700" align="center">
 
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
