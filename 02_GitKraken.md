@@ -113,7 +113,7 @@ We need to copy in our sample files that you've downloaded. Open up that folder,
 **need new photo**
 <img src="img/finder_view_added_files.png" width="700" align="center">
 
-But before we continue, we wish to utilize a few best practices from research data management: organize your files, using appropriate folder structure and file naming. Create 5 new directories: code, data, docs, figures, and other; and copy the files into these directories, placing them into their appropriate, final location. When done, your repo should look something like the following image:
+But before we continue, we wish to utilize a few best practices from research data management: organize your files, using appropriate folder structure and file naming. Create 5 new directories: code, data, docs, figures, and other; and copy all but three files into these directories, placing them into their appropriate, final location. Leave behind the files "Pi Formulas...", "README.md" (since one is already there), and "util_functions.R". When done, your repo should look something like the following image:
 
 **need new photo**
 
@@ -167,29 +167,38 @@ Let's open the `README.md` document using our favorite text editor (see note bel
 ```
 
 ##Overview
-Our code will demonstrate the different code snippets that have been used for programming classes. We
+Our code will demonstrate the different code snippets that have been used for programming
+classes. We
 will have this written in both R and Python. 
 
 ##Installation
+The full suite of code will require the Tmisc and dplyr R packages; 
+matplotlib and seaborn for Python
 
 ##Usage
+Simply fire up RStudio for trying out your R code, or Spyder for your Python code.
 
 ##Getting help
 
 ## Contributors
+Contributions and references are included in the source code files.
 
-## Reference
+## References
+Contributions and references are included in the source code files.
 
 ## Licensing
+This is all available as CC BY 4.0 license.
 
 ```
 
 Save the changes to your file and go back to GitKraken. Again, the program creates a new WIP timeline entry as it has detected changes. Click on this line to show that GitKraken has noticed that our file has changed (file icon with an elipsis inside):
 
+**need new photo**
 <img src="img/tracking_mars.png" width="700" align="center">
 
 When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** and **commit** our changes, just as we did before.
 
+**need new photo**
 <img src="img/git-staging-area.png" width="700" align="center">
 
 
@@ -197,14 +206,16 @@ When you click on the filename, you will see that these new lines of text appear
 >
 > When creating a plain text document, you will want to use a text editor like Atom, TextWrangler/Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from. In a pinch, you can always use TextEdit (Mac) or Notepad (Windows).
 
-In the context of GitKraken when you **stage** your changes, it is similar to the **add** command on the command line. You can "add" several changes in the staging area, and only **commit** when you are ready. 
+In the context of GitKraken when you **stage** your changes, it is similar to the **add** command on the command line. You can add several changes in the staging area, and only **commit** when you are ready. 
 
 As we did with our previous initial commit, include a change message, and click on the Commit button:
 
+**need new photo**
 <img src="img/commit_mars_first_change.png" width="700" align="center">
 
 Again, you'll see our timeline has changed to include this commit:
 
+**need new photo**
 <img src="img/after_commit_mars_first_change.png" width="700" align="center">
 
 
@@ -226,14 +237,17 @@ At the moment we are only recording our changes locally, but we may want to have
 
 This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on GitHub's servers in the process.
 
+**need new photo**
 <img src="img/push.png" width="700" align="center">
 
 We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', which is the default term for the remote repository in Git (note that you can call it whatever you'd like, and you can have more than one remote! But that is beyond the scope of this lesson.) If we then right-mouse click on our 'origin', we can select the pop-up menu option "View origin on GitHub.com":
 
+**need new photo**  
 <img src="img/view_origin_on_github.png" width="700" align="center">
 
 Indeed, GitKraken sends us to our web browser and our repository on GitHub.com is displayed:
 
+**need new photo**
 <img src="img/repo_on_github.png" width="700" align="center">
 
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
