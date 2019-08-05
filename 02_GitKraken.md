@@ -30,8 +30,7 @@ Most of you should have already installed [GitKraken](https://www.gitkraken.com/
 
 <img src="img/2.new-setup.png" width="700" align="center">
 
-**need new photo**
-<img src="img/setup2.png" width="700" align="center">
+<img src="img/2.new-setup2.png" width="700" align="center">
 
 Once you sign in, GitKraken will take you to it's Welcome screen. At this point, you are ready to start working with a repository.
 
@@ -61,8 +60,7 @@ There are a number of different ways to add files/folders for GitKraken to track
 
 Click on Init, and then GitHub.com, so that we can create a repository that we will keep locally, as well at a remote location as a backup or perhaps for sharing:
 
-**need new photo**
-<img src="img/init.png" width="700" align="center">
+<img src="img/2.new-init.png" width="700" align="center">
 
 Fill in the fields as appropriate:
 * your account
@@ -77,13 +75,11 @@ Fill in the fields as appropriate:
 
 Voila! You now have your first Git repo!
 
-**need new photo**
-<img src="img/init.png" width="700" align="center">
+<img src="img/2.new-init.png" width="700" align="center">
 
 Once we have added our folder we will be able to see it in a list of repositories on the left column.
 
-**need new photo**
-<img src="img/first_repo.png" width="700" align="center">
+<img src="img/2.new-first_repo.png" width="700" align="center">
 
 We'll point out a few features here:
 * a list of known/open repos at the top left
@@ -93,13 +89,11 @@ We'll point out a few features here:
 
 Since we'll now want to add more files to this repository, right-mouse click on the README.md file and select Show in Finder (Show in Explorer) from the pop-up menu:
 
-**need new photo**
-<img src="img/show_in_finder.png" width="700" align="center">
+<img src="img/2.new-show_in_finder.png" width="700" align="center">
 
 The folder we created the repsitory with now contains an extra folder with the name ‘.git’ (this is a hidden folder). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
 
-**need new photo**
-<img src="img/finder_view.png" width="700" align="center">
+<img src="img/2.new-finder_view.png" width="700" align="center">
 
 
 ### Creating a Repository, by Cloning an Existing Project
@@ -107,44 +101,36 @@ The folder we created the repsitory with now contains an extra folder with the n
 
 ### Staging and Committing Changes
 
-We need to copy in our sample files that you've downloaded. Open up that folder, and copy/move those files here. Your window should look something like this:
-
-**need new photo**
-<img src="img/finder_view_added_files.png" width="700" align="center">
 
 But before we continue, we wish to utilize a few best practices from research data management: organize your files, using appropriate folder structure and file naming. Create 5 new directories: code, data, docs, figures, and other; and copy all but three files into these directories, placing them into their appropriate, final location. Leave behind the files "Pi Formulas...", "README.md" (since one is already there), and "util_functions.R". When done, your repo should look something like the following image:
 
-**need new photo**
+<img src="img/2.new-finder_view_added_files.png" width="700" align="center">
 
 
 When we switch back to GitKraken, you'll notice the timeline window at the top has changed. GitKraken has noticed files have changes, and it's indicated this new set of changes is considered Work in Progress:
 
-**need new photo**
-<img src="img/first_wip.png" width="700" align="center">
+<img src="img/2.new-first_wip.png" width="700" align="center">
 
 Click on the WIP line at the top to show the files it is watching, show in the bottom pane. You can resize this panel to show all the files if you desire:
 
-**need new photo**
-<img src="img/file_list_resize.png" width="700" align="center">
+<img src="img/2.new-file_list_resize.png" width="700" align="center">
 
 A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
 
 We next need to tell Git that we wish to prep these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include these files for a commit, we **Stage** the changes by clicking on the 'Stage all changes' button:
 
-**need new photo**
-<img src="img/initial_commit_stage.png" width="700" align="center">
+<img src="img/2.new-initial_commit_stage.png" width="700" align="center">
 
 You do have the option of adding only certain files to the Staging area if you wish to make separate commits. Simply click on the work Stage that appears near the files you wish to include.
 
 To commit changes you must give a summary of the changes, include an optional message, and click on the Commit button:
 
-**need new photo**
-<img src="img/local_change.png" width="700" align="center">
+
+<img src="img/2.new-local_change.png" width="700" align="center">
 
 After the commit, the timeline changes to reflect the current state & history of our repository. Clicking on the top line, our recent commit, shows in the bottom pane the changes that were include, which is the addition (green plus square) of these files:
 
-**need new photo**
-<img src="img/local_change_after_commit.png" width="700" align="center">
+<img src="img/2.new-local_change_after_commit.png" width="700" align="center">
 
 A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced by looking at all of the commits. 
 
