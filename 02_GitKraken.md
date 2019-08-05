@@ -28,8 +28,7 @@ Since we are going to be using [GitHub](https://github.com/) we will need to reg
 
 Most of you should have already installed [GitKraken](https://www.gitkraken.com/download). Open it, and sign in using the credentials you used to sign up for a github account. 
 
-**need new photo**
-<img src="img/setup.png" width="700" align="center">
+<img src="img/2.new-setup.png" width="700" align="center">
 
 **need new photo**
 <img src="img/setup2.png" width="700" align="center">
