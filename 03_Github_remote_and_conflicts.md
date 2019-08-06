@@ -16,10 +16,10 @@ Once you have ‘published’ your repository it will be viewable on your profil
 For this lesson, we will stick with a public repository. To quickly view your repository online right-click on your remote's Origin in the left pane, and select 'View origin on GitHub.com'. This will reveal your online repository in your web browser.
 
 
-<img src="img/view_origin_on_github.png" width="700" align="center">
+<img src="img/2.new-view_origin_on_github.png" width="700" align="center">
 
 
-<img src="img/repo_on_github.png" width="700" align="center">
+<img src="img/2.new-repo_on_github.png" width="700" align="center">
 
 
 Once your document is online, you can continue to make local changes to your file. But you will have to synchronize your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers), and it is important to keep these changes in sync. 
@@ -28,39 +28,82 @@ In GitKraken and standard Git workflows, this is accomplished by regular, intent
 
 ### Making Changes Remotely
 
-It is also possible to make a change to your repository on the web interface. Clicking on the name of the file in the title area will take you to a new page showing your document.
+It is also possible to make a change to your repository on the web interface. We forgot to give attribution to our functions in the `util_functions.R` file. Go into the `code` directory, and click on the name of the file in the title area to take you to a new page showing your document.
 
-Click on the 'Edit' option or icon. You will now be able to edit the file and add some new text.
+Click on the 'Edit' option or icon. You will now be able to edit the file and add some new text. Let's add comments to both the square function:
 
-<img src="img/editongithubweb.png" width="700" align="center">
+```
+# Square function
+# adapted from https://hbctraining.github.io/Intro-to-R/lessons/03_introR-functions-and-arguments.html#user-defined-functions
+# and https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/
+
+```
+
+and the Anscombe's quartet function:
+
+```
+# Anscombe's quartet
+# Examples from https://www.r-bloggers.com/using-and-abusing-data-visualization-anscombes-quartet-and-cheating-bonferroni/
+```
+
+<img src="img/3.new-edit_on_github_web.png" width="700" align="center">
 
 Once you have made some changes to your file, you will again see the option to commit changes near the bottom of the text entry box.
 
-<img src="img/online_commit.png" width="700" align="center">
+<img src="img/3.new-online_commit.png" width="700" align="center">
 
-Once you have committed these changes they will be stored on the remote repository. GitKraken has already noticed that our remote repo has changed:
+One can also add and delete files from the repo. Since we're working in R, let's remove the python code files. One must first view the file itself (click on the file's name) to reveal the Delete (trash can) icon. Click here to delete:
 
-<img src="img/synced_change1.png" width="700" align="center">
+<img src="img/3.delete_one_file.png" width="700" align="center">
+
+This solitary action requires a description and subsequent Commit:
+
+<img src="img/3.commit_delete_one_file.png" width="700" align="center">
+
+Let's delete the other two as well. Your code repo should look like the following:
+
+<img src="img/3.code_folder_after_deletions.png" width="700" align="center">
+
+One can also add files and folders to the repo via the web interface. We'll keep this simple. In the `doc` folder we can add the `Pi formulas...` document from our workshop downloads folder. Navigate to the `docs` folder in the repo, and click on the Upload files button.
+
+<img src="img/3.upload_files_button.png" width="700" align="center">
+
+This action also requires a Description and subsequent Commit:
+
+<img src="img/3.commit_uploaded_file.png" width="700" align="center">
+
+You should now see the `Pi Formulas...` document in your `docs` folder.
+
+Two important sidebars: since on GitHub.com file changes are done serially, coodinated file changes cannot be done here -- the must be done on your local machine with GitKraken. Also, all these changes are realtime on the GitHub remote -- Once you have committed these changes these changes are immediate.
+
+Let's return to our local machine. GitKraken has already noticed that our remote repo has changed, and the markers for the two repos (local and remote) have diverged:
+
+<img src="img/3.new-local_remote_differ_on_commits.png" width="700" align="center">
 
 Click on the timeline entry to view the file changes:
 
-<img src="img/synced_change2.png" width="700" align="center">
+<img src="img/3.view_remote_commit_changes.png" width="700" align="center">
 
-And click on the file Mars.txt to see the changes within:
+And click on the filename itself to see the changes made within:
 
-<img src="img/synced_change3.png" width="700" align="center">
+<img src="img/3.view_remote_file_diff.png" width="700" align="center">
 
 You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>. <span style="color:red">Red</span> indicates where things have been removed, while <span style="color:green">green</span> indicates additions. 
 
-To get them back onto our own (local) computer, we need to Pull these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen:
+Click on the filename again to return to our commit timeline.
 
-<img src="img/pull.png" width="700" align="center">
+To get all these changes back onto our own (local) computer, we need to Pull these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen:
 
-Once done, you'll see a momentary "Success!" notice:
+<img src="img/3.new-pull.png" width="700" align="center">
 
-<img src="img/pull_success.png" width="700" align="center">
+If all goes well, you should see a brief 'Success' message, and your repos should be in sync again:
 
-One very useful feature of this and other Git clients is looking at how a file has changed over time. In GK, right-mouse click on the file and select "File History" to see exactly that: 
+<img src="img/3.local_remote_in_sync.png" width="700" align="center">
+
+
+## Viewing File Histories
+
+One very useful feature of this and other Git clients is looking at how a file has changed over time. In GitKraken, right-mouse click on the file and select "File History" to see exactly that: 
 
 <img src="img/get_to_file_history.png" width="700" align="center">
 
