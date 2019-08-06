@@ -103,25 +103,25 @@ If all goes well, you should see a brief 'Success' message, and your repos shoul
 
 ## Viewing File Histories
 
-One very useful feature of this and other Git clients is looking at how a file has changed over time. In GitKraken, right-mouse click on the file and select "File History" to see exactly that: 
+One very useful feature of this and other Git clients is looking at how a file has changed over time. In GitKraken, select the timeline entry 'Refactor code...', and in the section below, right-mouse click on the `scriptlets.R` file and select "File History" to see exactly that: 
 
-<img src="img/get_to_file_history.png" width="700" align="center">
+<img src="img/3.new-get_to_file_history.png" width="700" align="center">
 
-Our Mars.txt file is display with comments on the left and differences between the (left) selected and previous versions:
+Our code file is displayed with comments on the left and differences between the (left) selected and previous versions:
 
-<img src="img/mars_file_history.png" width="700" align="center">
+<img src="img/3.new-showing_file_history.png" width="700" align="center">
 
 Clicking on the previous comment shows the next level of changes:
 
-<img src="img/file_history_previous_comments.png" width="700" align="center">
+<img src="img/3.new-file_history_previous_comments.png" width="700" align="center">
 
 And finally, clicking on the File View button shows all the changes together, with the log (legend) of changes being indicated with color coding:
 
-<img src="img/history_combined_file_view.png" width="700" align="center">
+<img src="img/3.new-history_combined_file_view.png" width="700" align="center">
 
-Click on the X at the upper right to close this window.
+Click on the X at the upper right to close this window and return to the commit timeline.
 
-(Edit out: This can be useful for viewing the edits you have made before making a commit. On the left you will see a history of the changes you have made; at the moment this is very brief but as you work on a project the history will become much longer. )
+
 
 ## Managing Conflicts
 
