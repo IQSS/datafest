@@ -250,7 +250,7 @@ Again, you'll see our timeline has changed to include this commit. Now also stag
 
 <img src="img/2.new-post_serial_commit_changes.png" width="700" align="center">
 
-There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, it's sometimes better to refactor our code so that utility functions are kept in a separate code file, and then called from our main file. We'll do that with our code snippets:
+There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, it's sometimes better to refactor our code so that utility functions are kept in a separate code file, and then called from our main file. We'll do that with our code snippets with following sets of changes:
 
 1. Remove the square_it and montecarloPi section of code from the main file (as these are being separated into the new utilities file) and replace it three function calls:
 
@@ -307,7 +307,11 @@ montecarloPi(3000)
 # END
 ```
 
-Save this file. As a final step for the coordinated changes, we need to add this utilities file to the repo. From your workshop downloads folder, drag the `util_functions.R` script file into the repo folder `code`. When we return to GitKraken, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this snapshot captures these dependent changes. So we stage both files, give a meaningful commit message reflecting this process, and Commit. Your repo should look like the following:
+Be sure to save this file. 
+
+4. As a final step for the coordinated changes, we need to add this utilities file to the repo. From your workshop downloads folder, drag the `util_functions.R` script file into the repo folder `code`. 
+
+When we return to GitKraken, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this snapshot captures these dependent changes. So we stage both files, give a meaningful commit message reflecting this process, and Commit. Your repo should look like the following:
 
 <img src="img/2.new-post_coordinated_commit_change.png" width="700" align="center">
 
