@@ -340,6 +340,8 @@ Indeed, GitKraken sends us to our web browser and our repository on GitHub.com i
 
 <img src="img/2.new-repo_on_github.png" width="700" align="center">
 
+Notice that our commit short descriptions are shown here; and that we can see the different commits -- serial & coordinated -- that we performed.
+
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
 
