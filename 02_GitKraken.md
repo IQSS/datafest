@@ -147,7 +147,9 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 
 ### Changing File Contents and Committing Changes
 
-Let's open the `README.md` document using our favorite text editor (see note below about text editors) and make this more useful. GitHub automatically renders Markdown document into readable HTML pages that are displayed at the bottom of the main page of your repo. Let's turn this into something more meaningful by added some boilerplate text and helpful information to the small amount of text already there
+We're going to make several sets of changes that reflect the flexibility and capability of our version control system. 
+
+Let's open the `README.md` document using our favorite text editor (see note below about text editors) and make this more useful. GitHub automatically renders Markdown document into readable HTML pages that are displayed at the bottom of the main page of your repo. Let's turn this into something more meaningful by added some boilerplate text and helpful information to the small amount of text already there:
 
 ```
 
@@ -176,7 +178,54 @@ This is all available as CC BY 4.0 license. Enjoy!
 
 ```
 
-Save the changes to your file and go back to GitKraken. Again, the program creates a new WIP timeline entry as it has detected changes. Click on this line to show that GitKraken has noticed that our file has changed (file icon with an elipsis inside):
+Save the changes to your file.
+
+Let's also open the `scriptlets.R` file. You'll notice we have some template text there as well --  great for reminding you what you need to do when starting to code. Let's also change the file to reflect the new example codes we've found. Feel free to copy & paste this code:
+
+```
+#!/usr/bin/env Rscript
+
+# This script will include a collection of small scripts steps
+# often seen as example code. We're using this solely for demo purposes
+
+
+# 1. Prints hello world
+
+myString <- "Hello, World!"
+
+print (myString)
+
+
+# 2. Square function
+# adapted from https://hbctraining.github.io/Intro-to-R/lessons/03_introR-functions-and-arguments.html#user-defined-functions
+# and https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/
+
+square_it <- function(x){
+  sq <- x*x
+  return(sq)
+}
+
+square_it(5)
+
+
+# 3. Monte Carlo Pi
+
+for (trials in 1:3000) {
+  count = 0
+  for(i in 1:trials) {
+    if((runif(1,0,1)^2 + runif(1,0,1)^2) < 1) {
+      count = count + 1
+    }
+  }
+  print(paste(trials, ": ", (count*4) / trials))
+}
+
+
+# END
+
+```
+
+Save this file as well, and go back to GitKraken. Again, the program creates a new WIP timeline entry as it has detected changes. Click on this WIP line to show that GitKraken has noticed that our files have changed, and click on the README.md (file icon with an elipsis inside):
 
 <img src="img/2.new-viewing_readme_diff.png" width="700" align="center">
 
@@ -191,14 +240,76 @@ When you click on the filename, you will see that these new lines of text appear
 
 In the context of GitKraken when you **stage** your changes, it is similar to the **add** command on the command line. You can add several changes in the staging area, and only **commit** when you are ready. 
 
-As we did with our previous initial commit, include a change message, and click on the Commit button:
+Since we wish to keep all the different types of changes as separate commits, we will stage and commit first the documentation change, and then the code change: 
+
+First, stage only the `README.md` file, and, as we did with our previous initial commit, include a change message, and click on the Commit button:
 
 <img src="img/2.new-pre_commit_readme_change.png" width="700" align="center">
 
-Again, you'll see our timeline has changed to include this commit:
+Again, you'll see our timeline has changed to include this commit. Now also stage the changed code file, include a meaningful change message, and click Commit. Our timeline should now contain these two serial commits:
+
+<img src="img/2.new-post_serial_commit_changes.png" width="700" align="center">
+
+There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, it's sometimes better to refactor our code so that utility functions are kept in a separate code file, and then called from our main file. We'll do that with our code snippets:
+
+1. Remove the square_it and montecarloPi section of code from the main file (as these are being separated into the new utilities file) and replace it three function calls:
+
+```R
+hello_world()
+
+square_it(10)
+
+montecarloPi(3000)
+```
+
+2. Let's functionalize the `hello_world` code lines:
+
+```R
+hello_world <- function() {
+  myString <- "Hello, World!"
+  print (myString)
+}
+```
+
+3. And finally, we need to reference and ingest our functions that have been moved to another file. So we include a `source` line:
+
+```R
+source("./util_functions.R")
+```
+
+Your completed `scriptlets.R` file should look like the following:
+
+```R
+#!/usr/bin/env Rscript
+
+# This script will include a collection of small scripts steps
+# often seen as example code. We're using this solely for demo purposes
+
+# Put globals, installs, and sources here
+source("./util_functions.R")
+
+# Put functions here
+#   1. Prints hello world
+hello_world <- function() {
+  myString <- "Hello, World!"
+  print (myString)
+}
 
 
-<img src="img/2.new-post_commit_readme_change.png" width="700" align="center">
+# main code
+
+hello_world()
+
+square_it(10)
+
+montecarloPi(3000)
+
+# END
+```
+
+Save this file. As a final step for the coordinated changes, we need to add this utilities file to the repo. From your workshop downloads folder, drag the `util_functions.R` script file into the repo folder `code`. When we return to GitKraken, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this snapshot captures these dependent changes. So we stage both files, give a meaningful commit message reflecting this process, and Commit. Your repo should look like the following:
+
+<img src="img/2.new-post_coordinated_commit_change.png" width="700" align="center">
 
 
 ***
