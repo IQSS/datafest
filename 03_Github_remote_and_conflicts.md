@@ -209,7 +209,7 @@ If you are careful about always syncing changes you will be able to avoid having
 
 
 ***
-Next: [Working with Commits](04_Working_with_commits.md)
+Next: Working with Commits
 
 ***
 
