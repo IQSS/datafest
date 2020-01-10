@@ -1,0 +1,919 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{metropolis}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Shiny Web Applications in R},
+  pdfauthor={Ista Zahn and Jess Cohen-Tanugi},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\title{Shiny Web Applications in R}
+\author{Ista Zahn and Jess Cohen-Tanugi}
+\date{}
+
+\begin{document}
+\frame{\titlepage}
+
+\setbeamertemplate{itemize items}[square]
+
+\begin{frame}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+\hypertarget{r-shiny-workshop-setup}{%
+\section{R Shiny Workshop Setup}\label{r-shiny-workshop-setup}}
+
+\begin{frame}[fragile]{Required software}
+\protect\hypertarget{required-software}{}
+
+There are a few things you need to install in order to follow along with
+the examples and exercises.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{R}: \url{https://cran.r-project.org}
+\item
+  \textbf{RStudio}: \url{https://rstudio.com/products/rstudio/download/}
+\item
+  \textbf{tidyverse, plotly, leaflet, and DT packages}:
+  \newline \texttt{install.packages(c("tidyverse",\ "plotly",\ "DT"))}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Workshop materials and setup}
+\protect\hypertarget{workshop-materials-and-setup}{}
+
+\begin{enumerate}
+\tightlist
+\item
+  Download workshop materials from
+  \url{https://github.com/izahn/shiny_workshop/archive/master.zip} and
+  unzip.
+\item
+  Start Rstudio
+\item
+  Open \texttt{shiny\_workshop\_materials.Rproj} (\emph{File
+  \rightarrow Open Project
+  \rightarrow \texttt{shiny\_workshop\_materials.Rproj}})
+\item
+  Open shiny cheatsheet (\emph{Help \rightarrow Cheat sheets
+  \rightarrow Web applications with shiny})
+\end{enumerate}
+
+\end{frame}
+
+\hypertarget{what-is-shiny-and-what-is-it-good-for}{%
+\section{What is shiny and what is it good
+for?}\label{what-is-shiny-and-what-is-it-good-for}}
+
+\begin{frame}{A web application framework in R}
+\protect\hypertarget{a-web-application-framework-in-r}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Shiny is a web application framework in R.
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  You can build websites without knowing HTML/CSS/Javascript!
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The whole R package ecosystem is available for use in your web app!
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If you already know R shiny makes it easy to build a website.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Use cases and examples}
+\protect\hypertarget{use-cases-and-examples}{}
+
+\begin{itemize}
+\item
+  Exploratory data analysis:
+  \url{https://jjames.shinyapps.io/shinyHome/}
+\item
+  Teaching and learning:
+  \url{http://www.statstudio.net/free-tools/dists/}
+\item
+  Search and recommendation engine:
+  \url{https://public-service.vpal.harvard.edu/}
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Many more examples at \url{https://www.showmeshiny.com/}
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Some built-in examples accessible via \texttt{runExample()}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Sharing and deploying}
+\protect\hypertarget{sharing-and-deploying}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Shiny apps can be run locally using the \texttt{shiny} R package.
+
+  \begin{center}
+  \tikz{
+  \node (LT) at (0,0) {\LARGE \faLaptop};
+  \node (R)  at (0, 0) {\faRProject};
+  }
+  \end{center}
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Apps can be deployed to the freemium \url{https://shinyapps.io}
+  service.
+
+  \begin{center}
+  \tikz{
+  \node (LT) at (0,0) {\faLaptop};
+  \node [opacity=0.2](CLD)  at (2, 0) {{\LARGE \faCloud}\hspace{-1em}\faServer \faRProject};
+  \draw [->] (LT) edge[bend left=30] (CLD);
+  \draw [->] (CLD) edge[bend left=30] (LT);
+  }
+  \end{center}
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  You (or your organization) can run a free version of Shiny Server on
+  your own system, or pay for the full-featured \emph{RStudio Connect}
+  platform.
+\end{itemize}
+
+\end{frame}
+
+\hypertarget{structure-of-a-shiny-application}{%
+\section{Structure of a shiny
+application}\label{structure-of-a-shiny-application}}
+
+\begin{frame}{Structure of a shiny application}
+
+Objectives:
+
+\begin{itemize}
+\item
+  Learn the required components of a shiny application.
+\item
+  Learn how to create shiny apps from a template.
+\item
+  Start to think in terms of \emph{inputs} and \emph{outputs}.
+\item
+  Practice creating apps using storm data as an example.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Shiny app components}
+\protect\hypertarget{shiny-app-components}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Shiny apps have two main components: the \emph{ui} and the
+  \emph{server}.
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Can be in a single \texttt{app.R} file or in separate \texttt{ui.R}
+  and \texttt{server.R} files.
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The \emph{ui} specifies the layout of elements on the page, including
+  \emph{input} and \emph{output} elements.
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The \emph{server} does all computations, \emph{renders output} and
+  sends it to the \emph{ui}.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Example: Create new shiny app}
+\protect\hypertarget{example-create-new-shiny-app}{}
+
+There are two convenient ways to create a new shiny app.
+
+\begin{description}
+\tightlist
+\item[Option 1: Create a new shiny web app from example]
+\emph{File \rightarrow New File \rightarrow Shiny Web App}
+\item[Option 2: Create a new shiny app from a template]
+\emph{File \rightarrow New File \rightarrow R Script}; start typing
+\texttt{shinyapp} and select the shinyapp \emph{snippet}
+\end{description}
+
+\end{frame}
+
+\begin{frame}[fragile]{Exercise 1: Create a shiny app}
+\protect\hypertarget{exercise-1-create-a-shiny-app}{}
+
+Open the exercise file: \emph{File \rightarrow Open File
+\rightarrow exercises/01\_new\_shiny\_app.R}
+
+\begin{enumerate}
+\item
+  Start typing \texttt{shinyapp} and select the shinyapp \emph{snippet}
+  \includegraphics{./img/shiny_snippet.png}
+\item
+  Save the file and click the ``Run App'' button. You should see a blank
+  app and no errors!
+\item
+  Add some text inside the ui element, e.g., ``Hello World!''. Save and
+  click the ``Reload App'' button".
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]{Example project data}
+\protect\hypertarget{example-project-data}{}
+
+We will be using the \texttt{storms} data set distributed with the
+\texttt{dplyr} package as an example.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(shiny)}
+\KeywordTok{library}\NormalTok{(dplyr)}
+\KeywordTok{data}\NormalTok{(storms)}
+\KeywordTok{names}\NormalTok{(storms)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] "name"        "year"        "month"       "day"        
+##  [5] "hour"        "lat"         "long"        "status"     
+##  [9] "category"    "wind"        "pressure"    "ts_diameter"
+## [13] "hu_diameter"
+\end{verbatim}
+
+Our first goal is to \textbf{display the number of storms by year} in
+our shiny app.
+
+\end{frame}
+
+\begin{frame}[fragile]{UI and server elements}
+\protect\hypertarget{ui-and-server-elements}{}
+
+\begin{itemize}
+\tightlist
+\item
+  The \texttt{ui} specifies the elements of your application and their
+  arrangement.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Common elements include \emph{inputs}, \emph{outputs}, and
+    \emph{descriptive text}.
+  \item
+    Elements can be easily arranged in panels and tabs.
+  \end{itemize}
+\item
+  The \texttt{server} is responsible for all computation and output
+  rendering.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The \texttt{server} monitors \emph{inputs} and other \emph{reactive}
+    values.
+  \item
+    When inputs change, rendered outputs are created or updated.
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Outputs and Renderers}
+\protect\hypertarget{outputs-and-renderers}{}
+
+\emph{Outputs} are the way generated content produced by R is displayed
+in shiny. Examples include:
+
+\begin{itemize}
+\item
+  \texttt{textOutput()}
+\item
+  \texttt{plotOutput()}
+\item
+  \texttt{tableOutput()}
+\end{itemize}
+
+You can use
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{help.search}\NormalTok{(}\StringTok{"output"}\NormalTok{, }\DataTypeTok{package =} \StringTok{"shiny"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+to find other output functions in shiny.
+
+\end{frame}
+
+\begin{frame}[fragile]{Outputs and Renderers}
+\protect\hypertarget{outputs-and-renderers-1}{}
+
+Each \texttt{*output()} function has a corresponding \texttt{render*()}
+function. For example:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \texttt{textOutput()} \rightarrow \texttt{renderText()}
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \texttt{plotOutput()} \rightarrow \texttt{renderPlot()}
+\end{itemize}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \texttt{tableOutput()} \rightarrow \texttt{renderTable()}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Example: render outputs}
+\protect\hypertarget{example-render-outputs}{}
+
+\begin{description}
+\tightlist
+\item[Start]
+\emph{examples/02\_render\_output.R}
+\item[Finished]
+\emph{examples/02\_render\_output\_finished.R}
+\end{description}
+
+\end{frame}
+
+\begin{frame}{Exercise 2: Display number of storms by year.}
+\protect\hypertarget{exercise-2-display-number-of-storms-by-year.}{}
+
+Open the exercise file: \emph{File \rightarrow Open File
+\rightarrow exercises/02\_storms\_by\_year.R}
+
+\begin{enumerate}
+\item
+  Add a table output element to the ui and a corresponding renderer to
+  the server. The table should display the number of named storms in
+  each year.
+\item
+  Add a plot output element to the ui, and a corresponding renderer to
+  the server. The plot should display the number of named storms in each
+  year.
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]{Creating input elements}
+\protect\hypertarget{creating-input-elements}{}
+
+\emph{Inputs} are form elements like check boxes, text fields, and
+sliders. Examples include:
+
+\begin{itemize}
+\item
+  \texttt{textInput()}
+\item
+  \texttt{selectInput()}
+\item
+  \texttt{fileInput()}
+\end{itemize}
+
+You can use
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{help.search}\NormalTok{(}\StringTok{"input"}\NormalTok{, }\DataTypeTok{package =} \StringTok{"shiny"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+to find other input functions in shiny.
+
+\end{frame}
+
+\begin{frame}[fragile]{Accessing inputs}
+\protect\hypertarget{accessing-inputs}{}
+
+\begin{itemize}
+\item
+  Inputs are accessed in the \emph{server} function via the \emph{input}
+  argument.
+\item
+  Inputs are \emph{reactive}, meaning that changes trigger updates.
+\item
+  It is often helpful to \texttt{print} or use \texttt{str} to examine
+  inputs; \texttt{str(reactiveValuesToList(input))} will show the
+  current input names and values.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Example: create and use input}
+\protect\hypertarget{example-create-and-use-input}{}
+
+\begin{description}
+\tightlist
+\item[Start]
+\emph{examples/03\_input\_output.R}
+\item[Finished]
+\emph{examples/03\_input\_output\_finished.R}
+\end{description}
+
+\end{frame}
+
+\begin{frame}{Exercise 3: Display storms for a user-selected year.}
+\protect\hypertarget{exercise-3-display-storms-for-a-user-selected-year.}{}
+
+Open the exercise file: \emph{File \rightarrow Open File
+\rightarrow exercises/03\_storms\_filtered.R}
+
+\begin{enumerate}
+\item
+  Add a sliderInput element to the ui .
+\item
+  Modify the renderTable expression to filter the year displayed to the
+  one selected by the user.
+\end{enumerate}
+
+\end{frame}
+
+\hypertarget{user-interface-ui}{%
+\section{User interface (UI)}\label{user-interface-ui}}
+
+\begin{frame}{User interface (UI)}
+
+Objectives:
+
+\begin{itemize}
+\item
+  Learn the high-level layout features provided by shiny.
+\item
+  Learn how to include html tags in your shiny app.
+\item
+  Explore available shiny themes.
+\item
+  Practice creating apps using different layouts.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Page layouts}
+\protect\hypertarget{page-layouts}{}
+
+Our storms app is functional, but not much to look at.
+
+Top-level page layout functions in shiny include:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{fluidPage()}
+\item
+  \texttt{navbarPage()}
+\item
+  \texttt{fixedPage()}
+\item
+  \texttt{fillPage()}
+\item
+  \texttt{bootstrapPage()}
+\end{itemize}
+
+\texttt{fluidPage} is the most commonly used, and \texttt{navbarPage} is
+useful for more complex apps with many elements.
+
+See \url{https://shiny.rstudio.com/articles/layout-guide.html} for more.
+
+\end{frame}
+
+\begin{frame}[fragile]{Layout functions}
+\protect\hypertarget{layout-functions}{}
+
+Other layout functions include:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{fluidRow()} / \texttt{fixedRow()}
+\item
+  \texttt{column()},
+\item
+  \texttt{sidebarLayout()}
+\item
+  \texttt{splitLayout()}
+\item
+  \texttt{verticalLayout()}
+\end{itemize}
+
+These are often used inside the page layout functions.
+
+See \url{https://shiny.rstudio.com/articles/layout-guide.html} for more.
+
+\end{frame}
+
+\begin{frame}[fragile]{HTML tags}
+\protect\hypertarget{html-tags}{}
+
+In addition to the high-level layout functions you can also use
+low-level functions to generate html tags.
+
+Directly available tag functions include:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{h1()} .. \texttt{h6()} (headers)
+\item
+  \texttt{p()} (paragraph)
+\item
+  \texttt{a()} (link)
+\item
+  \texttt{br()} (line break)
+\item
+  \texttt{div()} (division)
+\end{itemize}
+
+See \texttt{?builder} for more.
+
+\end{frame}
+
+\begin{frame}[fragile]{Shiny themes}
+\protect\hypertarget{shiny-themes}{}
+
+Shiny uses bootstrap ( \url{https://getbootstrap.com/} ) under the hood,
+providing easy access to a range of themes.
+
+To use other themes, install the \texttt{shinythemes} package and use
+the \texttt{theme} argument to your page layout function.
+
+More information at \url{https://rstudio.github.io/shinythemes/}
+
+\end{frame}
+
+\begin{frame}{Example: Page and element layout}
+\protect\hypertarget{example-page-and-element-layout}{}
+
+\begin{description}
+\tightlist
+\item[Start]
+\emph{examples/04\_layout\_appearance.R}
+\item[Finished]
+\emph{examples/04\_layout\_appearance\_finished.R}
+\end{description}
+
+\end{frame}
+
+\begin{frame}[fragile]{Exercise 4: Spiff up the storms app}
+\protect\hypertarget{exercise-4-spiff-up-the-storms-app}{}
+
+Open the exercise file: \emph{File \rightarrow Open File
+\rightarrow exercises/04\_storms\_pretty.R}
+
+\begin{enumerate}
+\item
+  Lay out this application using \texttt{navbarPage} and `tabPanel. See
+  \url{https://shiny.rstudio.com/articles/layout-guide.html} for
+  examples.
+\item
+  Use html tags (e.g., \texttt{h2()}, \texttt{p()}, \texttt{a()}) to add
+  some descriptive text to your application.
+\item
+  Use the \texttt{shinythemes} package (install if needed) to change the
+  theme used by your app. See
+  \url{https://rstudio.github.io/shinythemes/} for examples.
+\end{enumerate}
+
+\end{frame}
+
+\hypertarget{interactive-tables-and-graphs}{%
+\section{Interactive tables and
+graphs}\label{interactive-tables-and-graphs}}
+
+\begin{frame}{Interactive tables and graphs}
+
+Javascript is the language of the web, and many of the most popular
+javascript libraries can be used directly from R.
+
+Objectives:
+
+\begin{itemize}
+\item
+  Discover available html widgets that can be used in shiny
+  applications.
+\item
+  Learn how html widgets interact with shiny.
+\item
+  Practice using html widgets as inputs and outputs in shiny apps.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Interactive tables with DT}
+\protect\hypertarget{interactive-tables-with-dt}{}
+
+The DataTables javascript library can be used to create interactive
+tables directly from R. Features inlude:
+
+\begin{itemize}
+\tightlist
+\item
+  searching,
+\item
+  pagination,
+\item
+  sorting.
+\end{itemize}
+
+Interacting with tables updates \texttt{input}, enabling integration
+with Shiny.
+
+See \url{https://shiny.rstudio.com/articles/datatables.html} for more.
+
+\end{frame}
+
+\begin{frame}[fragile]{Interactive graphs with plotly}
+\protect\hypertarget{interactive-graphs-with-plotly}{}
+
+Plotly is a robust javascript data visualization library with an
+excellent R package. Features include:
+
+\begin{itemize}
+\tightlist
+\item
+  easy converson of \texttt{ggplot} graphs,
+\item
+  hover, click, pan and zoom
+\item
+  support for plots, scatter plots, error bars, box plots, heatmaps and
+  much more.
+\end{itemize}
+
+Plotly includes an \texttt{event\_data} function for retrieving values
+produced by interacting with the plot. This enables deep integration
+with Shiny.
+
+See \url{https://plot.ly/r/shiny-coupled-events/} for more.
+
+\end{frame}
+
+\begin{frame}[fragile]{Interactive maps with leaflet}
+\protect\hypertarget{interactive-maps-with-leaflet}{}
+
+Leaflet is a popular javascript library for producing interactive maps.
+
+Like DataTables, interacting with leaflet maps updates \texttt{input},
+enabling interacting with shiny.
+
+See \url{http://rstudio.github.io/leaflet/shiny.html} for more.
+
+\end{frame}
+
+\begin{frame}{Example: html widgets DT and Plotly}
+\protect\hypertarget{example-html-widgets-dt-and-plotly}{}
+
+\begin{description}
+\tightlist
+\item[Start]
+\emph{examples/05\_htmlwidgets.R}
+\item[Finished]
+\emph{examples/05\_htmlwidgets\_finished.R}
+\end{description}
+
+\end{frame}
+
+\begin{frame}{Exercise 5: Interactive storms map}
+\protect\hypertarget{exercise-5-interactive-storms-map}{}
+
+Open the exercise file: \emph{File \rightarrow Open File
+\rightarrow exercises/05\_interactive\_storms\_map.R}
+
+\begin{enumerate}
+\item
+  Run the app and click on the blue markers. Examine the output in the
+  console to determin the input corresponding to the row number of the
+  clicked observation.
+\item
+  Use the slice function to select the row corresponding to the clicked
+  marker from the storms data frame and return this row to the
+  stormDetails output on line 65.
+\end{enumerate}
+
+\end{frame}
+
+\hypertarget{where-to-go-from-here}{%
+\section{Where to go from here}\label{where-to-go-from-here}}
+
+\begin{frame}{Learning resources}
+\protect\hypertarget{learning-resources}{}
+
+A number of excellent tutorials and other resources are available,
+including:
+
+\begin{itemize}
+\item
+  \url{https://www.linkedin.com/learning/building-data-apps-with-r-and-shiny-essential-training}
+\item
+  \url{https://shiny.rstudio.com/tutorial/}
+\item
+  \url{http://shiny.rstudio.com/articles/}
+\item
+  \url{https://shiny.rstudio.com/images/shiny-cheatsheet.pdf}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Reactivity and dynamic UI elements}
+\protect\hypertarget{reactivity-and-dynamic-ui-elements}{}
+
+We have only touched on the reactive model shiny uses to enable
+interactivity. You can learn much more about it at
+\url{https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/\#t=42m2s}
+
+\end{frame}
+
+\begin{frame}[fragile]{Debugging shiny apps}
+\protect\hypertarget{debugging-shiny-apps}{}
+
+We've seeen how to use \texttt{print} or \texttt{str} to insect values.
+You can also use breakpoints in Rstudio.
+
+More information about debugging shiny apps is available at
+\url{https://shiny.rstudio.com/articles/debugging.html}
+
+\end{frame}
+
+\end{document}
