@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Git(hub) Remote and Conflicts"
-author: "Bob Freeman, Radhika Khetani, Amir Karger"
+title: "Git(hub) Remote"
+author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
 ***
@@ -11,16 +11,37 @@ Previous: [Getting Started with Git using GitKraken](02_GitKraken.md)
 
 ## Repositories online (remote)
 
-Once you have ‘published’ your repository it will be viewable on your profile at [GitHub.com](github.com). You can choose to keep it public or make it private; and if it's private, you can choose specific GitHub users with whom you want to share it or collaborate with.
+### Pushing Your Changes to Your Remote Repository
 
-For this lesson, we will stick with a public repository. To quickly view your repository online right-click on your remote's Origin in the left pane, and select 'View origin on GitHub.com'. This will reveal your online repository in your web browser.
+In the last lesson we were only recording our changes locally, but we may want to have these changes be available remotely as well (for collaborating/sharing/backing up). The idea is you keep your local and remote repositories "in sync". 
 
+This is straightforward in GitKraken and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on GitHub's servers in the process.
+
+<img src="img/2.new-push.png" width="700" align="center">
+
+We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', which is the default term for the remote repository in Git (note that you can call it whatever you'd like, and you can have more than one remote! But that is beyond the scope of this lesson.) If we then right-mouse click on our 'origin', we can select the pop-up menu option "View origin on GitHub.com":
 
 <img src="img/2.new-view_origin_on_github.png" width="700" align="center">
 
+Indeed, GitKraken sends us to our web browser and our repository on GitHub.com is displayed:
 
 <img src="img/2.new-repo_on_github.png" width="700" align="center">
 
+Notice that our commit short descriptions are shown here; and that we can see the different commits -- serial & coordinated -- that we performed.
+
+> You can also have a fully local repository, without a remote "synced" one on GitHub. 
+> If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
+
+***
+
+**Exercise #2**
+
+1. Push the changes to the "learning_github" repo (from the preivous exercise) to the remote repo on github.com
+2. Make changes to data-file.txt on GitHub.com
+3. Sync or "Pull" the changes that were made remotely to the local repository
+***
+
+On Github, you can choose to keep it public or make it private; and if it's private, you can choose specific GitHub users with whom you want to share it or collaborate with. For this lesson, we will stick with having a public repository. 
 
 Once your document is online, you can continue to make local changes to your file. But you will have to synchronize your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers), and it is important to keep these changes in sync. 
 
@@ -36,7 +57,6 @@ Click on the 'Edit' option or icon. You will now be able to edit the file and ad
 # Square function
 # adapted from https://hbctraining.github.io/Intro-to-R/lessons/03_introR-functions-and-arguments.html#user-defined-functions
 # and https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/
-
 ```
 
 and the Anscombe's quartet function:
@@ -60,7 +80,7 @@ This solitary action requires a description and subsequent Commit:
 
 <img src="img/3.commit_delete_one_file.png" width="700" align="center">
 
-Let's delete the other two as well. Your code repo should look like the following:
+Let's delete the other two as well. the `code` folder in your repo should look like the following:
 
 <img src="img/3.code_folder_after_deletions.png" width="700" align="center">
 
@@ -100,7 +120,6 @@ If all goes well, you should see a brief 'Success' message, and your repos shoul
 
 <img src="img/3.local_remote_in_sync.png" width="700" align="center">
 
-
 ## Viewing File Histories
 
 One very useful feature of this and other Git clients is looking at how a file has changed over time. In GitKraken, select the timeline entry 'Refactor code...', and in the section below, right-mouse click on the `scriptlets.R` file and select "File History" to see exactly that: 
@@ -122,94 +141,9 @@ And finally, clicking on the File View button shows all the changes together, wi
 Click on the X at the upper right to close this window and return to the commit timeline.
 
 
-
-## Managing Conflicts
-
-A **conflict** emerges when you try to merge (sync) two versions of a document with changes which conflict with each other. If you are careful about committing and syncing then it is unlikely you will run into this issue; but if you do, it can be resolved fairly easily.
-
-The most likely way a conflict will emerge is if you, or if you are sharing your repo with a collaborator, make a change on either the local or online repo, and then make a subsequent change on the other without first syncing the changes.
-
-If you make changes in different parts of a file or within the repo, these changes can be merged (synced) together without any conflict. But if these changes conflict with one another – if you try and change the same line of the document in two different ways – that's when there is an issue, as Git will not know which change is the one you wish to keep.
-
-<img src="img/conflict.png" width="700" align="center">
-
-An example will help illustrate the most likely way conflicts can emerge, and how to deal with them. 
-
-Let's add a change to our remote repository to main documentation `README.md` file. The first title line isn't properly formatted. Let's edit this file and line with a single `#` as an H1 tag:
-
-<img src="img/3.new-edit_online_to_start_conflict.png" width="700" align="center">
-
-Don't forget commit this change on the website. 
-
-Without syncing, make a change to the same document using the text editor locally:
-
-<img src="img/3.new-edit_locally_to_make_conflict.png" width="700" align="center">
-
-Save the changed file. Return to GitKraken, click on the WIP line, stage your change, add a description, and Commit:
-
-<img src="img/3.new-local_conflict_commit.png" width="700" align="center">
-
-Note the divergence as a branch. Synchronize the repos by doing a Push. GitKraken warns us that we are behind the remote, so we must do a Pull:
- 
-<img src="img/3.new-local_pull_warning.png" width="700" align="center">
- 
-Once you do the Pull, we get a transient message about a 'Merge Conflict' and a timeline message warning us about "Merge Conflicts", which is not unexpected:
-
-<img src="img/3.new-merge_confict_warning.png" width="700" align="center">
-
-This is not a big problem: What Git is aking you to do is manage these conflicts. GitKraken offers you the option of opening the file with the sync conflicts.
-
-Instead, open the file with an external text editor (the document will open with whichever text editor/application we have chosen as the default for opening Markdown files). 
-
-<img src="img/merge.png" width="400" align="center">
-
-Looking at the file, we will see Git has denoted the conflicting section (selected here).
-
-<img src="img/3.new-conflict_text.png" width="600" align="center">
-
-This conflicting section is marked with `<<<<<<<` and ends with `>>>>>>>`. These are known as the **conflict markers**. The two conflicting blocks are divided by a `=======` line. 
-
-There are a number of approaches to dealing with a conflict:
-
-* You could choose to go with either of the changes by deleting the version you no longer want and removing the conflict markers, OR
-
-* You could change the section entirely and not choose either of the options, OR
-
-* You could keep both of the versions
-
-Whichever option you choose, you must **remove** the conflict markers in order to proceed. We're going to keep the local copy, as it is more informative. Once you have *resolved* the conflict, save the file, click on the conflict timeline entry, and indicate to GitKraken that you have resolved the problem in the lower section:
-
-<img src="img/3.new-conflict_resolved.png" width="600" align="center">
-
-and then proceed to **commit** and merge the changes (resolved conflict). When you go to Commit your changes you see that GitKraken specifies that the commit is to merge a conflict. This is useful historical information if you later wish to review how you managed any conflicts:
-
-<img src="img/3.new-commit_and_merge_conflict.png" width="600" align="center">
-
-GK now shows our commit & its message in the timeline in the upper pane:
-
-<img src="img/3.new-merged_conflict_timeline.png" width="600" align="center">
-
-Now, synchronize your local changes by the standard workflow of **Pull and Push** and your local and remote repositories will be in sync:
-
-
-<img src="img/3.new-commit_conflict_synched_timelines.png" width="700" align="center">
-
-This may seem like a convoluted approach to dealing with conflicts, but it is very useful as you have total control and the last word in dealing with conflicts. In contrast, if conflicts emerge on a system like Dropbox, the result is two files being created: Although this is better than potentially losing important changes, it also means you still have to look at these two documents and decide how you are going to merge them. 
-
-If you are careful about always syncing changes you will be able to avoid having to deal with conflicts. When collaborating, the likelihood for conflicts increases; so, it is useful to be aware of how to deal with conflicts before you begin to collaborate using GitHub. 
-
 ***
 
-**Exercise**
-
-1. Publish the "learning_github" repo. 
-2. Create a conflict within the "data-file.txt" file by making changes locally and remotely.
-3. Resolve the conflict and commit.
-4. [Optional] Add your neighbor as a collaborator to a the "learning_github" repo (in Settings -> Collaborators & teams), make changes to create a conflict within the "data-file.txt" document in one of the repos (pick one), and resolve the conflict.
-
-
-***
-Next: Working with Commits
+Next: [Managing Conflicts](04_Managing_conflicts.md)
 
 ***
 
