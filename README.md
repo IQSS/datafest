@@ -26,7 +26,7 @@ Attendees will participate in multiple exercises to learn how version control wo
 1. [Introduction to Version Control](01_Intro_to_versioning.md)
 2. [Getting Started with Git using GitKraken](02_GitKraken.md)
 3. [Remote repositories](03_Github_remote.md)
-4. [Managing Conflicts](https://hbctraining.github.io/versioning_data_scripts/04_Managing_conflicts.html)
+4. [Managing Conflicts](04_Managing_conflicts.md)
 
 ***
 
