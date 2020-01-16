@@ -24,9 +24,13 @@ Three common options for data storage are text files, spreadsheets, and database
 
 When we are using a spreadsheet, we put formulas into cells to calculate new values based on old ones. When we are using a database, we send commands (usually called [queries]({{ site.github.url }}/reference/#query)) to a [database manager]({{ site.github.url }}/reference/#database-manager): a program that manipulates the database for us. The database manager does whatever lookups and calculations the query specifies, returning the results in a tabular form that we can then use as a starting point for further queries.
 
+![Database  Manager](images/DBMS.PNG "Conceptual Overview of Database Manager")
+
 The three major ways to model databases are [*relational*](https://en.wikipedia.org/wiki/Relational_model), [*heirarchical*](https://en.wikipedia.org/wiki/Hierarchical_database_model) and [*network*](https://en.wikipedia.org/wiki/Network_model). The Relational model is the one that is most commonly employed and the resulting database is appropriately called a **Relational Database**.
 
 Within a [relational database]({{ site.github.url }}/reference/#relational-database) the data is arranged into [tables]({{ site.github.url }}/reference/#table). Each table has columns (also known as [fields]({{ site.github.url }}/reference/#field)) that describe the data, and rows (also known as [records]({{ site.github.url }}/reference/#record)) which contain the data.
+
+![Relational Database](images/RelationalDB.PNG "Conceptual Overview of Structure of a Relational Database")
 
 The Database engine we will be using today is **[SQLite](https://sqlite.org/about.html)**. SQLite attempts to provide a Structured Language Query (SQL) engine intended for data analysis/management "locally"; it is good at reading from, and writing directly to local files. Unlike other SQL engines like MySQL, Oracle, SQL server, etc., SQLite is not intended for high-volume websites or in the case where many "connections" need to be maintained simultaneously. [Here is a detailed overview of when it is appropriate to use SQLite](https://sqlite.org/whentouse.html). 
 
@@ -53,6 +57,8 @@ Key points when moving towards structured data that you wish to move into a data
 
 - Generate and use unique values (primary keys) for data in a given table. This primary key allows you to unique identify that row of data. This can be a unique, serial number (e.g. 1, 2, etc), a static # that is the row # upon data import, another value in a field (column), or a new field that is a combination of two values or fields that now creates a new value across all the table data.
 - Follow the data normalization rules as best as possible to create modular, non-redundant data. A good, lay discussion can be found at Software Carpentry's [Data Hygiene lesson](http://swcarpentry.github.io/sql-novice-survey/08-hygiene/).
+
+![Data  Normalization](images/Normalization.PNG "Conceptual Overview of Data Normalization Process")
 
 ## Exercise:
 
