@@ -14,7 +14,7 @@ Objectives:
 - Learn how to work with a previous commit
 - Learn how to temporarily hide work in progress
 
-Please download the additional workshop file [zip archive](/raw/master/data/gitkraken_workshop_newfiles.zip) and unzip it.
+Please download the additional workshop file [zip archive](data/gitkraken_workshop_newfiles.zip) and unzip it.
 
 # Working with Commits
 
