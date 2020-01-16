@@ -34,10 +34,19 @@ There are a few things you need to install in order to follow along with the exa
 
 ## Workshop materials and setup
 
-1. Download workshop materials from https://github.com/izahn/shiny_workshop/archive/master.zip and unzip.
+1. Download workshop materials from http://j.mp/r_shiny and unzip.
 2. Start Rstudio
-3. Open `shiny_workshop_materials.Rproj` (*File \rightarrow Open Project \rightarrow `shiny_workshop_materials.Rproj`*)
+3. Open `shiny_workshop.Rproj` (*File \rightarrow Open Project \rightarrow `shiny_workshop.Rproj`*)
 4. Open shiny cheatsheet (*Help \rightarrow Cheat sheets \rightarrow Web applications with shiny*)
+
+## This workshop
+
+> - This workshop is hands-on; you'll get the most out of it if you download the materials and try the exercieses.
+
+> - This workshop is at an introductory level, with the goal of enabling you to create simple shiny apps.
+
+> - Links and resources for further study are included!
+
 
 # What is shiny and what is it good for?
 
@@ -130,7 +139,7 @@ Option 2: Create a new shiny app from a template
 Open the exercise file: *File \rightarrow Open File \rightarrow exercises/01_new_shiny_app.R*
 
 1. Start typing `shinyapp` and select the shinyapp *snippet*
-![](./img/shiny_snippet.png)
+![](./img/shiny_snippet.png){ width=65% }
 
 2. Save the file and click the "Run App" button. You should see a blank app and no errors!
 

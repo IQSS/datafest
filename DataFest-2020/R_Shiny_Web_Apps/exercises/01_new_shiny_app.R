@@ -1,6 +1,6 @@
 ## Exercise 1: Create a new shiny app.
 
-## 1. 1. Start typing `shinyapp` and select the shinyapp *snippet*.
+## 1. Start typing `shinyapp` and select the shinyapp *snippet*.
 
 ## 2. Save the file and click the "Run App" button. You should see a blank app and no errors!
 

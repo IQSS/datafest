@@ -49,6 +49,7 @@ server <- function(input, output, session) {
   selection = "single")
   
   output$stormMap <- renderLeaflet({
+    
     req(input$nameTable_row_last_clicked)
     
     stormRow <- slice(stormsUnique, as.integer(input$nameTable_row_last_clicked))
@@ -72,7 +73,8 @@ server <- function(input, output, session) {
     
     ## Use the slice function to select the row corresponding
     ## to the clicked marker from the storms data frame.
-
+    
+    req(input$stormMap_marker_click)
     slice(storms, input$stormMap_marker_click$id)
     
   })
