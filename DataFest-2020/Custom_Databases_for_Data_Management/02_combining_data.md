@@ -24,6 +24,8 @@ We going to assume some base familiarity of SQL. The remainder of this lesson wi
 
 **Our data:** In the late 1920s and early 1930s, William Dyer, Frank Pabodie, and Valentina Roerich led expeditions to the Pole of Inaccessibility in the South Pacific, and then onward to Antarctica. Two years ago, their expeditions were found in a storage locker at Miskatonic University. We have scanned and OCR the data they contain, and we now want to store that information in a way that will make search and analysis easy.
 
+![Our Data](images/PoleofInaccessibility.PNG "Where did our data come from")
+
 Before we get into the data and using SQLite to select the data, the tables below show the database we will use in our examples:
 
 **Person**: people who took readings.
