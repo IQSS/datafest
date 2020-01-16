@@ -95,7 +95,7 @@ If you are careful about always syncing changes you will be able to avoid having
 
 ***
 
-Next: [Managing Conflicts](05_Working_with_commits.md)
+Next: [Working with commits](05_Working_with_commits.md)
 
 ***
 

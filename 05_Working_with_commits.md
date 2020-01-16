@@ -5,7 +5,8 @@ author: "Bob Freeman, Radhika Khetani, Amir Karger"
 ---
 
 ***
-Previous: [Remote repositories, managing conflicts](04_Managing_conflicts.md)
+
+Previous: [Managing Conflicts](04_Managing_conflicts.md)
 
 ***
 Objectives:
