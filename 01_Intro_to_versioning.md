@@ -16,7 +16,7 @@ Previous: [README](README.md)
 For this quick hands-on session we will be using a Graphical User Interface (GUI) to work with Git. Let's start by:
 1. [Downloading and installing GitKraken](https://gitkraken.com/download). 
 2. Creating an account for yourself on [GitHub](http://github.com). Please **select the free/academic account**, as this option has more long-term flexibility.
-3. Downloading the [workshop sample files zipped folder](https://github.com/hbctraining/versioning_data_scripts/raw/master/data/example_files.zip) and unzip it.
+3. Downloading the [workshop sample files zipped folder](./data/example_files.zip) and unzip it.
 
 ## What is Version Control?
 
