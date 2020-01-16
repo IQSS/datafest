@@ -14,8 +14,9 @@ Objectives:
 - Learn how to work with a previous commit
 - Learn how to temporarily hide work in progress
 
+Please download the additional workshop file [zip archive]() and unzip it.
 
-## Working with Commits
+# Working with Commits
 
 Sometimes a simple commit isn't that simple: you've forgotten something, you need to undo what you've done, or you need to go back to something you committed some time ago. This section with help you navigate these items.
 
@@ -23,23 +24,27 @@ Sometimes a simple commit isn't that simple: you've forgotten something, you nee
 
 Oops! Pushed 'Commit' button too fast? As long as you have not updated any remotes, you can amend the last commit message, add additional changes, or both.
 
-To make changes / add files, click on the //WIP node on the graph:
+Let's demonstrate this by updating our data. Let's add the `anscombe.tsv` and  `pi_trails_values.tsv` files to our `data/` folder, and then stage / commit in GitKraken:
 
-<img src="img/4.01.WIP_amend.png" width="700" align="center">
+<img src="img/5.01.Commit_before_amend.png" width="700" align="center">
 
-stage the files would wish to include in the updated commit, and selected the Amend checkbox in the Commit Message pane:
+Oh! But we forgot to remove the superfluous Stata file. Delete the `gss.dta` file, and back in GitKraken, click on the //WIP node on the graph:
 
-<img src="img/4.02.amend_checkbox.png" width="700" align="center">
+<img src="img/5.02.WIP_amend.png" width="700" align="center">
+
+stage the file change to include in the updated commit and select the Amend checkbox in the Commit Message pane:
+
+<img src="img/5.03.Amend_checkbox.png" width="700" align="center">
 
 You'll note that the previous commit message is copied into the Message and Description fields. And the Commit button is titled Amend Previous Commit instead. Go ahead.
 
 If you wish to amend the message only, hover over and click on the commit message in the bottom pane for the latest commit:
 
-<img src="img/4.03.click_on_commit_message.png" width="700" align="center">
+<img src="img/5.04.Update_commit_message_tooltip_popup.png" width="700" align="center">
 
 Change your commit message, and click on the Update Message button at the bottom:
 
-<img src="img/4.04.update_message_button.png" width="700" align="center">
+<img src="img/5.05.Update_message_button.png" width="700" align="center">
 
 
 ## Reverting Commits
