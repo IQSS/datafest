@@ -1,12 +1,12 @@
 
 # Versioning your Data and Scripts
 
-December, 2019
+January, 2020
 
 Authors: Bob Freeman ([devbioinfoguy](https://github.com/devbioinfoguy)), Radhika Khetani ([rkhetani](https://github.com/rkhetani)), Meeta Mistry ([mistrm82](https://github.com/mistrm82)), Kathleen Keating ([kthlnktng](https://github.com/kthlnktng)) 
 
 ## Overview:
-Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_beforeAdvisor'... ? This hands-on workshop will introduce the concepts of using a version control system to manage changes and the history of your data files (text, data, scripts, etc.) with [Git](https://git-scm.com/) using the [GitKraken](https://www.gitkraken.com/) interface, as well as on [GitHub](github.com). 
+Tired of wading through files/folders titled 'paper_v1', 'paper_v2', 'paper_v3_beforeAdvisor'... ? This hands-on workshop will introduce the concepts of using a version control system to manage changes and the history of your data files (text, data, scripts, etc.) with [Git](https://git-scm.com/) using the [GitKraken](https://www.gitkraken.com/) interface, as well as on [GitHub](http://github.com). 
 
 Attendees will participate in multiple exercises to learn how version control works, including: 
 * setting up Git repositories
@@ -19,7 +19,7 @@ Attendees will participate in multiple exercises to learn how version control wo
 
 1. Please [Download and install GitKraken](https://gitkraken.com/download). 
 2. Create an account for yourself on [GitHub](http://github.com). Please be sure to select the free/academic account, as this option has more long-term flexibility.
-3. Download the [workshop sample files zipped folder](https://github.com/hbctraining/versioning_data_scripts/raw/master/data/example_files.zip) and unzip it.
+3. Download the [workshop sample files zipped folder](./data/example_files.zip) and unzip it.
 
 ## Lessons:
 
@@ -27,6 +27,7 @@ Attendees will participate in multiple exercises to learn how version control wo
 2. [Getting Started with Git using GitKraken](02_GitKraken.md)
 3. [Remote repositories](03_Github_remote.md)
 4. [Managing Conflicts](04_Managing_conflicts.md)
+5. [Working with Commits](05_Working_with_commits.md)
 
 ***
 
