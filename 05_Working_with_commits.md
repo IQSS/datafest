@@ -49,17 +49,31 @@ Change your commit message, and click on the Update Message button at the bottom
 
 ## Reverting Commits
 
-Sometimes you just want to undo the last thing you did. Like that last change (e.g. commit, branch, etc) you didn't mean to make? GitKraken's Undo button in the top toolbar will let you undo most actions (which can also Redo if needed!). Hover over the Undo button to see what action it will take, and click if that seems appropriate:
+Sometimes you just want to undo the last thing you did. Like that last change (e.g. commit, branch, etc) you didn't mean to make? GitKraken's Undo button in the top toolbar will let you undo most actions (which can also Redo if needed!).
 
-<img src="img/4.05.undo_button_hover.png" width="700" align="center">
+Let's try this ourselves: in your Finder or Explorer window, let's delete the other R code files that were intermediates in the code/ folder: `example_Rcode.R`, `scriptlets-stage2.R`, `and scriptlets-stage3.R`. Continue on to stage and commit this deletion.
 
-If the Undo option is not available or not appropriate, one can use the Revert Commit option for the latest commit or even a previous one. This will not only bring back the changes to your working directory, but will include an explicit commit to document that this change to the repo. To perform this, click on the commit node, and right-mouse click to see the popup menu. From there, select the Revert Commit option:
+<img src="img/5.06.Removal_R_files_commit_button.png" width="700" align="center">
 
-<img src="img/4.06.revert_commit_popup_menu.png" width="700" align="center">
+
+Now, we can hover over the Undo button to see what action it will take, and click if that seems appropriate:
+
+<img src="img/5.07.Undo_button_hover.png" width="700" align="center">
+
+If the Undo option is not available or not appropriate, one can use the Revert Commit option for the latest commit or even a previous one. This will not only bring back the changes to your working directory, but will include an explicit commit to document that this change to the repo.
+
+To perform this, click on the appropriate commit node (our last one), and right-mouse click to see the popup menu. From there, select the Revert Commit option:
+
+<img src="img/5.08.Revert_commit_popup_menu.png" width="700" align="center">
   
-When prompted, you can immediate commit this explicit change, or keep the changes as a WIP (work in progress) for you to do additional work. Clicking Yes enters the new commit to your repo:
+When prompted, you can immediate commit this explicit change -- Yes choice -- or keep the changes as a WIP (work in progress) for you to do additional work -- No choice. 
 
-<img src="img/4.07.commit_a_revert_commit.png" width="700" align="center">
+<img src="img/5.09.revert_commit_yes_or_no.png" width="700" align="center">
+
+
+Clicking Yes enters the new commit to your repo:
+
+<img src="img/5.10.Commit_a_revert_commit.png" width="700" align="center">
 
 **Exercises-Coming soon!**
 
