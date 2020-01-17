@@ -23,7 +23,7 @@ If you already have R, Python, or Stata installed, you will still need to instal
 2. Download the following files into that folder, ensuring that the files have the names within single quotes:
 
 
-- ['survey.db' sqlite3 database](../../DataFest-2020/Multiple-Approaches-to-Combining-Data/data/survey.db)
+- ['survey.db' sqlite3 database](../../../../raw/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/survey.db)
 - ['person.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/person.csv)
 - ['site.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/site.csv)
 - ['survey.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/survey.csv)
