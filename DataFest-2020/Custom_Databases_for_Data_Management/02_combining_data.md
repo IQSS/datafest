@@ -102,50 +102,25 @@ Let's begin by opening up our SQLite database and interrogating our data!
 
 > ## Getting Into and Out Of SQLite
 >
-> In order to use the SQLite commands *interactively*, we need to
-> enter into the SQLite console. 
+> We'd like to introduce you to this handy tool, DB Brower for SQLite (https://sqlitebrowser.org/dl/).  DB Brower for SQLite gives us nice and quick overviews of our database and tables, and allows us to use the SQLite commands *interactively*.
+>  
 
-Open a shell or Terminal window and move to the location where our data is:
+Once you've downloaded DB Brower for SQLite for your operating system, you can open DB Brower and click Open Database.  Select our database, survey.db, and our database should pop up under the tab Database Structure. 
 
-Mac: Command-space to open up Spotlight search, type `Terminal`, and when the Terminal application appears, press Enter. Then enter the command `cd /Users/Shared/datafest_2017/`.
-PC: Go to your Windows/Start menu search, type `cmd`, and when the Windows Shell option appears, press Enter. Then enter the command `cd C:\Users\Public\datafest_2017\`.
+Under the Database Structure tab you'll see that we have 4 tables in our database: Person, Site, Survey, Visited.
 
-This folder should have your csv and sqlite3 database files in there. Now enter `sqlite3 survey.db`
+The Schema column of this tab informs us about the structures of each table:
 
-> The SQLite command is `sqlite3` and you are telling SQLite to open up
-> the `survey.db`.  You need to specify the `.db` file otherwise, SQLite
-> will open up a temporary, empty database.
->
-> To get out of SQLite, type out `.exit` or `.quit`.  If you forget any SQLite `.` (dot)
-> command, type `.help`.
-
-
-Let's turn on two options in our console to make working with SQL and SQLite more user-friendly:
-```sql
-.mode column
-.header on
-```
-
-> All SQLite-specific commands are prefixed with a `.` to distinguish them from SQL commands.
-> Type `.tables` to list the tables in the database.
->
-> ```sql
-> .tables
-> 
-> Person   Site     Survey   Visited
-> ```
-> To see how the database tables are structured, type
->
-> ```sql
-> .schema
 > 
 > CREATE TABLE Person (id text, personal text, family text);
 > CREATE TABLE Site (name text, lat real, long real);
 > CREATE TABLE Visited (id text, site text, dated text);
 > CREATE TABLE Survey (taken integer, person text, quant text, reading real);
-> ```
->
-> For a full list of commands, type `.help` and see the [SQLIte CLI page](https://sqlite.org/cli.html)
+> 
+
+The Browse Data tab provides view of each table.
+
+The Execute SQL tab is where we'll be entering our SQL commands.
 
 ## Selecting Data
 
