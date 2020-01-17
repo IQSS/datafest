@@ -24,10 +24,10 @@ If you already have R, Python, or Stata installed, you will still need to instal
 
 
 - ['survey.db' sqlite3 database](../../../../raw/master/DataFest-2020/Custom_Databases_for_Data_Management/data/survey.db)
-- ['person.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/person.csv)
-- ['site.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/site.csv)
-- ['survey.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/survey.csv)
-- ['visited.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/visited.csv)
+- ['person.csv' file](../../../../raw/master/DataFest-2020/Custom_Databases_for_Data_Management/data/person.csv)
+- ['site.csv' file](../../../../raw/master/DataFest-2020/Custom_Databases_for_Data_Management/data/site.csv)
+- ['survey.csv' file](../../../../raw/master/DataFest-2020/Custom_Databases_for_Data_Management/data/survey.csv)
+- ['visited.csv' file](../../../../raw/master/DataFest-2020/Custom_Databases_for_Data_Management/data/visited.csv)
 
 
 ## DB Browser for SQLite
@@ -40,36 +40,26 @@ The installation process is pretty simple and easy-to-follow for Mac and Windows
 
 You do not need to install all three analysis environments; instead, only install the one(s) that you are most interested. In session, we are going to demonstrate how to use SQLite from each of them. Please note that you might be required to install these for other Datafest Hands-on sessions.
 
-### Python + SQLite module
+### Python v3.x + SQLite module
 
 1. For Mac or PC, please download to your `Installers` folder the appropriate installer from [Continuum Analytics](https://www.continuum.io/) Anaconda Python installer and run it to start the installation process. If you don't know which PC installer to use, please use the 32-bit one.
 
-**If you are taking the Text Analysis with Python (Hands-on), please install Python v3**
+    Mac 64-bit: https://repo.anaconda.com/archive/Anaconda3-2019.10-MacOSX-x86_64.pkg
+    PC 64-bit : https://repo.anaconda.com/archive/Anaconda3-2019.10-Windows-x86_64.exe
 
-**Python v2.7**<br>
-    Mac 64-bit: https://repo.continuum.io/archive/Anaconda2-4.2.0-MacOSX-x86_64.pkg<br>
-    PC 32-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86.exe<br>
-    PC 64-bit : https://repo.continuum.io/archive/Anaconda2-4.2.0-Windows-x86_64.exe<br>
-
-**Python v3.5**<br>
-    Mac 64-bit: https://repo.continuum.io/archive/Anaconda3-4.2.0-MacOSX-x86_64.pkg<br>
-    PC 32-bit : https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86.exe<br>
-    PC 64-bit : https://repo.continuum.io/archive/Anaconda3-4.2.0-Windows-x86_64.exe<br>
-
-    
 2. To test the success of your installation, open up a Terminal or cmd shell window, type in `python` and press Enter. You are successful if the prompt changes to `>>> ` and 'Continuum Analytics' is mentioned in the text above. Type `quit()` and Enter to exit. If you did not get this prompt, please see the HelpDesk volunteers at DataFest concourse.
     
 ### R + RStudio + RSQLite + dplyr packages
 
 1. For Mac or PC, please download to your `Installers` folder the R installer from the [CRAN](https://cran.r-project.org/) site and run it to start the installation process:
 
-    Mac: https://cran.r-project.org/bin/macosx/R-3.3.2.pkg        
-    PC : https://cran.r-project.org/bin/windows/base/R-3.3.2-win.exe
+    Mac: https://cran.r-project.org/bin/macosx/R-3.6.2.pkg       
+    PC : https://cran.r-project.org/bin/windows/base/R-3.6.2-win.exe
 
 2. For Mac or PC, please download to your `Installers` folder the RStudio installer from the [RStudio](https://www.rstudio.com/) site and run it to start the installation process:
 
-    Mac: https://download1.rstudio.org/RStudio-1.0.136.dmg     
-    PC : https://download1.rstudio.org/RStudio-1.0.136.exe
+    Mac: https://download1.rstudio.org/desktop/macos/RStudio-1.2.5033.dmg
+    PC : https://download1.rstudio.org/desktop/windows/RStudio-1.2.5033.exe
 
 
 3. Final step is to install the R packages needed for the workshop. Open up the RStudio program. In the console window that appears in the left pane, please enter the following commands one-at-a-time, *noting that there may be long pauses* as RStudio processes and installs all the dependent packages:
@@ -133,8 +123,7 @@ For each backend database or data source, you need software (a driver) to commun
 
 1. For Mac or PC, please download to your `Installers` folder the appropriate installer and open/run the appropriate program, disk image, or package to start the installation process. **PC users:** please download and install **BOTH** sets of drivers.
 
-    Mac: [v0.9994 with full-text search support](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)<br>
-    PC : [v0.9996 Win32](http://www.ch-werner.de/sqliteodbc/sqliteodbc.exe)<br>
+    Mac: [v0.9994 with full-text search support](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)
     PC : [v0.9996 Win64](http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe)
 
 #### ODBC Configuration
