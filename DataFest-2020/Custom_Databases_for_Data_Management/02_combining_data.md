@@ -107,14 +107,18 @@ Let's begin by opening up our SQLite database and interrogating our data!
 
 Once you've downloaded DB Brower for SQLite for your operating system, you can open DB Brower and click Open Database.  Select our database, survey.db; and our database should pop up under the tab Database Structure. 
 
-Under the Database Structure tab you'll see that we have 4 tables in our database: Person, Site, Survey, Visited.
+Under the Database Structure tab you'll see that we have 4 tables in our database: 
+   Person, Site, Survey, Visited.
 
 The Schema column of this tab informs us about the structures of each table:
  
-CREATE TABLE Person (id text, personal text, family text)
-CREATE TABLE Site (name text, lat real, long real)
-CREATE TABLE Survey (taken integer, person text, quant text, reading real)
-CREATE TABLE Visited (id text, site text, dated text)
+  CREATE TABLE Person (id text, personal text, family text)
+ 
+  CREATE TABLE Site (name text, lat real, long real)
+ 
+  CREATE TABLE Survey (taken integer, person text, quant text, reading real)
+ 
+  CREATE TABLE Visited (id text, site text, dated text)
 
 The Browse Data tab provides view of each table.
 
