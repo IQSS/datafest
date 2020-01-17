@@ -300,6 +300,13 @@ SELECT personal || ' ' || family FROM Person;
 |Valentina Roerich|
 |Frank Danforth   |
 
+***
+**Exercise:**
+
+* After further reading, we realize that Valentina Roerich was reporting salinity as percentages. Write a query that returns all of her salinity measurements from the Survey table with the values divided by 100.
+
+***
+
 ## Aggregating Data
 SQL has built in functions that enable data aggregation, some of the more commonly used ones are `min`, `max`, `avg`, `count`, `sum`, `round`. 
 
