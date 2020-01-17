@@ -58,7 +58,7 @@ You do not need to install all three analysis environments; instead, only instal
 
 2. For Mac or PC, please download to your `Installers` folder the RStudio installer from the [RStudio](https://www.rstudio.com/) site and run it to start the installation process:
 
-    Mac: https://download1.rstudio.org/desktop/macos/RStudio-1.2.5033.dmg
+    Mac: https://download1.rstudio.org/desktop/macos/RStudio-1.2.5033.dmg       
     PC : https://download1.rstudio.org/desktop/windows/RStudio-1.2.5033.exe
 
 
@@ -114,8 +114,9 @@ The ODBC Manager software acts as a broker between your front-end program (R, Py
 
 1a. For the PC, this step is not needed as it is built into the Windows operating system.
 
-1b. For the Mac, please download to your `Installers` folder the [iODBC Manager 3.52.12 disk image](http://opldownload.s3.amazonaws.com/uda/components/7.0/universal-apple-macosx10.7-32/mxkozzzz.dmg). Open the disk image file, and double-click the installer package to start the installation process.
+1b. For the Mac, please download to your `Installers` folder the [iODBC Manager 3.52.12 disk image](http://download3.openlinksw.com/uda/components/7.0/universal-apple-macosx10.7-32/mxkozzzz.dmg). Open the disk image file, and double-click the installer package to start the installation process.
 
+https://files.downloadnow.com/s/software/16/57/30/52/ODBC_Manager_Installer.dmg?token=1579328513_1b4117c4feb98adb2dce7b9a221800e5&fileName=ODBC_Manager_Installer.dmg
 
 #### ODBC Drivers
 
@@ -123,7 +124,7 @@ For each backend database or data source, you need software (a driver) to commun
 
 1. For Mac or PC, please download to your `Installers` folder the appropriate installer and open/run the appropriate program, disk image, or package to start the installation process. **PC users:** please download and install **BOTH** sets of drivers.
 
-    Mac: [v0.9994 with full-text search support disk image](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)
+    Mac: [v0.9994 (with full-text search support) disk image](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)
     PC : [v0.9996 Win64 binary](http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe)
 
 #### ODBC Configuration
@@ -132,7 +133,7 @@ For each backend database or data source, you need software (a driver) to commun
 
 Unfortunately, this must be done by hand via the Windows GUI interface. Although these instructions were written for Window 7 SP1, they may vary slightly for v8.1, or v10. Please adjust accordingly. If really stuck, see the HelpDesk volunteers in the DataFest concourse.
 
-1. From your Start / Search menu, look for 'ODBC', and run a program similar to "Data Sources (ODBC)" or the Control Panel "Set up data sources (ODBC)"
+1. From your Start / Search menu, look for 'ODBC', and run a program similar to "Data Sources (ODBC)" or the Control Panel "Set up data sources (ODBC)". **Please choose the 64-bit one** if you are presented with more than one choice.
 
 2. Click on the "Drivers" tab. You should see "SQLite3 ODBC Driver" listed here, among others:
 
@@ -156,7 +157,7 @@ You should have this window configured as such. Click on "OK" to close this wind
 
 **Mac**
 
-1. For Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](https://raw.githubusercontent.com/IQSS/datafest/master/DataFest-2019/Multiple-Approaches-to-Combining-Data/installers/mac/mac_odbc_config.command) (right-mouse click and "Save Link As..."). 
+1. For Mac, please download to your `Installers` folder the [Mac ODBC Configuration Script](../../../../raw/master/DataFest-2020/Custom_Databases_for_Data_Management/installers/mac/mac_odbc_config.command) (right-mouse click and "Save Link As..."). 
 
 2. Click on the Search icon in the Mac main menu bar, or press Command-Space to bring up the Spotlight search. Enter "Terminal" and press Enter/Return when the Terminal application appears.
 
