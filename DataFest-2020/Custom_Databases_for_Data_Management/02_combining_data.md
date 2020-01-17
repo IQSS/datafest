@@ -229,9 +229,14 @@ SELECT DISTINCT quant FROM Survey;
 |temp |
 
 We can use the `DISTINCT` keyword on multiple columns. If we select more than one column, the distinct *pairs* of values are returned.
+We can get unique data this way.
 
+***
+**Exercise:**
 
-We can get unique data 
+* Write a query that displays the full names of the scientists in the Person table, ordered by family name.
+
+***
 
 ## Filtering Data
 
