@@ -5,7 +5,7 @@ Our hands-on session will be focusing on using SQLite3 as a lightweight, local d
 Although this looks lengthy, it is not and should take only about 5 minutes to complete.  Please install in the sections below:
 
 [Data Files](#data-files)<br>
-[SQLite3](#sqlite3)<br>
+[DB Browser for SQLite](#db-browser)<br>
 One (or all) of the following :<br>
   [Python + modules](#python--sqlite-module)<br>
   [R + packages](#r--rstudio--rsqlite--dplyr-packages)<br>
@@ -30,25 +30,11 @@ If you already have R, Python, or Stata installed, you will still need to instal
 - ['visited.csv' file](../../blob/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/data/visited.csv)
 
 
-## SQLite3
+## DB Browser for SQLite
 
-### Mac
+Please download the appropriate version for your operating systerm from: https://sqlitebrowser.org/dl/
 
-No need to do anything here! SQLite3 is pre-installed on Mac systems on Mac OS X 10.4 and later.
-
-### Windows
-
-Although these instructions were written for Window 7 SP1, they may vary slightly for v8.1, or v10. Please adjust accordingly, or see the HelpDesk volunteers in the DataFest concourse.
-
-1. Please create a folder called `Installers` inside your `datafest_2017` folder, and download the following Zip archives to that location:
-
-- [32-bit DLL (x86) for SQLite version 3.16.2](../../../../raw/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/installers/windows/sqlite-dll-win64-x64-3300100.zip)
-- [SQLite command-line tools, shell, sqldiff, and sqlite3_analyzer programs](../../../../raw/master/DataFest-2020/Multiple-Approaches-to-Combining-Data/installers/windows/sqlite-tools-win32-x86-3300100.zip)
-
-2. Unzip each archive by a right-mouse click on each archive, select `Extract All...`, and in the dialog that appears, navigate to the folder `Computer > C:\Windows\System32`. Uncheck the `Show Extracted Files When Complete` checkbox. Click on the Enter button.
-
-3. To test the success of your installation, go to Windows Start menu, type `cmd` and press Enter. When the (black) shell window appears, type `sqlite3` and press Enter. You are successful if the prompt changes to `sqlite> `. Type `.quit` and Enter to exit. If you did not get this prompt, please see the HelpDesk volunteers at DataFest concourse.
-
+The installation process is pretty simple and easy-to-follow for Mac and Windows.   
     
 ## Analysis Environments
 
