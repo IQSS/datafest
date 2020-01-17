@@ -44,7 +44,7 @@ You do not need to install all three analysis environments; instead, only instal
 
 1. For Mac or PC, please download to your `Installers` folder the appropriate installer from [Continuum Analytics](https://www.continuum.io/) Anaconda Python installer and run it to start the installation process. If you don't know which PC installer to use, please use the 32-bit one.
 
-    Mac 64-bit: https://repo.anaconda.com/archive/Anaconda3-2019.10-MacOSX-x86_64.pkg
+    Mac 64-bit: https://repo.anaconda.com/archive/Anaconda3-2019.10-MacOSX-x86_64.pkg       
     PC 64-bit : https://repo.anaconda.com/archive/Anaconda3-2019.10-Windows-x86_64.exe
 
 2. To test the success of your installation, open up a Terminal or cmd shell window, type in `python` and press Enter. You are successful if the prompt changes to `>>> ` and 'Continuum Analytics' is mentioned in the text above. Type `quit()` and Enter to exit. If you did not get this prompt, please see the HelpDesk volunteers at DataFest concourse.
@@ -123,8 +123,8 @@ For each backend database or data source, you need software (a driver) to commun
 
 1. For Mac or PC, please download to your `Installers` folder the appropriate installer and open/run the appropriate program, disk image, or package to start the installation process. **PC users:** please download and install **BOTH** sets of drivers.
 
-    Mac: [v0.9994 with full-text search support](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)
-    PC : [v0.9996 Win64](http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe)
+    Mac: [v0.9994 with full-text search support disk image](http://www.ch-werner.de/sqliteodbc/sqliteodbc-0.9994.dmg)
+    PC : [v0.9996 Win64 binary](http://www.ch-werner.de/sqliteodbc/sqliteodbc_w64.exe)
 
 #### ODBC Configuration
 
