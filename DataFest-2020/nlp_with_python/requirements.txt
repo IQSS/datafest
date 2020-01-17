@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+unicodedata2
+nltk
+matplotlib
+numpy
+pandas
