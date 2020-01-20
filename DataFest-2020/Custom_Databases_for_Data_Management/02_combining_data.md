@@ -163,7 +163,7 @@ SELECT * FROM Person ORDER BY family;
 By default, results are sorted in ascending order (i.e., from least to greatest). We can sort in the opposite order using `DESC` instead of the default `ASC`.
 
 
-The real meat of our data, which measurements were taken at each site, is in the `Survey` table, so let's switch to that quantitative data. To determine  we can examine the `Survey` table. Data is often redundant, so queries often return redundant information. For example, if we select the quantities that have been measured from the `Survey` table, we get this:
+The real meat of our data, which measurements were taken at each site, is in the `Survey` table, so let's switch to that quantitative data. To determine which measurements were taken we can examine the `Survey` table. Data is often redundant, so queries often return redundant information. For example, if we select the quantities that have been measured from the `Survey` table, we get this:
 
 ```sql
 SELECT quant FROM Survey;
