@@ -144,7 +144,7 @@ SELECT family, personal FROM Person;
 |Roerich |Valentina|
 |Danforth|Frank    |
 
-Case does not matter, the columns names are separated by commands, and a semicolon is used to terminal the statement. If you forget the semicolon, SQL will prompt you with additional `>` on a new line. 
+Case does not matter, the columns names are separated by commas, and a semicolon is used to terminal the statement. If you forget the semicolon, SQL will prompt you with additional `>` on a new line. 
 
 Database records are not stored in any particular order. This means that query results aren't necessarily sorted, and even if they are, we often want to sort them in a different way, e.g., by their identifier instead of by their personal name. We can do this in SQL by adding an `ORDER BY` clause to our query:
 
