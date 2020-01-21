@@ -65,8 +65,7 @@ You do not need to install all three analysis environments; instead, only instal
 3. Final step is to install the R packages needed for the workshop. Open up the RStudio program. In the console window that appears in the left pane, please enter the following commands one-at-a-time, *noting that there may be long pauses* as RStudio processes and installs all the dependent packages:
 
 ```
-    install.packages('RSQLite')
-    install.packages('dplyr')
+    install.packages(c('RSQLite','dplyr','dbplyr'))
 ```
 
 Red text may appear and scroll by. For the most part, that should be fine. But the final message should be something like...
@@ -81,12 +80,13 @@ The downloaded binary packages are in
 ```
     library('RSQLite')
     library('dplyr')
+    library('dbplyr')
 ```
     
 For RSQLite, there should be nothing printed. For dplyr, you may get someting like the following:
 
 ```
-`Attaching package: ‘dplyr’
+Attaching package: ‘dplyr’
 
 The following objects are masked from ‘package:stats’:
 
@@ -95,6 +95,13 @@ The following objects are masked from ‘package:stats’:
 The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union`
+
+
+Attaching package: ‘dbplyr’
+
+The following objects are masked from ‘package:dplyr’:
+
+    ident, sql
 ```
 
 If you receive any error (not warning) messages, please see the HelpDesk volunteers at DataFest concourse.
