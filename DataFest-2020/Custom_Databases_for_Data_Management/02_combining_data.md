@@ -144,7 +144,7 @@ SELECT family, personal FROM Person;
 |Roerich |Valentina|
 |Danforth|Frank    |
 
-Case does not matter, the columns names are separated by commands, and a semicolon is used to terminal the statement. If you forget the semicolon, SQL will prompt you with additional `>` on a new line. 
+Case does not matter, the columns names are separated by commas, and a semicolon is used to terminal the statement. If you forget the semicolon, SQL will prompt you with additional `>` on a new line. 
 
 Database records are not stored in any particular order. This means that query results aren't necessarily sorted, and even if they are, we often want to sort them in a different way, e.g., by their identifier instead of by their personal name. We can do this in SQL by adding an `ORDER BY` clause to our query:
 
@@ -163,7 +163,7 @@ SELECT * FROM Person ORDER BY family;
 By default, results are sorted in ascending order (i.e., from least to greatest). We can sort in the opposite order using `DESC` instead of the default `ASC`.
 
 
-The real meat of our data, which measurements were taken at each site, is in the `Survey` table, so let's switch to that quantitative data. To determine  we can examine the `Survey` table. Data is often redundant, so queries often return redundant information. For example, if we select the quantities that have been measured from the `Survey` table, we get this:
+The real meat of our data, which measurements were taken at each site, is in the `Survey` table, so let's switch to that quantitative data. To determine which measurements were taken we can examine the `Survey` table. Data is often redundant, so queries often return redundant information. For example, if we select the quantities that have been measured from the `Survey` table, we get this:
 
 ```sql
 SELECT quant FROM Survey;
