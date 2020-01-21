@@ -10,6 +10,7 @@ exercies: 10 minutes
 > - "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
 > objectives:
 > - "Write short programs that execute SQL queries."
+>
 > keypoints:
 > - "General-purpose languages have libraries for accessing databases."
 > - "To connect to a database, a program must use a library specific to that database manager."
