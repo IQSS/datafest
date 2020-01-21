@@ -110,6 +110,8 @@ Since establishing a connection takes time, though, we shouldn't open a connecti
 So let's see how we would implement this pseudocode in R, Python, and Stata!
 
 **R (standard)**
+You can download [`R_sqlite_dplyr.R`](https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/scripts/R_sqlite_dplyr.R) to your local machine and put it in your `datafest/` folder.
+
 ```r
 # import our required packages
 library('RSQLite')
@@ -230,7 +232,7 @@ dbDisconnect(connection)
 
 **Python**
 
-The python code is slightly more verbose than that for R, but is still very easy to understand:
+The python code is slightly more verbose than that for R, but is still very easy to understand. You can download the two files [`bad_query.py`](https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/scripts/bad_query.py) and [`better_query.py`](https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/scripts/better_query.py):
 
 ```python
 # import our python3-print-in-python2 and SQLite modules
