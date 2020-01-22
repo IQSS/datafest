@@ -69,7 +69,7 @@ To perform this, click on the appropriate commit node (our last one), and right-
   
 When prompted, you can immediate commit this explicit change -- Yes choice -- or keep the changes as a WIP (work in progress) for you to do additional work -- No choice. 
 
-<img src="img/5.09.revert_commit_yes_or_no.png" width="700" align="center">
+<img src="img/5.09.Revert_commit_yes_or_no.png" width="700" align="center">
 
 
 Clicking Yes enters the new commit to your repo:

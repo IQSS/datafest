@@ -36,9 +36,13 @@ Notice that our commit short descriptions are shown here; and that we can see th
 
 **Exercise #2**
 
-1. Push the changes to the "learning_github" repo (from the preivous exercise) to the remote repo on github.com
-2. Make changes to data-file.txt on GitHub.com
-3. Sync or "Pull" the changes that were made remotely to the local repository
+1. Push the changes to the `learning_github` repo (from the previous exercise) to the remote repo on github.com.
+2. Edit `data-file.txt` to add more text or remove text, as you see fit.
+3. Next, add an additional text file called `another-data-file.txt`.
+4. Commit these changes with an informative message.
+5. Remove `another-data-file.txt`.
+6. Commit this change, and push your local changes to the remote repository.
+
 ***
 
 On Github, you can choose to keep it public or make it private; and if it's private, you can choose specific GitHub users with whom you want to share it or collaborate with. For this lesson, we will stick with having a public repository. 
@@ -119,6 +123,18 @@ To get all these changes back onto our own (local) computer, we need to Pull the
 If all goes well, you should see a brief 'Success' message, and your repos should be in sync again:
 
 <img src="img/3.local_remote_in_sync.png" width="700" align="center">
+
+
+***
+
+**Exercise #3**
+
+1. Within the `learning_github` repo, make changes to `data-file.txt` on GitHub.com.
+2. Create a new file on GitHub.com, and commit the changes.
+3. Delete the new file you created on Github. Commit the change.
+4. Sync or "Pull" the changes that were made remotely to the local repository.
+***
+
 
 ## Viewing File Histories
 
