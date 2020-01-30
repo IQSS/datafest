@@ -31,7 +31,7 @@ fi
 
 # bring in class file
 echo "Downloading $driverfile..."
-curl -o $target/$driverfile "https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/odbcinst.ini"
+curl -o $target/$driverfile "https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/installers/mac/odbcinst.ini"
 
 # if odbc.ini exists, rename it to odbc.ini.bak for safe keeping
 
@@ -45,7 +45,7 @@ fi
 
 # bring in class file
 echo "Downloading $dsnfile..."
-curl -o $target/$dsnfile "https://raw.githubusercontent.com/IQSS/datafest/master/multiple_approaches_combining_data/installers/mac/odbc.ini"
+curl -o $target/$dsnfile "https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/installers/mac/odbc.ini"
 
 if [ -f ~/Library/ODBC/odbc.ini ] && [ -f ~/Library/ODBC/odbcinst.ini ]
 then 

@@ -123,7 +123,6 @@ The ODBC Manager software acts as a broker between your front-end program (R, Py
 
 1b. For the Mac, please download to your `Installers` folder the [iODBC Manager 3.52.12 disk image](http://download3.openlinksw.com/uda/components/7.0/universal-apple-macosx10.7-32/mxkozzzz.dmg). Open the disk image file, and double-click the installer package to start the installation process.
 
-https://files.downloadnow.com/s/software/16/57/30/52/ODBC_Manager_Installer.dmg?token=1579328513_1b4117c4feb98adb2dce7b9a221800e5&fileName=ODBC_Manager_Installer.dmg
 
 #### ODBC Drivers
 
@@ -154,7 +153,7 @@ Unfortunately, this must be done by hand via the Windows GUI interface. Although
 
 PLEASE verify that you selected SQLite3, not the other choices. Click on the "Finish" button.
 
-4. In the new window that appears, enter "DF_Survey_DB" as the Data Source Name. For Database Name, enter `C:\Users\Public\datafest_2017\survey.db` or use the "Browse" button to navigate to the `survey.db` file in your `datafest_2017` folder. 
+4. In the new window that appears, enter "DF_Survey_DB" as the Data Source Name. For Database Name, enter `C:\Users\Public\datafest\survey.db` or use the "Browse" button to navigate to the `survey.db` file in your `datafest` folder. 
 
 ![alt text](images/odbc_sqlite3_odbc_dsn_config.png "SQLite3 ODBC DSN Configuration")
 
@@ -170,7 +169,7 @@ You should have this window configured as such. Click on "OK" to close this wind
 
 3. In the Terminal window that appears, enter the following command (note that 'Installers' is capitalized):
 
-	`bash /Users/Shared/datafest_2019/Installers/mac_odbc_config.command`
+	`bash /Users/Shared/datafest/Installers/mac_odbc_config.command`
 
 4. If all installed successfully, you should see a confirmation message "Files are present and installed OK". If not, you will be informed, and you should download the *.ini files from the GitHub site found at 'installers > mac' and place in your invisible Library home folder. If you are stuck, please show the error messages to the HelpDesk volunteers at DataFest concourse.
 
