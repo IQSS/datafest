@@ -123,7 +123,7 @@
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -141,8 +141,7 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{fontawesome5}
-\usepackage{tikz}
-\usetikzlibrary{arrows}
+
 
 \title{Shiny Web Applications in R}
 \author{Ista Zahn and Jess Cohen-Tanugi}
@@ -161,7 +160,6 @@
 
 \begin{frame}[fragile]{Required software}
 \protect\hypertarget{required-software}{}
-
 There are a few things you need to install in order to follow along with
 the examples and exercises.
 
@@ -175,12 +173,10 @@ the examples and exercises.
   \textbf{tidyverse, plotly, leaflet, and DT packages}:
   \newline \texttt{install.packages(c("tidyverse",\ "plotly",\ "DT"))}
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}[fragile]{Workshop materials and setup}
 \protect\hypertarget{workshop-materials-and-setup}{}
-
 \begin{enumerate}
 \tightlist
 \item
@@ -194,12 +190,10 @@ the examples and exercises.
   Open shiny cheatsheet (\emph{Help \rightarrow Cheat sheets
   \rightarrow Web applications with shiny})
 \end{enumerate}
-
 \end{frame}
 
 \begin{frame}{This workshop}
 \protect\hypertarget{this-workshop}{}
-
 \begin{itemize}[<+->]
 \tightlist
 \item
@@ -219,7 +213,6 @@ the examples and exercises.
 \item
   Links and resources for further study are included!
 \end{itemize}
-
 \end{frame}
 
 \hypertarget{what-is-shiny-and-what-is-it-good-for}{%
@@ -228,7 +221,6 @@ for?}\label{what-is-shiny-and-what-is-it-good-for}}
 
 \begin{frame}{A web application framework in R}
 \protect\hypertarget{a-web-application-framework-in-r}{}
-
 \begin{itemize}[<+->]
 \tightlist
 \item
@@ -252,12 +244,10 @@ for?}\label{what-is-shiny-and-what-is-it-good-for}}
 \item
   If you already know R shiny makes it easy to build a website.
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}[fragile]{Use cases and examples}
 \protect\hypertarget{use-cases-and-examples}{}
-
 \begin{itemize}
 \item
   Exploratory data analysis:
@@ -281,12 +271,10 @@ for?}\label{what-is-shiny-and-what-is-it-good-for}}
 \item
   Some built-in examples accessible via \texttt{runExample()}
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}[fragile]{Sharing and deploying}
 \protect\hypertarget{sharing-and-deploying}{}
-
 \begin{itemize}[<+->]
 \tightlist
 \item
@@ -323,14 +311,11 @@ for?}\label{what-is-shiny-and-what-is-it-good-for}}
   your own system, or pay for the full-featured \emph{RStudio Connect}
   platform.
 \end{itemize}
-
 \end{frame}
 
 \hypertarget{structure-of-a-shiny-application}{%
 \section{Structure of a shiny
 application}\label{structure-of-a-shiny-application}}
-
-\begin{frame}{Structure of a shiny application}
 
 Objectives:
 
@@ -345,11 +330,8 @@ Objectives:
   Practice creating apps using storm data as an example.
 \end{itemize}
 
-\end{frame}
-
 \begin{frame}[fragile]{Shiny app components}
 \protect\hypertarget{shiny-app-components}{}
-
 \begin{itemize}[<+->]
 \tightlist
 \item
@@ -377,12 +359,10 @@ Objectives:
   The \emph{server} does all computations, \emph{renders output} and
   sends it to the \emph{ui}.
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}[fragile]{Example: Create new shiny app}
 \protect\hypertarget{example-create-new-shiny-app}{}
-
 There are two convenient ways to create a new shiny app.
 
 \begin{description}
@@ -393,12 +373,10 @@ There are two convenient ways to create a new shiny app.
 \emph{File \rightarrow New File \rightarrow R Script}; start typing
 \texttt{shinyapp} and select the shinyapp \emph{snippet}
 \end{description}
-
 \end{frame}
 
 \begin{frame}[fragile]{Exercise 1: Create a shiny app}
 \protect\hypertarget{exercise-1-create-a-shiny-app}{}
-
 Open the exercise file: \emph{File \rightarrow Open File
 \rightarrow exercises/01\_new\_shiny\_app.R}
 
@@ -413,12 +391,10 @@ Open the exercise file: \emph{File \rightarrow Open File
   Add some text inside the ui element, e.g., ``Hello World!''. Save and
   click the ``Reload App'' button".
 \end{enumerate}
-
 \end{frame}
 
 \begin{frame}[fragile]{Example project data}
 \protect\hypertarget{example-project-data}{}
-
 We will be using the \texttt{storms} data set distributed with the
 \texttt{dplyr} package as an example.
 
@@ -440,12 +416,10 @@ We will be using the \texttt{storms} data set distributed with the
 
 Our first goal is to \textbf{display the number of storms by year} in
 our shiny app.
-
 \end{frame}
 
 \begin{frame}[fragile]{UI and server elements}
 \protect\hypertarget{ui-and-server-elements}{}
-
 \begin{itemize}
 \tightlist
 \item
@@ -473,12 +447,10 @@ our shiny app.
     When inputs change, rendered outputs are created or updated.
   \end{itemize}
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}[fragile]{Outputs and Renderers}
 \protect\hypertarget{outputs-and-renderers}{}
-
 \emph{Outputs} are the way generated content produced by R is displayed
 in shiny. Examples include:
 
@@ -500,12 +472,10 @@ You can use
 \end{Shaded}
 
 to find other output functions in shiny.
-
 \end{frame}
 
 \begin{frame}[fragile]{Outputs and Renderers}
 \protect\hypertarget{outputs-and-renderers-1}{}
-
 Each \texttt{*output()} function has a corresponding \texttt{render*()}
 function. For example:
 
@@ -526,12 +496,10 @@ function. For example:
 \item
   \texttt{tableOutput()} \rightarrow \texttt{renderTable()}
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}{Example: render outputs}
 \protect\hypertarget{example-render-outputs}{}
-
 \begin{description}
 \tightlist
 \item[Start]
@@ -539,12 +507,10 @@ function. For example:
 \item[Finished]
 \emph{examples/02\_render\_output\_finished.R}
 \end{description}
-
 \end{frame}
 
 \begin{frame}{Exercise 2: Display number of storms by year.}
 \protect\hypertarget{exercise-2-display-number-of-storms-by-year.}{}
-
 Open the exercise file: \emph{File \rightarrow Open File
 \rightarrow exercises/02\_storms\_by\_year.R}
 
@@ -558,12 +524,10 @@ Open the exercise file: \emph{File \rightarrow Open File
   the server. The plot should display the number of named storms in each
   year.
 \end{enumerate}
-
 \end{frame}
 
 \begin{frame}[fragile]{Creating input elements}
 \protect\hypertarget{creating-input-elements}{}
-
 \emph{Inputs} are form elements like check boxes, text fields, and
 sliders. Examples include:
 
@@ -585,12 +549,10 @@ You can use
 \end{Shaded}
 
 to find other input functions in shiny.
-
 \end{frame}
 
 \begin{frame}[fragile]{Accessing inputs}
 \protect\hypertarget{accessing-inputs}{}
-
 \begin{itemize}
 \item
   Inputs are accessed in the \emph{server} function via the \emph{input}
@@ -602,12 +564,10 @@ to find other input functions in shiny.
   inputs; \texttt{str(reactiveValuesToList(input))} will show the
   current input names and values.
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}{Example: create and use input}
 \protect\hypertarget{example-create-and-use-input}{}
-
 \begin{description}
 \tightlist
 \item[Start]
@@ -615,12 +575,10 @@ to find other input functions in shiny.
 \item[Finished]
 \emph{examples/03\_input\_output\_finished.R}
 \end{description}
-
 \end{frame}
 
 \begin{frame}{Exercise 3: Display storms for a user-selected year.}
 \protect\hypertarget{exercise-3-display-storms-for-a-user-selected-year.}{}
-
 Open the exercise file: \emph{File \rightarrow Open File
 \rightarrow exercises/03\_storms\_filtered.R}
 
@@ -631,13 +589,111 @@ Open the exercise file: \emph{File \rightarrow Open File
   Modify the renderTable expression to filter the year displayed to the
   one selected by the user.
 \end{enumerate}
+\end{frame}
 
+\hypertarget{interactive-tables-and-graphs}{%
+\section{Interactive tables and
+graphs}\label{interactive-tables-and-graphs}}
+
+Javascript is the language of the web, and many of the most popular
+javascript libraries can be used directly from R.
+
+Objectives:
+
+\begin{itemize}
+\item
+  Discover available html widgets that can be used in shiny
+  applications.
+\item
+  Learn how html widgets interact with shiny.
+\item
+  Practice using html widgets as inputs and outputs in shiny apps.
+\end{itemize}
+
+\begin{frame}[fragile]{Interactive tables with DT}
+\protect\hypertarget{interactive-tables-with-dt}{}
+The DataTables javascript library can be used to create interactive
+tables directly from R. Features inlude:
+
+\begin{itemize}
+\tightlist
+\item
+  searching,
+\item
+  pagination,
+\item
+  sorting.
+\end{itemize}
+
+Interacting with tables updates \texttt{input}, enabling integration
+with Shiny.
+
+See \url{https://shiny.rstudio.com/articles/datatables.html} for more.
+\end{frame}
+
+\begin{frame}[fragile]{Interactive graphs with plotly}
+\protect\hypertarget{interactive-graphs-with-plotly}{}
+Plotly is a robust javascript data visualization library with an
+excellent R package. Features include:
+
+\begin{itemize}
+\tightlist
+\item
+  easy converson of \texttt{ggplot} graphs,
+\item
+  hover, click, pan and zoom
+\item
+  support for plots, scatter plots, error bars, box plots, heatmaps and
+  much more.
+\end{itemize}
+
+Plotly includes an \texttt{event\_data} function for retrieving values
+produced by interacting with the plot. This enables deep integration
+with Shiny.
+
+See \url{https://plot.ly/r/shiny-coupled-events/} for more.
+\end{frame}
+
+\begin{frame}[fragile]{Interactive maps with leaflet}
+\protect\hypertarget{interactive-maps-with-leaflet}{}
+Leaflet is a popular javascript library for producing interactive maps.
+
+Like DataTables, interacting with leaflet maps updates \texttt{input},
+enabling interacting with shiny.
+
+See \url{http://rstudio.github.io/leaflet/shiny.html} for more.
+\end{frame}
+
+\begin{frame}{Example: html widgets DT and Plotly}
+\protect\hypertarget{example-html-widgets-dt-and-plotly}{}
+\begin{description}
+\tightlist
+\item[Start]
+\emph{examples/04\_htmlwidgets.R}
+\item[Finished]
+\emph{examples/04\_htmlwidgets\_finished.R}
+\end{description}
+\end{frame}
+
+\begin{frame}{Exercise 4: Interactive storms map}
+\protect\hypertarget{exercise-4-interactive-storms-map}{}
+Open the exercise file: \emph{File \rightarrow Open File
+\rightarrow exercises/04\_interactive\_storms\_map.R}
+
+\begin{enumerate}
+\item
+  Run the app and click on the blue markers. Examine the output in the
+  console to determin the input corresponding to the row number of the
+  clicked observation.
+\item
+  Use the slice function to select the row corresponding to the clicked
+  marker from the storms data frame and return this row to the
+  stormDetails output on line 65.
+\end{enumerate}
 \end{frame}
 
 \hypertarget{user-interface-ui}{%
 \section{User interface (UI)}\label{user-interface-ui}}
-
-\begin{frame}{User interface (UI)}
 
 Objectives:
 
@@ -652,11 +708,8 @@ Objectives:
   Practice creating apps using different layouts.
 \end{itemize}
 
-\end{frame}
-
 \begin{frame}[fragile]{Page layouts}
 \protect\hypertarget{page-layouts}{}
-
 Our storms app is functional, but not much to look at.
 
 Top-level page layout functions in shiny include:
@@ -679,12 +732,10 @@ Top-level page layout functions in shiny include:
 useful for more complex apps with many elements.
 
 See \url{https://shiny.rstudio.com/articles/layout-guide.html} for more.
-
 \end{frame}
 
 \begin{frame}[fragile]{Layout functions}
 \protect\hypertarget{layout-functions}{}
-
 Other layout functions include:
 
 \begin{itemize}
@@ -704,12 +755,10 @@ Other layout functions include:
 These are often used inside the page layout functions.
 
 See \url{https://shiny.rstudio.com/articles/layout-guide.html} for more.
-
 \end{frame}
 
 \begin{frame}[fragile]{HTML tags}
 \protect\hypertarget{html-tags}{}
-
 In addition to the high-level layout functions you can also use
 low-level functions to generate html tags.
 
@@ -730,12 +779,10 @@ Directly available tag functions include:
 \end{itemize}
 
 See \texttt{?builder} for more.
-
 \end{frame}
 
 \begin{frame}[fragile]{Shiny themes}
 \protect\hypertarget{shiny-themes}{}
-
 Shiny uses bootstrap ( \url{https://getbootstrap.com/} ) under the hood,
 providing easy access to a range of themes.
 
@@ -743,27 +790,23 @@ To use other themes, install the \texttt{shinythemes} package and use
 the \texttt{theme} argument to your page layout function.
 
 More information at \url{https://rstudio.github.io/shinythemes/}
-
 \end{frame}
 
 \begin{frame}{Example: Page and element layout}
 \protect\hypertarget{example-page-and-element-layout}{}
-
 \begin{description}
 \tightlist
 \item[Start]
-\emph{examples/04\_layout\_appearance.R}
+\emph{examples/05\_layout\_appearance.R}
 \item[Finished]
-\emph{examples/04\_layout\_appearance\_finished.R}
+\emph{examples/05\_layout\_appearance\_finished.R}
 \end{description}
-
 \end{frame}
 
-\begin{frame}[fragile]{Exercise 4: Spiff up the storms app}
-\protect\hypertarget{exercise-4-spiff-up-the-storms-app}{}
-
+\begin{frame}[fragile]{Exercise 5: Spiff up the storms app}
+\protect\hypertarget{exercise-5-spiff-up-the-storms-app}{}
 Open the exercise file: \emph{File \rightarrow Open File
-\rightarrow exercises/04\_storms\_pretty.R}
+\rightarrow exercises/05\_storms\_pretty.R}
 
 \begin{enumerate}
 \item
@@ -778,122 +821,6 @@ Open the exercise file: \emph{File \rightarrow Open File
   theme used by your app. See
   \url{https://rstudio.github.io/shinythemes/} for examples.
 \end{enumerate}
-
-\end{frame}
-
-\hypertarget{interactive-tables-and-graphs}{%
-\section{Interactive tables and
-graphs}\label{interactive-tables-and-graphs}}
-
-\begin{frame}{Interactive tables and graphs}
-
-Javascript is the language of the web, and many of the most popular
-javascript libraries can be used directly from R.
-
-Objectives:
-
-\begin{itemize}
-\item
-  Discover available html widgets that can be used in shiny
-  applications.
-\item
-  Learn how html widgets interact with shiny.
-\item
-  Practice using html widgets as inputs and outputs in shiny apps.
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}[fragile]{Interactive tables with DT}
-\protect\hypertarget{interactive-tables-with-dt}{}
-
-The DataTables javascript library can be used to create interactive
-tables directly from R. Features inlude:
-
-\begin{itemize}
-\tightlist
-\item
-  searching,
-\item
-  pagination,
-\item
-  sorting.
-\end{itemize}
-
-Interacting with tables updates \texttt{input}, enabling integration
-with Shiny.
-
-See \url{https://shiny.rstudio.com/articles/datatables.html} for more.
-
-\end{frame}
-
-\begin{frame}[fragile]{Interactive graphs with plotly}
-\protect\hypertarget{interactive-graphs-with-plotly}{}
-
-Plotly is a robust javascript data visualization library with an
-excellent R package. Features include:
-
-\begin{itemize}
-\tightlist
-\item
-  easy converson of \texttt{ggplot} graphs,
-\item
-  hover, click, pan and zoom
-\item
-  support for plots, scatter plots, error bars, box plots, heatmaps and
-  much more.
-\end{itemize}
-
-Plotly includes an \texttt{event\_data} function for retrieving values
-produced by interacting with the plot. This enables deep integration
-with Shiny.
-
-See \url{https://plot.ly/r/shiny-coupled-events/} for more.
-
-\end{frame}
-
-\begin{frame}[fragile]{Interactive maps with leaflet}
-\protect\hypertarget{interactive-maps-with-leaflet}{}
-
-Leaflet is a popular javascript library for producing interactive maps.
-
-Like DataTables, interacting with leaflet maps updates \texttt{input},
-enabling interacting with shiny.
-
-See \url{http://rstudio.github.io/leaflet/shiny.html} for more.
-
-\end{frame}
-
-\begin{frame}{Example: html widgets DT and Plotly}
-\protect\hypertarget{example-html-widgets-dt-and-plotly}{}
-
-\begin{description}
-\tightlist
-\item[Start]
-\emph{examples/05\_htmlwidgets.R}
-\item[Finished]
-\emph{examples/05\_htmlwidgets\_finished.R}
-\end{description}
-
-\end{frame}
-
-\begin{frame}{Exercise 5: Interactive storms map}
-\protect\hypertarget{exercise-5-interactive-storms-map}{}
-
-Open the exercise file: \emph{File \rightarrow Open File
-\rightarrow exercises/05\_interactive\_storms\_map.R}
-
-\begin{enumerate}
-\item
-  Run the app and click on the blue markers. Examine the output in the
-  console to determin the input corresponding to the row number of the
-  clicked observation.
-\item
-  Use the slice function to select the row corresponding to the clicked
-  marker from the storms data frame and return this row to the
-  stormDetails output on line 65.
-\end{enumerate}
-
 \end{frame}
 
 \hypertarget{where-to-go-from-here}{%
@@ -901,7 +828,6 @@ Open the exercise file: \emph{File \rightarrow Open File
 
 \begin{frame}{Learning resources}
 \protect\hypertarget{learning-resources}{}
-
 A number of excellent tutorials and other resources are available,
 including:
 
@@ -915,27 +841,29 @@ including:
 \item
   \url{https://shiny.rstudio.com/images/shiny-cheatsheet.pdf}
 \end{itemize}
-
 \end{frame}
 
 \begin{frame}{Reactivity and dynamic UI elements}
 \protect\hypertarget{reactivity-and-dynamic-ui-elements}{}
-
 We have only touched on the reactive model shiny uses to enable
 interactivity. You can learn much more about it at
 \url{https://vimeo.com/rstudioinc/review/131218530/212d8a5a7a/\#t=42m2s}
-
 \end{frame}
 
 \begin{frame}[fragile]{Debugging shiny apps}
 \protect\hypertarget{debugging-shiny-apps}{}
-
 We've seeen how to use \texttt{print} or \texttt{str} to insect values.
 You can also use breakpoints in Rstudio.
 
 More information about debugging shiny apps is available at
 \url{https://shiny.rstudio.com/articles/debugging.html}
+\end{frame}
 
+\begin{frame}{Workshop feedback}
+\protect\hypertarget{workshop-feedback}{}
+Help us make DataFest even better by giving us feedback at
+
+\url{http://bit.ly/datafest_eval}
 \end{frame}
 
 \end{document}

@@ -10,6 +10,7 @@ exercies: 10 minutes
 > - "How can I access databases from scripts and programs written in Python, R, Stata, or other languages?"
 > objectives:
 > - "Write short programs that execute SQL queries."
+>
 > keypoints:
 > - "General-purpose languages have libraries for accessing databases."
 > - "To connect to a database, a program must use a library specific to that database manager."
@@ -109,12 +110,14 @@ Since establishing a connection takes time, though, we shouldn't open a connecti
 So let's see how we would implement this pseudocode in R, Python, and Stata!
 
 **R (standard)**
+You can download [`R_sqlite_dplyr.R`](https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/scripts/R_sqlite_dplyr.R) to your local machine and put it in your `datafest/` folder.
+
 ```r
 # import our required packages
 library('RSQLite')
 
 # open the database connection
-connection <- dbConnect(SQLite(), "survey.db")
+connection <- dbConnect(SQLite(), "/Users/Shared/datafest/survey.db")
 
 # execute and fetch the results
 results <- dbGetQuery(connection, "SELECT Site.lat, Site.long FROM Site;")
@@ -128,22 +131,108 @@ dbDisconnect(connection)
 
 **R with dplyr**
 ```r
+#
+# somewhat using dplyr
 # import our required packages
 library('RSQLite')
 library('dplyr')
 
-my_db <- src_sqlite("survey.db")
+connection <- DBI::dbConnect(RSQLite::SQLite(), "/Users/Shared/datafest/survey.db")
 
 # execute and fetch the results
-results <- tbl(my_db, sql("SELECT Site.lat, Site.long FROM Site"))
+results <- tbl(connection, sql("SELECT Site.lat, Site.long FROM Site"))
 
 # print 'em out
 print(results)
+
+# close the connection
+dbDisconnect(connection)
+```
+
+**R with dplyr and dbplyr**
+```r
+## better examples
+# real dplyr with dbplyr
+#
+#
+library(dplyr)
+library(dbplyr)
+
+connection <- DBI::dbConnect(RSQLite::SQLite(), "/Users/Shared/datafest/survey.db")
+src_dbi(connection)
+
+# sql
+results <- tbl(connection, sql("SELECT Site.lat, Site.long FROM Site"))
+results
+str(results)
+
+# dplyr
+sites <- tbl(connection, "Site")
+str(sites)
+
+sites %>% 
+  select(lat, long)
+sites
+
+sites %>% 
+  select(lat, long) %>%
+  show_query()
+  
+dbDisconnect(connection)
+
+
+# Simple query and filter
+# find readings out of range:
+# SELECT * FROM Survey WHERE quant = 'sal' AND ((reading > 1.0) OR (reading < 0.0));
+connection <- DBI::dbConnect(RSQLite::SQLite(), "/Users/Shared/datafest/survey.db")
+src_dbi(connection)
+s
+urvey <- tbl(connection, "Survey")
+survey %>% 
+  select(person, quant, reading) %>% 
+  filter(quant == 'sal',
+         reading > 1 | reading < 0)
+
+# what did it do?
+survey %>% 
+  select(person, quant, reading) %>% 
+  filter(quant == 'sal',
+         reading > 1 | reading < 0) %>% 
+  show_query()
+
+# collect data
+salinity_readings <- survey %>% 
+  select(person, quant, reading) %>% 
+  filter(quant == 'sal',
+         reading > 1 | reading < 0)
+salinity_readings
+
+dbDisconnect(connection)
+
+
+# do a join
+# SELECT * FROM Visited JOIN Survey ON Survey.taken = Visited.id and person = "lake" ORDER BY quant ASC;
+
+library(dplyr)
+library(dbplyr)
+
+connection <- DBI::dbConnect(RSQLite::SQLite(), "/Users/Shared/datafest/survey.db")
+src_dbi(connection)
+
+survey <- tbl(connection, "Survey")
+both <- left_join(survey, tbl(connection, "Visited"),
+                   by = c("taken" = "id")) %>% 
+  filter(person == "lake") %>%
+  arrange(quant)
+both
+explain(both)
+
+dbDisconnect(connection)
 ```
 
 **Python**
 
-The python code is slightly more verbose than that for R, but is still very easy to understand:
+The python code is slightly more verbose than that for R, but is still very easy to understand. You can download the two files [`bad_query.py`](https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/scripts/bad_query.py) and [`better_query.py`](https://raw.githubusercontent.com/hbs-rcs/datafest/master/DataFest-2020/Custom_Databases_for_Data_Management/scripts/better_query.py):
 
 ```python
 # import our python3-print-in-python2 and SQLite modules

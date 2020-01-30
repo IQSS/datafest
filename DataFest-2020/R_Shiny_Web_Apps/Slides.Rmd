@@ -268,6 +268,79 @@ Open the exercise file: *File \rightarrow Open File \rightarrow exercises/03_sto
 
 
 
+
+
+
+# Interactive tables and graphs
+
+Javascript is the language of the web, and many of the most popular javascript libraries can be used directly from R.
+
+Objectives:
+
+- Discover available html widgets that can be used in shiny applications.
+
+- Learn how html widgets interact with shiny.
+
+- Practice using html widgets as inputs and outputs in shiny apps.
+
+
+## Interactive tables with DT
+
+The DataTables javascript library can be used to create interactive tables directly from R. Features inlude:
+
+- searching,
+- pagination, 
+- sorting.
+
+Interacting with tables updates `input`, enabling integration with Shiny.
+
+See https://shiny.rstudio.com/articles/datatables.html for more.
+
+## Interactive graphs with plotly
+
+Plotly is a robust javascript data visualization library with an excellent R package. Features include:
+
+- easy converson of `ggplot` graphs,
+- hover, click, pan and zoom
+- support for  plots, scatter plots, error bars, box plots, heatmaps and much more.
+
+Plotly includes an `event_data` function for retrieving values produced by interacting with the plot. This enables deep integration with Shiny.
+
+See https://plot.ly/r/shiny-coupled-events/ for more.
+
+
+## Interactive maps with leaflet
+
+Leaflet is a popular javascript library for producing interactive maps.
+
+Like DataTables, interacting with leaflet maps updates `input`, enabling interacting with shiny.
+
+See http://rstudio.github.io/leaflet/shiny.html for more.
+
+
+## Example: html widgets DT and Plotly
+
+Start
+: *examples/04_htmlwidgets.R*
+
+Finished
+: *examples/04_htmlwidgets_finished.R*
+
+
+## Exercise 4: Interactive storms map
+
+Open the exercise file: *File \rightarrow Open File \rightarrow exercises/04_interactive_storms_map.R*
+
+
+1. Run the app and click on the blue markers. Examine the output in 
+the console to determin the input corresponding to the row number 
+of the clicked observation.
+
+2. Use the slice function to select the row corresponding
+to the clicked marker from the storms data frame and return
+this row to the stormDetails output on line 65.
+
+
 # User interface (UI)
 
 Objectives:
@@ -342,16 +415,16 @@ More information at https://rstudio.github.io/shinythemes/
 ## Example: Page and element layout
 
 Start
-: *examples/04_layout_appearance.R*
+: *examples/05_layout_appearance.R*
 
 Finished
-: *examples/04_layout_appearance_finished.R*
+: *examples/05_layout_appearance_finished.R*
 
 
 
-## Exercise 4: Spiff up the storms app
+## Exercise 5: Spiff up the storms app
 
-Open the exercise file: *File \rightarrow Open File \rightarrow exercises/04_storms_pretty.R*
+Open the exercise file: *File \rightarrow Open File \rightarrow exercises/05_storms_pretty.R*
 
 1. Lay out this application using `navbarPage` and `tabPanel.
    See https://shiny.rstudio.com/articles/layout-guide.html 
@@ -361,78 +434,6 @@ Open the exercise file: *File \rightarrow Open File \rightarrow exercises/04_sto
 
 3. Use the `shinythemes` package (install if needed) to change the theme used by your app.
    See https://rstudio.github.io/shinythemes/ for examples.
-
-
-
-# Interactive tables and graphs
-
-Javascript is the language of the web, and many of the most popular javascript libraries can be used directly from R.
-
-Objectives:
-
-- Discover available html widgets that can be used in shiny applications.
-
-- Learn how html widgets interact with shiny.
-
-- Practice using html widgets as inputs and outputs in shiny apps.
-
-
-## Interactive tables with DT
-
-The DataTables javascript library can be used to create interactive tables directly from R. Features inlude:
-
-- searching,
-- pagination, 
-- sorting.
-
-Interacting with tables updates `input`, enabling integration with Shiny.
-
-See https://shiny.rstudio.com/articles/datatables.html for more.
-
-## Interactive graphs with plotly
-
-Plotly is a robust javascript data visualization library with an excellent R package. Features include:
-
-- easy converson of `ggplot` graphs,
-- hover, click, pan and zoom
-- support for  plots, scatter plots, error bars, box plots, heatmaps and much more.
-
-Plotly includes an `event_data` function for retrieving values produced by interacting with the plot. This enables deep integration with Shiny.
-
-See https://plot.ly/r/shiny-coupled-events/ for more.
-
-
-## Interactive maps with leaflet
-
-Leaflet is a popular javascript library for producing interactive maps.
-
-Like DataTables, interacting with leaflet maps updates `input`, enabling interacting with shiny.
-
-See http://rstudio.github.io/leaflet/shiny.html for more.
-
-
-## Example: html widgets DT and Plotly
-
-Start
-: *examples/05_htmlwidgets.R*
-
-Finished
-: *examples/05_htmlwidgets_finished.R*
-
-
-## Exercise 5: Interactive storms map
-
-Open the exercise file: *File \rightarrow Open File \rightarrow exercises/05_interactive_storms_map.R*
-
-
-1. Run the app and click on the blue markers. Examine the output in 
-the console to determin the input corresponding to the row number 
-of the clicked observation.
-
-2. Use the slice function to select the row corresponding
-to the clicked marker from the storms data frame and return
-this row to the stormDetails output on line 65.
-
 
 
 # Where to go from here
@@ -462,3 +463,8 @@ We've seeen how to use `print` or `str` to insect values. You can also use break
 More information about debugging shiny apps is available at https://shiny.rstudio.com/articles/debugging.html
 
 
+## Workshop feedback
+
+Help us make DataFest even better by giving us feedback at
+
+http://bit.ly/datafest_eval

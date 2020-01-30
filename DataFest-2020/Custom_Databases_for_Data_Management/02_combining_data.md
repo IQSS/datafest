@@ -5,18 +5,31 @@ teaching: 20
 exercises: 10
 ---
 
+***
+
+<span style="float:left;">
+[Previous: Intro to Structured Data](01_intro_to_structured_data.md)
+</span>​
+<span style="float:right;">
+[Next: Scripting with Databases](03_scripting_with_databases.md)
+</span>
+
+***
+
 > Questions:
-> - "How can I get data from a database?"
-> - "What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
-> - "How can I select subsets of data?"
-> - "How can I calculate new values on the fly?"
-> - "How can I combine data from multiple tables?"
+> - How can I get data from a database?
+> - What are various options I can use to manipulate my data (e.g. sort, remove dupes, aggregate)?
+> - How can I select subsets of data?
+> - How can I calculate new values on the fly?
+> - How can I combine data from multiple tables?
+>
 > Objectives:
-> - "Explain the difference between a table, a record, and a field."
-> - "Explain the difference between a database and a database manager."
+> - Explain the difference between a table, a record, and a field
+> - Explain the difference between a database and a database manager
+>
 > Keypoints:
-> - "A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records."
-> - "A database manager is a program that manipulates information stored in a database."
+> - A relational database stores information in tables, each of which has a fixed set of columns and a variable number of records.
+> - A database manager is a program that manipulates information stored in a database.
 
 
 We going to assume some base familiarity of SQL. The remainder of this lesson will go through essential SQL commands that will get you off an running. For a more comprehensive review, we urge you to walk through the Software Carpentry [Databases and SQL lessons](http://swcarpentry.github.io/sql-novice-survey/).
@@ -446,7 +459,12 @@ SELECT rowid, * FROM Person;
 
 ***
 
-[Next Lesson](03_scripting_with_databases.md)
+<span style="float:left;">
+[Previous: Intro to Structured Data](01_intro_to_structured_data.md)
+</span>​
+<span style="float:right;">
+[Next: Scripting with Databases](03_scripting_with_databases.md)
+</span>
 
 ***
 
