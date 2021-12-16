@@ -52,10 +52,6 @@ d3.csv("data/universities_ranked_2017_conferences.csv", function(data){
 			return d.grad_salary;
 		})])
 		.range([0, barChartWidth]);
-	var xAxis = d3.axisBottom()
-							.scale(xscale)
-							.ticks(10)
-							.tickSizeOuter(0);
 
 	var xBarAxis = d3.axisTop()
 							.scale(xscale)
@@ -94,6 +90,7 @@ d3.csv("data/universities_ranked_2017_conferences.csv", function(data){
 		.append("text")
 			.attr("class", "barLabels")
 			.text(function(d){
+				//return "text";
 				return(`${d.name} | (${d.rank}) | $${d.grad_salary}`)
 			})
 			.attr("x", function(d){ return xscale(d.grad_salary) + 3})

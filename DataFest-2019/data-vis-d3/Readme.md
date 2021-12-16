@@ -1,5 +1,7 @@
 # Interactive Data Visualization with D3
 
+*Also at https://github.com/IQSS/datafest/tree/master/DataFest-2019/data-vis-d3*
+
 <a href="https://d3js.org/">D3.js</a> is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
 
 In this workshop, we're going present several exercises and go through some core D3 functionality in a whirlwind crash course to this popular library.
